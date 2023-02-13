@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Deep Learning on Graphs
+title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -30,12 +30,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-#theme: hacker
-#plugins:
-#  - jekyll-feed
-remote_theme: pages-themes/hacker@v0.2.0
+theme: minima
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
