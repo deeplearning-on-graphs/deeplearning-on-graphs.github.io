@@ -6,4 +6,4 @@ layout: home
 ---
 
 - test
-- -test2
+- test2
