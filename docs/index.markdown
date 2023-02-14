@@ -10,9 +10,8 @@ layout: home
 - test
 - test2
 
-# 目的
-
-- test3
+# 目次
+- [第3章](./chapters/chap3.md).
 
 # 深層学習の基礎
 ## はじめに
