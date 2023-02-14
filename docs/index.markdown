@@ -5,12 +5,13 @@
 layout: default
 ---
 
-# 自己紹介
+# Deep Learning on Graphs
 
 - test
 - test2
 
-# 目次
+## 目次
 - [第3章](./chapters/_chap3.md)
 
-# 公開レビューへの参加方法
+## 公開レビューへの参加方法
+- test
