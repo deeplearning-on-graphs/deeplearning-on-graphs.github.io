@@ -5,13 +5,10 @@
 layout: default
 ---
 
-# Deep Learning on Graphs
-
-- test
-- test2
-
 ## 目次
-- [第3章](./chapters/chap3.md)
+- [第1章](./chapters/chap1/chap1.md)
+- [第2章](./chapters/chap2/chap2.md)
+- [第3章](./chapters/chap3/chap3.md)
 
 ## 公開レビューへの参加方法
 - test
