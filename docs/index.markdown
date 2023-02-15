@@ -10,7 +10,8 @@ layout: default
 - [第2章](./chapters/chap2/chap2.md)
 - [第3章 深層学習の基礎](./chapters/chap3/chap3.md)
     - [3.1 はじめに](./chapters/chap3/chap3_1.md)
-    - [3.2 深層順伝播型ネットワーク](./chapters/chap3/chap3_1.md)
-    - 
+    - [3.2 深層順伝播型ネットワーク](./chapters/chap3/chap3_2.md)
+
+
 ## 公開レビューへの参加方法
 - test
