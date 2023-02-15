@@ -4,6 +4,7 @@
 
 layout: default
 ---
+# Deep Laerning on Graphs
 
 ## 目次
 - [第1章](./chapters/chap1/chap1.md)
