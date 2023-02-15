@@ -190,8 +190,8 @@ He et al.2016)．
 ここでは各カーネルの結果が各出力チャンネルに対応することになる.
  $L $個のチャンネルを持つ入力画像 $I $を考えてみよう.
  $P $個のカーネルを用いた畳み込み演算は次のように定式化することができる：
- $ $S(i, j, p)=\left(I * K_{p}\right)(i, j)=\sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}(i-\tau, j-\gamma, l), p=1, \ldots P
-    \label{eq:3_2} $ $
+ $$S(i, j, p)=\left(I * K_{p}\right)(i, j)=\sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}(i-\tau, j-\gamma, l), p=1, \ldots P
+    \label{eq:3_2} $$
 ここで $K_p $は $p $番目のカーネルで、 $(2n+1)^2\cdot L $個のパラメータを持つ。
 出力は $P $チャンネルから成る。
 
@@ -205,7 +205,7 @@ He et al.2016)．
 通常の畳み込みの結果をダウンサンプリングしたものと見なすこともできる.
 ストライド  $s $
 のストライド付き畳み込みは，次のように表現することができる：
- $ $\begin{array}{l}S(i, j, p)= \\ \sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}((i-1) \cdot s+1-\tau,(j-1) \cdot s+1-\gamma, l)\end{array}\nonumber $ $
+ $$\begin{array}{l}S(i, j, p)= \\ \sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}((i-1) \cdot s+1-\tau,(j-1) \cdot s+1-\gamma, l)\end{array}\nonumber $$
 
 <figure id="fig:fig3_9">
 <img src="chapters/chap3/fig/fig3_9.png" />
@@ -231,7 +231,7 @@ reference="eq:3_2"}のようにストライドなし畳み込みと等価にな�
 ストライドが $s=2 $であることから,
 [\[eq:3_3\]](#eq:3_3){reference-type="eqref"
 reference="eq:3_3"}を用いて出力サイズは次のように計算される：
- $ $O=\frac{N-F+2 Q}{s}+1=\frac{5-3+2 \times 1}{2}+1=3\nonumber $ $
+ $$O=\frac{N-F+2 Q}{s}+1=\frac{5-3+2 \times 1}{2}+1=3\nonumber $$
 :::
 
 ### 3.3.3 検出層
