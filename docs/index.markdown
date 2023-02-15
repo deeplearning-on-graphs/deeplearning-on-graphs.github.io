@@ -4,7 +4,8 @@
 
 layout: default
 ---
-# Deep Learning on Graphs
+
+Deep Learning on Graphsの公開レビューサイトです.
 
 ## 目次
 - [第1章](./chapters/chap1/chap1.md)
