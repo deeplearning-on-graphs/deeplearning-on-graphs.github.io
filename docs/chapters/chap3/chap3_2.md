@@ -67,7 +67,7 @@
 これらの入力層のノードと第2層の任意のノードとの接続をに示す.
 
 <figure id="fig:fig3_2">
-<img src="chapters/chap3/fig/fig3_2.png" />
+<img src="./fig/fig3_2.png" />
 <figcaption>ノードでの操作</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ $$
 $$
 
 <figure id="fig:fig3_3">
-<img src="chapters/chap3/fig/fig3_3.png" />
+<img src="./fig/fig3_3.png" />
 <figcaption>ReLU関数</figcaption>
 </figure>
 
@@ -156,7 +156,7 @@ $$
 $$
 
 <figure id="fig:fig3_4">
-<img src="chapters/chap3/fig/fig3_4.png" />
+<img src="./fig/fig3_4.png" />
 <figcaption>ReLU関数の一般化</figcaption>
 </figure>
 
@@ -182,7 +182,7 @@ $$
 $$
 
 <figure id="fig:fig3_5">
-<img src="chapters/chap3/fig/fig3_5.png" />
+<img src="./fig/fig3_5.png" />
 <figcaption>ロジスティックシグモイド関数とtanh関数</figcaption>
 </figure>
 
@@ -307,6 +307,6 @@ $$
 ## 3.4 リカレントニューラルネットワーク
 ## 3.5 オートエンコーダー
 ## 3.6 深層ニューラルネットワークの学習
-## [3.7 本章のまとめ](./chapters/chap3/chap3_7.md)
-## [3.8 参考文献](./chapters/chap3/chap3_8.md)
+## [3.7 本章のまとめ](././chap3_7.md)
+## [3.8 参考文献](././chap3_8.md)
 
