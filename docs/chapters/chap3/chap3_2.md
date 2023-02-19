@@ -95,13 +95,12 @@ $$
 $$
 
 ここで,
-$ \mathbf{W}_{j i}^{(k)} $は
+ $\mathbf{W}_{j i}^{(k)}$ は 
+ $\mathbf{h}_i^{(k)}$ と 
+ $\mathbf{h}_i^{(k+1)}$ をつなげる重みに対応し,
+ $b_j^{(k)}$ はバイアス項を表す.
+ $k+1$ 層の全要素を計算する演算を行列形式で書くと次のようになる：
 
-$ \mathbf{W}_{j i}^{(k)} $ は 
-$ \mathbf{h}_{i}^{(k)} $ と 
-$ \mathbf{h}_{i}^{(k+1)} $ をつなげる重みに対応し,
-$ b_{j}^{(k)} $ はバイアス項を表す.
-$ k+1 $ 層の全要素を計算する演算を行列形式で書くと次のようになる：
 
 $$
 \mathbf{h}^{(k+1)}=\boldsymbol{\alpha}\left(\mathbf{b}^{(k)}+\mathbf{W}^{(k)} \mathbf{h}^{(k)}\right)\nonumber 
