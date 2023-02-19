@@ -103,7 +103,7 @@ $$
 
 
 $$
-\mathbf{h}^{(k+1)}=\boldsymbol{\alpha}\left(\mathbf{b}^{(k)}+\mathbf{W}^{(k)} \mathbf{h}^{(k)}\right)\nonumber 
+\mathbf{h}^{(k+1)}=\mathbf{\alpha}\left(\mathbf{b}^{(k)}+\mathbf{W}^{(k)} \mathbf{h}^{(k)}\right)\nonumber 
 $$
 
 ここで,
@@ -231,13 +231,13 @@ $$
 ベクトル $\hat{\mathbf{y}} \in \mathbb{R} d_{o u} $を次のように出力する：
 
 $$
-\hat{\boldsymbol{y}}=\boldsymbol{W h}+\boldsymbol{b}\nonumber
+\hat{\mathbf{y}}=\mathbf{W h}+\mathbf{b}\nonumber
 $$
 
 ここで,
  $\mathbf{W} \in \mathbb{R}^{d_{o u} \times d_{i n}} $と $\mathbf{b} \in \mathbb{R}^{d_{o u}} $は学習すべきパラメータである.
 一つのサンプルに対して,
-予測値 $\hat{\boldsymbol{y}} $と正解 $\boldsymbol{y} $との差を測定するために,
+予測値 $\hat{\mathbf{y}} $と正解 $\mathbf{y} $との差を測定するために,
 以下のように単純な二乗損失関数を用いることができる：
 
 $$
