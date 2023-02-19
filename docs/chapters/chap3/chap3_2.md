@@ -51,7 +51,7 @@
 これによって近似能力が大きく向上する.
 
 <figure id="fig:FFN">
-<img src="chapters/chap3/fig/fig3_1.png" />
+<img src="./fig/fig3_1.png" />
 <figcaption>順伝播型ネットワークの例</figcaption>
 </figure>
 
