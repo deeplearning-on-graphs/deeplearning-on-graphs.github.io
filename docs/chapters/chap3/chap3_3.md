@@ -309,3 +309,9 @@ CNNで広く用いられている活性化関数はReLU関数である.
 <figcaption>CNNにおけるプーリング</figcaption>
 </figure>
 
+## 3.4 リカレントニューラルネットワーク
+## 3.5 オートエンコーダー
+## 3.6 深層ニューラルネットワークの学習
+## [3.7 本章のまとめ](./chapters/chap3/chap3_7.md)
+## [3.8 参考文献](./chapters/chap3/chap3_8.md)
+
