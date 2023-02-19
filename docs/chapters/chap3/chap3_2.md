@@ -51,7 +51,7 @@
 これによって近似能力が大きく向上する.
 
 <figure id="fig:FFN">
-<img src="./fig/fig3_1.png" width="50%" />
+<img src="./fig/fig3_1.png" width="75%" />
 <figcaption>図3.1 順伝播型ネットワークの例</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@
 これらの入力層のノードと第2層の任意のノードとの接続をに示す.
 
 <figure id="fig:fig3_2">
-<img src="./fig/fig3_2.png" width="50%"/>
+<img src="./fig/fig3_2.png" width="75%"/>
 <figcaption>図3.2 ノードでの操作</figcaption>
 </figure>
 
@@ -78,16 +78,24 @@
 2.  前のステップで得られた値を, 活性化関数に通す
 
 これは数学的には次のように書くことができる：
- $ $h=\alpha\left(b+\sum_{i=1}^{4} \mathbf{w}_{i} \cdot \mathbf{x}_{i}\right)\nonumber $ $
+
+$$
+h=\alpha\left(b+\sum_{i=1}^{4} \mathbf{w}_{i} \cdot \mathbf{x}_{i}\right)\nonumber
+$$
+
 ここで,  $b $はバイアス項,  $\alpha $は活性化関数（次の章で述べる）を表す.
 次にこの演算を任意の隠れ層に一般化する.
 ニューラルネットワークのk番目の層には $N^{(k)} $ノードあり,
 その出力は $\mathbf{h}^{(k)} $と表すことができるとする（ここで,
  $\mathbf{h}^{(k)}_{i} $はi番目の要素を表す）.
-ニューラルネットワークのk+1番目の層で $\mathbf{h}^{(k+1)} $を計算するために次の演算を行う：
- $ $\mathbf{h}_{j}^{(k+1)}=\alpha\left(b_{j}^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}_{i}^{(k)}\right)\label{eq:3_1} $ $
+ニューラルネットワークの $k+1$番目の層で $\mathbf{h}^{(k+1)} $を計算するために次の演算を行う：
+
+$$
+\mathbf{h}_{j}^{(k+1)}=\alpha\left(b_{j}^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}_{i}^{(k)}\right)\tag{3.1}
+$$
+
 ここで,
- $\mathbf{W}_{j i}^{(k)} $は $\mathbf{h}_{i}^{(k)} $と $\mathbf{h}_{i}^{(k+1)} $をつなげる重みに対応し,
+ $\mathbf{W}_{j i}^{(k)}$ は $\mathbf{h}_{i}^{(k)}$ と $\mathbf{h}_{i}^{(k+1)}$ をつなげる重みに対応し,
  $b_{j}^{(k)} $はバイアス項を表す.
 k+1層の全要素を計算する演算を行列形式で書くと次のようになる：
 
@@ -137,7 +145,7 @@ $$
 $$
 
 <figure id="fig:fig3_3">
-<img src="./fig/fig3_3.png" width="50%" />
+<img src="./fig/fig3_3.png" width="75%" />
 <figcaption>図3.3 ReLU関数</figcaption>
 </figure>
 
@@ -156,7 +164,7 @@ $$
 $$
 
 <figure id="fig:fig3_4">
-<img src="./fig/fig3_4.png" width="50%"/>
+<img src="./fig/fig3_4.png" width="75%"/>
 <figcaption>図3.4 ReLU関数の一般化</figcaption>
 </figure>
 
@@ -182,7 +190,7 @@ $$
 $$
 
 <figure id="fig:fig3_5">
-<img src="./fig/fig3_5.png" width="50%" />
+<img src="./fig/fig3_5.png" width="75%" />
 <figcaption>図3.5 ロジスティックシグモイド関数とtanh関数</figcaption>
 </figure>
 
