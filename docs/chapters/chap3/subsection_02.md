@@ -1,3 +1,4 @@
+[メインページ](../../index.markdown)
 ## 2. 深層順伝播型ネットワーク
 
 順伝播型ネットワークは, 多くの重要な深層学習技術の基礎となっている.
@@ -65,7 +66,9 @@
 
 これは数学的には次のように書くことができる：
  
+
 $$ h=\alpha\left(b+\sum_{i=1}^{4} \mathbf{w}_{i} \cdot \mathbf{x}_{i}\right)\nonumber $$
+
  
 ここで,  $b$ はバイアス項,  $\alpha$ は活性化関数（次の章で述べる）を表す.
 次にこの演算を任意の隠れ層に一般化する.
@@ -74,14 +77,18 @@ $$ h=\alpha\left(b+\sum_{i=1}^{4} \mathbf{w}_{i} \cdot \mathbf{x}_{i}\right)\non
  $\mathbf{h}^{(k)}_{i}$ はi番目の要素を表す）.
 ニューラルネットワークのk+1番目の層で $\mathbf{h}^{(k+1)}$ を計算するために次の演算を行う：
  
-$$ \mathbf{h}_{j}^{(k+1)}=\alpha\left(b_{j}^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}_{i}^{(k)}\right) $$
+
+$$ \mathbf{h}_{j}^{(k+1)}=\alpha\left(b_{j}^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}_{i}^{(k)}\right)\tag{3.1} $$
+
  
 ここで,
  $\mathbf{W}_{j i}^{(k)}$ は $\mathbf{h}_{i}^{(k)}$ と $\mathbf{h}_{i}^{(k+1)}$ をつなげる重みに対応し,
  $b_{j}^{(k)}$ はバイアス項を表す.
 k+1層の全要素を計算する演算を行列形式で書くと次のようになる：
  
+
 $$ \mathbf{h}^{(k+1)}=\boldsymbol{\alpha}\left(\mathbf{b}^{(k)}+\mathbf{W}^{(k)} \mathbf{h}^{(k)}\right)\nonumber $$
+
  
 ここで,
  $\mathbf{W}^{(k)} \in \mathbb{R}^{N^{(k+1)} \times N^{(k)}}$ は全てのウェイトを含み,
@@ -90,7 +97,9 @@ $$ \mathbf{h}^{(k+1)}=\boldsymbol{\alpha}\left(\mathbf{b}^{(k)}+\mathbf{W}^{(k)}
 入力層においては $\mathbf{h}^{(0)}=\mathbf{x}$ となる.
 ニューラルネットワークのk+1層目の演算を表すのに $f^{k+1}$ を使っていたことを思い出すと,
  
+
 $$ \mathbf{h}^{(k+1)}=f^{(k+1)}\left(\mathbf{h}^{(k)}\right)=\alpha\left(\mathbf{b}^{(k)}+\mathbf{W}^{(k)} \mathbf{h}^{(k)}\right)\nonumber $$
+
  
 と書くことができる.
 ここで紹介した演算は隠れ層において典型的なものである.
@@ -118,7 +127,9 @@ ReLU関数はすべての正の入力に対して線形（というより同じ�
 すべての負の入力に対して0である. 数学的には次のように定義される：
 
  
+
 $$ \operatorname{ReLU}(z)=\max \{0,  z\}\nonumber $$
+
  
 
 ![ReLU関数](chapters/chap3/fig/fig3_3.png){width="0.75\\columnwidth"}
@@ -134,7 +145,9 @@ LeakyReLU関数 (Maas et al., 2013)は, 負の入力を0にする代わりに,
 より具体的には, LeakyReLU関数は数学的に次のように表すことができる：
 
  
+
 $$ \operatorname{LeakyReLU}(z)=\left\{\begin{array}{cc}0.01 z & z<0 \\ z & z \geq 0\end{array}\right.\nonumber $$
+
  
 
 ![ReLU関数の一般化](chapters/chap3/fig/fig3_4.png){width="0.75\\columnwidth"}
@@ -145,7 +158,9 @@ Unit)である. ELU関数は図3.4(b)に示すように,
 負の値に対しては指数関数的な変換を行う. 数学的には,
 ELUの活性化関数は次のように表される：
  
+
 $$ \operatorname{ELU}(z)=\left\{\begin{array}{cc}c \cdot \exp (z-1) & z<0 \\ z & z \geq 0\end{array}\right.\nonumber $$
+
  
 ここで,  $c$ は負の入力に対して指数関数の傾きを決める正の定数である.
 
@@ -155,7 +170,9 @@ $$ \operatorname{ELU}(z)=\left\{\begin{array}{cc}c \cdot \exp (z-1) & z<0 \\ z &
 ReLU関数よりも先にロジスティックシグモイド関数とtanh関数が最もよく使われてきた.
 ロジスティックシグモイド関数は数学的には次のように表される：
  
+
 $$ \sigma(z)=\frac{1}{1+\exp (-z)}\nonumber $$
+
  
 
 ![ロジスティックシグモイド関数とtanh関数](chapters/chap3/fig/fig3_5.png){width="0.75\\columnwidth"}
@@ -166,7 +183,9 @@ $$ \sigma(z)=\frac{1}{1+\exp (-z)}\nonumber $$
 
 tanh関数はシグモイド関数と次のような関係がある：
  
+
 $$ \tanh (z)=\frac{2}{1+\exp (-2 z)}-1=2 \cdot \sigma(2 z)-1\nonumber $$
+
  
 
 図3.5(b)に示すように, tanh関数は入力を-1から1の範囲に変換する.
@@ -193,7 +212,9 @@ $$ \tanh (z)=\frac{2}{1+\exp (-2 z)}-1=2 \cdot \sigma(2 z)-1\nonumber $$
 線形ユニットの層は,
 ベクトル $\hat{\mathbf{y}} \in \mathbb{R} d_{o u}$ を次のように出力する：
  
+
 $$ \hat{\boldsymbol{y}}=\boldsymbol{W h}+\boldsymbol{b}\nonumber $$
+
  
 ここで,
  $\mathbf{W} \in \mathbb{R}^{d_{o u} \times d_{i n}}$ と $\mathbf{b} \in \mathbb{R}^{d_{o u}}$ は学習すべきパラメータである.
@@ -201,7 +222,9 @@ $$ \hat{\boldsymbol{y}}=\boldsymbol{W h}+\boldsymbol{b}\nonumber $$
 予測値 $\hat{\boldsymbol{y}}$ と正解 $\boldsymbol{y}$ との差を測定するために,
 以下のように単純な二乗損失関数を用いることができる：
  
+
 $$ \ell(\mathbf{y},  \hat{\mathbf{y}})=(\mathbf{y}-\hat{\mathbf{y}})^{2}\nonumber $$
+
  
 
 分類問題では,
@@ -221,7 +244,9 @@ $$ \ell(\mathbf{y},  \hat{\mathbf{y}})=(\mathbf{y}-\hat{\mathbf{y}})^{2}\nonumbe
 これはサンプルがラベル1として予測される確率に対応する. まとめると,
 この処理は次のようにモデル化できる：
  
+
 $$ \hat{y}=\sigma(\mathbf{W h}+b)\nonumber $$
+
   ここで,
  $\mathbf{h} \in \mathbb{R}^{d_{i n}}$ および $\mathbf{W} \in \mathbb{R}^{1 \times d_{i n}}$ である.
 特に,  $\hat{y}$ は入力サンプルがラベル1と予測される確率を示し,
@@ -229,7 +254,9 @@ $$ \hat{y}=\sigma(\mathbf{W h}+b)\nonumber $$
 交差エントロピー損失関数を用いることで,
 正解値と予測値の差を次のように計算することができる：
  
+
 $$ \ell(y,  \hat{y})=-y \cdot \log (\hat{y})-(1-y) \cdot \log (1-\hat{y})\nonumber $$
+
  
 モデルを用いて推論する際には,
  $\hat{y}>0.5$ の時に入力サンプルはラベル1と予測され,
@@ -244,13 +271,17 @@ $$ \ell(y,  \hat{y})=-y \cdot \log (\hat{y})-(1-y) \cdot \log (1-\hat{y})\nonumb
 予測を行うために,
 まず入力 $\mathbf{h}$ をn次元ベクトル $\mathbf{Z} \in \mathbb{R}^{n}$ に変換する線形層が必要である：
  
+
 $$ \mathbf{z}=\mathbf{W}\mathbf{h}+\mathbf{b}\nonumber $$
+
   ここで,
  $\mathbf{W} \in \mathbb{R}^{n \times d_{i n}}$ および $\mathbf{b} \in \mathbb{R}^{n}$ である.
 次に, ソフトマックス関数に入力し,
  $z$ を全クラスに渡って離散的な確率密度関数に標準化する：
  
+
 $$ \hat{\mathbf{y}}_{i}=\operatorname{softmax}(z)_{i}=\frac{\exp \left(\mathbf{z}_{i}\right)}{\sum_{j} \exp \left(\mathbf{z}_{j}\right)},  i=1,  \ldots,  n\nonumber $$
+
  
 ここで,  $\mathbf{z}_{i}$ はベクトル $z$ のi番目の要素を表し,
  $\hat{\mathbf{y}}_i$ はソフトマックス関数のi番目の出力を表す. 特に,
@@ -259,7 +290,9 @@ $$ \hat{\mathbf{y}}_{i}=\operatorname{softmax}(z)_{i}=\frac{\exp \left(\mathbf{z
  $\hat{\mathbf{y}}$ に対して，交差エントロピー損失関数を用いることで,
 正解値と予測値の差を計算することができる：
  
+
 $$ \ell(\mathbf{y},  \hat{\mathbf{y}})=-\sum_{i=0}^{n-1} \mathbf{y}_{i} \log \left(\hat{\mathbf{y}}_{i}\right)\nonumber $$
+
  
 モデルを用いて推論する際には,
  $\hat{\mathbf{y}}_i$ が $\hat{\mathbf{y}}$ のn個の要素の中で最も大きい時に入力サンプルはラベル $i-1$ と予測される.

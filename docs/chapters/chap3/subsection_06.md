@@ -1,3 +1,4 @@
+[メインページ](../../index.markdown)
 ## 6. 深層ニューラルネットワークの学習
 
 この節では, 深層ニューラルネットワークの学習手順について説明する. まず,
@@ -17,7 +18,9 @@
 一次の繰り返し最適化アルゴリズムである. 各繰り返しにおいて,
 以下のように負の勾配の方向へ一歩ずつ, パラメータ $\mathbf{W}$ を更新する：
  
+
 $$ \mathbf{W}^{\prime}=\mathbf{W}-\eta \cdot \nabla_{\mathbf{W}} \mathcal{L}(\mathbf{W}) $$
+
  
 ここで, $\nabla_{\mathbf{W}} \mathcal{L}(\mathbf{W})$ は勾配を表し,
  $\eta$ は学習率を表す. 学習率は正の値で,
@@ -27,9 +30,11 @@ $$ \mathbf{W}^{\prime}=\mathbf{W}-\eta \cdot \nabla_{\mathbf{W}} \mathcal{L}(\ma
 損失関数は通常, 学習サンプルのペナルティの総和である.
 したがって，損失関数を以下のように書くことができる：
  
+
 $$ \mathcal{L}(\mathbf{W})=\sum_{i=1}^{N_{s}} \mathcal{L}_{i}(\mathbf{W}) $$
+
  
-ここで,  $\mathcal{L}_{i}(\mathbf{W})$ はi番目のサンプルの損失を表し,
+ここで,  $\mathcal{L}_{i}(\mathbf{W})$ は $i$ 番目のサンプルの損失を表し,
  $N_s$ はサンプル数を表す. 多くの場合,
 直接 $\nabla_{\mathbf{W}} \mathcal{L}(\mathbf{W})$ を計算するのは非常に手間がかかる.
 そこで, 深層ニューラルネットワークの学習で非常によく使われている,
@@ -37,7 +42,7 @@ $$ \mathcal{L}(\mathbf{W})=\sum_{i=1}^{N_{s}} \mathcal{L}_{i}(\mathbf{W}) $$
 すべての学習サンプルに対して勾配を評価するのではなく,
 学習データから少量のサンプルを抽出し, それを使って勾配を推定する.
 この推定された勾配を利用してパラメータを更新する. 具体的には,
-勾配は $\sum_{j \in \mathcal{M}} \nabla_{\mathbf{W}} \mathcal{L}_{j}(\mathbf{W})$ として推定さる.
+勾配は $\sum_{j \in \mathcal{M}} \nabla_{\mathbf{W}} \mathcal{L}_{j}(\mathbf{W})$ として推定される.
 ここで, $\mathcal{M}$ はミニバッチのサンプル集合を表す. Adagrad (Duchi et
 al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
 などの深層ニューラルネットワークの学習のため,
@@ -65,16 +70,17 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
  $o$ は出力層のユニットを表す.
  $\left(h^{r-1}, h^{r}\right)$ の間に1本しかエッジがないとすると,
 損失関数の微分はチェーン・ルールを使って次のように書くことができる：
- 
-$$ \frac{\partial \mathcal{L}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \cdot \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h_{r}\right)}} \forall r \in 1 \ldots k $$
- 
+ $$ \frac{\partial \mathcal{L}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \cdot \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h_{r}\right)}} \forall r \in 1 \ldots k
+    \tag{3.16} $$ 
 ここで, $w_{\left(h^{r-1}, h^{r}\right)}$ はユニット $h^{r-1}$ と $h^r$ の間のパラメータを表す.
 
 複数層のニューラルネットワークでは,
  $\left(h^{r-1}, h^{r}\right)$ の間に複数パスある場合が多い. したがって,
 上の計算で得られた勾配を合計する必要がある：
  
+
 $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrace{\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]}_{\text {Backpropagation computes } \Delta\left(h^{r}, o\right)=\frac{\partial \mathcal{L}}{\partial h^{r}}} \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}} $$
+
  
 ここで,  $\mathcal{P}$ は $h^r$ から $o$ に至るパスの集合を表し,
 これは $\left(h^{r-1}, h^{r}\right)$ まで拡張することができる.
@@ -83,7 +89,8 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
 次に, 第一項を再帰的に評価する方法について説明する.
 第一項は以下のように計算することができる：  $$ \begin{aligned} 
     \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}} \cdot \frac{\partial h^{r+1}}{\partial h^{r}}\right] 
-    \end{aligned} $$ 
+    \end{aligned}
+    \tag{3.17} $$ 
 
 ![パスの分解](chapters/chap3/fig/fig3_18.png){width="0.75\\columnwidth"}
 
@@ -99,10 +106,8 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
 この残りのパスを $\mathcal{P}'_{r+1}$ と書くことにすると,
 式(3.17)は次のように簡略化することができる：
 
- 
-$$ \begin{aligned} \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_{k}, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_{k}, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \Delta\left(h^{r+1}, o\right) \end{aligned} $$
- 
-ここで,
+ $$ \begin{aligned} \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_{k}, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_{k}, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \Delta\left(h^{r+1}, o\right) \end{aligned}
+    \tag{3.18} $$  ここで,
  $\mathcal{E}$ はユニット $h^r$ から $(r+1)$ 番目の層のユニット $h^{r+1}$ への,
 存在しうる全てのエッジの集合を表す. 図3.18に図示したように,
  $(r+1)$ 番目の層の全てのユニットは $h^r$ につながっているため,
@@ -116,20 +121,19 @@ $$ \begin{aligned} \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\pa
 すなわち,  $h^{r+1}=\alpha\left(a^{r+1}\right)$ とする.
  $\frac{\partial h^{r+1}}{\partial h^{r}}$ を評価するために次のようにチェーン・ルールを使う：
  
+
 $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\right)}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\right)}{\partial a^{r+1}} \cdot \frac{\partial a^{r+1}}{\partial h^{r}}=\alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} $$
+
  
 ここで,
  $w_{\left(h^{r}, h^{r+1}\right)}$ はユニット $h^r$ と $h^{r+1}$ の間のパラメータである.
 これを用いると,
  $\Delta\left(h^{r}, o\right)$ を次のように書き換えることができる：
- 
-$$ \Delta\left(h^{r}, o\right)=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} \cdot \Delta\left(h^{r+1}, o\right) $$
- 
-ここまでが, 式(3.16)の前半部分の評価であり,
+ $$ \Delta\left(h^{r}, o\right)=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} \cdot \Delta\left(h^{r+1}, o\right)
+    \tag{3.20} $$  ここまでが, 式(3.16)の前半部分の評価であり,
 後半部分については次のように評価することができる：
- 
-$$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1} $$
- 
+ $$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1}
+    \tag{3.21} $$ 
 
 以上から, 式(3.20)と式(3.21)を用いることで,
 式(3.16)を再帰的かつ効率的に評価することができる.
