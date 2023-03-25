@@ -1,4 +1,7 @@
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\ $','\ $'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 [メインページ](../../index.markdown)
+
 ## 6. 深層ニューラルネットワークの学習
 
 この節では, 深層ニューラルネットワークの学習手順について説明する. まず,
@@ -129,11 +132,14 @@ $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\ri
  $w_{\left(h^{r}, h^{r+1}\right)}$ はユニット $h^r$ と $h^{r+1}$ の間のパラメータである.
 これを用いると,
  $\Delta\left(h^{r}, o\right)$ を次のように書き換えることができる：
+ 
  $$ \Delta\left(h^{r}, o\right)=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} \cdot \Delta\left(h^{r+1}, o\right)
-    \tag{3.20} $$  ここまでが, 式(3.16)の前半部分の評価であり,
+    \tag{3.20} $$  
+    
+ここまでが, 式(3.16)の前半部分の評価であり,
 後半部分については次のように評価することができる：
- $$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1}
-    \tag{3.21} $$ 
+
+ $$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1}\tag{3.21} $$ 
 
 以上から, 式(3.20)と式(3.21)を用いることで,
 式(3.16)を再帰的かつ効率的に評価することができる.
