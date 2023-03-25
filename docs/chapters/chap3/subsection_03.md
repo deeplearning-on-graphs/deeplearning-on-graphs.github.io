@@ -1,4 +1,5 @@
 [メインページ](../../index.markdown)
+[章目次](./chap3.md)
 ## 3. 畳み込みニューラルネットワーク
 
 CNN(Convolutional Neural Networks)は,
@@ -83,7 +84,7 @@ $$ (f * w)(t)=\sum_{\tau=t-n}^{t+n} f(\tau) w(t-\tau)\nonumber $$
 それに対応する出力を計算すると解釈することができる. 図3.6に,
 畳み込み演算を構成する層の例を示す.
 
-![畳み込み層の例](./fig/fig3_6.png)
+![畳み込み層の例](./fig/fig3_6.png){width="0.75\\columnwidth"}
 
 ::: eg
 図3.6は, 入力と出力が同じ大きさの畳み込み層である.
@@ -112,7 +113,7 @@ $$ S(i,  j)=(I * K)(i,  j)=\sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(
 
 #### スパースな接続
 
-![密な接続とスパースな接続](./fig/fig3_7.png)
+![密な接続とスパースな接続](./fig/fig3_7.png){width="0.75\\columnwidth"}
 
 従来のニューラルネットワークでは,
 入力ユニットと出力ユニットの間の相互作用は行列で記述することができる.
@@ -156,7 +157,7 @@ $$ S(i,  j)=(I * K)(i,  j)=\sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(
  $K$ 個というパラメータ数はかなり小さく,
 結果として必要なメモリもはるかに抑えられる.
 
-![パラメータの共有](./fig/fig3_8.png)
+![パラメータの共有](./fig/fig3_8.png){width="0.75\\columnwidth"}
 
 #### 平行移動に対する同変性
 
@@ -198,7 +199,7 @@ He et al.2016)．
 ここでは各カーネルの結果が各出力チャンネルに対応することになる.
  $L$ 個のチャンネルを持つ入力画像 $I$ を考えてみよう.
  $P$ 個のカーネルを用いた畳み込み演算は次のように定式化することができる：
- $$ S(i, j, p)=\left(I * K_{p}\right)(i, j)=\sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}(i-\tau, j-\gamma, l), p=1, \ldots P
+ $$ S(i, j, p)=\left(I * K_p\right)(i, j)=\sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_p(i-\tau, j-\gamma, l), p=1, \ldots P
     \tag{3.2} $$ 
 ここで $K_p$ は $p$ 番目のカーネルで、 $(2n+1)^2\cdot L$ 個のパラメータを持つ。
 出力は $P$ チャンネルから成る。
@@ -215,11 +216,11 @@ He et al.2016)．
 のストライド付き畳み込みは，次のように表現することができる：
  
 
-$$ \begin{array}{l}S(i, j, p)= \\ \sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}((i-1) \cdot s+1-\tau,(j-1) \cdot s+1-\gamma, l)\end{array}\nonumber $$
+$$ \begin{array}{l}S(i, j, p)= \\ \sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_p((i-1) \cdot s+1-\tau,(j-1) \cdot s+1-\gamma, l)\end{array}\nonumber $$
 
  
 
-![ストライド付き畳み込みの概念図](./fig/fig3_9.png)
+![ストライド付き畳み込みの概念図](./fig/fig3_9.png){width="0.75\\columnwidth"}
 
 ストライドを  $s = 1$ 
 とすると，式(3.2)のようにストライドなし畳み込みと等価になる．
@@ -265,7 +266,7 @@ CNNで広く用いられている活性化関数はReLU関数である.
 最大値プーリングは局所近傍の最大値を出力とし,
 平均値プーリングは局所近傍の平均値を出力とする.
 
-![CNNにおけるプーリング](./fig/fig3_10.png)
+![CNNにおけるプーリング](./fig/fig3_10.png){width="0.75\\columnwidth"}
 
 ### CNNフレームワークの全体像
 
@@ -282,5 +283,5 @@ CNNで広く用いられている活性化関数はReLU関数である.
 実際には複数の畳み込み層とプーリング層を重ねるのが一般的である. 同様に,
 分類パートにおいても順伝播型ニューラルネットワークは複数の全結合層で構成される場合がある.
 
-![CNNにおけるプーリング](./fig/fig3_11.png)
+![CNNにおけるプーリング](./fig/fig3_11.png){width="0.75\\columnwidth"}
 
