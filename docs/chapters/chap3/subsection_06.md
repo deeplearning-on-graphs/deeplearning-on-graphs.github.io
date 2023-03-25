@@ -1,4 +1,4 @@
-## 深層ニューラルネットワークの学習
+## 6. 深層ニューラルネットワークの学習
 
 この節では, 深層ニューラルネットワークの学習手順について説明する. まず,
 ニューラルネットワークを学習するための一般的なアプローチである,
@@ -46,8 +46,7 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
 
 ### 逆伝播法
 
-![隣り合う層のニューロン](chapters/chap3/fig/fig3_17.png){#fig:fig3_17
-width="0.75\\columnwidth"}
+![隣り合う層のニューロン](chapters/chap3/fig/fig3_17.png){width="0.75\\columnwidth"}
 
 勾配に基づく最適化を行うための重要なステップの1つは,
 すべてのパラメータに関する勾配を計算することである.
@@ -66,8 +65,9 @@ width="0.75\\columnwidth"}
  $o$ は出力層のユニットを表す.
  $\left(h^{r-1}, h^{r}\right)$ の間に1本しかエッジがないとすると,
 損失関数の微分はチェーン・ルールを使って次のように書くことができる：
- $$ \frac{\partial \mathcal{L}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \cdot \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h_{r}\right)}} \forall r \in 1 \ldots k
-    \label{eq:3_16} $$ 
+ 
+$$ \frac{\partial \mathcal{L}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \cdot \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h_{r}\right)}} \forall r \in 1 \ldots k $$
+ 
 ここで, $w_{\left(h^{r-1}, h^{r}\right)}$ はユニット $h^{r-1}$ と $h^r$ の間のパラメータを表す.
 
 複数層のニューラルネットワークでは,
@@ -83,11 +83,9 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
 次に, 第一項を再帰的に評価する方法について説明する.
 第一項は以下のように計算することができる：  $$ \begin{aligned} 
     \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}} \cdot \frac{\partial h^{r+1}}{\partial h^{r}}\right] 
-    \end{aligned}
-    \label{eq:3_17} $$ 
+    \end{aligned} $$ 
 
-![パスの分解](chapters/chap3/fig/fig3_18.png){#fig:fig3_18
-width="0.75\\columnwidth"}
+![パスの分解](chapters/chap3/fig/fig3_18.png){width="0.75\\columnwidth"}
 
 図3.18に示したように,
  $\mathcal{P}$ に属する任意のパスは2つのパートにわけることができる：
@@ -101,8 +99,10 @@ width="0.75\\columnwidth"}
 この残りのパスを $\mathcal{P}'_{r+1}$ と書くことにすると,
 式(3.17)は次のように簡略化することができる：
 
- $$ \begin{aligned} \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_{k}, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_{k}, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \Delta\left(h^{r+1}, o\right) \end{aligned}
-    \label{eq:3_18} $$  ここで,
+ 
+$$ \begin{aligned} \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_{k}, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_{k}, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \Delta\left(h^{r+1}, o\right) \end{aligned} $$
+ 
+ここで,
  $\mathcal{E}$ はユニット $h^r$ から $(r+1)$ 番目の層のユニット $h^{r+1}$ への,
 存在しうる全てのエッジの集合を表す. 図3.18に図示したように,
  $(r+1)$ 番目の層の全てのユニットは $h^r$ につながっているため,
@@ -122,11 +122,14 @@ $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\ri
  $w_{\left(h^{r}, h^{r+1}\right)}$ はユニット $h^r$ と $h^{r+1}$ の間のパラメータである.
 これを用いると,
  $\Delta\left(h^{r}, o\right)$ を次のように書き換えることができる：
- $$ \Delta\left(h^{r}, o\right)=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} \cdot \Delta\left(h^{r+1}, o\right)
-    \label{eq:3_20} $$  ここまでが, 式(3.16)の前半部分の評価であり,
+ 
+$$ \Delta\left(h^{r}, o\right)=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} \cdot \Delta\left(h^{r+1}, o\right) $$
+ 
+ここまでが, 式(3.16)の前半部分の評価であり,
 後半部分については次のように評価することができる：
- $$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1}
-    \label{eq:3_21} $$ 
+ 
+$$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1} $$
+ 
 
 以上から, 式(3.20)と式(3.21)を用いることで,
 式(3.16)を再帰的かつ効率的に評価することができる.
@@ -137,7 +140,7 @@ $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\ri
 学習データに対して容易に過学習してしまう. この節では,
 ニューラルネットワークの過学習を防ぐための実用的なテクニックを紹介する.
 
-#### 重み正則化 {#重み正則化 .unnumbered}
+#### 重み正則化
 
 機械学習において, モデルの過学習を防ぐためには,
 モデルのパラメータに対する正則化項を損失関数に含めるという手法が一般的である.
@@ -145,7 +148,7 @@ $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\ri
 モデルの汎化性能を向上させる. よく用いられている正則化項は,
 モデルパラメータの $L_1$ ノルムと $L_2$ ノルムの2つである.
 
-#### ドロップアウト {#ドロップアウト .unnumbered}
+#### ドロップアウト
 
 ドロップアウトは, 過学習を防ぐために有効な手法の一つである（Srivastava
 et al.2014）. ドロップアウトでは, 学習手順の各バッチにおいて,
@@ -160,7 +163,7 @@ et al.2014）. ドロップアウトでは, 学習手順の各バッチにおい
 学習手順でのみ利用される. すなわち,
 推論手順では常にネットワーク全体が予測の際に使用される.
 
-#### バッチ正規化 {#バッチ正規化 .unnumbered}
+#### バッチ正規化
 
 バッチ正規化（Ioffe and Szegedy, 2015）は当初,
 内部共変量が変化する問題を解決するために導入されたが,

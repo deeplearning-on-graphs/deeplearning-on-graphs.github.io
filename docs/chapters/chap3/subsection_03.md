@@ -1,4 +1,4 @@
-## 畳み込みニューラルネットワーク
+## 3. 畳み込みニューラルネットワーク
 
 CNN(Convolutional Neural Networks)は,
 よく使われているニューラルネットワークの一種であり,
@@ -74,8 +74,7 @@ $$ (f * w)(t)=\sum_{\tau=t-n}^{t+n} f(\tau) w(t-\tau)\nonumber $$
 それに対応する出力を計算すると解釈することができる. 図3.6に,
 畳み込み演算を構成する層の例を示す.
 
-![畳み込み層の例](chapters/chap3/fig/fig3_6.png){#fig:fig3_6
-width="0.75\\columnwidth"}
+![畳み込み層の例](chapters/chap3/fig/fig3_6.png){width="0.75\\columnwidth"}
 
 ::: eg
 図3.6は, 入力と出力が同じ大きさの畳み込み層である.
@@ -100,10 +99,9 @@ $$ S(i,  j)=(I * K)(i,  j)=\sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(
 「スパースな接続」, 「パラメータの共有」,
 「平行移動に対する同変性」という3つの重要な特性を持っている.
 
-#### スパースな接続 {#スパースな接続 .unnumbered}
+#### スパースな接続
 
-![密な接続とスパースな接続](chapters/chap3/fig/fig3_7.png){#fig:fig3_7
-width="0.75\\columnwidth"}
+![密な接続とスパースな接続](chapters/chap3/fig/fig3_7.png){width="0.75\\columnwidth"}
 
 従来のニューラルネットワークでは,
 入力ユニットと出力ユニットの間の相互作用は行列で記述することができる.
@@ -131,7 +129,7 @@ width="0.75\\columnwidth"}
 畳み込みニューラルネットワークの計算は,
 従来のニューラルネットワークの計算よりはるかに効率的になる.
 
-#### パラメータの共有 {#パラメータの共有 .unnumbered}
+#### パラメータの共有
 
 前述したように, 畳み込み層には  $K \times M$  個のパラメータが存在する.
 しかし, 畳み込み層の「パラメータの共有」により,
@@ -147,10 +145,9 @@ width="0.75\\columnwidth"}
  $K$ 個というパラメータ数はかなり小さく,
 結果として必要なメモリもはるかに抑えられる.
 
-![パラメータの共有](chapters/chap3/fig/fig3_8.png){#fig:fig3_8
-width="0.75\\columnwidth"}
+![パラメータの共有](chapters/chap3/fig/fig3_8.png){width="0.75\\columnwidth"}
 
-#### 平行移動に対する同変性 {#平行移動に対する同変性 .unnumbered}
+#### 平行移動に対する同変性
 
 パラメータを共有する仕組みからは,
 CNNのもう一つの重要な特性である「平行移動に対する同変性」が導かれる.
@@ -190,8 +187,9 @@ He et al.2016)．
 ここでは各カーネルの結果が各出力チャンネルに対応することになる.
  $L$ 個のチャンネルを持つ入力画像 $I$ を考えてみよう.
  $P$ 個のカーネルを用いた畳み込み演算は次のように定式化することができる：
- $$ S(i, j, p)=\left(I * K_{p}\right)(i, j)=\sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}(i-\tau, j-\gamma, l), p=1, \ldots P
-    \label{eq:3_2} $$ 
+ 
+$$ S(i, j, p)=\left(I * K_{p}\right)(i, j)=\sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}(i-\tau, j-\gamma, l), p=1, \ldots P $$
+ 
 ここで $K_p$ は $p$ 番目のカーネルで、 $(2n+1)^2\cdot L$ 個のパラメータを持つ。
 出力は $P$ チャンネルから成る。
 
@@ -209,8 +207,7 @@ He et al.2016)．
 $$ \begin{array}{l}S(i, j, p)= \\ \sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_{p}((i-1) \cdot s+1-\tau,(j-1) \cdot s+1-\gamma, l)\end{array}\nonumber $$
  
 
-![ストライド付き畳み込みの概念図](chapters/chap3/fig/fig3_9.png){#fig:fig3_9
-width="0.75\\columnwidth"}
+![ストライド付き畳み込みの概念図](chapters/chap3/fig/fig3_9.png){width="0.75\\columnwidth"}
 
 ストライドを  $s = 1$ 
 とすると，式(3.2)のようにストライドなし畳み込みと等価になる．
@@ -221,8 +218,9 @@ width="0.75\\columnwidth"}
 サイズ $N$ の1次元入力を考え, パディングのサイズを $Q$ ,
 受容野のサイズを $F$ ,
 ストライドのサイズを $s$ とすると、出力のサイズ $O$ は以下の式で計算することができる：
- $$ O=\frac{N-F+2 Q}{s}+1
-    \label{eq:3_3} $$ 
+ 
+$$ O=\frac{N-F+2 Q}{s}+1 $$
+ 
 
 ::: eg
 図3.9のストライド付き畳み込みの入力サイズは $N=5$ である。
@@ -254,10 +252,9 @@ CNNで広く用いられている活性化関数はReLU関数である.
 最大値プーリングは局所近傍の最大値を出力とし,
 平均値プーリングは局所近傍の平均値を出力とする.
 
-![CNNにおけるプーリング](chapters/chap3/fig/fig3_10.png){#fig:fig3_10
-width="0.75\\columnwidth"}
+![CNNにおけるプーリング](chapters/chap3/fig/fig3_10.png){width="0.75\\columnwidth"}
 
-### CNNフレームワークの全体像 {#sec:3_3_5}
+### CNNフレームワークの全体像
 
 畳み込み演算とプーリング演算を説明したので,
 次に分類問題に対する畳み込みニューラルネットワークの全体的な枠組みについて述べる.
@@ -272,6 +269,5 @@ width="0.75\\columnwidth"}
 実際には複数の畳み込み層とプーリング層を重ねるのが一般的である. 同様に,
 分類パートにおいても順伝播型ニューラルネットワークは複数の全結合層で構成される場合がある.
 
-![CNNにおけるプーリング](chapters/chap3/fig/fig3_11.png){#fig:fig3_11
-width="0.75\\columnwidth"}
+![CNNにおけるプーリング](chapters/chap3/fig/fig3_11.png){width="0.75\\columnwidth"}
 

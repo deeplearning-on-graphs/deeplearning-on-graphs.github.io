@@ -1,4 +1,4 @@
-## 深層順伝播型ネットワーク
+## 2. 深層順伝播型ネットワーク
 
 順伝播型ネットワークは, 多くの重要な深層学習技術の基礎となっている.
 このネットワークは与えられたデータを用いて関数 $f^{\ast}(x)$ を近似する.
@@ -42,8 +42,7 @@
 活性化関数はニューラルネットワークに非線形性を加え,
 これによって近似能力が大きく向上する.
 
-![順伝播型ネットワークの例](chapters/chap3/fig/fig3_1.png){#fig:FFN
-width="0.75\\columnwidth"}
+![順伝播型ネットワークの例](chapters/chap3/fig/fig3_1.png){width="0.75\\columnwidth"}
 
 ### ネットワークの構成
 
@@ -56,8 +55,7 @@ width="0.75\\columnwidth"}
 第2層のノード(または入力層の次の層のノード)は，入力層のすべてのノードに接続されている.
 これらの入力層のノードと第2層の任意のノードとの接続を図3.2に示す.
 
-![ノードでの操作](chapters/chap3/fig/fig3_2.png){#fig:fig3_2
-width="0.75\\columnwidth"}
+![ノードでの操作](chapters/chap3/fig/fig3_2.png){width="0.75\\columnwidth"}
 
 1つのノードにおける演算は, 次の2つの部分から構成される:
 
@@ -76,7 +74,7 @@ $$ h=\alpha\left(b+\sum_{i=1}^{4} \mathbf{w}_{i} \cdot \mathbf{x}_{i}\right)\non
  $\mathbf{h}^{(k)}_{i}$ はi番目の要素を表す）.
 ニューラルネットワークのk+1番目の層で $\mathbf{h}^{(k+1)}$ を計算するために次の演算を行う：
  
-$$ \mathbf{h}_{j}^{(k+1)}=\alpha\left(b_{j}^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}_{i}^{(k)}\right)\label{eq:3_1} $$
+$$ \mathbf{h}_{j}^{(k+1)}=\alpha\left(b_{j}^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}_{i}^{(k)}\right) $$
  
 ここで,
  $\mathbf{W}_{j i}^{(k)}$ は $\mathbf{h}_{i}^{(k)}$ と $\mathbf{h}_{i}^{(k+1)}$ をつなげる重みに対応し,
@@ -100,7 +98,7 @@ $$ \mathbf{h}^{(k+1)}=f^{(k+1)}\left(\mathbf{h}^{(k)}\right)=\alpha\left(\mathbf
 得られた情報を変換するための活性化関数が異なっていることが多い. 次に,
 活性化関数と出力層の設計について述べる.
 
-### 活性化関数 {#sec:3.2.2}
+### 活性化関数
 
 活性化関数は, 入力信号を通過させるかどうか, あるいはどの程度通過させ
 るかを決定する. ノード(またはニューロン)は,
@@ -110,7 +108,7 @@ $$ \mathbf{h}^{(k+1)}=f^{(k+1)}\left(\mathbf{h}^{(k)}\right)=\alpha\left(\mathbf
 それによって近似能力が向上する. 以下では,
 よく使われている活性化関数を紹介する.
 
-#### ReLU関数 {#relu関数 .unnumbered}
+#### ReLU関数
 
 ReLU関数は最もよく使われる活性化関数の一つである. 図3.3に示すように,
 ReLU関数は線形関数と似ているが,
@@ -123,8 +121,7 @@ ReLU関数はすべての正の入力に対して線形（というより同じ�
 $$ \operatorname{ReLU}(z)=\max \{0,  z\}\nonumber $$
  
 
-![ReLU関数](chapters/chap3/fig/fig3_3.png){#fig:fig3_3
-width="0.75\\columnwidth"}
+![ReLU関数](chapters/chap3/fig/fig3_3.png){width="0.75\\columnwidth"}
 
 各層では, いくつかのユニットのみが活性化されるため, 効率的な計
 算が可能になる. ReLU関数の欠点は,
@@ -140,8 +137,7 @@ LeakyReLU関数 (Maas et al., 2013)は, 負の入力を0にする代わりに,
 $$ \operatorname{LeakyReLU}(z)=\left\{\begin{array}{cc}0.01 z & z<0 \\ z & z \geq 0\end{array}\right.\nonumber $$
  
 
-![ReLU関数の一般化](chapters/chap3/fig/fig3_4.png){#fig:fig3_4
-width="0.75\\columnwidth"}
+![ReLU関数の一般化](chapters/chap3/fig/fig3_4.png){width="0.75\\columnwidth"}
 
 ReLU関数をさらに一般化したものが, ELU関数 (Exponential Linear
 Unit)である. ELU関数は図3.4(b)に示すように,
@@ -153,7 +149,7 @@ $$ \operatorname{ELU}(z)=\left\{\begin{array}{cc}c \cdot \exp (z-1) & z<0 \\ z &
  
 ここで,  $c$ は負の入力に対して指数関数の傾きを決める正の定数である.
 
-#### ロジスティックシグモイド関数とtanh関数 {#ロジスティックシグモイド関数とtanh関数 .unnumbered}
+#### ロジスティックシグモイド関数とtanh関数
 
 活性化関数としては,
 ReLU関数よりも先にロジスティックシグモイド関数とtanh関数が最もよく使われてきた.
@@ -162,8 +158,7 @@ ReLU関数よりも先にロジスティックシグモイド関数とtanh関数
 $$ \sigma(z)=\frac{1}{1+\exp (-z)}\nonumber $$
  
 
-![ロジスティックシグモイド関数とtanh関数](chapters/chap3/fig/fig3_5.png){#fig:fig3_5
-width="0.75\\columnwidth"}
+![ロジスティックシグモイド関数とtanh関数](chapters/chap3/fig/fig3_5.png){width="0.75\\columnwidth"}
 
 図3.5(a)に示すように, シグモイド関数は入力を0から1の範囲に変換する.
 具体的には, 入力が負の値であるほど出力は0に近づき,
@@ -216,7 +211,7 @@ $$ \ell(\mathbf{y},  \hat{\mathbf{y}})=(\mathbf{y}-\hat{\mathbf{y}})^{2}\nonumbe
 予測対象が二値か多値かによって, 異なる出力層と損失関数が使われる. 次に,
 この2つの場合の詳細について述べる.
 
-#### 二値分類 {#二値分類 .unnumbered}
+#### 二値分類
 
 2値分類のタスクでは,
 サンプルは0か1のどちらかにラベル付けされていると仮定する.
@@ -240,7 +235,7 @@ $$ \ell(y,  \hat{y})=-y \cdot \log (\hat{y})-(1-y) \cdot \log (1-\hat{y})\nonumb
  $\hat{y}>0.5$ の時に入力サンプルはラベル1と予測され,
 そうではない時にラベル0と予測される.
 
-#### 多値分類 {#多値分類 .unnumbered}
+#### 多値分類
 
 多クラス(nクラス）の分類課題では,
 正解はは0からn-1までの整数で表されると仮定する. そこで,

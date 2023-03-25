@@ -1,9 +1,8 @@
-## オートエンコーダー {#sec:3_5}
+## 5. オートエンコーダー
 
 ![オートエンコーダーは, 入力から出力までを記憶する.
 太字の接続は入力から出力まで記憶することを示し,
-他の接続はオートエンコーダでは使用しない（重み0）ことを示す.](chapters/chap3/fig/fig3_15.png){#fig:fig3_15
-width="0.6\\columnwidth"}
+他の接続はオートエンコーダでは使用しない（重み0）ことを示す.](chapters/chap3/fig/fig3_15.png){width="0.6\\columnwidth"}
 
 オートエンコーダーは,
 入力を再現して出力しようとするニューラルネットワークと見なすことができる.
@@ -27,8 +26,7 @@ $$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x}))) $$
 ここで,
  $\ell(\mathbf{x}, \hat{\mathbf{x}})$ は $\mathbf{x}$ と $\hat{\mathbf{x}}$ の違いを表す.
 
-![オートエンコーダーの一般的な構成](chapters/chap3/fig/fig3_16.png){#fig:fig3_16
-width="0.6\\columnwidth"}
+![オートエンコーダーの一般的な構成](chapters/chap3/fig/fig3_16.png){width="0.6\\columnwidth"}
 
 例えば, 平均二乗誤差を $l$ とすることができる. オートエンコーダーでは,
 「ボトルネック」の設計が重要である. 図3.15に示すように,
@@ -95,8 +93,9 @@ $$ \overline{\mathbf{h}}=\frac{1}{m} \sum_{i=1}^{m} \mathbf{h}\left(\mathbf{x}_{
 隠れ表現の各要素を̄ $\overline{\mathbf{h}}$ を平均とするベルヌーイ確率変数として扱っている.
 KLダイバージェンスを用いることで,
 この確率変数が $\rho$ を平均とするベルヌーイ確率変数と近づくように制約することができる：
- $$ \Omega(\mathbf{h})=\sum_{j}\left(\rho \log \frac{\rho}{\overline{\mathbf{h}}[j]}+(1-\rho) \log \frac{1-\rho}{1-\overline{\mathbf{h}}[j]}\right)
-    \label{eq:3_12} $$ 
+ 
+$$ \Omega(\mathbf{h})=\sum_{j}\left(\rho \log \frac{\rho}{\overline{\mathbf{h}}[j]}+(1-\rho) \log \frac{1-\rho}{1-\overline{\mathbf{h}}[j]}\right) $$
+ 
 
 式(3.12)の正則化項を持つオートエンコーダーも「スパースオートエンコーダー」と呼ばれる.
 正則化項は, 「不完全オートエンコーダー」に適用することもできるが,

@@ -1,4 +1,4 @@
-## リカレントニューラルネットワーク {#sec:3_4}
+## 4. リカレントニューラルネットワーク
 
 音声認識, 機械翻訳, センチメント分類などの多くのタスクにおいて,
 系列データを扱う必要がある. 機械翻訳は,
@@ -69,10 +69,9 @@ $$ \begin{array}{l}\mathbf{h}^{(i)}=\alpha_{h}\left(\mathbf{W}_{h h} \cdot \math
 (Hochreiter and Schmidhuber, 1997) とGRU (gated recurrent unit) (Cho et
 al., 2014a) がある.
 
-![伝統的なRNNの構成](chapters/chap3/fig/fig3_12.png){#fig:fig3_12
-width="0.75\\columnwidth"}
+![伝統的なRNNの構成](chapters/chap3/fig/fig3_12.png){width="0.75\\columnwidth"}
 
-### LSTM {#sec:3_4_2}
+### LSTM
 
 LSTMの全体的な構造は従来のRNNモデルと同じである. また,
 系列の要素に同一のニューラルネットワークを適用するチェーン構造も持っている.
@@ -84,8 +83,7 @@ LSTMの全体的な構造は従来のRNNモデルと同じである. また,
 セル状態 $\mathbf{h}^{(t)}$ は,
 必要に応じて（例えば入力も出力も系列であるようなタスクなどで）この位置の出力としても機能する.
 
-![LSTMの構成ブロック](chapters/chap3/fig/fig3_13.png){#fig:fig3_13
-width="0.75\\columnwidth"}
+![LSTMの構成ブロック](chapters/chap3/fig/fig3_13.png){width="0.75\\columnwidth"}
 
 LSTMではまず最初のステップで,
 前のセルから来た情報のうち何を捨てるかを決める.
@@ -140,14 +138,14 @@ LSTMの全体のプロセスは次のようにまとめることができる： 
     \begin{array}
     {l}\mathbf{f}_{t}=\sigma\left(\mathbf{W}_{f} \cdot \mathbf{x}^{(t)}+\mathbf{U}_{f} \cdot \mathbf{h}^{(t-1)}+\mathbf{b}_{f}\right) \\ \mathbf{i}_{t}=\sigma\left(\mathbf{W}_{i} \cdot \mathbf{x}^{(t)}+\mathbf{U}_{i} \cdot \mathbf{h}^{(t-1)}+\mathbf{b}_{i}\right) \\ \mathbf{o}_{t}=\sigma\left(\mathbf{W}_{o} \cdot \mathbf{x}^{(t)}+\mathbf{U}_{o} \cdot \mathbf{h}^{(t-1)}+\mathbf{b}_{o}\right) \\ \tilde{\mathbf{C}}^{(t)}=\tanh \left(\mathbf{W}_{c} \cdot \mathbf{x}^{(t)}+\mathbf{U}_{c} \cdot \mathbf{h}^{(t-1)}+\mathbf{b}_{c}\right) \\ \mathbf{C}^{(t)}=\mathbf{f}_{t} \odot \mathbf{C}^{(t-1)}+\mathbf{i}_{t} \odot \tilde{\mathbf{C}}^{(t)} \\ \mathbf{h}^{(t)}=\mathbf{o}_{t} \odot \tanh \left(\mathbf{C}^{(t)}\right)
     \end{array}
-    \end{split}
-    \label{eq:3_4} $$ 
+    \end{split} $$ 
 
 便宜上, 式(3.4)で表される,
 i番目の位置のLSTMのニューラルネットワークを次のように書く：
 
- $$ \mathbf{C}^{(t)}, \mathbf{h}^{(t)}=\operatorname{LSTM}\left(\mathbf{x}^{(t)}, \mathbf{C}^{(t-1)}, \mathbf{h}^{(t-1)}\right)
-    \label{eq:3_5} $$ 
+ 
+$$ \mathbf{C}^{(t)}, \mathbf{h}^{(t)}=\operatorname{LSTM}\left(\mathbf{x}^{(t)}, \mathbf{C}^{(t-1)}, \mathbf{h}^{(t-1)}\right) $$
+ 
 
 ### GRU
 
@@ -158,7 +156,7 @@ LSTMの忘却ゲートと入力ゲートを「更新ゲート」として統合�
 よりシンプルなゲート付きRNNモデルを構成することができる.
 GRUは以下のように定式化される：  $$ \begin{split}
         \begin{array}{l}\mathbf{z}_{t}=\sigma\left(\mathbf{W}_{z} \cdot \mathbf{x}^{(t)}+\mathbf{U}_{z} \cdot \mathbf{h}^{(t-1)}+\mathbf{b}_{z}\right) \\ \mathbf{r}_{t}=\sigma\left(\mathbf{W}_{r} \cdot \mathbf{x}^{(t)}+\mathbf{U}_{r} \cdot \mathbf{h}^{(t-1)}+\mathbf{b}_{r}\right) \\ \tilde{\mathbf{h}}^{(t)}=\tanh \left(\mathbf{W} \cdot \mathbf{x}^{(t)}+\mathbf{U} \cdot\left(\mathbf{r}_{t} \odot \mathbf{h}^{(t-1)}\right)+\mathbf{b}\right) \\ \mathbf{h}^{(t)}=\left(\mathbf{1}-\mathbf{z}_{t}\right) \odot \tilde{\mathbf{h}}^{(t)}+\mathbf{z}_{t} \odot \mathbf{h}^{(t-1)}\end{array}
-        \label{eq:3_6}
+        
     \end{split} $$  ここで,  $\mathbf{z}_t$ は更新ゲートであり,
  $\mathbf{r}_t$ はリセットゲートである. 便宜上,
 この式(3.6)のプロセスを次のようにまとめる：
@@ -166,6 +164,5 @@ GRUは以下のように定式化される：  $$ \begin{split}
 $$ \mathbf{h}^{(t)}=\operatorname{GRU}\left(\mathbf{x}^{(t)}, \mathbf{h}^{(t-1)}\right) $$
  
 
-![GRUの構成ブロック](chapters/chap3/fig/fig3_14.png){#fig:fig3_14
-width="0.75\\columnwidth"}
+![GRUの構成ブロック](chapters/chap3/fig/fig3_14.png){width="0.75\\columnwidth"}
 
