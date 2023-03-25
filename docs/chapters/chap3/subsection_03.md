@@ -83,7 +83,7 @@ $$ (f * w)(t)=\sum_{\tau=t-n}^{t+n} f(\tau) w(t-\tau)\nonumber $$
 それに対応する出力を計算すると解釈することができる. 図3.6に,
 畳み込み演算を構成する層の例を示す.
 
-![畳み込み層の例](chapters/chap3/fig/fig3_6.png){width="0.75\\columnwidth"}
+![畳み込み層の例](./fig/fig3_6.png)
 
 ::: eg
 図3.6は, 入力と出力が同じ大きさの畳み込み層である.
@@ -112,7 +112,7 @@ $$ S(i,  j)=(I * K)(i,  j)=\sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(
 
 #### スパースな接続
 
-![密な接続とスパースな接続](chapters/chap3/fig/fig3_7.png){width="0.75\\columnwidth"}
+![密な接続とスパースな接続](./fig/fig3_7.png)
 
 従来のニューラルネットワークでは,
 入力ユニットと出力ユニットの間の相互作用は行列で記述することができる.
@@ -156,7 +156,7 @@ $$ S(i,  j)=(I * K)(i,  j)=\sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(
  $K$ 個というパラメータ数はかなり小さく,
 結果として必要なメモリもはるかに抑えられる.
 
-![パラメータの共有](chapters/chap3/fig/fig3_8.png){width="0.75\\columnwidth"}
+![パラメータの共有](./fig/fig3_8.png)
 
 #### 平行移動に対する同変性
 
@@ -219,7 +219,7 @@ $$ \begin{array}{l}S(i, j, p)= \\ \sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\
 
  
 
-![ストライド付き畳み込みの概念図](chapters/chap3/fig/fig3_9.png){width="0.75\\columnwidth"}
+![ストライド付き畳み込みの概念図](./fig/fig3_9.png)
 
 ストライドを  $s = 1$ 
 とすると，式(3.2)のようにストライドなし畳み込みと等価になる．
@@ -265,7 +265,7 @@ CNNで広く用いられている活性化関数はReLU関数である.
 最大値プーリングは局所近傍の最大値を出力とし,
 平均値プーリングは局所近傍の平均値を出力とする.
 
-![CNNにおけるプーリング](chapters/chap3/fig/fig3_10.png){width="0.75\\columnwidth"}
+![CNNにおけるプーリング](./fig/fig3_10.png)
 
 ### CNNフレームワークの全体像
 
@@ -282,5 +282,5 @@ CNNで広く用いられている活性化関数はReLU関数である.
 実際には複数の畳み込み層とプーリング層を重ねるのが一般的である. 同様に,
 分類パートにおいても順伝播型ニューラルネットワークは複数の全結合層で構成される場合がある.
 
-![CNNにおけるプーリング](chapters/chap3/fig/fig3_11.png){width="0.75\\columnwidth"}
+![CNNにおけるプーリング](./fig/fig3_11.png)
 

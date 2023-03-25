@@ -1,6 +1,4 @@
-
 [メインページ](../../index.markdown)
-
 ## 6. 深層ニューラルネットワークの学習
 
 この節では, 深層ニューラルネットワークの学習手順について説明する. まず,
@@ -53,7 +51,7 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
 
 ### 逆伝播法
 
-![隣り合う層のニューロン](chapters/chap3/fig/fig3_17.png){width="0.75\\columnwidth"}
+![隣り合う層のニューロン](./fig/fig3_17.png)
 
 勾配に基づく最適化を行うための重要なステップの1つは,
 すべてのパラメータに関する勾配を計算することである.
@@ -94,7 +92,7 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
     \end{aligned}
     \tag{3.17} $$ 
 
-![パスの分解](chapters/chap3/fig/fig3_18.png){width="0.75\\columnwidth"}
+![パスの分解](./fig/fig3_18.png)
 
 図3.18に示したように,
  $\mathcal{P}$ に属する任意のパスは2つのパートにわけることができる：
@@ -131,14 +129,11 @@ $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\ri
  $w_{\left(h^{r}, h^{r+1}\right)}$ はユニット $h^r$ と $h^{r+1}$ の間のパラメータである.
 これを用いると,
  $\Delta\left(h^{r}, o\right)$ を次のように書き換えることができる：
- 
  $$ \Delta\left(h^{r}, o\right)=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} \cdot \Delta\left(h^{r+1}, o\right)
-    \tag{3.20} $$  
-    
-ここまでが, 式(3.16)の前半部分の評価であり,
+    \tag{3.20} $$  ここまでが, 式(3.16)の前半部分の評価であり,
 後半部分については次のように評価することができる：
-
- $$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1}\tag{3.21} $$ 
+ $$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1}
+    \tag{3.21} $$ 
 
 以上から, 式(3.20)と式(3.21)を用いることで,
 式(3.16)を再帰的かつ効率的に評価することができる.

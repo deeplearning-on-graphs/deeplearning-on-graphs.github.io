@@ -3,7 +3,7 @@
 
 ![オートエンコーダーは, 入力から出力までを記憶する.
 太字の接続は入力から出力まで記憶することを示し,
-他の接続はオートエンコーダでは使用しない（重み0）ことを示す.](chapters/chap3/fig/fig3_15.png){width="0.6\\columnwidth"}
+他の接続はオートエンコーダでは使用しない（重み0）ことを示す.](./fig/fig3_15.png){width="0.6\\columnwidth"}
 
 オートエンコーダーは,
 入力を再現して出力しようとするニューラルネットワークと見なすことができる.
@@ -29,7 +29,7 @@ $$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x}))) $$
 ここで,
  $\ell(\mathbf{x}, \hat{\mathbf{x}})$ は $\mathbf{x}$ と $\hat{\mathbf{x}}$ の違いを表す.
 
-![オートエンコーダーの一般的な構成](chapters/chap3/fig/fig3_16.png){width="0.6\\columnwidth"}
+![オートエンコーダーの一般的な構成](./fig/fig3_16.png){width="0.6\\columnwidth"}
 
 例えば, 平均二乗誤差を $l$ とすることができる. オートエンコーダーでは,
 「ボトルネック」の設計が重要である. 図3.15に示すように,

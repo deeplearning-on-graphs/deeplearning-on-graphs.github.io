@@ -72,7 +72,7 @@ $$ \begin{array}{l}\mathbf{h}^{(i)}=\alpha_{h}\left(\mathbf{W}_{h h} \cdot \math
 (Hochreiter and Schmidhuber, 1997) とGRU (gated recurrent unit) (Cho et
 al., 2014a) がある.
 
-![伝統的なRNNの構成](chapters/chap3/fig/fig3_12.png){width="0.75\\columnwidth"}
+![伝統的なRNNの構成](./fig/fig3_12.png)
 
 ### LSTM
 
@@ -86,7 +86,7 @@ LSTMの全体的な構造は従来のRNNモデルと同じである. また,
 セル状態 $\mathbf{h}^{(t)}$ は,
 必要に応じて（例えば入力も出力も系列であるようなタスクなどで）この位置の出力としても機能する.
 
-![LSTMの構成ブロック](chapters/chap3/fig/fig3_13.png){width="0.75\\columnwidth"}
+![LSTMの構成ブロック](./fig/fig3_13.png)
 
 LSTMではまず最初のステップで,
 前のセルから来た情報のうち何を捨てるかを決める.
@@ -181,5 +181,5 @@ $$ \mathbf{h}^{(t)}=\operatorname{GRU}\left(\mathbf{x}^{(t)}, \mathbf{h}^{(t-1)}
 
  
 
-![GRUの構成ブロック](chapters/chap3/fig/fig3_14.png){width="0.75\\columnwidth"}
+![GRUの構成ブロック](./fig/fig3_14.png)
 
