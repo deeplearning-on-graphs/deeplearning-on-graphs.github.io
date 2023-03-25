@@ -1,6 +1,6 @@
 [メインページ](../../index.markdown)
 [章目次](./chap3.md)
-## 3. 畳み込みニューラルネットワーク
+## 3.3. 畳み込みニューラルネットワーク
 
 CNN(Convolutional Neural Networks)は,
 よく使われているニューラルネットワークの一種であり,
