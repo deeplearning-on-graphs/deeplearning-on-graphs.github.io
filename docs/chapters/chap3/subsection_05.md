@@ -1,4 +1,5 @@
 [メインページ](../../index.markdown)
+
 [章目次](./chap3.md)
 ## 3.5. オートエンコーダー
 
@@ -22,11 +23,13 @@
 ここでは符号化表現 $\mathbf{h}$ に保存できる情報が制御される. そして,
 デコーダ部分 $\mathbf{h}$ を利用して入力 $\mathbf{x}$ を再構成した $\hat{\mathbf{x}}$ を出力する.
 オートエンコーダーのネットワークは次の再構成誤差を最小化することで学習させることができる：
+
  
 
 $$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x}))) $$
 
  
+
 ここで,
  $\ell(\mathbf{x}, \hat{\mathbf{x}})$ は $\mathbf{x}$ と $\hat{\mathbf{x}}$ の違いを表す.
 
@@ -77,16 +80,19 @@ $$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x}))) $$
 $$ \ell(\mathbf{x}, g(f(\mathbf{x})))+\eta \cdot \Omega(\mathbf{h}) $$
 
  
+
 ここで,  $\Omega(\mathbf{h})$ は正則化項で,
  $\eta$ は正則化項の大きさを制御するハイパーパラメータである.
 
 (Olshausen and Field, 1997)の研究では,
 符号化表現 $\mathbf{h}$ の $L\_1$ ノルムが正則化項として次のように導入されていた：
+
  
 
 $$ \Omega(\mathbf{h})=\|\mathbf{h}\|\_1 $$
 
  
+
  $L\_1$ ノルム正則化項によって $\mathbf{h}$ はスパースになるよう誘導される.
 こうしたオートエンコーダーは「スパースオートエンコーダー」とも呼ばれる.
 
@@ -98,6 +104,7 @@ $$ \Omega(\mathbf{h})=\|\mathbf{h}\|\_1 $$
 そこで, 関係を明示的に表現するため, 与えられた入力 $\mathbf{x}$ に対して,
 オートエンコーダーで学習したその符号化表現を $\mathbf{h}(x)$ とする.
 サンプル集合 $\left\{\mathbf{X}_{(i)}\right\}_{i=1}^{m}$ の符号化表現の平均は次のように書くことができる：
+
  
 
 $$ \overline{\mathbf{h}}=\frac{1}{m} \sum_{i=1}^{m} \mathbf{h}\left(\mathbf{x}_{(i)}\right) $$
@@ -109,6 +116,7 @@ $$ \overline{\mathbf{h}}=\frac{1}{m} \sum_{i=1}^{m} \mathbf{h}\left(\mathbf{x}_{
 隠れ表現の各要素を̄ $\overline{\mathbf{h}}$ を平均とするベルヌーイ確率変数として扱っている.
 KLダイバージェンスを用いることで,
 この確率変数が $\rho$ を平均とするベルヌーイ確率変数と近づくように制約することができる：
+
  $$ \Omega(\mathbf{h})=\sum\_j\left(\rho \log \frac{\rho}{\overline{\mathbf{h}}[j]}+(1-\rho) \log \frac{1-\rho}{1-\overline{\mathbf{h}}[j]}\right)
     \tag{3.12} $$ 
 
@@ -118,3 +126,7 @@ KLダイバージェンスを用いることで,
 正則化項を用いれば,
 隠れ符号化表現 $\mathbf{h}$ は必ずしも入力より小さい次元である必要はなくなる.
 
+
+[メインページ](../../index.markdown)
+
+[章目次](./chap3.md)

@@ -1,4 +1,5 @@
 [メインページ](../../index.markdown)
+
 [章目次](./chap3.md)
 ## 3.8. 参考文献
 
@@ -16,3 +17,7 @@ Learning: A Textbook*(Aggarwal, 2018) など,
 また, Tensorflow (Abadi et al., 2015) やPytorch (Paszke et al., 2017)
 などのライブラリやプラットフォームで,
 様々な深層ニューラルネットワークモデルを簡単に構築することもできる.
+
+[メインページ](../../index.markdown)
+
+[章目次](./chap3.md)

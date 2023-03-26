@@ -1,4 +1,5 @@
 [メインページ](../../index.markdown)
+
 [章目次](./chap3.md)
 ## 3.4. リカレントニューラルネットワーク
 
@@ -49,11 +50,13 @@ Network）である. RNNは, 系列の各要素に同じ関数を再帰的に適
 次の位置に流れる情報を $\mathbf{h^{(i)}}$ とする.
  $\mathbf{h^{(0)}}$ `<!-- -->`{=html}0で初期化されることが多い.
  $i$ 番目の要素を処理する手順は, 次のように定式化できる：
+
  
 
 $$ \begin{array}{l}\mathbf{h}^{(i)}=\alpha\_h\left(\mathbf{W}_{h h} \cdot \mathbf{h}^{(i-1)}+\mathbf{W}_{h x} \mathbf{x}^{(i-1)}+\mathbf{b}\_h\right) \nonumber \\ \mathbf{y}^{(i)}=\alpha\_y\left(\mathbf{W}_{y h} \mathbf{h}^{(i)}+\mathbf{b}\_y\right)\end{array}\nonumber $$
 
  
+
 ここで、 $\mathbf{W}_{h h},\mathbf{W}_{h x}, \mathbf{W}_{y h}$ は線形変換をする行列で,
  $\mathbf{b}\_h, \mathbf{b}\_y$ はバイアス項,
  $\alpha\_h, \alpha\_y$ は活性化関数を表す.
@@ -109,11 +112,13 @@ LSTMではまず最初のステップで,
 どの程度の情報を捨てるかを表す. 出力は,
 セル状態 $\mathbf{C}^{(t-1)}$ と同じ次元をもつベクトル $\mathbf{f}_t$ に集約される.
 具体的には, 忘却ゲートは以下のように定式化される：
+
  
 
 $$ \mathbf{f}\_t=\sigma\left(\mathbf{W}\_f \cdot \mathbf{x}^{(t)}+\mathbf{U}\_f \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_f\right)\nonumber $$
 
  
+
 ここで,  $\mathbf{W}_f$ と $\mathbf{U}_f$ はパラメータで,
  $\mathbf{b}_f$ はバイアス項,
  $\sigma()$ はシグモイド関数で入力を0から1に変換する.
@@ -129,19 +134,23 @@ $$ \mathbf{i}\_t=\sigma\left(\mathbf{W}\_i \cdot \mathbf{x}^{(t)}+\mathbf{U}\_i 
  
 入力 $\mathbf{x}^{(t)}$ を数層のニューラルネットワークで処理することで候補セル $\tilde{\mathbf{C}}^{(t)}$ を生成し,
 これを使ってセル状態を更新する. このプロセスは次のように書ける：
+
  
 
 $$ \tilde{\mathbf{C}}^{(t)}=\tanh \left(\mathbf{W}\_c \cdot \mathbf{x}^{(t)}+\mathbf{U}\_c \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_c\right)\nonumber $$
 
  
+
 その後,
 古いセル状態 $\mathbf{C}^{(t-1)}$ と新しい候補セル $\tilde{\mathbf{C}}^{(t)}$ を用いて,
 新しいセル状態 $\mathbf{C}^{(t)}$ を生成する：
+
  
 
 $$ \mathbf{C}^{(t)}=\mathbf{f}\_t \odot \mathbf{C}^{(t-1)}+\mathbf{i}\_t \odot \tilde{\mathbf{C}}^{(t)}\nonumber $$
 
  
+
 ここで,  $\odot$ という記号はアダマール積（成分ごとに積をとる）を表す.
 
 最後のステップで, 隠れ状態 $\mathbf{h}^{(t)}$ を生成し,
@@ -150,19 +159,24 @@ $$ \mathbf{C}^{(t)}=\mathbf{f}\_t \odot \mathbf{C}^{(t-1)}+\mathbf{i}\_t \odot \
 この隠れ状態は更新されたセル状態 $\mathbf{C}^{(t)}$ に基づいており,
 「出力ゲート」がセル状態のどの部分を保存するかを決定する.
 出力ゲートは忘却ゲートと入力ゲートと同じように次のように定式化される：
+
  
 
 $$ \mathbf{o}\_t=\sigma\left(\mathbf{W}\_o \cdot \mathbf{x}^{(t)}+\mathbf{U}\_o \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_o\right)\nonumber $$
 
  
+
 新しい隠れ状態 $\mathbf{h}^{(t)}$ は次のように生成される：
+
  
 
 $$ \mathbf{h}^{(t)}=\mathbf{o}\_t \odot \tanh \left(\mathbf{C}^{(t)}\right)\nonumber $$
 
  
 
-LSTMの全体のプロセスは次のようにまとめることができる：  $$ \begin{split}
+LSTMの全体のプロセスは次のようにまとめることができる：
+
+ $$ \begin{split}
     \begin{array}
     {l}\mathbf{f}\_t=\sigma\left(\mathbf{W}\_f \cdot \mathbf{x}^{(t)}+\mathbf{U}\_f \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_f\right) \\ \mathbf{i}\_t=\sigma\left(\mathbf{W}\_i \cdot \mathbf{x}^{(t)}+\mathbf{U}\_i \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_i\right) \\ \mathbf{o}\_t=\sigma\left(\mathbf{W}\_o \cdot \mathbf{x}^{(t)}+\mathbf{U}\_o \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_o\right) \\ \tilde{\mathbf{C}}^{(t)}=\tanh \left(\mathbf{W}\_c \cdot \mathbf{x}^{(t)}+\mathbf{U}\_c \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_c\right) \\ \mathbf{C}^{(t)}=\mathbf{f}\_t \odot \mathbf{C}^{(t-1)}+\mathbf{i}\_t \odot \tilde{\mathbf{C}}^{(t)} \\ \mathbf{h}^{(t)}=\mathbf{o}\_t \odot \tanh \left(\mathbf{C}^{(t)}\right)
     \end{array}
@@ -182,12 +196,17 @@ LSTMの忘却ゲートと入力ゲートを「更新ゲート」として統合�
 セル状態と隠れ状態を同じものとして統合したものと見なすことができる.
 これらの変更により,
 よりシンプルなゲート付きRNNモデルを構成することができる.
-GRUは以下のように定式化される：  $$ \begin{split}
+GRUは以下のように定式化される：
+
+ $$ \begin{split}
         \begin{array}{l}\mathbf{z}\_t=\sigma\left(\mathbf{W}\_z \cdot \mathbf{x}^{(t)}+\mathbf{U}\_z \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_z\right) \\ \mathbf{r}\_t=\sigma\left(\mathbf{W}\_r \cdot \mathbf{x}^{(t)}+\mathbf{U}\_r \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_r\right) \\ \tilde{\mathbf{h}}^{(t)}=\tanh \left(\mathbf{W} \cdot \mathbf{x}^{(t)}+\mathbf{U} \cdot\left(\mathbf{r}\_t \odot \mathbf{h}^{(t-1)}\right)+\mathbf{b}\right) \\ \mathbf{h}^{(t)}=\left(\mathbf{1}-\mathbf{z}\_t\right) \odot \tilde{\mathbf{h}}^{(t)}+\mathbf{z}\_t \odot \mathbf{h}^{(t-1)}\end{array}
         \tag{3.6}
-    \end{split} $$  ここで,  $\mathbf{z}_t$ は更新ゲートであり,
+    \end{split} $$ 
+
+ここで,  $\mathbf{z}_t$ は更新ゲートであり,
  $\mathbf{r}_t$ はリセットゲートである. 便宜上,
 この式(3.6)のプロセスを次のようにまとめる：
+
  
 
 $$ \mathbf{h}^{(t)}=\operatorname{GRU}\left(\mathbf{x}^{(t)}, \mathbf{h}^{(t-1)}\right) $$
@@ -202,3 +221,7 @@ $$ \mathbf{h}^{(t)}=\operatorname{GRU}\left(\mathbf{x}^{(t)}, \mathbf{h}^{(t-1)}
 
 </figure>
 
+
+[メインページ](../../index.markdown)
+
+[章目次](./chap3.md)
