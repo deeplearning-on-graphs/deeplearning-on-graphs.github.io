@@ -81,7 +81,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
  
 <strong>定義 2.38 ハイパーグラフ</strong>
 
- $\nodes$ を $N$ 個のノード集合， $\edges$ をハイパーエッジ集合，そしてハイパーエッジ $e_j$ の重みを $\symbf{W}[j,j]$ においた対角行列を $\symbf{W}\in \mathbb{R}^{|\edges|\times|\edges|}$ とする．このとき， $\g=\left\{\nodes, \edges, \symbf{W}\right\}$ をハイパーグラフと定義する．ハイパーグラフ $\g$ は，ノード $v_i$ がエッジ $e_j$ に現れる場合にだけ $\symbf{H}_{i,j}=1$ となる，接続行列 $\symbf{H}\in \mathbb{R}^{|\nodes|\times|\edges|}$ を用いて記述することができる．また，ノード $v_i$ について，その次数を $\displaystyle d(v_i)=\sum^{|\edges|}_{j=1}\symbf{H}_{i,j}$ と定義し，ハイパーエッジの次数を $\displaystyle d(e_j) = \sum^{|\nodes|}_{i=1}\symbf{H}_{i,j}$ と定義する．さらに， $\symbf{D}_e$ と $\symbf{D}_v$ を，それぞれハイパーエッジとノードの(対角)次数行列を表すとする．
+ $\nodes$ を $N$ 個のノード集合， $\edges$ をハイパーエッジ集合，そしてハイパーエッジ $e_j$ の重みを $\symbf{W}[j,j]$ においた対角行列を $\symbf{W}\in \mathbb{R}^{|\edges|\times|\edges|}$ とする．このとき， $\g=\left\{\nodes, \edges, \symbf{W}\right\}$ をハイパーグラフと定義する．ハイパーグラフ $\g$ は，ノード $v_i$ がエッジ $e_j$ に現れる場合にだけ $\symbf{H}_{i,j}=1$ となる，接続行列 $\symbf{H}\in \mathbb{R}^{|\nodes|\times|\edges|}$ を用いて記述することができる．また，ノード $v_i$ について，その次数を $\displaystyle d(v_i)=\sum^{|\edges|}_{j=1}\symbf{H}_{i,j}$ と定義し，ハイパーエッジの次数を $\displaystyle d(e_j) = \sum^{|\nodes|}_{i=1}\symbf{H}_{i,j}$ と定義する．さらに， $\symbf{D}\_e$ と $\symbf{D}\_v$ を，それぞれハイパーエッジとノードの(対角)次数行列を表すとする．
 
 </div>
 

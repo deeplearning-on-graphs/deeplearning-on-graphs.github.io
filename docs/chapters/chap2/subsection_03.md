@@ -279,7 +279,7 @@ $$ c_e(v_i) = \dfrac{1}{\lambda}\sum^{N}_{j=1}\symbf{A}_{i,j}\cdot c_e(v_j). $$
 この式は行列形式として以下のようにかける．
  
 
-$$ \symbf{c}_e = \dfrac{1}{\lambda}\symbf{A}\cdot \symbf{c}_e. $$
+$$ \symbf{c}\_e = \dfrac{1}{\lambda}\symbf{A}\cdot \symbf{c}\_e. $$
 
  
 ここで， $\symbf{c}_e\in \mathbb{R}^N$ ，はグラフ内の全ノードの中心性スコアを成分に持ったベクトルである．式(2.3)を
