@@ -1,4 +1,5 @@
 [メインページ](../../index.markdown)
+
 [章目次](./chap2.md)
 ## 2.5. グラフ信号処理
 
@@ -10,7 +11,7 @@ $$ f\colon \nodes \rightarrow \mathbb{R}^{N\times d}. $$
 
  
 ここで， $d$ は各ノードに与える値（ベクトル）の次元である．
-一般性を損なうことなく，本節では $d=1$ とおいて議論を進め，全ノードを写像して得た値を $\symbf{f}\in\mathbb{R}^{N}$ とする．また，ノード $v_i$ に対応する値を $\symbf{f}[i]$ で表すことにする．
+一般性を損なうことなく，本節では $d=1$ とおいて議論を進め，全ノードを写像して得た値を $\symbf{f}\in\mathbb{R}^{N}$ とする．また，ノード $v\_i$ に対応する値を $\symbf{f}[i]$ で表すことにする．
 
 <div class="eg">
  
@@ -43,25 +44,29 @@ $$ \hat{f}(\xi) = \langle f(t),\exp(-2\pi it \xi)\rangle = \int^{\infty}_{-\inft
     &= (2\pi i \xi)^2 \exp (-2\pi it \xi).\end{aligned} $$ 
 
 同様に，グラフ $\g$ 上のグラフ信号 $\symbf{f}$ の"グラフフーリエ変換"は，以下のように表すことができる．
+
  
 
 $$ \hat{\symbf{f}}[l] = \langle\symbf{f},\symbf{u}_l \rangle = \sum^{N}_{i=1}\symbf{f}[i]\symbf{u}_l[i]. $$
 
  
-ここで， $\symbf{u}_l$ は，ラプラシアン行列 $\symbf{L}$ の $l$ 番目の固有ベクトルであり，対応する固有値 $\lambda_l$ は固有ベクトル $\symbf{u}_l$ の周波数(滑らかさ)を表している．
+
+ここで， $\symbf{u}_l$ は，ラプラシアン行列 $\symbf{L}$ の $l$ 番目の固有ベクトルであり，対応する固有値 $\lambda\_l$ は固有ベクトル $\symbf{u}_l$ の周波数(滑らかさ)を表している．
  $\symbf{f}$ のグラフフーリエ変換は，（ $\hat{\symbf{f}}[l]$ をその $l$ 番目の要素とする）ベクトル $\hat{\symbf{f}}$ として定義され，このときの固有ベクトルは，グラフ $\g$ のグラフフーリエ基底である．つまり， $\hat{\symbf{f}}$ は，信号 $\symbf{f}$ をこれらの基底で分解して得られる"グラフフーリエ係数"で構成される．
 一方で， $\symbf{f}$ のグラフフーリエ変換は，
+
  
 
 $$ \hat{\symbf{f}} = \symbf{U}^{T}\symbf{f}, $$
 
  
+
 と行列形式で表すこともできる．ここで，行列 $\symbf{U}$ の $l$ 番目の列は $\symbf{u}_l$ である．
 
-以下の式で示されるように，固有値 $\lambda_l$ は，対応する固有ベクトル $\symbf{u}_l$ の滑らかさを測定している[^3]．
+以下の式で示されるように，固有値 $\lambda\_l$ は，対応する固有ベクトル $\symbf{u}_l$ の滑らかさを測定している[^3]．
  
 
-$$ \symbf{u}^T_l \symbf{L}\symbf{u}_l = \lambda_l \cdot\symbf{u}^T_l\symbf{u}_l = \lambda_l. $$
+$$ \symbf{u}^T\_l \symbf{L}\symbf{u}_l = \lambda\_l \cdot\symbf{u}^T\_l\symbf{u}_l = \lambda\_l. $$
 
  
 例えば，小さな固有値に対応する（隣接ノード間の）固有ベクトルの要素は，グラフ上でゆっくりと変化することになる．
@@ -112,3 +117,7 @@ $$ \symbf{f} = \symbf{U}\hat{\symbf{f}}. $$
 </div>
 
 
+
+[メインページ](../../index.markdown)
+
+[章目次](./chap2.md)
