@@ -32,18 +32,18 @@ $$ \mathbf{W}^{\prime}=\mathbf{W}-\eta \cdot \nabla_{\mathbf{W}} \mathcal{L}(\ma
 したがって，損失関数を以下のように書くことができる：
  
 
-$$ \mathcal{L}(\mathbf{W})=\sum_{i=1}^{N_s} \mathcal{L}_i(\mathbf{W}) $$
+$$ \mathcal{L}(\mathbf{W})=\sum_{i=1}^{N\_s} \mathcal{L}\_i(\mathbf{W}) $$
 
  
-ここで,  $\mathcal{L}_i(\mathbf{W})$ は $i$ 番目のサンプルの損失を表し,
- $N_s$ はサンプル数を表す. 多くの場合,
+ここで,  $\mathcal{L}\_i(\mathbf{W})$ は $i$ 番目のサンプルの損失を表し,
+ $N\_s$ はサンプル数を表す. 多くの場合,
 直接 $\nabla_{\mathbf{W}} \mathcal{L}(\mathbf{W})$ を計算するのは非常に手間がかかる.
 そこで, 深層ニューラルネットワークの学習で非常によく使われている,
 ミニバッチ勾配降下法が登場する. ミニバッチ勾配降下法では,
 すべての学習サンプルに対して勾配を評価するのではなく,
 学習データから少量のサンプルを抽出し, それを使って勾配を推定する.
 この推定された勾配を利用してパラメータを更新する. 具体的には,
-勾配は $\sum_{j \in \mathcal{M}} \nabla_{\mathbf{W}} \mathcal{L}_j(\mathbf{W})$ として推定される.
+勾配は $\sum_{j \in \mathcal{M}} \nabla_{\mathbf{W}} \mathcal{L}\_j(\mathbf{W})$ として推定される.
 ここで, $\mathcal{M}$ はミニバッチのサンプル集合を表す. Adagrad (Duchi et
 al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
 などの深層ニューラルネットワークの学習のため,
@@ -54,7 +54,7 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
 
 <figure>
 
-<img src="./fig/fig3_17.png" width="75%"/>
+<img src="./fig/fig3_17.png" width="100%"/>
 
 <figcaption>図3.17 隣り合う層のニューロン</figcaption>
 
@@ -77,7 +77,7 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
  $o$ は出力層のユニットを表す.
  $\left(h^{r-1}, h^{r}\right)$ の間に1本しかエッジがないとすると,
 損失関数の微分はチェーン・ルールを使って次のように書くことができる：
- $$ \frac{\partial \mathcal{L}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \cdot \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h_r\right)}} \forall r \in 1 \ldots k
+ $$ \frac{\partial \mathcal{L}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \cdot \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h\_r\right)}} \forall r \in 1 \ldots k
     \tag{3.16} $$ 
 ここで, $w_{\left(h^{r-1}, h^{r}\right)}$ はユニット $h^{r-1}$ と $h^r$ の間のパラメータを表す.
 
@@ -101,7 +101,7 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
 
 <figure>
 
-<img src="./fig/fig3_18.png" width="75%"/>
+<img src="./fig/fig3_18.png" width="100%"/>
 
 <figcaption>図3.18 パスの分解</figcaption>
 
@@ -119,7 +119,7 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
 この残りのパスを $\mathcal{P}'_{r+1}$ と書くことにすると,
 式(3.17)は次のように簡略化することができる：
 
- $$ \begin{aligned} \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_k, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_k} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h_k, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h_k} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \Delta\left(h^{r+1}, o\right) \end{aligned}
+ $$ \begin{aligned} \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h\_k, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h\_k} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h\_k, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h\_k} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \Delta\left(h^{r+1}, o\right) \end{aligned}
     \tag{3.18} $$  ここで,
  $\mathcal{E}$ はユニット $h^r$ から $(r+1)$ 番目の層のユニット $h^{r+1}$ への,
 存在しうる全てのエッジの集合を表す. 図3.18に図示したように,
@@ -163,7 +163,7 @@ $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\ri
 モデルのパラメータに対する正則化項を損失関数に含めるという手法が一般的である.
 正則化項はモデルパラメータを比較的小さくなるように制限することで,
 モデルの汎化性能を向上させる. よく用いられている正則化項は,
-モデルパラメータの $L_1$ ノルムと $L_2$ ノルムの2つである.
+モデルパラメータの $L\_1$ ノルムと $L\_2$ ノルムの2つである.
 
 #### ドロップアウト
 

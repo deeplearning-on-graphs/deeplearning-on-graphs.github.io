@@ -32,7 +32,7 @@ $$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x}))) $$
 
 <figure>
 
-<img src="./fig/fig3_16.png" width="75%"/>
+<img src="./fig/fig3_16.png" width="100%"/>
 
 <figcaption>図3.16 オートエンコーダーの一般的な構成</figcaption>
 
@@ -81,13 +81,13 @@ $$ \ell(\mathbf{x}, g(f(\mathbf{x})))+\eta \cdot \Omega(\mathbf{h}) $$
  $\eta$ は正則化項の大きさを制御するハイパーパラメータである.
 
 (Olshausen and Field, 1997)の研究では,
-符号化表現 $\mathbf{h}$ の $L_1$ ノルムが正則化項として次のように導入されていた：
+符号化表現 $\mathbf{h}$ の $L\_1$ ノルムが正則化項として次のように導入されていた：
  
 
-$$ \Omega(\mathbf{h})=\|\mathbf{h}\|_1 $$
+$$ \Omega(\mathbf{h})=\|\mathbf{h}\|\_1 $$
 
  
- $L_1$ ノルム正則化項によって $\mathbf{h}$ はスパースになるよう誘導される.
+ $L\_1$ ノルム正則化項によって $\mathbf{h}$ はスパースになるよう誘導される.
 こうしたオートエンコーダーは「スパースオートエンコーダー」とも呼ばれる.
 
 符号化表現をスパースにする別の方法は, $\mathbf{h}$ のニューロンがほとんどの時間で不活性であるように制約することである.
@@ -109,7 +109,7 @@ $$ \overline{\mathbf{h}}=\frac{1}{m} \sum_{i=1}^{m} \mathbf{h}\left(\mathbf{x}_{
 隠れ表現の各要素を̄ $\overline{\mathbf{h}}$ を平均とするベルヌーイ確率変数として扱っている.
 KLダイバージェンスを用いることで,
 この確率変数が $\rho$ を平均とするベルヌーイ確率変数と近づくように制約することができる：
- $$ \Omega(\mathbf{h})=\sum_j\left(\rho \log \frac{\rho}{\overline{\mathbf{h}}[j]}+(1-\rho) \log \frac{1-\rho}{1-\overline{\mathbf{h}}[j]}\right)
+ $$ \Omega(\mathbf{h})=\sum\_j\left(\rho \log \frac{\rho}{\overline{\mathbf{h}}[j]}+(1-\rho) \log \frac{1-\rho}{1-\overline{\mathbf{h}}[j]}\right)
     \tag{3.12} $$ 
 
 式(3.12)の正則化項を持つオートエンコーダーも「スパースオートエンコーダー」と呼ばれる.

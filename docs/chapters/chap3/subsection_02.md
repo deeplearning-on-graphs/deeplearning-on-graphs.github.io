@@ -46,7 +46,7 @@
 
 <figure>
 
-<img src="./fig/fig3_1.png" width="75%"/>
+<img src="./fig/fig3_1.png" width="100%"/>
 
 <figcaption>図3.1 順伝播型ネットワークの例</figcaption>
 
@@ -58,14 +58,14 @@
 図3.1は，このネットワーク構成の全体像を表す. 次に,
 ニューラルネットワークで行われる計算の詳細を述べる. ここでは,
 第1層の1つのノードに注目する.
-ニューラルネットワークの入力は，ベクトル $\mathbf{x}$ で， $x_i$ はそのi番目の要素を表す.
+ニューラルネットワークの入力は，ベクトル $\mathbf{x}$ で， $x\_i$ はそのi番目の要素を表す.
 これらの要素はすべて入力層のノードとみなすことができる.
 第2層のノード(または入力層の次の層のノード)は，入力層のすべてのノードに接続されている.
 これらの入力層のノードと第2層の任意のノードとの接続を図3.2に示す.
 
 <figure>
 
-<img src="./fig/fig3_2.png" width="75%"/>
+<img src="./fig/fig3_2.png" width="100%"/>
 
 <figcaption>図3.2 ノードでの操作</figcaption>
 
@@ -73,30 +73,30 @@
 
 1つのノードにおける演算は, 次の2つの部分から構成される:
 
-1.  入力を重み（ $\mathbf{w}_i$ ）で線形に組み合わせる
+1.  入力を重み（ $\mathbf{w}\_i$ ）で線形に組み合わせる
 
 2.  前のステップで得られた値を, 活性化関数に通す
 
 これは数学的には次のように書くことができる：
  
 
-$$ h=\alpha\left(b+\sum_{i=1}^{4} \mathbf{w}_i \cdot \mathbf{x}_i\right)\nonumber $$
+$$ h=\alpha\left(b+\sum_{i=1}^{4} \mathbf{w}\_i \cdot \mathbf{x}\_i\right)\nonumber $$
 
  
 ここで,  $b$ はバイアス項,  $\alpha$ は活性化関数（次の章で述べる）を表す.
 次にこの演算を任意の隠れ層に一般化する.
 ニューラルネットワークのk番目の層には $N^{(k)}$ ノードあり,
 その出力は $\mathbf{h}^{(k)}$ と表すことができるとする（ここで,
- $\mathbf{h}^{(k)}_i$ はi番目の要素を表す）.
+ $\mathbf{h}^{(k)}\_i$ はi番目の要素を表す）.
 ニューラルネットワークのk+1番目の層で $\mathbf{h}^{(k+1)}$ を計算するために次の演算を行う：
  
 
-$$ \mathbf{h}_j^{(k+1)}=\alpha\left(b_j^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}_i^{(k)}\right)\tag{3.1} $$
+$$ \mathbf{h}\_j^{(k+1)}=\alpha\left(b\_j^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}\_i^{(k)}\right)\tag{3.1} $$
 
  
 ここで,
- $\mathbf{W}_{j i}^{(k)}$ は $\mathbf{h}_i^{(k)}$ と $\mathbf{h}_i^{(k+1)}$ をつなげる重みに対応し,
- $b_j^{(k)}$ はバイアス項を表す.
+ $\mathbf{W}_{j i}^{(k)}$ は $\mathbf{h}\_i^{(k)}$ と $\mathbf{h}\_i^{(k+1)}$ をつなげる重みに対応し,
+ $b\_j^{(k)}$ はバイアス項を表す.
 k+1層の全要素を計算する演算を行列形式で書くと次のようになる：
  
 
@@ -147,7 +147,7 @@ $$ \operatorname{ReLU}(z)=\max \{0,  z\}\nonumber $$
 
 <figure>
 
-<img src="./fig/fig3_3.png" width="75%"/>
+<img src="./fig/fig3_3.png" width="100%"/>
 
 <figcaption>図3.3 ReLU関数</figcaption>
 
@@ -171,7 +171,7 @@ $$ \operatorname{LeakyReLU}(z)=\left\{\begin{array}{cc}0.01 z & z<0 \\ z & z \ge
 
 <figure>
 
-<img src="./fig/fig3_4.png" width="75%"/>
+<img src="./fig/fig3_4.png" width="100%"/>
 
 <figcaption>図3.4 ReLU関数の一般化</figcaption>
 
@@ -202,7 +202,7 @@ $$ \sigma(z)=\frac{1}{1+\exp (-z)}\nonumber $$
 
 <figure>
 
-<img src="./fig/fig3_5.png" width="75%"/>
+<img src="./fig/fig3_5.png" width="100%"/>
 
 <figcaption>図3.5 ロジスティックシグモイド関数とtanh関数</figcaption>
 
@@ -298,7 +298,7 @@ $$ \ell(y,  \hat{y})=-y \cdot \log (\hat{y})-(1-y) \cdot \log (1-\hat{y})\nonumb
 多クラス(nクラス）の分類課題では,
 正解はは0からn-1までの整数で表されると仮定する. そこで,
 分類ラベルを表現するためにOne-hotベクトル $\mathbf{y} \in\{0, 1\}^{n}$ を用いる.
-ここで $\mathbf{y}_i=1$ はサンプルが $i-1$ とラベル付けされていることを表す.
+ここで $\mathbf{y}\_i=1$ はサンプルが $i-1$ とラベル付けされていることを表す.
 予測を行うために,
 まず入力 $\mathbf{h}$ をn次元ベクトル $\mathbf{Z} \in \mathbb{R}^{n}$ に変換する線形層が必要である：
  
@@ -311,10 +311,10 @@ $$ \mathbf{z}=\mathbf{W}\mathbf{h}+\mathbf{b}\nonumber $$
  $z$ を全クラスに渡って離散的な確率密度関数に標準化する：
  
 
-$$ \hat{\mathbf{y}}_i=\operatorname{softmax}(z)_i=\frac{\exp \left(\mathbf{z}_i\right)}{\sum_j \exp \left(\mathbf{z}_j\right)},  i=1,  \ldots,  n\nonumber $$
+$$ \hat{\mathbf{y}}\_i=\operatorname{softmax}(z)\_i=\frac{\exp \left(\mathbf{z}\_i\right)}{\sum\_j \exp \left(\mathbf{z}\_j\right)},  i=1,  \ldots,  n\nonumber $$
 
  
-ここで,  $\mathbf{z}_i$ はベクトル $z$ のi番目の要素を表し,
+ここで,  $\mathbf{z}\_i$ はベクトル $z$ のi番目の要素を表し,
  $\hat{\mathbf{y}}_i$ はソフトマックス関数のi番目の出力を表す. 特に,
  $\hat{\mathbf{y}}_i$ は入力サンプルがラベル $i-1$ で予測される確率を表す.
 予測値
@@ -322,7 +322,7 @@ $$ \hat{\mathbf{y}}_i=\operatorname{softmax}(z)_i=\frac{\exp \left(\mathbf{z}_i\
 正解値と予測値の差を計算することができる：
  
 
-$$ \ell(\mathbf{y},  \hat{\mathbf{y}})=-\sum_{i=0}^{n-1} \mathbf{y}_i \log \left(\hat{\mathbf{y}}_i\right)\nonumber $$
+$$ \ell(\mathbf{y},  \hat{\mathbf{y}})=-\sum_{i=0}^{n-1} \mathbf{y}\_i \log \left(\hat{\mathbf{y}}\_i\right)\nonumber $$
 
  
 モデルを用いて推論する際には,

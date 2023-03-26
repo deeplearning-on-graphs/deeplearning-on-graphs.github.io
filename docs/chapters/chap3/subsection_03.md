@@ -86,7 +86,7 @@ $$ (f * w)(t)=\sum_{\tau=t-n}^{t+n} f(\tau) w(t-\tau)\nonumber $$
 
 <figure>
 
-<img src="./fig/fig3_6.png" width="75%"/>
+<img src="./fig/fig3_6.png" width="100%"/>
 
 <figcaption>図3.6 畳み込み層の例</figcaption>
 
@@ -125,7 +125,7 @@ $$ S(i,  j)=(I * K)(i,  j)=\sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(
 
 <figure>
 
-<img src="./fig/fig3_7.png" width="75%"/>
+<img src="./fig/fig3_7.png" width="100%"/>
 
 <figcaption>図3.7 密な接続とスパースな接続</figcaption>
 
@@ -137,13 +137,13 @@ $$ S(i,  j)=(I * K)(i,  j)=\sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(
 各入力ユニットと各出力ユニット間の相互作用を記述する独立なパラメータである.
 しかし, 畳み込み層においては層間の接続は疎になることが多い. 図3.7は,
 従来のニューラルネットワーク層と畳み込みニューラルネットワーク層の比較を示している.
-この図では, 1つの出力ユニット $S_3$ と,
- $S_3$ に影響を与える対応する入力ユニットを強調して表示している. 明らかに,
-左の密な結合の場合には,
+この図では, 1つの出力ユニット $S\_3$ と,
+ $S\_3$ に影響を与える対応する入力ユニットを強調して表示している.
+明らかに, 左の密な結合の場合には,
 1つの出力ユニットがすべての入力ユニットの影響を受けている. しかし,
 右の畳み込みニューラルネットワーク層では,
-出力ユニット $S_3$ は3つの入力ユニット $x_2$ ,  $x_3$ ,
- $x_4$ （ $S_3$ の「受容野」と呼ばれる）の影響を受けるだけである.
+出力ユニット $S\_3$ は3つの入力ユニット $x\_2$ ,  $x\_3$ ,
+ $x\_4$ （ $S\_3$ の「受容野」と呼ばれる）の影響を受けるだけである.
 スパースな接続の大きな利点は,
 計算効率を大きく向上させることができる点である.
 従来のニューラルネットワークの層では,
@@ -175,7 +175,7 @@ $$ S(i,  j)=(I * K)(i,  j)=\sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(
 
 <figure>
 
-<img src="./fig/fig3_8.png" width="75%"/>
+<img src="./fig/fig3_8.png" width="100%"/>
 
 <figcaption>図3.8 パラメータの共有</figcaption>
 
@@ -221,9 +221,9 @@ He et al.2016)．
 ここでは各カーネルの結果が各出力チャンネルに対応することになる.
  $L$ 個のチャンネルを持つ入力画像 $I$ を考えてみよう.
  $P$ 個のカーネルを用いた畳み込み演算は次のように定式化することができる：
- $$ S(i, j, p)=\left(I * K_p\right)(i, j)=\sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_p(i-\tau, j-\gamma, l), p=1, \ldots P
+ $$ S(i, j, p)=\left(I * K\_p\right)(i, j)=\sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K\_p(i-\tau, j-\gamma, l), p=1, \ldots P
     \tag{3.2} $$ 
-ここで $K_p$ は $p$ 番目のカーネルで、 $(2n+1)^2\cdot L$ 個のパラメータを持つ。
+ここで $K\_p$ は $p$ 番目のカーネルで、 $(2n+1)^2\cdot L$ 個のパラメータを持つ。
 出力は $P$ チャンネルから成る。
 
 多くの場合, 計算量をさらに減らすため,
@@ -238,13 +238,13 @@ He et al.2016)．
 のストライド付き畳み込みは，次のように表現することができる：
  
 
-$$ \begin{array}{l}S(i, j, p)= \\ \sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K_p((i-1) \cdot s+1-\tau,(j-1) \cdot s+1-\gamma, l)\end{array}\nonumber $$
+$$ \begin{array}{l}S(i, j, p)= \\ \sum_{l=1}^{L} \sum_{\tau=i-n}^{i+n} \sum_{j=\gamma-n}^{\gamma+n} I(\tau, \gamma, l) K\_p((i-1) \cdot s+1-\tau,(j-1) \cdot s+1-\gamma, l)\end{array}\nonumber $$
 
  
 
 <figure>
 
-<img src="./fig/fig3_9.png" width="75%"/>
+<img src="./fig/fig3_9.png" width="100%"/>
 
 <figcaption>図3.9 ストライド付き畳み込みの概念図</figcaption>
 
@@ -301,7 +301,7 @@ CNNで広く用いられている活性化関数はReLU関数である.
 
 <figure>
 
-<img src="./fig/fig3_10.png" width="75%"/>
+<img src="./fig/fig3_10.png" width="100%"/>
 
 <figcaption>図3.10 CNNにおけるプーリング</figcaption>
 
@@ -324,7 +324,7 @@ CNNで広く用いられている活性化関数はReLU関数である.
 
 <figure>
 
-<img src="./fig/fig3_11.png" width="75%"/>
+<img src="./fig/fig3_11.png" width="100%"/>
 
 <figcaption>図3.11 CNNにおけるプーリング</figcaption>
 
