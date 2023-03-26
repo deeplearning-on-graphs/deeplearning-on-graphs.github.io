@@ -44,7 +44,13 @@
 活性化関数はニューラルネットワークに非線形性を加え,
 これによって近似能力が大きく向上する.
 
-![順伝播型ネットワークの例](./fig/fig3_1.png)
+<figure>
+
+<img src="./fig/fig3_1.png" width="75%"/>
+
+<figcaption>図3.1 順伝播型ネットワークの例</figcaption>
+
+</figure>
 
 ### ネットワークの構成
 
@@ -57,7 +63,13 @@
 第2層のノード(または入力層の次の層のノード)は，入力層のすべてのノードに接続されている.
 これらの入力層のノードと第2層の任意のノードとの接続を図3.2に示す.
 
-![ノードでの操作](./fig/fig3_2.png)
+<figure>
+
+<img src="./fig/fig3_2.png" width="75%"/>
+
+<figcaption>図3.2 ノードでの操作</figcaption>
+
+</figure>
 
 1つのノードにおける演算は, 次の2つの部分から構成される:
 
@@ -133,7 +145,13 @@ $$ \operatorname{ReLU}(z)=\max \{0,  z\}\nonumber $$
 
  
 
-![ReLU関数](./fig/fig3_3.png)
+<figure>
+
+<img src="./fig/fig3_3.png" width="75%"/>
+
+<figcaption>図3.3 ReLU関数</figcaption>
+
+</figure>
 
 各層では, いくつかのユニットのみが活性化されるため, 効率的な計
 算が可能になる. ReLU関数の欠点は,
@@ -151,7 +169,13 @@ $$ \operatorname{LeakyReLU}(z)=\left\{\begin{array}{cc}0.01 z & z<0 \\ z & z \ge
 
  
 
-![ReLU関数の一般化](./fig/fig3_4.png)
+<figure>
+
+<img src="./fig/fig3_4.png" width="75%"/>
+
+<figcaption>図3.4 ReLU関数の一般化</figcaption>
+
+</figure>
 
 ReLU関数をさらに一般化したものが, ELU関数 (Exponential Linear
 Unit)である. ELU関数は図3.4(b)に示すように,
@@ -176,7 +200,13 @@ $$ \sigma(z)=\frac{1}{1+\exp (-z)}\nonumber $$
 
  
 
-![ロジスティックシグモイド関数とtanh関数](./fig/fig3_5.png)
+<figure>
+
+<img src="./fig/fig3_5.png" width="75%"/>
+
+<figcaption>図3.5 ロジスティックシグモイド関数とtanh関数</figcaption>
+
+</figure>
 
 図3.5(a)に示すように, シグモイド関数は入力を0から1の範囲に変換する.
 具体的には, 入力が負の値であるほど出力は0に近づき,

@@ -52,7 +52,13 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
 
 ### 逆伝播法
 
-![隣り合う層のニューロン](./fig/fig3_17.png)
+<figure>
+
+<img src="./fig/fig3_17.png" width="75%"/>
+
+<figcaption>図3.17 隣り合う層のニューロン</figcaption>
+
+</figure>
 
 勾配に基づく最適化を行うための重要なステップの1つは,
 すべてのパラメータに関する勾配を計算することである.
@@ -93,7 +99,13 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
     \end{aligned}
     \tag{3.17} $$ 
 
-![パスの分解](./fig/fig3_18.png)
+<figure>
+
+<img src="./fig/fig3_18.png" width="75%"/>
+
+<figcaption>図3.18 パスの分解</figcaption>
+
+</figure>
 
 図3.18に示したように,
  $\mathcal{P}$ に属する任意のパスは2つのパートにわけることができる：

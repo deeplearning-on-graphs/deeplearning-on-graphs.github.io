@@ -30,7 +30,13 @@ $$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x}))) $$
 ここで,
  $\ell(\mathbf{x}, \hat{\mathbf{x}})$ は $\mathbf{x}$ と $\hat{\mathbf{x}}$ の違いを表す.
 
-![オートエンコーダーの一般的な構成](./fig/fig3_16.png)
+<figure>
+
+<img src="./fig/fig3_16.png" width="75%"/>
+
+<figcaption>図3.16 オートエンコーダーの一般的な構成</figcaption>
+
+</figure>
 
 例えば, 平均二乗誤差を $l$ とすることができる. オートエンコーダーでは,
 「ボトルネック」の設計が重要である. 図3.15に示すように,
