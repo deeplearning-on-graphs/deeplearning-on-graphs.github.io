@@ -77,8 +77,10 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
  $o$ は出力層のユニットを表す.
  $\left(h^{r-1}, h^{r}\right)$ の間に1本しかエッジがないとすると,
 損失関数の微分はチェーン・ルールを使って次のように書くことができる：
+
  $$ \frac{\partial \mathcal{L}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \cdot \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h\_r\right)}} \forall r \in 1 \ldots k
-    \tag{3.16} $$ 
+    \tag{3.16} $$
+ 
 ここで, $w_{\left(h^{r-1}, h^{r}\right)}$ はユニット $h^{r-1}$ と $h^r$ の間のパラメータを表す.
 
 複数層のニューラルネットワークでは,
@@ -94,10 +96,13 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
 式(3.16)の右辺は2つの要素があり,
 後者は計算が面倒（後述）なのに対し、最初の部分（ $\Delta\left(h^{r}, o\right)=\frac{\partial \mathcal{L}}{\partial h^{r}}$ と式中に記載）は再帰的に計算が可能である.
 次に, 第一項を再帰的に評価する方法について説明する.
-第一項は以下のように計算することができる：  $$ \begin{aligned} 
+第一項は以下のように計算することができる：  
+
+$$ \begin{aligned} 
     \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}} \cdot \frac{\partial h^{r+1}}{\partial h^{r}}\right] 
     \end{aligned}
-    \tag{3.17} $$ 
+    \tag{3.17} 
+$$ 
 
 <figure>
 
@@ -120,7 +125,9 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
 式(3.17)は次のように簡略化することができる：
 
  $$ \begin{aligned} \Delta\left(h^{r}, o\right) &=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h\_k, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h\_k} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r+1}, \ldots, h\_k, o\right] \in \mathcal{P}_{r+1}^{\prime}} \frac{\partial o}{\partial h\_k} \prod_{i=r+1}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \\ &=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \frac{\partial h^{r+1}}{\partial h^{r}} \cdot \Delta\left(h^{r+1}, o\right) \end{aligned}
-    \tag{3.18} $$  ここで,
+    \tag{3.18} $$  
+    
+ここで,
  $\mathcal{E}$ はユニット $h^r$ から $(r+1)$ 番目の層のユニット $h^{r+1}$ への,
 存在しうる全てのエッジの集合を表す. 図3.18に図示したように,
  $(r+1)$ 番目の層の全てのユニットは $h^r$ につながっているため,
@@ -142,9 +149,11 @@ $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\ri
  $w_{\left(h^{r}, h^{r+1}\right)}$ はユニット $h^r$ と $h^{r+1}$ の間のパラメータである.
 これを用いると,
  $\Delta\left(h^{r}, o\right)$ を次のように書き換えることができる：
+ 
  $$ \Delta\left(h^{r}, o\right)=\sum_{\left(h^{r}, h^{r+1}\right) \in \mathcal{E}} \alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} \cdot \Delta\left(h^{r+1}, o\right)
     \tag{3.20} $$  ここまでが, 式(3.16)の前半部分の評価であり,
 後半部分については次のように評価することができる：
+
  $$ \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\alpha^{\prime}\left(a^{r}\right) \cdot h^{r-1}
     \tag{3.21} $$ 
 
