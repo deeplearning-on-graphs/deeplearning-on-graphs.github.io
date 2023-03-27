@@ -32,7 +32,7 @@ Network）である. RNNは, 系列の各要素に同じ関数を再帰的に適
 系列の長さに関係なく同じ関数を繰り返し適用できるため,
 長さの異なる配列を本質的に扱うことができる.
 
-### 伝統的なRNNの構成
+### 従来のRNNの構成
 
 長さ $n$ の系列は,
 （ $\mathbf{x^{(1)}},\mathbf{x^{(2)}},...,\mathbf{x^{(n)}}$ ）と表すことができる.
@@ -48,7 +48,7 @@ Network）である. RNNは, 系列の各要素に同じ関数を再帰的に適
 ニューラルネットワークのブロックは, 2つの入力と2つの出力をもつ.
 出力を $\mathbf{y^{(i)}}$ ,
 次の位置に流れる情報を $\mathbf{h^{(i)}}$ とする.
- $\mathbf{h^{(0)}}$ `<!-- -->`{=html}0で初期化されることが多い.
+最初の要素 $\mathbf{h^{(0)}}$ は0で初期化されることが多い.
  $i$ 番目の要素を処理する手順は, 次のように定式化できる：
 
  
@@ -57,7 +57,7 @@ $$ \begin{array}{l}\mathbf{h}^{(i)}=\alpha\_h\left(\mathbf{W}_{h h} \cdot \mathb
 
  
 
-ここで、 $\mathbf{W}_{h h},\mathbf{W}_{h x}, \mathbf{W}_{y h}$ は線形変換をする行列で,
+ここで、 $\mathbf{W}_{hh},\mathbf{W}_{hx}, \mathbf{W}_{yh}$ は線形変換をする行列で,
  $\mathbf{b}\_h, \mathbf{b}\_y$ はバイアス項,
  $\alpha\_h, \alpha\_y$ は活性化関数を表す.
 
@@ -80,7 +80,7 @@ al., 2014a) がある.
 
 <img src="./fig/fig3_12.png" width="100%"/>
 
-<figcaption>図3.12 伝統的なRNNの構成</figcaption>
+<figcaption>図3.12 従来のRNNの構成</figcaption>
 
 </figure>
 
