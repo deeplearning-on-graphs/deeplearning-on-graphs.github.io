@@ -31,7 +31,13 @@ graph)については本章の後半で見ていくことにする．
 
 無向グラフにおいては，ノード $v\_i$ が $v\_j$ と隣接していることと，ノード $v\_j$ が $v\_j$ と隣接していることは区別しないから，グラフ内の任意の $v\_i$ と $v\_j$ に対して， $\symbf{A}_{i,j} = \symbf{A}_{j,i}$ が成り立つ．したがって，無向グラフに対応する隣接行列は対称行列である．
 
-![ノード数5，エッジ数6のグラフ](./fig/fig2_1.pdf){width="0.5\\linewidth"}
+<figure>
+
+<img src="./fig/fig2_1.pdf" width="100%"/>
+
+<figcaption>図2.1 ノード数5，エッジ数6のグラフ</figcaption>
+
+</figure>{width="0.5\\linewidth"}
 
 
 <div class="eg">

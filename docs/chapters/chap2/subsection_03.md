@@ -189,7 +189,13 @@ $$ \symbf{A}^{k+1}_{i,j} = \sum^{N}_{h=1}\symbf{A}^{k}_{i,h}\cdot\symbf{A}_{h,j}
 </div>
 
 
-![ $2$ つの連結成分を持つグラフ](./fig/fig2_2.pdf){width="0.8\\linewidth"}
+<figure>
+
+<img src="./fig/fig2_2.pdf" width="100%"/>
+
+<figcaption>図2.2  $2$ つの連結成分を持つグラフ</figcaption>
+
+</figure>{width="0.8\\linewidth"}
 
 
 <div class="definition">

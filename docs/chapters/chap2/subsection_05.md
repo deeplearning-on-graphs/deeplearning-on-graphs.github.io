@@ -84,7 +84,13 @@ $$ \symbf{u}^T\_l \symbf{L}\symbf{u}_l = \lambda\_l \cdot\symbf{u}^T\_l\symbf{u}
 </div>
 w
 
-![グラフフーリエ基底の周波数](./fig/fig2_4.pdf){width="0.8\\linewidth"}
+<figure>
+
+<img src="./fig/fig2_4.pdf" width="100%"/>
+
+<figcaption>図2.4 グラフフーリエ基底の周波数</figcaption>
+
+</figure>{width="0.8\\linewidth"}
 
 グラフフーリエ係数 $\hat{\symbf{f}}$ は，信号 $\symbf{f}$ をスペクトル(spectral)領域で表現したものである．また，スペクトル表現 $\hat{\symbf{f}}$ を空間(spatial)表現 $\symbf{f}$ に変換する逆グラフフーリエ変換も存在しており，以下のように定義される．
  

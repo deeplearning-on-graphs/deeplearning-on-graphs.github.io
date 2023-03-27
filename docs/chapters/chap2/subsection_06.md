@@ -21,7 +21,13 @@ Heterogeneous
 </div>
 
 
-![Heterogeneousグラフの例：学術情報ネットワーク](./fig/fig2_6.pdf){width="0.73\\linewidth"}
+<figure>
+
+<img src="./fig/fig2_6.pdf" width="100%"/>
+
+<figcaption>図2.6 Heterogeneousグラフの例：学術情報ネットワーク</figcaption>
+
+</figure>{width="0.73\\linewidth"}
 
 ### 二部グラフ
 
@@ -36,7 +42,13 @@ Heterogeneous
 </div>
 
 
-![二部グラフの例：オンラインショッピング](./fig/fig2_7.pdf){width="0.4\\linewidth"}
+<figure>
+
+<img src="./fig/fig2_7.pdf" width="100%"/>
+
+<figcaption>図2.7 二部グラフの例：オンラインショッピング</figcaption>
+
+</figure>{width="0.4\\linewidth"}
 
 ### Multidimensionalグラフ
 
@@ -68,7 +80,13 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
 </div>
 
 
-![符号付きグラフの例：友人関係](./fig/fig2_8.pdf){width="0.6\\linewidth"}
+<figure>
+
+<img src="./fig/fig2_8.pdf" width="100%"/>
+
+<figcaption>図2.8 符号付きグラフの例：友人関係</figcaption>
+
+</figure>{width="0.6\\linewidth"}
 
 ### ハイパーグラフ
 
@@ -87,7 +105,13 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
 </div>
 
 
-![ハイパーグラフの例：学術論文ネットワーク](./fig/fig2_9.pdf){width="0.7\\linewidth"}
+<figure>
+
+<img src="./fig/fig2_9.pdf" width="100%"/>
+
+<figcaption>図2.9 ハイパーグラフの例：学術論文ネットワーク</figcaption>
+
+</figure>{width="0.7\\linewidth"}
 
 ### ダイナミックグラフ
 
@@ -96,7 +120,13 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
 図2.10にダイナミックグラフの模式図を示す．各エッジに時点が関連付けられていて，ノードの時点は，そのノードを含むエッジが出現した時点が与えられる．
 以下に，ダイナミックグラフの形式的な定義を与えた．
 
-![ダイナミックグラフの模式図](./fig/fig2_10.pdf){width="0.6\\linewidth"}
+<figure>
+
+<img src="./fig/fig2_10.pdf" width="100%"/>
+
+<figcaption>図2.10 ダイナミックグラフの模式図</figcaption>
+
+</figure>{width="0.6\\linewidth"}
 
 
 <div class="definition">
