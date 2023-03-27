@@ -196,10 +196,8 @@ LSTMの忘却ゲートと入力ゲートを「更新ゲート」として統合�
 よりシンプルなゲート付きRNNモデルを構成することができる.
 GRUは以下のように定式化される：
 
- $$ \begin{split}
-        \begin{array}{l}\mathbf{z}\_t=\sigma\left(\mathbf{W}\_z \cdot \mathbf{x}^{(t)}+\mathbf{U}\_z \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_z\right) \\ \mathbf{r}\_t=\sigma\left(\mathbf{W}\_r \cdot \mathbf{x}^{(t)}+\mathbf{U}\_r \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_r\right) \\ \tilde{\mathbf{h}}^{(t)}=\tanh \left(\mathbf{W} \cdot \mathbf{x}^{(t)}+\mathbf{U} \cdot\left(\mathbf{r}\_t \odot \mathbf{h}^{(t-1)}\right)+\mathbf{b}\right) \\ \mathbf{h}^{(t)}=\left(\mathbf{1}-\mathbf{z}\_t\right) \odot \tilde{\mathbf{h}}^{(t)}+\mathbf{z}\_t \odot \mathbf{h}^{(t-1)}\end{array}
-        \tag{3.6}
-    \end{split} $$ 
+ $$ \begin{array}{l}\mathbf{z}\_t=\sigma\left(\mathbf{W}\_z \cdot \mathbf{x}^{(t)}+\mathbf{U}\_z \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_z\right) \\ \mathbf{r}\_t=\sigma\left(\mathbf{W}\_r \cdot \mathbf{x}^{(t)}+\mathbf{U}\_r \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_r\right) \\ \tilde{\mathbf{h}}^{(t)}=\tanh \left(\mathbf{W} \cdot \mathbf{x}^{(t)}+\mathbf{U} \cdot\left(\mathbf{r}\_t \odot \mathbf{h}^{(t-1)}\right)+\mathbf{b}\right) \\ \mathbf{h}^{(t)}=\left(\mathbf{1}-\mathbf{z}\_t\right) \odot \tilde{\mathbf{h}}^{(t)}+\mathbf{z}\_t \odot \mathbf{h}^{(t-1)}\end{array}
+        \tag{3.6} $$ 
 
 ここで,  $\mathbf{z}_t$ は更新ゲートであり,
  $\mathbf{r}_t$ はリセットゲートである. 便宜上,
