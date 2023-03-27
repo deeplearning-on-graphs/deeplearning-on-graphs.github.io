@@ -203,11 +203,8 @@ GRUは以下のように定式化される：
  $\mathbf{r}_t$ はリセットゲートである. 便宜上,
 この式(3.6)のプロセスを次のようにまとめる：
 
- 
-
-$$ \mathbf{h}^{(t)}=\operatorname{GRU}\left(\mathbf{x}^{(t)}, \mathbf{h}^{(t-1)}\right) $$
-
- 
+ $$ \mathbf{h}^{(t)}=\operatorname{GRU}\left(\mathbf{x}^{(t)}, \mathbf{h}^{(t-1)}\right)
+    \tag{3.7} $$ 
 
 <figure>
 

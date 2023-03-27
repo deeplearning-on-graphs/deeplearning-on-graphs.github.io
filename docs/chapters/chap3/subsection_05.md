@@ -24,11 +24,8 @@
 デコーダ部分 $\mathbf{h}$ を利用して入力 $\mathbf{x}$ を再構成した $\hat{\mathbf{x}}$ を出力する.
 オートエンコーダーのネットワークは次の再構成誤差を最小化することで学習させることができる：
 
- 
-
-$$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x}))) $$
-
- 
+ $$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x})))
+    \tag{3.8} $$ 
 
 ここで,
  $\ell(\mathbf{x}, \hat{\mathbf{x}})$ は $\mathbf{x}$ と $\hat{\mathbf{x}}$ の違いを表す.
@@ -75,11 +72,8 @@ $$ \ell(\mathbf{x}, \hat{\mathbf{x}})=\ell(\mathbf{x}, g(f(\mathbf{x}))) $$
 オートエンコーダーが単に「恒等関数」を学習してしまうことを防ぐため,
 オートエンコーダーの損失関数に正則化項を以下のように入れることができる：
 
- 
-
-$$ \ell(\mathbf{x}, g(f(\mathbf{x})))+\eta \cdot \Omega(\mathbf{h}) $$
-
- 
+ $$ \ell(\mathbf{x}, g(f(\mathbf{x})))+\eta \cdot \Omega(\mathbf{h})
+    \tag{3.9} $$ 
 
 ここで,  $\Omega(\mathbf{h})$ は正則化項で,
  $\eta$ は正則化項の大きさを制御するハイパーパラメータである.
@@ -87,11 +81,8 @@ $$ \ell(\mathbf{x}, g(f(\mathbf{x})))+\eta \cdot \Omega(\mathbf{h}) $$
 (Olshausen and Field, 1997)の研究では,
 符号化表現 $\mathbf{h}$ の $L\_1$ ノルムが正則化項として次のように導入されていた：
 
- 
-
-$$ \Omega(\mathbf{h})=\|\mathbf{h}\|\_1 $$
-
- 
+ $$ \Omega(\mathbf{h})=\|\mathbf{h}\|\_1
+    \tag{3.10} $$ 
 
  $L\_1$ ノルム正則化項によって $\mathbf{h}$ はスパースになるよう誘導される.
 こうしたオートエンコーダーは「スパースオートエンコーダー」とも呼ばれる.
@@ -103,13 +94,10 @@ $$ \Omega(\mathbf{h})=\|\mathbf{h}\|\_1 $$
 これではどのような入力がこのコードにつながるのかが明示的にわからない.
 そこで, 関係を明示的に表現するため, 与えられた入力 $\mathbf{x}$ に対して,
 オートエンコーダーで学習したその符号化表現を $\mathbf{h}(x)$ とする.
-サンプル集合 $\left\\{\mathbf{X}\_{(i)}\right\\}\_{i=1}^{m}$ の符号化表現の平均は次のように書くことができる：
+サンプル集合 $\left\{\mathbf{X}\_{(i)}\right\}\_{i=1}^{m}$ の符号化表現の平均は次のように書くことができる：
 
- 
-
-$$ \overline{\mathbf{h}}=\frac{1}{m} \sum_{i=1}^{m} \mathbf{h}\left(\mathbf{x}\_{(i)}\right) $$
-
- 
+ $$ \overline{\mathbf{h}}=\frac{1}{m} \sum_{i=1}^{m} \mathbf{h}\left(\mathbf{x}\_{(i)}\right)
+    \tag{3.11} $$ 
 
 次に, 隠れ符号化表現の各要素が小さな値 $\rho$ に近づくようにしたい.
 例えば,  $\rho$ を0.05とする. (Ng et al., n.d.)の研究では,
