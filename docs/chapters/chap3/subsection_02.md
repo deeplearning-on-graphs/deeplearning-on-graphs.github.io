@@ -95,12 +95,12 @@ $$ h=\alpha\left(b+\sum_{i=1}^{4} \mathbf{w}\_i \cdot \mathbf{x}\_i\right)\nonum
 
  
 
-$$ \mathbf{h}\_j^{(k+1)}=\alpha\left(b\_j^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}_{j i}^{(k)} \mathbf{h}\_i^{(k)}\right)\tag{3.1} $$
+$$ \mathbf{h}\_j^{(k+1)}=\alpha\left(b\_j^{(k)}+\sum_{i=1}^{N^{(k)}} \mathbf{W}\_{j i}^{(k)} \mathbf{h}\_i^{(k)}\right)\tag{3.1} $$
 
  
 
 ここで,
- $\mathbf{W}_{j i}^{(k)}$ は $\mathbf{h}\_i^{(k)}$ と $\mathbf{h}\_i^{(k+1)}$ をつなげる重みに対応し,
+ $\mathbf{W}\_{j i}^{(k)}$ は $\mathbf{h}\_i^{(k)}$ と $\mathbf{h}\_i^{(k+1)}$ をつなげる重みに対応し,
  $b\_j^{(k)}$ はバイアス項を表す.
 k+1層の全要素を計算する演算を行列形式で書くと次のようになる：
 
@@ -112,7 +112,7 @@ $$ \mathbf{h}^{(k+1)}=\boldsymbol{\alpha}\left(\mathbf{b}^{(k)}+\mathbf{W}^{(k)}
 
 ここで,
  $\mathbf{W}^{(k)} \in \mathbb{R}^{N^{(k+1)} \times N^{(k)}}$ は全てのウェイトを含み,
-(j, i)要素は式(3.1)の $\mathbf{W}_{j i}^{(k)}$ である.
+(j, i)要素は式(3.1)の $\mathbf{W}\_{j i}^{(k)}$ である.
  $\mathbf{b}^{(k)}$ は全てのバイアス項を含む. 特に,
 入力層においては $\mathbf{h}^{(0)}=\mathbf{x}$ となる.
 ニューラルネットワークのk+1層目の演算を表すのに $f^{k+1}$ を使っていたことを思い出すと,

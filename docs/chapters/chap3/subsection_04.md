@@ -53,7 +53,7 @@ Network）である. RNNは, 系列の各要素に同じ関数を再帰的に適
 
  
 
-$$ \begin{array}{l}\mathbf{h}^{(i)}=\alpha_h\left(\mathbf{W}_{h h} \cdot \mathbf{h}^{(i-1)}+\mathbf{W}_{h x} \mathbf{x}^{(i-1)}+\mathbf{b}\_h\right) \nonumber \\ \mathbf{y}^{(i)}=\alpha\_y\left(\mathbf{W}_{y h} \mathbf{h}^{(i)}+\mathbf{b}\_y\right)\end{array}\nonumber $$
+$$ \begin{array}{l}\mathbf{h}^{(i)}=\alpha\_h\left(\mathbf{W}\_{hh} \cdot \mathbf{h}^{(i-1)}+\mathbf{W}\_{hx} \mathbf{x}^{(i-1)}+\mathbf{b}\_h\right) \nonumber \\ \mathbf{y}^{(i)}=\alpha\_y\left(\mathbf{W}\_{yh} \mathbf{h}^{(i)}+\mathbf{b}\_y\right)\end{array}\nonumber $$
 
  
 
@@ -176,11 +176,9 @@ $$ \mathbf{h}^{(t)}=\mathbf{o}\_t \odot \tanh \left(\mathbf{C}^{(t)}\right)\nonu
 
 LSTMの全体のプロセスは次のようにまとめることができる：
 
- $$ \begin{split}
-    \begin{array}
+ $$ \begin{array}
     {l}\mathbf{f}\_t=\sigma\left(\mathbf{W}\_f \cdot \mathbf{x}^{(t)}+\mathbf{U}\_f \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_f\right) \\ \mathbf{i}\_t=\sigma\left(\mathbf{W}\_i \cdot \mathbf{x}^{(t)}+\mathbf{U}\_i \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_i\right) \\ \mathbf{o}\_t=\sigma\left(\mathbf{W}\_o \cdot \mathbf{x}^{(t)}+\mathbf{U}\_o \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_o\right) \\ \tilde{\mathbf{C}}^{(t)}=\tanh \left(\mathbf{W}\_c \cdot \mathbf{x}^{(t)}+\mathbf{U}\_c \cdot \mathbf{h}^{(t-1)}+\mathbf{b}\_c\right) \\ \mathbf{C}^{(t)}=\mathbf{f}\_t \odot \mathbf{C}^{(t-1)}+\mathbf{i}\_t \odot \tilde{\mathbf{C}}^{(t)} \\ \mathbf{h}^{(t)}=\mathbf{o}\_t \odot \tanh \left(\mathbf{C}^{(t)}\right)
     \end{array}
-    \end{split}
     \tag{3.4} $$ 
 
 便宜上, 式(3.4)で表される,
