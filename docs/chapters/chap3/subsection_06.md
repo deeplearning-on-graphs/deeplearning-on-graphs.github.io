@@ -20,11 +20,8 @@
 一次の繰り返し最適化アルゴリズムである. 各繰り返しにおいて,
 以下のように負の勾配の方向へ一歩ずつ, パラメータ $\mathbf{W}$ を更新する：
 
- 
-
-$$ \mathbf{W}^{\prime}=\mathbf{W}-\eta \cdot \nabla_{\mathbf{W}} \mathcal{L}(\mathbf{W}) $$
-
- 
+ $$ \mathbf{W}^{\prime}=\mathbf{W}-\eta \cdot \nabla_{\mathbf{W}} \mathcal{L}(\mathbf{W})
+    \tag{3.13} $$ 
 
 ここで, $\nabla_{\mathbf{W}} \mathcal{L}(\mathbf{W})$ は勾配を表し,
  $\eta$ は学習率を表す. 学習率は正の値で,
@@ -34,21 +31,18 @@ $$ \mathbf{W}^{\prime}=\mathbf{W}-\eta \cdot \nabla_{\mathbf{W}} \mathcal{L}(\ma
 損失関数は通常, 学習サンプルのペナルティの総和である.
 したがって，損失関数を以下のように書くことができる：
 
- 
-
-$$ \mathcal{L}(\mathbf{W})=\sum_{i=1}^{N\_s} \mathcal{L}\_i(\mathbf{W}) $$
-
- 
+ $$ \mathcal{L}(\mathbf{W})=\sum_{i=1}^{N\_s} \mathcal{L}\_i(\mathbf{W})
+    \tag{3.14} $$ 
 
 ここで,  $\mathcal{L}\_i(\mathbf{W})$ は $i$ 番目のサンプルの損失を表し,
  $N\_s$ はサンプル数を表す. 多くの場合,
-直接 $\nabla_{\mathbf{W}} \mathcal{L}(\mathbf{W})$ を計算するのは非常に手間がかかる.
+直接 $\nabla_{\mathbf{W}}\mathcal{L}(\mathbf{W})$ を計算するのは非常に手間がかかる.
 そこで, 深層ニューラルネットワークの学習で非常によく使われている,
 ミニバッチ勾配降下法が登場する. ミニバッチ勾配降下法では,
 すべての学習サンプルに対して勾配を評価するのではなく,
 学習データから少量のサンプルを抽出し, それを使って勾配を推定する.
 この推定された勾配を利用してパラメータを更新する. 具体的には,
-勾配は $\sum_{j \in \mathcal{M}} \nabla_{\mathbf{W}} \mathcal{L}\_j(\mathbf{W})$ として推定される.
+勾配は $\sum_{j\in\mathcal{M}}\nabla_{\mathbf{W}}\mathcal{L}\_j(\mathbf{W})$ として推定される.
 ここで, $\mathcal{M}$ はミニバッチのサンプル集合を表す. Adagrad (Duchi et
 al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
 などの深層ニューラルネットワークの学習のため,
@@ -84,7 +78,7 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
 損失関数の微分はチェーン・ルールを使って次のように書くことができる：
 
  $$ \frac{\partial \mathcal{L}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}=\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right] \cdot \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h\_r\right)}} \forall r \in 1 \ldots k
-    \tag{3.16} $$ 
+    \tag{3.15} $$ 
 
 ここで, $w_{\left(h^{r-1}, h^{r}\right)}$ はユニット $h^{r-1}$ と $h^r$ の間のパラメータを表す.
 
@@ -92,11 +86,8 @@ al., 2011), Adadelta (Zeiler, 2012), および Adam (Kingma and Ba, 2014)
  $\left(h^{r-1}, h^{r}\right)$ の間に複数パスある場合が多い. したがって,
 上の計算で得られた勾配を合計する必要がある：
 
- 
-
-$$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrace{\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]}_{\text {Backpropagation computes } \Delta\left(h^{r}, o\right)=\frac{\partial \mathcal{L}}{\partial h^{r}}} \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}} $$
-
- 
+ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrace{\frac{\partial \mathcal{L}}{\partial o} \cdot\left[\sum_{\left[h^{r}, h^{r+1}, \ldots, h^{k}, o\right] \in \mathcal{P}} \frac{\partial o}{\partial h^{k}} \prod_{i=r}^{k-1} \frac{\partial h^{i+1}}{\partial h^{i}}\right]}_{\text {Backpropagation computes } \Delta\left(h^{r}, o\right)=\frac{\partial \mathcal{L}}{\partial h^{r}}} \frac{\partial h^{r}}{\partial w_{\left(h^{r-1}, h^{r}\right)}}
+    \tag{3.16} $$ 
 
 ここで,  $\mathcal{P}$ は $h^r$ から $o$ に至るパスの集合を表し,
 これは $\left(h^{r-1}, h^{r}\right)$ まで拡張することができる.
@@ -147,11 +138,8 @@ $$ \frac{\partial \mathcal{L}}{\partial w\left(h^{r-1}, h^{r}\right)}=\underbrac
 すなわち,  $h^{r+1}=\alpha\left(a^{r+1}\right)$ とする.
  $\frac{\partial h^{r+1}}{\partial h^{r}}$ を評価するために次のようにチェーン・ルールを使う：
 
- 
-
-$$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\right)}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\right)}{\partial a^{r+1}} \cdot \frac{\partial a^{r+1}}{\partial h^{r}}=\alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)} $$
-
- 
+ $$ \frac{\partial h^{r+1}}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\right)}{\partial h^{r}}=\frac{\partial \alpha\left(a^{r+1}\right)}{\partial a^{r+1}} \cdot \frac{\partial a^{r+1}}{\partial h^{r}}=\alpha^{\prime}\left(a^{r+1}\right) \cdot w_{\left(h^{r}, h^{r+1}\right)}
+    \tag{3.19} $$ 
 
 ここで,
  $w_{\left(h^{r}, h^{r+1}\right)}$ はユニット $h^r$ と $h^{r+1}$ の間のパラメータである.
