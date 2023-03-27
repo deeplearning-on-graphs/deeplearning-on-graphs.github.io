@@ -53,11 +53,11 @@ Network）である. RNNは, 系列の各要素に同じ関数を再帰的に適
 
  
 
-$$ \begin{array}{l}\mathbf{h}^{(i)}=\alpha\_h\left(\mathbf{W}_{h h} \cdot \mathbf{h}^{(i-1)}+\mathbf{W}_{h x} \mathbf{x}^{(i-1)}+\mathbf{b}\_h\right) \nonumber \\ \mathbf{y}^{(i)}=\alpha\_y\left(\mathbf{W}_{y h} \mathbf{h}^{(i)}+\mathbf{b}\_y\right)\end{array}\nonumber $$
+$$ \begin{array}{l}\mathbf{h}^{(i)}=\alpha_h\left(\mathbf{W}_{h h} \cdot \mathbf{h}^{(i-1)}+\mathbf{W}_{h x} \mathbf{x}^{(i-1)}+\mathbf{b}\_h\right) \nonumber \\ \mathbf{y}^{(i)}=\alpha\_y\left(\mathbf{W}_{y h} \mathbf{h}^{(i)}+\mathbf{b}\_y\right)\end{array}\nonumber $$
 
  
 
-ここで、 $\mathbf{W}_{hh},\mathbf{W}_{hx}, \mathbf{W}_{yh}$ は線形変換をする行列で,
+ここで、 $\mathbf{W}\_{hh},\mathbf{W}\_{hx}, \mathbf{W}\_{yh}$ は線形変換をする行列で,
  $\mathbf{b}\_h, \mathbf{b}\_y$ はバイアス項,
  $\alpha\_h, \alpha\_y$ は活性化関数を表す.
 
