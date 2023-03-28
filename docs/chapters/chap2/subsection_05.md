@@ -3,7 +3,7 @@
 [章目次](./chap2.md)
 ## 2.5. グラフ信号処理
 
-現実世界で現れる多くのグラフでは，各ノードに特徴や属性が与えられている場合が多い．このようなグラフは，構造情報（ノード間の接続性）とデータ（ノードの属性）の両方を捉えた，「信号(シグナル)を持つグラフ」として見ることができる．信号付きのグラフは「グラフ $\sgraph$ 」と，「ノードを実数値に写像する，グラフ領域で定義された写像 $f$ 」から構成される．
+現実世界で現れる多くのグラフでは，各ノードに特徴や属性が与えられている場合が多い．このようなグラフは，構造情報（ノード間の接続性）とデータ（ノードの属性）の両方を捉えた，「信号(シグナル)を持つグラフ」として見ることができる．信号付きのグラフは「グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ 」と，「ノードを実数値に写像する，グラフ領域で定義された写像 $f$ 」から構成される．
 数学的には，この写像は以下のように表される．
  
 
@@ -32,7 +32,7 @@ $$ f\colon \nodes \rightarrow \mathbb{R}^{N\times d}. $$
 古典的なフーリエ変換(Bracewell, n.d.)は，
  
 
-$$ \hat{f}(\xi) = \langle f(t),\exp(-2\pi it \xi)\rangle = \int^{\infty}_{-\infty}f(t)\exp (-2\pi i t \xi) dt $$
+$$ \hat{f}(\xi) = \langle f(t),\exp(-2\pi it \xi)\rangle = \int^{\infty}\_{-\infty}f(t)\exp (-2\pi i t \xi) dt $$
 
  
 と定義される．
@@ -47,7 +47,7 @@ $$ \hat{f}(\xi) = \langle f(t),\exp(-2\pi it \xi)\rangle = \int^{\infty}_{-\inft
 
  
 
-$$ \hat{\symbf{f}}[l] = \langle\symbf{f},\symbf{u}_l \rangle = \sum^{N}_{i=1}\symbf{f}[i]\symbf{u}_l[i]. $$
+$$ \hat{\symbf{f}}[l] = \langle\symbf{f},\symbf{u}_l \rangle = \sum^{N}\_{i=1}\symbf{f}[i]\symbf{u}_l[i]. $$
 
  
 
@@ -86,7 +86,7 @@ w
 
 <figure>
 
-<img src="./fig/fig2_4.pdf" width="100%"/>
+<img src="./fig/fig2_4.png" width="100%"/>
 
 <figcaption>図2.4 グラフフーリエ基底の周波数</figcaption>
 
@@ -95,7 +95,7 @@ w
 グラフフーリエ係数 $\hat{\symbf{f}}$ は，信号 $\symbf{f}$ をスペクトル(spectral)領域で表現したものである．また，スペクトル表現 $\hat{\symbf{f}}$ を空間(spatial)表現 $\symbf{f}$ に変換する逆グラフフーリエ変換も存在しており，以下のように定義される．
  
 
-$$ \symbf{f}[i] = \sum^{N}_{l=1}\hat{\symbf{f}}[l]\symbf{u}_l[i]. $$
+$$ \symbf{f}[i] = \sum^{N}\_{l=1}\hat{\symbf{f}}[l]\symbf{u}_l[i]. $$
 
  
 この変換は，次のように行列形式で表すこともできる．

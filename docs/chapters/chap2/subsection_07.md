@@ -32,7 +32,7 @@
 <strong>定義 2.41 ノード分類</strong>
 
 
-ノード集合 $\nodes$ とエッジ集合 $\edges$ を持つグラフを $\sgraph$ と表す． $\nodes$ のノードの中にはラベルが貼られているものがあり，このラベルが付いたノード集合を $\nodes\_l\subset\nodes$ と表す．残りのノードはラベルを持たないので，このラベルがないノード集合を $\nodes\_u$ と表す．これらの集合は， $\nodes\_l\cup\nodes\_u = \nodes$ かつ $\nodes\_l\cap\nodes\_u = \emptyset$ を満たす．ノード分類タスクの目的は，ラベルのないノード( $v\in \nodes\_u$ )のラベルを予測する写像 $\phi$ を， $\g$ と $\nodes\_l$ のラベルを活用して学習することにある．
+ノード集合 $\nodes$ とエッジ集合 $\edges$ を持つグラフを $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ と表す． $\nodes$ のノードの中にはラベルが貼られているものがあり，このラベルが付いたノード集合を $\nodes\_l\subset\nodes$ と表す．残りのノードはラベルを持たないので，このラベルがないノード集合を $\nodes\_u$ と表す．これらの集合は， $\nodes\_l\cup\nodes\_u = \nodes$ かつ $\nodes\_l\cap\nodes\_u = \emptyset$ を満たす．ノード分類タスクの目的は，ラベルのないノード( $v\in \nodes\_u$ )のラベルを予測する写像 $\phi$ を， $\g$ と $\nodes\_l$ のラベルを活用して学習することにある．
 
 </div>
 
@@ -61,7 +61,7 @@ and Adar, 2003)やナレッジグラフ補完(Nickel et al.,
 <strong>定義
 2.43 リンク予測</strong>
 
- $\nodes$ をノード集合， $\edges$ をエッジ集合とするグラフを $\sgraph$ とする． $\nodes$ 中のノード間の可能な全てのエッジを $\symbfscr{M}$ とすると， $\symbfscr{M}$ を全体とした $\edges$ の補集合を $\edges^{\prime} = \symbfscr{M} - \edges$ と表す．集合 $\edges^{\prime}$ にはノード間の未観測のエッジが含まれる．リンク予測タスクの目標は，最も可能性の高いエッジを予測することである．具体的には， $\edges^{\prime}$ 内の各エッジにスコアを割り当てることができる．これは，それらのエッジが存在しているか，又は将来現れる可能性がどの程度あるかを示している．
+ $\nodes$ をノード集合， $\edges$ をエッジ集合とするグラフを $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ とする． $\nodes$ 中のノード間の可能な全てのエッジを $\symbfscr{M}$ とすると， $\symbfscr{M}$ を全体とした $\edges$ の補集合を $\edges^{\prime} = \symbfscr{M} - \edges$ と表す．集合 $\edges^{\prime}$ にはノード間の未観測のエッジが含まれる．リンク予測タスクの目標は，最も可能性の高いエッジを予測することである．具体的には， $\edges^{\prime}$ 内の各エッジにスコアを割り当てることができる．これは，それらのエッジが存在しているか，又は将来現れる可能性がどの程度あるかを示している．
 
 </div>
 
@@ -93,7 +93,7 @@ and Leskovec(2015)を参照せよ．
 <strong>定義 2.45 グラフ分類</strong>
 
 
- $y\_i$ をグラフ $\g\_i$ のラベルとする，ラベル付きグラフの集合 $\symbfscr{D} = \left\{(\g\_i, y\_i)\right\}$ が与えられたとき，グラフ分類タスクの目的は， $\symbfscr{D}$ を使ってラベルのないグラフが持つラベルを予測するような写像 $\phi$ を学習することにある．
+ $y\_i$ をグラフ $\g\_i$ のラベルとする，ラベル付きグラフの集合 $\symbfscr{D} = \left\\{(\g\_i, y\_i)\right\\}$ が与えられたとき，グラフ分類タスクの目的は， $\symbfscr{D}$ を使ってラベルのないグラフが持つラベルを予測するような写像 $\phi$ を学習することにある．
 
 </div>
 

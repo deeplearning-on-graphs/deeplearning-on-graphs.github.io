@@ -13,7 +13,7 @@
  
 <strong>定義 2.27 ラプラシアン行列</strong>
 
- $\symbf{A}$ を隣接行列とするグラフ $\sgraph$ に対して，ラプラシアン行列は以下のように定義される．
+ $\symbf{A}$ を隣接行列とするグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対して，ラプラシアン行列は以下のように定義される．
 
  
 
@@ -32,7 +32,7 @@ $$ \symbf{L} = \symbf{D} - \symbf{A}. $$
 <strong>定義 2.28 正規化ラプラシアン行列</strong>
 
 
- $\symbf{A}$ を隣接行列とするグラフ $\sgraph$ について，その正規化ラプラシアン行列は以下のように定義される．
+ $\symbf{A}$ を隣接行列とするグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ について，その正規化ラプラシアン行列は以下のように定義される．
 
  
 
@@ -50,8 +50,8 @@ $$ \symbf{L} = \symbf{D}^{-\tfrac{1}{2}}(\symbf{D} - \symbf{A})\symbf{D}^{-\tfra
     &= (\symbf{D} - \symbf{A})\symbf{f}\\
     &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\end{aligned} $$ 
  $\symbf{h}$ の $i$ 番目の要素は以下のようになる．  $$ \begin{aligned}
-\symbf{h}[i] &= d(v\_i)\cdot \symbf{f}[i] - \sum^{N}_{j=1}\symbf{A}_{i,j}\cdot\symbf{f}[j]\notag\\
-&= d(v\_i)\cdot\symbf{f}[i] - \sum_{v\_j\in \symbfscr{N}(v\_i)}\symbf{A}_{i,j}\cdot\symbf{f}[j] \notag\\
+\symbf{h}[i] &= d(v\_i)\cdot \symbf{f}[i] - \sum^{N}\_{j=1}\symbf{A}\_{i,j}\cdot\symbf{f}[j]\notag\\
+&= d(v\_i)\cdot\symbf{f}[i] - \sum_{v\_j\in \symbfscr{N}(v\_i)}\symbf{A}\_{i,j}\cdot\symbf{f}[j] \notag\\
 &= \sum_{v\_j\in \symbfscr{N}(v\_i)}(\symbf{f}[i] - \symbf{f}[j]).\end{aligned} $$ 
 式(2.9)から明らかのように， $\symbf{h}[i]$ は，ノード $v\_i$ とその近傍ノード $\symbfscr{N}(v\_i)$ との間における， $\symbf{f}$ の差を合計したものになる．次に， $\symbf{f}^{T}\symbf{L}\symbf{f}$ を以下のように求める．
  $$ \begin{aligned}
@@ -70,7 +70,7 @@ $$ \symbf{L} = \symbf{D}^{-\tfrac{1}{2}}(\symbf{D} - \symbf{A})\symbf{D}^{-\tfra
  
 <strong>定理 2.29</strong>
 
-グラフ $\sgraph$ について，ラプラシアン行列 $\symbf{L}$ の固有値は非負である．
+グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ について，ラプラシアン行列 $\symbf{L}$ の固有値は非負である．
 
 ::: prf
 ラプラシアン行列 $\symbf{L}$ の固有値を $\lambda$ とし，対応する正規化固有ベクトルを $\symbf{u}$ とする．固有値と固有ベクトルの定義によれば， $\lambda\symbf{u} = \symbf{L}\symbf{u}$ であり， $\symbf{u}$ は非ゼロの単位ベクトルで $\symbf{u}^{T}\symbf{u} = 1$ である．したがって，
