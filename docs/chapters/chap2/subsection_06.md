@@ -16,7 +16,7 @@ graph)に関する形式的定義を紹介していく．
 <strong>定義 2.34 Heterogeneousグラフ</strong>
 
 Heterogeneous
-グラフ $\g$ は，ノード集合 $\nodes = \left\\{v\_1,\dots,v\_N\right\\}$ とエッジ集合 $\edges=\left\\{e\_1,\dots,e\_M\right\\}$ で構成され，各ノードと各エッジには"タイプ"が関連付けられている．ノードタイプの集合を $\symbfscr{T}_n$ ，エッジタイプの集合を $\symbfscr{T}_e$ とする．そして各ノードと各エッジをそれぞれのタイプに対応付ける $2$ つの写像 $\phi\_n\colon \nodes\rightarrow\symbfscr{T}_n$ と $\phi\_e\colon \edges\rightarrow\symbfscr{T}_e$ が存在している．
+グラフ $\g$ は，ノード集合 $\symbfscr{V} = \left\\{v\_1,\dots,v\_N\right\\}$ とエッジ集合 $\edges=\left\\{e\_1,\dots,e\_M\right\\}$ で構成され，各ノードと各エッジには"タイプ"が関連付けられている．ノードタイプの集合を $\symbfscr{T}_n$ ，エッジタイプの集合を $\symbfscr{T}_e$ とする．そして各ノードと各エッジをそれぞれのタイプに対応付ける $2$ つの写像 $\phi\_n\colon \symbfscr{V}\rightarrow\symbfscr{T}_n$ と $\phi\_e\colon \edges\rightarrow\symbfscr{T}_e$ が存在している．
 
 </div>
 
@@ -31,13 +31,13 @@ Heterogeneous
 
 ### 二部グラフ
 
-二部グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ におけるノード集合 $\nodes$ は，互いに素な $2$ つの部分集合 $\nodes\_1$ と $\nodes\_2$ に分割することができ， $\edges$ のすべてのエッジは， $\nodes\_1$ のノードと $\nodes\_2$ のノードを接続する．このように二部グラフは，異なるオブジェクト間の相互作用を把握するために広く用いられている．例えばAmazonのようなECサイトにおいては，図2.7に示すように，ユーザのクリック履歴を二部グラフとしてのモデル化が可能である．このとき，ユーザとアイテムは互いに素な $2$ つのノード集合とし，ユーザのクリックはそれらの間のエッジとみなすことになる．以下に二部グラフの形式的な定義を示す．
+二部グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ におけるノード集合 $\symbfscr{V}$ は，互いに素な $2$ つの部分集合 $\symbfscr{V}\_1$ と $\symbfscr{V}\_2$ に分割することができ， $\edges$ のすべてのエッジは， $\symbfscr{V}\_1$ のノードと $\symbfscr{V}\_2$ のノードを接続する．このように二部グラフは，異なるオブジェクト間の相互作用を把握するために広く用いられている．例えばAmazonのようなECサイトにおいては，図2.7に示すように，ユーザのクリック履歴を二部グラフとしてのモデル化が可能である．このとき，ユーザとアイテムは互いに素な $2$ つのノード集合とし，ユーザのクリックはそれらの間のエッジとみなすことになる．以下に二部グラフの形式的な定義を示す．
 
 <div class="definition">
  
 <strong>定義 2.35 二部グラフ</strong>
 
-グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ を考える． $\nodes = \nodes\_1\cup \nodes\_2$ かつ $\nodes\_1\cap \nodes\_2 = \emptyset$ が成り立ち，さらにすべての $e = (v^1_e,v^2_e)\in \edges$ に対して， $v^1_e\in \nodes\_1$ ,   $v^2_e\in \nodes\_2$ が満たされるとき，このグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ は二部グラフであるという．
+グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ を考える． $\symbfscr{V} = \symbfscr{V}\_1\cup \symbfscr{V}\_2$ かつ $\symbfscr{V}\_1\cap \symbfscr{V}\_2 = \emptyset$ が成り立ち，さらにすべての $e = (v^1_e,v^2_e)\in \edges$ に対して， $v^1_e\in \symbfscr{V}\_1$ ,   $v^2_e\in \symbfscr{V}\_2$ が満たされるとき，このグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ は二部グラフであるという．
 
 </div>
 
@@ -60,8 +60,8 @@ Heterogeneous
  
 <strong>定義 2.36 Multidimensional グラフ</strong>
 
-Multidimensionalグラフは， $N$ 個のノードから成る集合 $\nodes = \left\\{v\_1,\dots,v\_N\right\\}$ および $D$ 個のエッジ集合 $\left\\{\edges\_1,\dots,\edges\_D\right\\}$ で構成される．各エッジ集合 $\edges\_d$ は，それぞれの $d$ 次元における，ノード間の $d$ 番目の関係タイプを表している．
-また，これら $D$ 種類の関係は $D$ 個の隣接行列 $\symbf{A}^{(1)},\dots,\symbf{A}^{(D)}$ としても表現でき， $d$ 次元に対応する隣接行列 $\symbf{A}_d\in \mathbb{R}^{N\times N}$ は， $\nodes$ 中のノード間にあるエッジ集合 $\edges\_d$ を記述している．例えば， $\symbf{A}_d$ の $i,j$ 要素 $\symbf{A}_d[i,j]$ は，ノード $v\_i$ と $v\_j$ の間に次元 $d$ のエッジが存在するとき（ $(v\_i,v\_j)\in\edges\_d$ ）にのみ $1$ ，次元 $d$ のエッジが存在しない場合は $0$ となる．
+Multidimensionalグラフは， $N$ 個のノードから成る集合 $\symbfscr{V} = \left\\{v\_1,\dots,v\_N\right\\}$ および $D$ 個のエッジ集合 $\left\\{\edges\_1,\dots,\edges\_D\right\\}$ で構成される．各エッジ集合 $\edges\_d$ は，それぞれの $d$ 次元における，ノード間の $d$ 番目の関係タイプを表している．
+また，これら $D$ 種類の関係は $D$ 個の隣接行列 $\symbf{A}^{(1)},\dots,\symbf{A}^{(D)}$ としても表現でき， $d$ 次元に対応する隣接行列 $\symbf{A}_d\in \mathbb{R}^{N\times N}$ は， $\symbfscr{V}$ 中のノード間にあるエッジ集合 $\edges\_d$ を記述している．例えば， $\symbf{A}_d$ の $i,j$ 要素 $\symbf{A}_d[i,j]$ は，ノード $v\_i$ と $v\_j$ の間に次元 $d$ のエッジが存在するとき（ $(v\_i,v\_j)\in\edges\_d$ ）にのみ $1$ ，次元 $d$ のエッジが存在しない場合は $0$ となる．
 
 </div>
 
@@ -75,7 +75,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
 <strong>定義
 2.37 符号付きグラフ</strong>
 
- $\nodes = \left\\{v\_1,\dots,v\_N\right\\}$ を $N$ 個のノードから成る集合， $\edges^{+}\subset\nodes\times\nodes$ と $\edges^{-}\subset\nodes\times\nodes$ をそれぞれ正と負のエッジ集合を表す．ただし，エッジは正または負のどちらか一方に属すこととし， $\edges^{+}\cap\edges^{-}=\emptyset$ を満たす．このとき， $\g = \left\{\nodes,\edges^{+},\edges^{-}\right\}$ は符号付きグラフである．これらのノード間の正・負エッジは符号付き隣接行列 $\symbf{A}$ で記述することができ，ノード $v\_i$ とノード $v\_j$ の間に正のエッジがあるとき $\symbf{A}\_{i,j}=1$ ，負のエッジがあるとき $\symbf{A}\_{i,j}=-1$ ，それ以外の場合 $\symbf{A}\_{i,j}=0$ となる．
+ $\symbfscr{V} = \left\\{v\_1,\dots,v\_N\right\\}$ を $N$ 個のノードから成る集合， $\edges^{+}\subset\symbfscr{V}\times\symbfscr{V}$ と $\edges^{-}\subset\symbfscr{V}\times\symbfscr{V}$ をそれぞれ正と負のエッジ集合を表す．ただし，エッジは正または負のどちらか一方に属すこととし， $\edges^{+}\cap\edges^{-}=\emptyset$ を満たす．このとき， $\g = \left\{\symbfscr{V},\edges^{+},\edges^{-}\right\}$ は符号付きグラフである．これらのノード間の正・負エッジは符号付き隣接行列 $\symbf{A}$ で記述することができ，ノード $v\_i$ とノード $v\_j$ の間に正のエッジがあるとき $\symbf{A}\_{i,j}=1$ ，負のエッジがあるとき $\symbf{A}\_{i,j}=-1$ ，それ以外の場合 $\symbf{A}\_{i,j}=0$ となる．
 
 </div>
 
@@ -100,7 +100,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
  
 <strong>定義 2.38 ハイパーグラフ</strong>
 
- $\nodes$ を $N$ 個のノード集合， $\edges$ をハイパーエッジ集合，そしてハイパーエッジ $e\_j$ の重みを $\symbf{W}[j,j]$ においた対角行列を $\symbf{W}\in \mathbb{R}^{|\edges|\times|\edges|}$ とする．このとき， $\g=\left\{\nodes, \edges, \symbf{W}\right\}$ をハイパーグラフと定義する．ハイパーグラフ $\g$ は，ノード $v\_i$ がエッジ $e\_j$ に現れる場合にだけ $\symbf{H}\_{i,j}=1$ となる，接続行列 $\symbf{H}\in \mathbb{R}^{|\nodes|\times|\edges|}$ を用いて記述することができる．また，ノード $v\_i$ について，その次数を $\displaystyle d(v\_i)=\sum^{|\edges|}\_{j=1}\symbf{H}\_{i,j}$ と定義し，ハイパーエッジの次数を $\displaystyle d(e\_j) = \sum^{|\nodes|}\_{i=1}\symbf{H}\_{i,j}$ と定義する．さらに， $\symbf{D}\_e$ と $\symbf{D}\_v$ を，それぞれハイパーエッジとノードの(対角)次数行列を表すとする．
+ $\symbfscr{V}$ を $N$ 個のノード集合， $\edges$ をハイパーエッジ集合，そしてハイパーエッジ $e\_j$ の重みを $\symbf{W}[j,j]$ においた対角行列を $\symbf{W}\in \mathbb{R}^{|\edges|\times|\edges|}$ とする．このとき， $\g=\left\{\symbfscr{V}, \edges, \symbf{W}\right\}$ をハイパーグラフと定義する．ハイパーグラフ $\g$ は，ノード $v\_i$ がエッジ $e\_j$ に現れる場合にだけ $\symbf{H}\_{i,j}=1$ となる，接続行列 $\symbf{H}\in \mathbb{R}^{|\symbfscr{V}|\times|\edges|}$ を用いて記述することができる．また，ノード $v\_i$ について，その次数を $\displaystyle d(v\_i)=\sum^{|\edges|}\_{j=1}\symbf{H}\_{i,j}$ と定義し，ハイパーエッジの次数を $\displaystyle d(e\_j) = \sum^{|\symbfscr{V}|}\_{i=1}\symbf{H}\_{i,j}$ と定義する．さらに， $\symbf{D}\_e$ と $\symbf{D}\_v$ を，それぞれハイパーエッジとノードの(対角)次数行列を表すとする．
 
 </div>
 
@@ -133,7 +133,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
  
 <strong>定義 2.39 ダイナミックグラフ</strong>
 
-ダイナミックグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ はノード集合 $\nodes=\left\\{v\_1,\dots,v\_N\right\\}$ とエッジ集合 $\edges=\left\\{e\_1,\dots,e\_M\right\\}$ で構成され，各ノードと各エッジの両方（またはどちらか一方）にはそれが出現した時刻を示す時点(timestamp)が関連付けられている．具体的には，各ノードおよび各エッジからそれぞれの出現時点への対応を与える $2$ つの写像 $\phi\_v$ および $\phi\_e$ が存在する．
+ダイナミックグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ はノード集合 $\symbfscr{V}=\left\\{v\_1,\dots,v\_N\right\\}$ とエッジ集合 $\edges=\left\\{e\_1,\dots,e\_M\right\\}$ で構成され，各ノードと各エッジの両方（またはどちらか一方）にはそれが出現した時刻を示す時点(timestamp)が関連付けられている．具体的には，各ノードおよび各エッジからそれぞれの出現時点への対応を与える $2$ つの写像 $\phi\_v$ および $\phi\_e$ が存在する．
 
 </div>
 

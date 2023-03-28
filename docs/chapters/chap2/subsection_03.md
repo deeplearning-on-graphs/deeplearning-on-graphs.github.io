@@ -176,7 +176,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.16 連結成分</strong>
 
-グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ とその部分グラフ $\subsgraph$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\subnodes$ のノードが $\nodes/\subnodes$ (訳注： $\nodes$ から $\subnodes$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\subg$ はグラフ $\g$ の連結成分であるという．
+グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ とその部分グラフ $\subsgraph$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\subnodes$ のノードが $\symbfscr{V}/\subnodes$ (訳注： $\symbfscr{V}$ から $\subnodes$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\subg$ はグラフ $\g$ の連結成分であるという．
 
 </div>
  
@@ -220,7 +220,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.20 最短パス</strong>
 
-グラフ $\g$ において $2$ つのノード $v\_s,v\_t\in \nodes$ が与えられたとき， $v\_s$ から $v\_t$ へのパスの集合を $\symbfscr{P}\_{st}$ と表す．ノード $v\_s$ とノード $v\_t$ の間の最短パスは以下のように定義される．
+グラフ $\g$ において $2$ つのノード $v\_s,v\_t\in \symbfscr{V}$ が与えられたとき， $v\_s$ から $v\_t$ へのパスの集合を $\symbfscr{P}\_{st}$ と表す．ノード $v\_s$ とノード $v\_t$ の間の最短パスは以下のように定義される．
  
 
 $$ p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$
@@ -239,7 +239,7 @@ $$ p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$
 連結グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ の直径は以下のように定義される．
  
 
-$$ \textrm{diameter}(\g) = \max_{v\_s,v\_t\in \nodes}\min_{p\in \symbfscr{P}\_{st}} |p|. $$
+$$ \textrm{diameter}(\g) = \max_{v\_s,v\_t\in \symbfscr{V}}\min_{p\in \symbfscr{P}\_{st}} |p|. $$
 
  
 

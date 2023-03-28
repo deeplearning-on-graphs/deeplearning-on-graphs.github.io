@@ -7,7 +7,7 @@
 数学的には，この写像は以下のように表される．
  
 
-$$ f\colon \nodes \rightarrow \mathbb{R}^{N\times d}. $$
+$$ f\colon \symbfscr{V} \rightarrow \mathbb{R}^{N\times d}. $$
 
  
 ここで， $d$ は各ノードに与える値（ベクトル）の次元である．
