@@ -82,7 +82,7 @@ $$ \symbf{u}^T\_l \symbf{L}\symbf{u}_l = \lambda\_l \cdot\symbf{u}^T\_l\symbf{u}
 図2.4に，図2.3のグラフに対応するグラフフーリエ基底の周波数を示した． $u\_1$ が $0$ となることに注目しよう．
 
 </div>
-w
+
 
 <figure>
 

@@ -16,11 +16,11 @@
  $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ において， $v\_i\in \symbfscr{V}$ の次数とは， $v\_i$ と隣接しているノードの数
  
 
-$$ d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\}), $$
+$$ d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\}), $$
 
  
 である．ここで， $\symbb{1}\_{\symbfscr{E}}(\cdot)$ は次のような指示関数である．
- $$ \symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\}) = 
+ $$ \symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\}) = 
     \begin{cases}
         1 & (v\_i,v\_j)\in \symbfscr{E},\\
         0 & (v\_i,v\_j)\notin \symbfscr{E}.
@@ -67,9 +67,9 @@ $$ \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$
 
 ::: prf
  $$ \begin{aligned}
-    \sum_{v\_i\in\symbfscr{V}}d(v\_i) &= \sum_{v\_i\in \symbfscr{V}}\sum_{v\_j\in\symbfscr{V}}\symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\})\\
-    &=\sum_{\left\\\{v\_i,v\_j\right\\\}\in\symbfscr{E}}2\cdot\symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\})\\
-    &=2\cdot\sum_{\left\\\{v\_i,v\_j\right\\\}\in\symbfscr{E}}\symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\})\\
+    \sum_{v\_i\in\symbfscr{V}}d(v\_i) &= \sum_{v\_i\in \symbfscr{V}}\sum_{v\_j\in\symbfscr{V}}\symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\})\\
+    &=\sum_{\left\\{v\_i,v\_j\right\\}\in\symbfscr{E}}2\cdot\symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\})\\
+    &=2\cdot\sum_{\left\\{v\_i,v\_j\right\\}\in\symbfscr{E}}\symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\})\\
     &=2\cdot|\symbfscr{E}|\tag*{\qed}\end{aligned} $$ 
 :::
 
@@ -168,7 +168,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>例 2.15</strong>
 
-図2.1のグラフ $\symbfscr{G}$ に対して，ノードの部分集合を $\subnodes=\left\\\{v\_1,v\_2,v\_3,v\_5\right\\\}$ ，エッジの部分集合を $\subedges = \left\\\{e\_1,e\_2,e\_3,e\_6\right\\\}$ とおくことで，部分グラフ $\subg$ が構成できる．
+図2.1のグラフ $\symbfscr{G}$ に対して，ノードの部分集合を $\subnodes=\left\\{v\_1,v\_2,v\_3,v\_5\right\\}$ ，エッジの部分集合を $\subedges = \left\\{e\_1,e\_2,e\_3,e\_6\right\\}$ とおくことで，部分グラフ $\subg$ が構成できる．
 
 </div>
  
@@ -357,7 +357,7 @@ $$ c\_b(v\_i) = \sum_{v\_s\neq v\_i\neq v\_t}\dfrac{\sigma_{st}(v\_i)}{\sigma_{s
  
 
 ここで，（分母の） $\sigma_{st}$ はノード $v\_s$ からノード $v\_t$ までの全最短パスの数，（分子の） $\sigma_{st}(v\_i)$ は全最短パスのうち $v\_i$ を通るパスの個数を表す．
-式(2.16)から，可能なすべてのノードの組に対する総和を計算していることがわかる．したがって，グラフの大きさが大きくなるほど，媒介中心性スコアの値も大きくなる．このことから，中心性スコアを正規化することで，異なるグラフ間で比較できるようにする必要がある．有効な手段の一つとしては，「各ノードの中心性スコアを，グラフが与えうる最大の中心性スコアで割る」ことである．式(2.6)の $\sigma_{st}(v\_i)/\sigma_{st}$ が最大になるのは，任意のノード間の最短パスがすべてノード $v\_i$ を通るとき，すなわち $\sigma_{st}(v\_i)/\sigma_{st}=1,\,(\allowbreak\forall v\_s\neq v\_i\neq v\_t)$ のときである．このとき，無向グラフであればノードの組は全部で $\tfrac{(N-1)(N-2)}{2}$ 個存在するから，媒介中心性スコアの最大値は $\tfrac{(N-1)(N-2)}{2}$ となる．
+式(2.16)から，可能なすべてのノードの組に対する総和を計算していることがわかる．したがって，グラフの大きさが大きくなるほど，媒介中心性スコアの値も大きくなる．このことから，中心性スコアを正規化することで，異なるグラフ間で比較できるようにする必要がある．有効な手段の一つとしては，「各ノードの中心性スコアを，グラフが与えうる最大の中心性スコアで割る」ことである．式(2.6)の $\sigma_{st}(v\_i)/\sigma_{st}$ が最大になるのは，任意のノード間の最短パスがすべてノード $v\_i$ を通るとき，すなわち $\sigma_{st}(v\_i)/\sigma_{st}=1,\,(\forall v\_s\neq v\_i\neq v\_t)$ のときである．このとき，無向グラフであればノードの組は全部で $\tfrac{(N-1)(N-2)}{2}$ 個存在するから，媒介中心性スコアの最大値は $\tfrac{(N-1)(N-2)}{2}$ となる．
 したがって，ノード $v\_i$ の正規化した媒介中心性スコア $c_{nb}(v\_i)$ は以下のように定義される．
  
 

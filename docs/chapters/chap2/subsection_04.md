@@ -86,7 +86,7 @@ $$ \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \s
 </div>
 
  $N$ 個のノードを持つグラフ $\symbfscr{G}$ には，(重複も含めて)合計で $N$ 個の固有値・固有ベクトルが存在し，Theorem
-2.30によれば，それら全ての固有値は非負である．また， $0$ に等しい固有値は常に存在している．実際，ベクトル $\symbf{u}_1 = \tfrac{1}{\sqrt{N}}(1,\dots,1)$ を考えると，式(2.9)により， $\symbf{L}\symbf{u}_1 = \symbf{0}=0\symbf{u}_1$ であることがわかる．これは， $\symbf{u}_1$ が固有値 $0$ に対応する固有ベクトルであることを表している．便宜上，固有値を $0=\lambda\_1\leq\lambda\_2\leq,\allowbreak\dots,\allowbreak\leq\lambda\_N$ のように小さい順に並べ，それらに対応する正規化固有ベクトルを $\symbf{u}_1,\dots,\symbf{u}_N$ と表記することにする．
+2.30によれば，それら全ての固有値は非負である．また， $0$ に等しい固有値は常に存在している．実際，ベクトル $\symbf{u}_1 = \tfrac{1}{\sqrt{N}}(1,\dots,1)$ を考えると，式(2.9)により， $\symbf{L}\symbf{u}_1 = \symbf{0}=0\symbf{u}_1$ であることがわかる．これは， $\symbf{u}_1$ が固有値 $0$ に対応する固有ベクトルであることを表している．便宜上，固有値を $0=\lambda\_1\leq\lambda\_2\leq,\dots,\leq\lambda\_N$ のように小さい順に並べ，それらに対応する正規化固有ベクトルを $\symbf{u}_1,\dots,\symbf{u}_N$ と表記することにする．
 
 <div class="definition">
  

@@ -11,7 +11,7 @@ graph)については本章の後半で見ていくことにする．
 
 <strong>定義 2.1 グラフ</strong>
 
-グラフは $\symbfscr{G} = \left\\{\symbfscr{V},\,\symbfscr{E}\right\\}$ と表記される．ここで， $\symbfscr{V}=\left\\\{v\_1,\dots,v\_N\right\\\}$ は $N=|\symbfscr{V}|$ 個のノードで構成される集合で， $\symbfscr{E}=\left\\\{e\_1,\dots,e\_M\right\\\}$ は $M$ 個のエッジで構成される集合である．
+グラフは $\symbfscr{G} = \left\\{\symbfscr{V},\,\symbfscr{E}\right\\}$ と表記される．ここで， $\symbfscr{V}=\left\\{v\_1,\dots,v\_N\right\\}$ は $N=|\symbfscr{V}|$ 個のノードで構成される集合で， $\symbfscr{E}=\left\\{e\_1,\dots,e\_M\right\\}$ は $M$ 個のエッジで構成される集合である．
 
 </div>
 
@@ -25,7 +25,7 @@ graph)については本章の後半で見ていくことにする．
  
 <strong>定義 2.2 隣接行列</strong>
 
-あるグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ に対応する隣接行列を $\symbf{A}\in \left\\\{0,1\right\\\}^{N\times N}$ と表す． $\symbf{A}$ の $i$ 行 $j$ 列要素である $\symbf{A}\_{i,j}$ は， $2$ つのノード $v\_i$ と $v\_j$ の接続状況を表している．具体的には， $v\_i$ が $v\_j$ に隣接している場合には $\symbf{A}\_{i,j}=1$ ，隣接していない場合には $\symbf{A}\_{i,j}=0$ とする．
+あるグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ に対応する隣接行列を $\symbf{A}\in \left\\{0,1\right\\}^{N\times N}$ と表す． $\symbf{A}$ の $i$ 行 $j$ 列要素である $\symbf{A}\_{i,j}$ は， $2$ つのノード $v\_i$ と $v\_j$ の接続状況を表している．具体的には， $v\_i$ が $v\_j$ に隣接している場合には $\symbf{A}\_{i,j}=1$ ，隣接していない場合には $\symbf{A}\_{i,j}=0$ とする．
 
 </div>
 
@@ -44,7 +44,7 @@ graph)については本章の後半で見ていくことにする．
  
 <strong>例 2.3</strong>
 
-ノード数 $5$ ，エッジ数 $6$ のグラフの例をに示した．このグラフのノード集合は $\symbfscr{V}=\allowbreak\left\\\{v\_1,v\_2,v\_3,v\_4,v\_5\right\\\}$ ，エッジ集合は $\symbfscr{E} =\allowbreak \left\\\{e\_1,e\_2,e\_3,e\_4,e\_5,e\_6\right\\\}$ である．
+ノード数 $5$ ，エッジ数 $6$ のグラフの例をに示した．このグラフのノード集合は $\symbfscr{V}=\left\\{v\_1,v\_2,v\_3,v\_4,v\_5\right\\}$ ，エッジ集合は $\symbfscr{E} = \left\\{e\_1,e\_2,e\_3,e\_4,e\_5,e\_6\right\\}$ である．
 
 このグラフの隣接行列は次のように表せる．  $$ \symbf{A} = 
 \begin{pmatrix}
