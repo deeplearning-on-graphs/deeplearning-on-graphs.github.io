@@ -16,11 +16,11 @@
  $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ において， $v\_i\in \symbfscr{V}$ の次数とは， $v\_i$ と隣接しているノードの数
  
 
-$$ d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\}), $$
+$$ d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\}), $$
 
  
 である．ここで， $\symbb{1}\_{\symbfscr{E}}(\cdot)$ は次のような指示関数である．
- $$ \symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\}) = 
+ $$ \symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\}) = 
     \begin{cases}
         1 & (v\_i,v\_j)\in \symbfscr{E},\\
         0 & (v\_i,v\_j)\notin \symbfscr{E}.
@@ -67,9 +67,9 @@ $$ \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$
 
 ::: prf
  $$ \begin{aligned}
-    \sum_{v\_i\in\symbfscr{V}}d(v\_i) &= \sum_{v\_i\in \symbfscr{V}}\sum_{v\_j\in\symbfscr{V}}\symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\})\\
-    &=\sum_{\left\\{v\_i,v\_j\right\\}\in\symbfscr{E}}2\cdot\symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\})\\
-    &=2\cdot\sum_{\left\\{v\_i,v\_j\right\\}\in\symbfscr{E}}\symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\})\\
+    \sum_{v\_i\in\symbfscr{V}}d(v\_i) &= \sum_{v\_i\in \symbfscr{V}}\sum_{v\_j\in\symbfscr{V}}\symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\})\\
+    &=\sum_{\left\\\{v\_i,v\_j\right\\\}\in\symbfscr{E}}2\cdot\symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\})\\
+    &=2\cdot\sum_{\left\\\{v\_i,v\_j\right\\\}\in\symbfscr{E}}\symbb{1}\_{\symbfscr{E}}(\left\\\{v\_i,v\_j\right\\\})\\
     &=2\cdot|\symbfscr{E}|\tag*{\qed}\end{aligned} $$ 
 :::
 
@@ -168,7 +168,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>例 2.15</strong>
 
-図2.1のグラフ $\symbfscr{G}$ に対して，ノードの部分集合を $\subnodes=\left\\{v\_1,v\_2,v\_3,v\_5\right\\}$ ，エッジの部分集合を $\subedges = \left\\{e\_1,e\_2,e\_3,e\_6\right\\}$ とおくことで，部分グラフ $\subg$ が構成できる．
+図2.1のグラフ $\symbfscr{G}$ に対して，ノードの部分集合を $\subnodes=\left\\\{v\_1,v\_2,v\_3,v\_5\right\\\}$ ，エッジの部分集合を $\subedges = \left\\\{e\_1,e\_2,e\_3,e\_6\right\\\}$ とおくことで，部分グラフ $\subg$ が構成できる．
 
 </div>
  
