@@ -93,7 +93,7 @@ and Leskovec(2015)を参照せよ．
 <strong>定義 2.45 グラフ分類</strong>
 
 
- $y\_i$ をグラフ $\symbfscr{G}\_i$ のラベルとする，ラベル付きグラフの集合 $\symbfscr{D} = \left\\{(\symbfscr{G}\_i, y\_i)\right\\}$ が与えられたとき，グラフ分類タスクの目的は， $\symbfscr{D}$ を使ってラベルのないグラフが持つラベルを予測するような写像 $\phi$ を学習することにある．
+ $y\_i$ をグラフ $\symbfscr{G}\_i$ のラベルとする，ラベル付きグラフの集合 $\symbfscr{D} = \left\{(\symbfscr{G}\_i, y\_i)\right\}$ が与えられたとき，グラフ分類タスクの目的は， $\symbfscr{D}$ を使ってラベルのないグラフが持つラベルを予測するような写像 $\phi$ を学習することにある．
 
 </div>
 
