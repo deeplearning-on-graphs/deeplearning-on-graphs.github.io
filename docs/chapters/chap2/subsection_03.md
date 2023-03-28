@@ -13,7 +13,7 @@
  
 <strong>定義 2.4 次数</strong>
 
- $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ において， $v\_i\in \symbfscr{V}$ の次数とは， $v\_i$ と隣接しているノードの数
+ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ において， $v\_i\in \symbfscr{V}$ の次数とは， $v\_i$ と隣接しているノードの数
  
 
 $$ d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\\{v\_i,v\_j\right\\}), $$
@@ -48,7 +48,7 @@ $$ d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$
  
 <strong>定義 2.6 近傍</strong>
 
- $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ のノード $v\_i$ について，その近傍 $\symscr{N}(v\_i)$ とは， $v\_i$ と隣接している全ノードで構成される集合である．
+ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ のノード $v\_i$ について，その近傍 $\symscr{N}(v\_i)$ とは， $v\_i$ と隣接している全ノードで構成される集合である．
 
 </div>
 
@@ -58,7 +58,7 @@ $$ d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$
  
 <strong>定理 2.7</strong>
 
- $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対して，"総次数"（全ノードの次数の和）は，グラフに含まれる全エッジ数の $2$ 倍になる：
+ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ に対して，"総次数"（全ノードの次数の和）は，グラフに含まれる全エッジ数の $2$ 倍になる：
  
 
 $$ \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$
@@ -137,7 +137,7 @@ $$ \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$
  
 <strong>定理 2.13</strong>
 
-隣接行列 $\symbf{A}$ を持つグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対して，隣接行列の $n$ 乗を $\symbf{A}^{n}$ と表す．このとき，行列 $\symbf{A}^{n}$ の $i,j$ 成分は，長さ $n$ の $v\_i$ - $v\_j$ ウォークの数に等しい．
+隣接行列 $\symbf{A}$ を持つグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ に対して，隣接行列の $n$ 乗を $\symbf{A}^{n}$ と表す．このとき，行列 $\symbf{A}^{n}$ の $i,j$ 成分は，長さ $n$ の $v\_i$ - $v\_j$ ウォークの数に等しい．
 
 ::: prf
 帰納法によってこの定理を証明できる．
@@ -160,7 +160,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.14 部分グラフ</strong>
 
-与えられたグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ の部分グラフ $\subsgraph$ は，ノードの部分集合 $\symbfscr{V}'\subset\symbfscr{V}$ およびエッジの部分集合 $\symbfscr{E}'\subset\symbfscr{E}$ で構成されるグラフである．このとき，部分集合 $\symbfscr{E}'$ 中のエッジに関係する全ノードが，部分集合 $\symbfscr{V}'$ に含まれていなければならない．
+与えられたグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ の部分グラフ $\subsgraph$ は，ノードの部分集合 $\symbfscr{V}'\subset\symbfscr{V}$ およびエッジの部分集合 $\symbfscr{E}'\subset\symbfscr{E}$ で構成されるグラフである．このとき，部分集合 $\symbfscr{E}'$ 中のエッジに関係する全ノードが，部分集合 $\symbfscr{V}'$ に含まれていなければならない．
 
 </div>
  
@@ -168,7 +168,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>例 2.15</strong>
 
-図2.1のグラフ $\g$ に対して，ノードの部分集合を $\subnodes=\left\\{v\_1,v\_2,v\_3,v\_5\right\\}$ ，エッジの部分集合を $\subedges = \left\\{e\_1,e\_2,e\_3,e\_6\right\\}$ とおくことで，部分グラフ $\subg$ が構成できる．
+図2.1のグラフ $\symbfscr{G}$ に対して，ノードの部分集合を $\subnodes=\left\\{v\_1,v\_2,v\_3,v\_5\right\\}$ ，エッジの部分集合を $\subedges = \left\\{e\_1,e\_2,e\_3,e\_6\right\\}$ とおくことで，部分グラフ $\subg$ が構成できる．
 
 </div>
  
@@ -176,7 +176,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.16 連結成分</strong>
 
-グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ とその部分グラフ $\subsgraph$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\subnodes$ のノードが $\symbfscr{V}/\subnodes$ (訳注： $\symbfscr{V}$ から $\subnodes$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\subg$ はグラフ $\g$ の連結成分であるという．
+グラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ とその部分グラフ $\subsgraph$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\subnodes$ のノードが $\symbfscr{V}/\subnodes$ (訳注： $\symbfscr{V}$ から $\subnodes$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\subg$ はグラフ $\symbfscr{G}$ の連結成分であるという．
 
 </div>
  
@@ -202,7 +202,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.18 連結グラフ</strong>
 
-連結成分が $1$ つだけのグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ を，連結グラフという． 
+連結成分が $1$ つだけのグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ を，連結グラフという． 
 </div>
 
 
@@ -220,7 +220,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.20 最短パス</strong>
 
-グラフ $\g$ において $2$ つのノード $v\_s,v\_t\in \symbfscr{V}$ が与えられたとき， $v\_s$ から $v\_t$ へのパスの集合を $\symbfscr{P}\_{st}$ と表す．ノード $v\_s$ とノード $v\_t$ の間の最短パスは以下のように定義される．
+グラフ $\symbfscr{G}$ において $2$ つのノード $v\_s,v\_t\in \symbfscr{V}$ が与えられたとき， $v\_s$ から $v\_t$ へのパスの集合を $\symbfscr{P}\_{st}$ と表す．ノード $v\_s$ とノード $v\_t$ の間の最短パスは以下のように定義される．
  
 
 $$ p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$
@@ -236,10 +236,10 @@ $$ p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$
  
 <strong>定義 2.21 直径</strong>
 
-連結グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ の直径は以下のように定義される．
+連結グラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ の直径は以下のように定義される．
  
 
-$$ \textrm{diameter}(\g) = \max_{v\_s,v\_t\in \symbfscr{V}}\min_{p\in \symbfscr{P}\_{st}} |p|. $$
+$$ \textrm{diameter}(\symbfscr{G}) = \max_{v\_s,v\_t\in \symbfscr{V}}\min_{p\in \symbfscr{P}\_{st}} |p|. $$
 
  
 

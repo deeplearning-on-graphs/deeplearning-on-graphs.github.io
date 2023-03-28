@@ -13,7 +13,7 @@
  
 <strong>定義 2.27 ラプラシアン行列</strong>
 
- $\symbf{A}$ を隣接行列とするグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対して，ラプラシアン行列は以下のように定義される．
+ $\symbf{A}$ を隣接行列とするグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ に対して，ラプラシアン行列は以下のように定義される．
 
  
 
@@ -32,7 +32,7 @@ $$ \symbf{L} = \symbf{D} - \symbf{A}. $$
 <strong>定義 2.28 正規化ラプラシアン行列</strong>
 
 
- $\symbf{A}$ を隣接行列とするグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ について，その正規化ラプラシアン行列は以下のように定義される．
+ $\symbf{A}$ を隣接行列とするグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ について，その正規化ラプラシアン行列は以下のように定義される．
 
  
 
@@ -70,14 +70,14 @@ $$ \symbf{L} = \symbf{D}^{-\tfrac{1}{2}}(\symbf{D} - \symbf{A})\symbf{D}^{-\tfra
  
 <strong>定理 2.29</strong>
 
-グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ について，ラプラシアン行列 $\symbf{L}$ の固有値は非負である．
+グラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ について，ラプラシアン行列 $\symbf{L}$ の固有値は非負である．
 
 ::: prf
 ラプラシアン行列 $\symbf{L}$ の固有値を $\lambda$ とし，対応する正規化固有ベクトルを $\symbf{u}$ とする．固有値と固有ベクトルの定義によれば， $\lambda\symbf{u} = \symbf{L}\symbf{u}$ であり， $\symbf{u}$ は非ゼロの単位ベクトルで $\symbf{u}^{T}\symbf{u} = 1$ である．したがって，
 
  
 
-$$ \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \symbf{u}^{T}\symbf{L}\symbf{u} \geq 0.\tag*{\qed}\vspace{-2.0\intextsep} $$
+$$ \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \symbf{u}^{T}\symbf{L}\symbf{u} \symbfscr{G}eq 0.\tag*{\qed}\vspace{-2.0\intextsep} $$
 
  
 :::
@@ -85,17 +85,17 @@ $$ \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \s
 
 </div>
 
- $N$ 個のノードを持つグラフ $\g$ には，(重複も含めて)合計で $N$ 個の固有値・固有ベクトルが存在し，Theorem
+ $N$ 個のノードを持つグラフ $\symbfscr{G}$ には，(重複も含めて)合計で $N$ 個の固有値・固有ベクトルが存在し，Theorem
 2.30によれば，それら全ての固有値は非負である．また， $0$ に等しい固有値は常に存在している．実際，ベクトル $\symbf{u}_1 = \tfrac{1}{\sqrt{N}}(1,\dots,1)$ を考えると，式(2.9)により， $\symbf{L}\symbf{u}_1 = \symbf{0}=0\symbf{u}_1$ であることがわかる．これは， $\symbf{u}_1$ が固有値 $0$ に対応する固有ベクトルであることを表している．便宜上，固有値を $0=\lambda\_1\leq\lambda\_2\leq,\allowbreak\dots,\allowbreak\leq\lambda\_N$ のように小さい順に並べ，それらに対応する正規化固有ベクトルを $\symbf{u}_1,\dots,\symbf{u}_N$ と表記することにする．
 
 <div class="definition">
  
 <strong>定義 2.30</strong>
 
-グラフ $\g$ が与えられたとき，そのラプラシアン行列 $\symbf{L}$ の固有値 $0$ の個数（固有値 $0$ の重複度）は，グラフが持つ連結成分の数に等しい．
+グラフ $\symbfscr{G}$ が与えられたとき，そのラプラシアン行列 $\symbf{L}$ の固有値 $0$ の個数（固有値 $0$ の重複度）は，グラフが持つ連結成分の数に等しい．
 
 ::: prf
- $\g$ は $K$ 個の連結成分を持つと仮定する．するとノード集合 $\symbfscr{V}$ を $K$ 個の互いに素な部分集合 $\symbfscr{V}\_1,\dots,\symbfscr{V}\_K$ に分割することができる．
+ $\symbfscr{G}$ は $K$ 個の連結成分を持つと仮定する．するとノード集合 $\symbfscr{V}$ を $K$ 個の互いに素な部分集合 $\symbfscr{V}\_1,\dots,\symbfscr{V}\_K$ に分割することができる．
 
 まず，固有値 $0$ に対応する正規直交固有ベクトルが少なくとも $K$ 個存在することを示す． $K$ 個のベクトルを $\symbf{u}_1,\dots,\symbf{u}_K$ とおき， $v\_j\in \symbfscr{V}\_i$ なら $\symbf{u}_i[j] = \tfrac{1}{\sqrt{|\symbfscr{V}\_i|}}$ ，それ以外なら $0$ となるように構成する．すると， $i=1,\dots,K$ について $\symbf{L}\symbf{u}_i=0$ となるから， $K$ 個のベクトルはすべて固有値 $0$ に対応する $\symbf{L}$ の固有ベクトルであることがわかる．さらに構成したベクトルの値の定め方より， $i\neq j$ のとき $\symbf{u}^T\_i \symbf{u}_j = 0$ となることがわかるから， $K$ 個の固有ベクトルは互いに直交していることになる．したがって，固有値 $0$ の重複度は少なくとも $K$ であることが示せた．
 

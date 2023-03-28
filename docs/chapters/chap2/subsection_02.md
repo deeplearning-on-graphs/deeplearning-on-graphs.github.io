@@ -25,7 +25,7 @@ graph)については本章の後半で見ていくことにする．
  
 <strong>定義 2.2 隣接行列</strong>
 
-あるグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対応する隣接行列を $\symbf{A}\in \left\\{0,1\right\\}^{N\times N}$ と表す． $\symbf{A}$ の $i$ 行 $j$ 列要素である $\symbf{A}\_{i,j}$ は， $2$ つのノード $v\_i$ と $v\_j$ の接続状況を表している．具体的には， $v\_i$ が $v\_j$ に隣接している場合には $\symbf{A}\_{i,j}=1$ ，隣接していない場合には $\symbf{A}\_{i,j}=0$ とする．
+あるグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ に対応する隣接行列を $\symbf{A}\in \left\\{0,1\right\\}^{N\times N}$ と表す． $\symbf{A}$ の $i$ 行 $j$ 列要素である $\symbf{A}\_{i,j}$ は， $2$ つのノード $v\_i$ と $v\_j$ の接続状況を表している．具体的には， $v\_i$ が $v\_j$ に隣接している場合には $\symbf{A}\_{i,j}=1$ ，隣接していない場合には $\symbf{A}\_{i,j}=0$ とする．
 
 </div>
 
