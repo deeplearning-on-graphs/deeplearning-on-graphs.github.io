@@ -11,7 +11,7 @@ graph)については本章の後半で見ていくことにする．
 
 <strong>定義 2.1 グラフ</strong>
 
-グラフは $\symbfscr{G} = \left\\{\symbfscr{V},\,\symbfscr{E}\right\\}$ と表記される．ここで， $\symbfscr{V}=\left\\{v\_1,\dots,v\_N\right\\}$ は $N=|\symbfscr{V}|$ 個のノードで構成される集合で， $\symbfscr{E}=\left\\{e\_1,\dots,e\_M\right\\}$ は $M$ 個のエッジで構成される集合である．
+グラフは $\symbfscr{G} = \left\{\symbfscr{V},\,\symbfscr{E}\right\}$ と表記される．ここで， $\symbfscr{V}=\left\{v\_1,\dots,v\_N\right\}$ は $N=|\symbfscr{V}|$ 個のノードで構成される集合で， $\symbfscr{E}=\left\{e\_1,\dots,e\_M\right\}$ は $M$ 個のエッジで構成される集合である．
 
 </div>
 
