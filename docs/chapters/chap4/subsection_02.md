@@ -26,18 +26,18 @@ $$ f(v\_i) = \symbf{u}_i = \symbf{e}^{T}\_i\symbf{W}. $$
 
  
 
-ここで， $\symbf{e}_i\in \left\\{0,1\right\\}^N\,(N=|\nodes|)$ は，ノード $v\_i$ のワンホットエンコーディングを表している（つまり $\symbf{e}_i$ は，1つの要素だけ $\symbf{e}_i[i]=1$ であり，他の要素は全て $0$ となる）．また $\symbf{W}\in \mathbb{R}^{N\times d}$ は， $d$ を埋め込み次元とした，学習対象である埋め込みパラメータで，行列 $\symbf{W}$ の $i$ 番目の行はノード $v\_i$ の表現（または埋め込み）を表す．ゆえに，マッピング関数のパラメータ数は $N\times d$ 個となる．
+ここで， $\symbf{e}_i\in \left\\{0,1\right\\}^N\,(N=|\symbfscr{V}|)$ は，ノード $v\_i$ のワンホットエンコーディングを表している（つまり $\symbf{e}_i$ は，1つの要素だけ $\symbf{e}_i[i]=1$ であり，他の要素は全て $0$ となる）．また $\symbf{W}\in \mathbb{R}^{N\times d}$ は， $d$ を埋め込み次元とした，学習対象である埋め込みパラメータで，行列 $\symbf{W}$ の $i$ 番目の行はノード $v\_i$ の表現（または埋め込み）を表す．ゆえに，マッピング関数のパラメータ数は $N\times d$ 個となる．
 
 ### ランダムウォークに基づく共起性の抽出 {#ランダムウォークに基づく共起性の抽出 .unnumbered}
 
-グラフ $\g$ の始点ノード $v^{(0)}$ が与えられたとき，そこから隣接するノードを無作為(ランダム)に選び，そのノードに向かって移動（ウォーク）する．
-この移動プロセスを，始点ノードから始めて $T$ 個のノードを訪れるまで繰り返す．こうしてランダムに訪れてきたノードを集めた列(sequence)のことを，グラフ $\g$ における長さ $T$ のランダムウォークという．ランダムウォークを形式的に定義すると以下のようになる．
+グラフ $\symbfscr{G}$ の始点ノード $v^{(0)}$ が与えられたとき，そこから隣接するノードを無作為(ランダム)に選び，そのノードに向かって移動（ウォーク）する．
+この移動プロセスを，始点ノードから始めて $T$ 個のノードを訪れるまで繰り返す．こうしてランダムに訪れてきたノードを集めた列(sequence)のことを，グラフ $\symbfscr{G}$ における長さ $T$ のランダムウォークという．ランダムウォークを形式的に定義すると以下のようになる．
 
 <div class="definition">
  
 <strong>定義 4.1 ランダムウォーク，Random Walk</strong>
 
- $\sgraph$ を連結グラフとし，始点ノードを $v^{0}\in \nodes$ とする．いま $t$ ステップ目でノード $v^{(t)}$ にいると仮定した場合，ランダムウォークは，次の移動先のノードを以下の確率で選択することで進められる．
+ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ を連結グラフとし，始点ノードを $v^{0}\in \symbfscr{V}$ とする．いま $t$ ステップ目でノード $v^{(t)}$ にいると仮定した場合，ランダムウォークは，次の移動先のノードを以下の確率で選択することで進められる．
  $$ p(v^{(t+1)}| v^{(t)}) = 
     \begin{cases}
         \dfrac{1}{d(v^{(t)})}, & v^{(t+1)} \in \symbfscr{N}(v^{(t)})\\
@@ -51,7 +51,7 @@ $$ f(v\_i) = \symbf{u}_i = \symbf{e}^{T}\_i\symbf{W}. $$
 上記の処理を，次のような"ランダムウォーク生成器"を用いてまとめる．
  
 
-$$ \symbfscr{W} = \textrm{RW}(\g,v^{(0)},T) $$
+$$ \symbfscr{W} = \textrm{RW}(\symbfscr{G},v^{(0)},T) $$
 
  
  $\symbfscr{W}=(v^{(0)},\dots,v^{(T-1)})$ は生成されたランダムウォークを表しており， $v^{(0)}$ は始点ノード， $T$ はランダムウォークの長さである．
@@ -61,19 +61,19 @@ $$ \symbfscr{W} = \textrm{RW}(\g,v^{(0)},T) $$
 2006)など，様々なタスクにおいて類似性を測定する目的で採用されている．
 DeepWalkでは，与えられたグラフから複数の短いランダムウォークを生成し，それらを1つの集合にまとめてノードの共起性を抽出している．以下では，ランダムウォークの集合を生成し，そこから共起性を抽出するプロセスの詳細を説明していく．
 
-グラフ全体の情報を捉えるランダムウォークを生成するために，各ノードを始点として，ランダムウォークを $\gamma$ 個ずつ生成する．これにより，合計 $N\times\gamma$ 個のランダムウォークを得る．この処理をAlgorithm
-1に示した．アルゴリズムの入力には，グラフ $\g$ ，ランダムウォークの長さ $T$ ，そして各始点ノードで何回ランダムウォークを生成するかを表す $\gamma$ が含まれる．Algorithm
-1の4行目から9行目では， $\nodes$ の各ノードについて $\gamma$ 個ずつランダムウォークを生成し，それらを $\mathscr{R}$ に順次追加していく．最終的に生成された $N\times\gamma$ 個のランダムウォークを含む $\mathscr{R}$ がこのアルゴリズムの出力となる．
+グラフ全体の情報を捉えるランダムウォークを生成するために，各ノードを始点として，ランダムウォークを $\symbfscr{G}amma$ 個ずつ生成する．これにより，合計 $N\times\symbfscr{G}amma$ 個のランダムウォークを得る．この処理をAlgorithm
+1に示した．アルゴリズムの入力には，グラフ $\symbfscr{G}$ ，ランダムウォークの長さ $T$ ，そして各始点ノードで何回ランダムウォークを生成するかを表す $\symbfscr{G}amma$ が含まれる．Algorithm
+1の4行目から9行目では， $\symbfscr{V}$ の各ノードについて $\symbfscr{G}amma$ 個ずつランダムウォークを生成し，それらを $\mathscr{R}$ に順次追加していく．最終的に生成された $N\times\symbfscr{G}amma$ 個のランダムウォークを含む $\mathscr{R}$ がこのアルゴリズムの出力となる．
 
 ::: algorithm
- $\textbf{Input:}\;\sgraph, T, \gamma$ 
+ $\textbf{Input:}\;\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}, T, \symbfscr{G}amma$ 
 
  $\textbf{Output:}\;\mathscr{R}$ 
 
- $\textbf{Initialization:}\;\mathscr{R}\leftarrow \emptyset$ 
+ $\textbf{Initialization:}\;\mathscr{R}\left\arrow \emptyset$ 
 :::
 
-こうして生成したランダムウォークは，ノード集合 $\nodes$ を語彙（単語の集まり）とする"人工言語"の文章として扱うことができる．言語モデルにおけるskip-gramアルゴリズム(Mikolov
+こうして生成したランダムウォークは，ノード集合 $\symbfscr{V}$ を語彙（単語の集まり）とする"人工言語"の文章として扱うことができる．言語モデルにおけるskip-gramアルゴリズム(Mikolov
 et al.,
 2013)は，これらの文章における単語間の共起関係を捉えることで，文章の情報を保持しようとするものである．このアルゴリズムでは，文章中の与えられた"中心単語"に対して，その中心単語から一定の距離 $w$ 以内の単語を"文脈単語"として扱う．そして中心単語は，その文脈単語と「共起している」とみなすことになる．
 skip-gramアルゴリズムは，このような共起情報を保持することを目的としているため，この概念をランダムウォークに適用することで，ノード間の共起関係を抽出できるようになる(Perozzi
@@ -90,7 +90,7 @@ al(2015)では，中心ノードまでの距離に応じて文脈ノードは異
 
  $\textbf{Output:}\;\mathscr{I}$ 
 
- $\textbf{Initialization:}\;\mathscr{I}\leftarrow [\;]$ 
+ $\textbf{Initialization:}\;\mathscr{I}\left\arrow [\;]$ 
 :::
 
 ### 共起性の再構成および目的関数 {#共起性の再構成および目的関数 .unnumbered}
@@ -107,7 +107,7 @@ al(2015)では，中心ノードまでの距離に応じて文脈ノードは異
 
  
 
-$$ p(v_{\text{con}}|v_{\text{cen}}) = \dfrac{\exp (f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}}))}{\displaystyle\sum_{v\in\nodes}\exp (f_{\text{con}}(v)^{\top}f_{\text{cen}}(v_{\text{cen}}))}. $$
+$$ p(v_{\text{con}}|v_{\text{cen}}) = \dfrac{\exp (f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}}))}{\displaystyle\sum_{v\in\symbfscr{V}}\exp (f_{\text{con}}(v)^{\top}f_{\text{cen}}(v_{\text{cen}}))}. $$
 
  
 
@@ -158,18 +158,18 @@ et al., 2013)．
 
 #### 階層的ソフトマックス
 
-階層的ソフトマックスでは，グラフ $\g$ のノードを二分木の葉に割り当てる[^3]．
+階層的ソフトマックスでは，グラフ $\symbfscr{G}$ のノードを二分木の葉に割り当てる[^3]．
 階層的ソフトマックスにおける二分木の一例を図4.2に示す．
 
 <figure>
 
-<img src="./fig/fig4_2.pdf" width="100%"/>
+<img src="./fig/fig4_2.png" width="100%"/>
 
 <figcaption>図4.2 階層的ソフトマックスの例．ノード $v\_3$ へのパスを赤く強調した．</figcaption>
 
 </figure>{width="0.7\\linewidth"}
 
-この二分木には $8$ つの葉があるため，元のグラフ $\g$ には $8$ つのノードが存在することになる．
+この二分木には $8$ つの葉があるため，元のグラフ $\symbfscr{G}$ には $8$ つのノードが存在することになる．
 そのため確率 $p(v_{\text{con}}|v_{\text{cen}})$ は，二分木の葉ノード $v_{\text{con}}$ へのパスを通じてモデル化できる．
 もし，ノード $v_{\text{con}}$ へのパスを，根ノード $p^{(0)}=b\_0$ から $p^{(H)}=v_{\text{con}}$ までの二分木上のノード列 $(p^{(0)}, p^{(1)},\dots, p^{(H)})$ として与えた場合，確率 $p(v_{\text{con}}|v_{\text{cen}})$ は以下のように計算される．
  
@@ -185,7 +185,7 @@ $$ p(v_{\text{con}}|v_{\text{cen}}) = \prod^{H}\_{h=1}p_{\text{path}}(p^{(h)}|v_
 $$ p(\text{left}|b\_0, v\_8) = \sigma(f\_b(b\_0)^{\top}f(v\_8)), $$
 
  
-として計算される．ここで， $f\_b$ は内部ノードのマッピング関数， $f$ は葉ノード（グラフ $\g$ 中のノード）のマッピング関数， $\sigma$ はシグモイド関数である．
+として計算される．ここで， $f\_b$ は内部ノードのマッピング関数， $f$ は葉ノード（グラフ $\symbfscr{G}$ 中のノード）のマッピング関数， $\sigma$ はシグモイド関数である．
 一方 $b\_0$ において，右のノードに進む確率は，
  
 
@@ -199,14 +199,14 @@ $$ p_{\text{path}}(b\_1|v\_8) = p(\text{left}|b\_0, v\_8). $$
 
  
 なお，内部ノードの埋め込みは二値分類のパラメータとみなすことができ，また，これら二値分類の入力は $(v_{\text{con}}, v_{\text{cen}})$ における中心ノードの埋め込み $f(v_{\text{cen}})$ である．
-式(4.2)で表される従来のソフトマックスの代わりに階層的ソフトマックを用いることで，計算量を $O(|\nodes|)$ から $O(\log |\nodes|)$ へと大幅に削減することができる．
-ただし，階層的ソフトマックスでは， $\nodes$ の各ノードに対して $2$ つのマッピング関数を学習するのではなく， $\nodes$ のノード（二分木では葉ノード）に対してはマッピング関数 $f$ ，二分木の内部ノードに対してはマッピング関数 $f\_b$ を学習することになる．
+式(4.2)で表される従来のソフトマックスの代わりに階層的ソフトマックを用いることで，計算量を $O(|\symbfscr{V}|)$ から $O(\log |\symbfscr{V}|)$ へと大幅に削減することができる．
+ただし，階層的ソフトマックスでは， $\symbfscr{V}$ の各ノードに対して $2$ つのマッピング関数を学習するのではなく， $\symbfscr{V}$ のノード（二分木では葉ノード）に対してはマッピング関数 $f$ ，二分木の内部ノードに対してはマッピング関数 $f\_b$ を学習することになる．
 
 <div class="eg">
  
 <strong>例 4.2 階層的ソフトマックス</strong>
 
-与えられたグラフ $\g$ において，文脈ノード $v\_3$ と中心ノード $v\_8$ の共起情報を記述したノード組を $(v\_3,v\_8)$ とし，このグラフに対する階層的ソフトマックスの二分木を図4.2に示すものとする． $v\_8$ の文脈で $v\_3$ を観測する確率，すなわち $p(v\_3|v\_8)$ は次のように計算される．
+与えられたグラフ $\symbfscr{G}$ において，文脈ノード $v\_3$ と中心ノード $v\_8$ の共起情報を記述したノード組を $(v\_3,v\_8)$ とし，このグラフに対する階層的ソフトマックスの二分木を図4.2に示すものとする． $v\_8$ の文脈で $v\_3$ を観測する確率，すなわち $p(v\_3|v\_8)$ は次のように計算される．
  $$ \begin{aligned}
         p(v\_3|v\_8) &= p_{\text{path}}(b\_1|v\_8)\cdot p_{\text{path}}(b\_4|v\_8)\cdot p_{\text{path}}(v\_3|v\_8)\\
         &= p(\text{left}|b\_0,v\_8)\cdot p(\text{right}|b\_1,v\_8)\cdot p(\text{left}|b\_4,v\_8).
@@ -224,7 +224,7 @@ Hyvärinen,
 
  
 
-$$ \log\sigma\left(f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}})\right) + \sum^{k}\_{i=1}E_{v\_n\sim P\_n(v)}\left[\log\sigma\left(-f_{\text{con}}(v\_n)^{\top} f_{\text{cen}}(v_{\text{cen}})\right)\right]. $$
+$$ \log\sigma\left\(f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}})\right\) + \sum^{k}\_{i=1}E_{v\_n\sim P\_n(v)}\left\[\log\sigma\left\(-f_{\text{con}}(v\_n)^{\top} f_{\text{cen}}(v_{\text{cen}})\right\)\right\]. $$
 
  
 
@@ -236,7 +236,7 @@ et al. (2013)やTang et al.
  $$ \begin{aligned}
     \symcal{L}(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}) &=\sum_{(v_{\text{con}}, v_{\text{cen}})\in\;\text{set}(\symcal{I})}\#(v_{\text{con}}, v_{\text{cen}})\cdot\bigg(\log\sigma\Big(f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}})\Big)\nonumber\\
     &\qquad\qquad + \sum^{k}\_{i=1}E_{v\_n\sim P\_n(v)}\Big[\log\sigma\Big(-f_{\text{con}}(v\_n)^{\top}f_{\text{cen}}(v_{\text{cen}})\Big)\Big]\bigg).\end{aligned} $$ 
-従来のソフトマックスの代わりにネガティブサンプリングを用いることで，計算量を $O(|\nodes|)$ から $O(k)$ へと大幅に削減することができる．
+従来のソフトマックスの代わりにネガティブサンプリングを用いることで，計算量を $O(|\symbfscr{V}|)$ から $O(k)$ へと大幅に削減することができる．
 
 #### 実際の学習プロセスについて
 
@@ -264,7 +264,7 @@ walk)」を用いた手法が導入されており，これによりノードの
  
 <strong>定義 4.3</strong>
 
- $\sgraph$ を連結グラフとし，ノード $v^{(0)}\in \nodes$ から始まるランダムウォークを考える．また，ランダムウォークによりノード $v^{(t-1)}$ からノード $v^{(t)}$ まで移動し，現在はノード $v^{(t)}$ にいると仮定する．次のステップでは，どのノードに進むかを決める必要がある．このとき， $v^{(t)}$ の近傍から一様に $v^{(t+1)}$ を選ぶのではなく， $v^{(t)}$ と $v^{(t-1)}$ の両方に基づいてサンプルする確率が定義される．具体的には，移動先のノードを選択する非正規化"確率"は次のように定義される．
+ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ を連結グラフとし，ノード $v^{(0)}\in \symbfscr{V}$ から始まるランダムウォークを考える．また，ランダムウォークによりノード $v^{(t-1)}$ からノード $v^{(t)}$ まで移動し，現在はノード $v^{(t)}$ にいると仮定する．次のステップでは，どのノードに進むかを決める必要がある．このとき， $v^{(t)}$ の近傍から一様に $v^{(t+1)}$ を選ぶのではなく， $v^{(t)}$ と $v^{(t-1)}$ の両方に基づいてサンプルする確率が定義される．具体的には，移動先のノードを選択する非正規化"確率"は次のように定義される．
 
  $$ \alpha_{pq}(v^{(t+1)}|v^{(t-1)}, v^{(t)}) = 
     \begin{cases}
@@ -290,9 +290,9 @@ LINE (Tang et al.,
 2015)の"第二次近接性"に関する目的関数は，以下のように表すことができる[^6]．
  $$ \begin{aligned}
 %NOTE: 誤植か？(第一項の符号をマイナス→プラスにした)
-    \sum_{(v_{\text{con}}, v_{\text{cen}})\in\;\edges}\bigg(&\log\sigma\Big(f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}})\Big)\nonumber\\
+    \sum_{(v_{\text{con}}, v_{\text{cen}})\in\;\symbfscr{E}}\bigg(&\log\sigma\Big(f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}})\Big)\nonumber\\
     &+ \sum^{k}\_{i=1}E_{v\_n\sim P\_n(v)}\Big[\log\sigma\Big(-f_{\text{con}}(v\_n)^{\top}f_{\text{cen}}(v_{\text{cen}})\Big)\Big]\bigg).\end{aligned} $$ 
-ここで， $\edges$ はグラフ $\g$ が含むエッジの集合である．式(4.9)と式(4.7)を比較すると，LINEが再構成する情報として $\symscr{I}$ の代わりに $\edges$ を採用していることが大きく異なる点であることがわかる．実際， $\edges$ はランダムウォークの長さを $1$ に設定した $\symscr{I}$ の特殊なケースとみなすことができる．
+ここで， $\symbfscr{E}$ はグラフ $\symbfscr{G}$ が含むエッジの集合である．式(4.9)と式(4.7)を比較すると，LINEが再構成する情報として $\symscr{I}$ の代わりに $\symbfscr{E}$ を採用していることが大きく異なる点であることがわかる．実際， $\symbfscr{E}$ はランダムウォークの長さを $1$ に設定した $\symscr{I}$ の特殊なケースとみなすことができる．
 
 ### 行列分解による表示 {#行列分解による表示 .unnumbered}
 
@@ -303,13 +303,13 @@ al.(2018b)によれば，前述したネットワークの埋め込み手法は�
  
 <strong>定理 4.4 Qiu et al., 2018b</strong>
 
-行列形式では，与えられたグラフ $\g$ に対してネガティブサンプリングを行ったDeepWalkは，以下の行列因子分解に等価である．
+行列形式では，与えられたグラフ $\symbfscr{G}$ に対してネガティブサンプリングを行ったDeepWalkは，以下の行列因子分解に等価である．
  
 
-$$ \log\left(\dfrac{\mathrm{vol}(\g)}{T}\left(\sum^{T}\_{r=1}\symbf{P}^r\right)\symbf{D}^{-1}\right) - \log(k). $$
+$$ \log\left\(\dfrac{\mathrm{vol}(\symbfscr{G})}{T}\left\(\sum^{T}\_{r=1}\symbf{P}^r\right\)\symbf{D}^{-1}\right\) - \log(k). $$
 
  
-ここで， $\symbf{P}$ はグラフ $\g$ の隣接行列 $\symbf{A}$ と対応する次数行列 $D$ の逆行列で構成した行列 $\symbf{P} = \symbf{D}^{-1}\symbf{A}$ であり， $T$ はランダムウォークの長さである．また， $\mathrm{vol}(\g)=\sum^{|\nodes|}\_{i=1}\sum^{|\nodes|}\_{j=1}\symbf{A}\_{i,j}$ であり， $k$ はネガティブサンプルの個数である．
+ここで， $\symbf{P}$ はグラフ $\symbfscr{G}$ の隣接行列 $\symbf{A}$ と対応する次数行列 $D$ の逆行列で構成した行列 $\symbf{P} = \symbf{D}^{-1}\symbf{A}$ であり， $T$ はランダムウォークの長さである．また， $\mathrm{vol}(\symbfscr{G})=\sum^{|\symbfscr{V}|}\_{i=1}\sum^{|\symbfscr{V}|}\_{j=1}\symbf{A}\_{i,j}$ であり， $k$ はネガティブサンプルの個数である．
 
 </div>
 
@@ -317,14 +317,14 @@ $$ \log\left(\dfrac{\mathrm{vol}(\g)}{T}\left(\sum^{T}\_{r=1}\symbf{P}^r\right)\
 具体的には，行列因子分解による情報抽出(Extractor)は以下のようになる．
  
 
-$$ \log\left(\dfrac{\mathrm{vol}(\g)}{T}\left(\sum^{T}\_{r=1}\symbf{P}^r\right)\symbf{D}^{-1}\right). $$
+$$ \log\left\(\dfrac{\mathrm{vol}(\symbfscr{G})}{T}\left\(\sum^{T}\_{r=1}\symbf{P}^r\right\)\symbf{D}^{-1}\right\). $$
 
  
 一方でマッピング関数(Mapping)は，DeepWalkで導入したものと同じ $f_{\text{cen}}(\cdot)$ と $f_{\text{con}}(\cdot)$ のを用いている．
-これら2つのマッピング関数のパラメータは， $\symbf{W}\_{\text{cen}}$ と $\symbf{W}\_{\text{con}}$ であり，それらはグラフ $\g$ の2組のノード表現でもある．そしてこの場合の再構成(Reconstractor)は，" $\symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}$ "という形で表現でき，これにより目的関数は以下のように表すことができる．
+これら2つのマッピング関数のパラメータは， $\symbf{W}\_{\text{cen}}$ と $\symbf{W}\_{\text{con}}$ であり，それらはグラフ $\symbfscr{G}$ の2組のノード表現でもある．そしてこの場合の再構成(Reconstractor)は，" $\symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}$ "という形で表現でき，これにより目的関数は以下のように表すことができる．
  
 
-$$ \symscr{L}(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}) = \left\|\,\log\left(\dfrac{\text{vol}(\g)}{T}\left(\sum^{T}\_{r=1}\symbf{P}^r\right)\symbf{D}^{-1}\right) - \log(k) - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\, \right\|^2_F. $$
+$$ \symscr{L}(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}) = \left\\|\,\log\left\(\dfrac{\text{vol}(\symbfscr{G})}{T}\left\(\sum^{T}\_{r=1}\symbf{P}^r\right\)\symbf{D}^{-1}\right\) - \log(k) - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\, \right\\|^2_F. $$
 
  
 したがって，埋め込み $\symbf{W}\_{\text{con}}$ と $\symbf{W}\_{\text{cen}}$ は，この目的関数を最小化することで学習できる．同様に，LINEやnode2vecも行列形式で表現することが可能である(Qiu
@@ -334,7 +334,7 @@ et al., 2018b)．
 
 <figure>
 
-<img src="./fig/fig4_3.pdf" width="100%"/>
+<img src="./fig/fig4_3.png" width="100%"/>
 
 <figcaption>図4.3 構造的役割が類似している2つのノードの例．</figcaption>
 
@@ -362,7 +362,7 @@ et al.(2017)で提案されている．
 $$ g\_k(v\_1, v\_2) = g_{k-1}(v\_1,v\_2) + \text{dis}(s(R\_k(v\_1)), s(R\_k(v\_2))). $$
 
  
-ここで， $\text{dis}(s(R\_k(v\_1)), s(R\_k(v\_2)))\geq 0$ は「 $v\_1$ と $v\_2$ の次数列間の距離」を測定している．言い換えれば，「 $v\_1$ と $v\_2$ に対する $k$ 次近傍の次数の類似度」を表している．
+ここで， $\text{dis}(s(R\_k(v\_1)), s(R\_k(v\_2)))\symbfscr{G}eq 0$ は「 $v\_1$ と $v\_2$ の次数列間の距離」を測定している．言い換えれば，「 $v\_1$ と $v\_2$ に対する $k$ 次近傍の次数の類似度」を表している．
  $g_{-1}(\cdot,\cdot)$ は $0$ で初期化していることに注意．ゆえに，この距離の値が大きいほど，比較される $2$ つの入力ノードの構造的類似度は低くなることを意味する．
 また，一般に次数列 $s(R\_k(v\_1))$ と $s(R\_k(v\_2))$ は異なる長さであり，その要素は任意の（非負）整数である．
 したがって，異なる長さの数列を扱うことができる"動的時間伸縮法(dynamic
@@ -379,7 +379,7 @@ $$ l(a,b) = \dfrac{\max (a,b)}{\min (a,b)} - 1. $$
 ### 構造類似性に基づくグラフの生成 {#構造類似性に基づくグラフの生成 .unnumbered}
 
 ノード組に対する構造距離を求めれば，それらのノード間の構造類似性を符号化した"多層重み付きグラフ"が構成できる[^8]．
-具体的に，元のグラフ $\g$ の直径を $k^{\ast}$ とすると，" $k^\ast$ 層グラフ"が構成できる．
+具体的に，元のグラフ $\symbfscr{G}$ の直径を $k^{\ast}$ とすると，" $k^\ast$ 層グラフ"が構成できる．
 そして $k$ 番目の層は，以下のように定義された重みを持つ[^9]．
  
 
@@ -397,10 +397,10 @@ $$ w\_k(u,v) = \exp(-g\_k(u,v)). $$
 ここで，
  
 
-$$ \Gamma\_k(v) = \sum_{v\_j\in\nodes}\symbb{1}(w\_k(v, v\_j) > \bar{w}_k), $$
+$$ \Gamma\_k(v) = \sum_{v\_j\in\symbfscr{V}}\symbb{1}(w\_k(v, v\_j) > \bar{w}_k), $$
 
  
-である．また， $\bar{w}_k = \sum_{(u,v)\in\edges\_k} w\_k(u,v)/\dbinom{N}{2}$ は，第 $k$ 層の完全グラフ上における，エッジの重みの平均を表している（ $\edges\_k$ は第 $k$ 層内のエッジ集合である）．
+である．また， $\bar{w}_k = \sum_{(u,v)\in\symbfscr{E}\_k} w\_k(u,v)/\dbinom{N}{2}$ は，第 $k$ 層の完全グラフ上における，エッジの重みの平均を表している（ $\symbfscr{E}\_k$ は第 $k$ 層内のエッジ集合である）．
 したがって， $\Gamma\_k(v)$ は，第 $k$ 層上で，ノード $v$ が他のノードとどれくらい類似しているかを測る指標となる．この設計により，現在の層内で他のノードに非常に類似しているノードは，次の層への強い接続を持つことが保証される．その結果，次の層に進んでより多くの情報を取得するようなランダムウォークが得られやすくなる．
 
 ### 多層グラフ上での偏りのあるランダムウォーク {#多層グラフ上での偏りのあるランダムウォーク .unnumbered}
@@ -417,7 +417,7 @@ $$ p\_k(v|u) = \dfrac{\exp (-g\_k(v,u))}{Z\_k(u)}. $$
  $Z\_k(u)$ は $k$ 層におけるノード $u$ についての正規化因子であり，以下のように定義される．
  
 
-$$ Z\_k(u) = \sum_{(v,u)\in\,\edges\_k}\exp (-g\_k(v,u)). $$
+$$ Z\_k(u) = \sum_{(v,u)\in\,\symbfscr{E}\_k}\exp (-g\_k(v,u)). $$
 
  
 
@@ -461,7 +461,7 @@ $$ p_{\text{global}} = \prod_{1\leq i<j\leq N}p(v_{(i)},v_{(j)}). $$
 ここで， $p(v_{(i)}, v_{(j)})$ はノード $v_{(i)}$ が $v_{(j)}$ より先にランク付けされる確率[^10]を，それらのノード埋め込みに基づき算出したものである．詳細にいえばこの確率は以下のようにモデル化される．
  
 
-$$ p\left(v_{(i)}, v_{(j)}\right) = \sigma\left(\symbf{w}^{\top}(\symbf{u}\_{(i)} - \symbf{u}\_{(j)})\right) $$
+$$ p\left\(v_{(i)}, v_{(j)}\right\) = \sigma\left\(\symbf{w}^{\top}(\symbf{u}\_{(i)} - \symbf{u}\_{(j)})\right\) $$
 
  
  $\symbf{u}\_{(i)}$ および $\symbf{u}\_{(j)}$ は，それぞれノード $v_{(i)}$ および $v_{(j)}$ のノード埋め込み（あるいは $v_{(i)}$ および $v_{(j)}$ についてのマッピング関数の出力）であり， $\symbf{w}$ は学習対象のパラメータベクトルである．
@@ -514,7 +514,7 @@ $$ \symbf{P} = \symbf{A} + \eta\cdot\symbf{S}. $$
  $\eta>0$ は近傍類似性の重要度を制御している．行列 $\symbf{P}$ は埋め込みドメインから $\symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}$ として再構成される（ $\symbf{W}\_{\text{con}}$ と $\symbf{W}\_{\text{cen}}$ は $2$ つのマッピング関数 $f_{\text{con}}$ と $f_{\text{cen}}$ のパラメータである）．これらはDeepWalkと同じ設計である．そして，目的関数は以下のように定式化される．
  
 
-$$ \symscr{L}\left(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}\right) = \|\symbf{P} - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\|^2_{\text{F}}. $$
+$$ \symscr{L}\left\(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}\right\) = \|\symbf{P} - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\|^2_{\text{F}}. $$
 
  
 ここで， $\|\cdot\|_{\text{F}}$ は行列のフロベニウスノルムを表している．
@@ -526,26 +526,26 @@ maximization)に基づくものがある(Newman, 2006)．
 具体的には，ノードのコミュニティへの割り当てが既知の， $2$ つのコミュニティが存在するグラフが与えられたとすると，モジュラリティは
  
 
-$$ Q = \dfrac{1}{2\cdot \text{vol}(\g)}\sum_{ij}\left(\symbf{A}\_{i,j} - \dfrac{d(v\_i)d(v\_j)}{\text{vol}(\g)}\right)h\_ih\_j, $$
+$$ Q = \dfrac{1}{2\cdot \text{vol}(\symbfscr{G})}\sum_{ij}\left\(\symbf{A}\_{i,j} - \dfrac{d(v\_i)d(v\_j)}{\text{vol}(\symbfscr{G})}\right\)h\_ih\_j, $$
 
  
 と定義することができる．
- $d(v\_i)$ はノード $v\_i$ の次数であり，また，ノード $v\_i$ が第一のコミュニティに属していれば $h\_i=1$ ，そうでなければ $h\_i=-1$ とする．また， $\displaystyle\text{vol}(\g)=\sum_{v\_i\in\nodes}d(v\_i)$ である．
-実際， $\dfrac{d(v\_i)d(v\_j)}{\text{vol}(\g)}$ はランダムに生成されたグラフのノード $v\_i$ と $v\_j$ 間のエッジ数の期待値になっている．
-ここでランダムに生成されたグラフというのは， $\g$ と同じノード集合，同じノード次数，同じ数のエッジを持つが，そのエッジはノード間にランダムに配置されたものである．したがってモジュラリティ $Q$ は，観測されたエッジのうち元のグラフのコミュニティに含まれるエッジの割合と，
+ $d(v\_i)$ はノード $v\_i$ の次数であり，また，ノード $v\_i$ が第一のコミュニティに属していれば $h\_i=1$ ，そうでなければ $h\_i=-1$ とする．また， $\displaystyle\text{vol}(\symbfscr{G})=\sum_{v\_i\in\symbfscr{V}}d(v\_i)$ である．
+実際， $\dfrac{d(v\_i)d(v\_j)}{\text{vol}(\symbfscr{G})}$ はランダムに生成されたグラフのノード $v\_i$ と $v\_j$ 間のエッジ数の期待値になっている．
+ここでランダムに生成されたグラフというのは， $\symbfscr{G}$ と同じノード集合，同じノード次数，同じ数のエッジを持つが，そのエッジはノード間にランダムに配置されたものである．したがってモジュラリティ $Q$ は，観測されたエッジのうち元のグラフのコミュニティに含まれるエッジの割合と，
 ランダムに生成されたグラフでそれらのエッジの観測が期待される割合の差に基づいて定義される．
 モジュラリティ $Q$ が正値ならコミュニティ構造の存在を示唆しており，多くの場合，モジュラリティ $Q$ の値が大きいほど，より優れたコミュニティ構造が発見されることを意味している(Newman,
 2006)．
 したがって，優れたコミュニティを検出するためには，適切なコミュニティの割り当てを見つけてモジュラリティ $Q$ の最大化を行うことが可能になる．さらに，モジュラリティ $Q$ は行列形式で以下のようにかける．
  
 
-$$ Q = \dfrac{1}{2\cdot\text{vol}(\g)}\symbf{h}^{\top}\symbf{B}\symbf{h}. $$
+$$ Q = \dfrac{1}{2\cdot\text{vol}(\symbfscr{G})}\symbf{h}^{\top}\symbf{B}\symbf{h}. $$
 
  
  $\symbf{h}\in \left\\{-1,1\right\\}^N$ は $i$ 番目の要素を $\symbf{h}[i]=h\_i$ としたコミュニティ割り当てベクトルであり， $\symbf{B}\in\mathbb{R}^{N\times N}$ は
  
 
-$$ \symbf{B}\_{i,j} = \symbf{A}\_{i,j} - \dfrac{d(v\_i)d(v\_j)}{\text{vol}(\g)}. $$
+$$ \symbf{B}\_{i,j} = \symbf{A}\_{i,j} - \dfrac{d(v\_i)d(v\_j)}{\text{vol}(\symbfscr{G})}. $$
 
  
 と定義される．
@@ -565,7 +565,7 @@ $$ \max_{\symbf{H}}Q = \tr (\symbf{H}^{\top}\symbf{B}\symbf{H}),\qquad\textit{s.
 ノード指向の構造情報とコミュニティ構造情報を共に保存するために，別の行列 $\symbf{C}$ を導入し，コミュニティ割り当て行列 $\symbf{H}$ とともに $\symbf{W}\_{\text{cen}}$ を再構成する．その結果，今回の手法の枠組み全体の目的関数は以下のようになる．
  $$ \begin{aligned}
     \min_{\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}},\symbf{H},\symbf{C}} &\|\symbf{P} - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\|^{2}\_{\text{F}} + \alpha\|\symbf{H} - \symbf{W}\_{\text{cen}}\symbf{C}^{\top}\|^{2}\_{\text{F}} - \beta\cdot\tr (\symbf{H}^{\top}\symbf{B}\symbf{H}),\\
-    &\textit{s.t.}\quad\symbf{W}\_{\text{con}}\geq 0,\;\symbf{W}\_{\text{cen}}\geq 0,\;\symbf{C}\geq0,\;\tr (\symbf{H}^{\top}\symbf{H}) = N.\end{aligned} $$ 
+    &\textit{s.t.}\quad\symbf{W}\_{\text{con}}\symbfscr{G}eq 0,\;\symbf{W}\_{\text{cen}}\symbfscr{G}eq 0,\;\symbf{C}\symbfscr{G}eq0,\;\tr (\symbf{H}^{\top}\symbf{H}) = N.\end{aligned} $$ 
  $\|\symbf{H} - \symbf{W}\_{\text{cen}}\symbf{C}^{\top}\|^{2}\_{\text{F}}$ の項はコミュニティ構造情報とノード表現を結びつけており，またWang
 et
 al.(2017c)で採用されている非負行列分解を行うために非負制約が加えられている．さらにハイパーパラメータ $\alpha,\beta$ は $3$ 項間のバランスを制御するものである．
