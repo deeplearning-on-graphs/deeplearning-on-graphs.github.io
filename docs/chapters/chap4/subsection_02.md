@@ -26,7 +26,7 @@ $$ f(v\_i) = \symbf{u}_i = \symbf{e}^{T}\_i\symbf{W}. $$
 
  
 
-ここで， $\symbf{e}_i\in \left\\{0,1\right\\}^N\,(N=|\symbfscr{V}|)$ は，ノード $v\_i$ のワンホットエンコーディングを表している（つまり $\symbf{e}_i$ は，1つの要素だけ $\symbf{e}_i[i]=1$ であり，他の要素は全て $0$ となる）．また $\symbf{W}\in \mathbb{R}^{N\times d}$ は， $d$ を埋め込み次元とした，学習対象である埋め込みパラメータで，行列 $\symbf{W}$ の $i$ 番目の行はノード $v\_i$ の表現（または埋め込み）を表す．ゆえに，マッピング関数のパラメータ数は $N\times d$ 個となる．
+ここで， $\symbf{e}_i\in \left\{0,1\right\}^N\,(N=|\symbfscr{V}|)$ は，ノード $v\_i$ のワンホットエンコーディングを表している（つまり $\symbf{e}_i$ は，1つの要素だけ $\symbf{e}_i[i]=1$ であり，他の要素は全て $0$ となる）．また $\symbf{W}\in \mathbb{R}^{N\times d}$ は， $d$ を埋め込み次元とした，学習対象である埋め込みパラメータで，行列 $\symbf{W}$ の $i$ 番目の行はノード $v\_i$ の表現（または埋め込み）を表す．ゆえに，マッピング関数のパラメータ数は $N\times d$ 個となる．
 
 ### ランダムウォークに基づく共起性の抽出 {#ランダムウォークに基づく共起性の抽出 .unnumbered}
 
@@ -70,7 +70,7 @@ DeepWalkでは，与えられたグラフから複数の短いランダムウォ
 
  $\textbf{Output:}\;\mathscr{R}$ 
 
- $\textbf{Initialization:}\;\mathscr{R}\left\arrow \emptyset$ 
+ $\textbf{Initialization:}\;\mathscr{R}\leftarrow \emptyset$ 
 :::
 
 こうして生成したランダムウォークは，ノード集合 $\symbfscr{V}$ を語彙（単語の集まり）とする"人工言語"の文章として扱うことができる．言語モデルにおけるskip-gramアルゴリズム(Mikolov
@@ -90,7 +90,7 @@ al(2015)では，中心ノードまでの距離に応じて文脈ノードは異
 
  $\textbf{Output:}\;\mathscr{I}$ 
 
- $\textbf{Initialization:}\;\mathscr{I}\left\arrow [\;]$ 
+ $\textbf{Initialization:}\;\mathscr{I}\leftarrow [\;]$ 
 :::
 
 ### 共起性の再構成および目的関数 {#共起性の再構成および目的関数 .unnumbered}
@@ -224,7 +224,7 @@ Hyvärinen,
 
  
 
-$$ \log\sigma\left\(f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}})\right\) + \sum^{k}\_{i=1}E_{v\_n\sim P\_n(v)}\left\[\log\sigma\left\(-f_{\text{con}}(v\_n)^{\top} f_{\text{cen}}(v_{\text{cen}})\right\)\right\]. $$
+$$ \log\sigma\left(f_{\text{con}}(v_{\text{con}})^{\top}f_{\text{cen}}(v_{\text{cen}})\right) + \sum^{k}\_{i=1}E_{v\_n\sim P\_n(v)}\left[\log\sigma\left(-f_{\text{con}}(v\_n)^{\top} f_{\text{cen}}(v_{\text{cen}})\right)\right]. $$
 
  
 
@@ -306,7 +306,7 @@ al.(2018b)によれば，前述したネットワークの埋め込み手法は�
 行列形式では，与えられたグラフ $\symbfscr{G}$ に対してネガティブサンプリングを行ったDeepWalkは，以下の行列因子分解に等価である．
  
 
-$$ \log\left\(\dfrac{\mathrm{vol}(\symbfscr{G})}{T}\left\(\sum^{T}\_{r=1}\symbf{P}^r\right\)\symbf{D}^{-1}\right\) - \log(k). $$
+$$ \log\left(\dfrac{\mathrm{vol}(\symbfscr{G})}{T}\left(\sum^{T}\_{r=1}\symbf{P}^r\right)\symbf{D}^{-1}\right) - \log(k). $$
 
  
 ここで， $\symbf{P}$ はグラフ $\symbfscr{G}$ の隣接行列 $\symbf{A}$ と対応する次数行列 $D$ の逆行列で構成した行列 $\symbf{P} = \symbf{D}^{-1}\symbf{A}$ であり， $T$ はランダムウォークの長さである．また， $\mathrm{vol}(\symbfscr{G})=\sum^{|\symbfscr{V}|}\_{i=1}\sum^{|\symbfscr{V}|}\_{j=1}\symbf{A}\_{i,j}$ であり， $k$ はネガティブサンプルの個数である．
@@ -317,14 +317,14 @@ $$ \log\left\(\dfrac{\mathrm{vol}(\symbfscr{G})}{T}\left\(\sum^{T}\_{r=1}\symbf{
 具体的には，行列因子分解による情報抽出(Extractor)は以下のようになる．
  
 
-$$ \log\left\(\dfrac{\mathrm{vol}(\symbfscr{G})}{T}\left\(\sum^{T}\_{r=1}\symbf{P}^r\right\)\symbf{D}^{-1}\right\). $$
+$$ \log\left(\dfrac{\mathrm{vol}(\symbfscr{G})}{T}\left(\sum^{T}\_{r=1}\symbf{P}^r\right)\symbf{D}^{-1}\right). $$
 
  
 一方でマッピング関数(Mapping)は，DeepWalkで導入したものと同じ $f_{\text{cen}}(\cdot)$ と $f_{\text{con}}(\cdot)$ のを用いている．
 これら2つのマッピング関数のパラメータは， $\symbf{W}\_{\text{cen}}$ と $\symbf{W}\_{\text{con}}$ であり，それらはグラフ $\symbfscr{G}$ の2組のノード表現でもある．そしてこの場合の再構成(Reconstractor)は，" $\symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}$ "という形で表現でき，これにより目的関数は以下のように表すことができる．
  
 
-$$ \symscr{L}(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}) = \left\\|\,\log\left\(\dfrac{\text{vol}(\symbfscr{G})}{T}\left\(\sum^{T}\_{r=1}\symbf{P}^r\right\)\symbf{D}^{-1}\right\) - \log(k) - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\, \right\\|^2_F. $$
+$$ \symscr{L}(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}) = \left\|\,\log\left(\dfrac{\text{vol}(\symbfscr{G})}{T}\left(\sum^{T}\_{r=1}\symbf{P}^r\right)\symbf{D}^{-1}\right) - \log(k) - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\, \right\|^2_F. $$
 
  
 したがって，埋め込み $\symbf{W}\_{\text{con}}$ と $\symbf{W}\_{\text{cen}}$ は，この目的関数を最小化することで学習できる．同様に，LINEやnode2vecも行列形式で表現することが可能である(Qiu
@@ -461,7 +461,7 @@ $$ p_{\text{global}} = \prod_{1\leq i<j\leq N}p(v_{(i)},v_{(j)}). $$
 ここで， $p(v_{(i)}, v_{(j)})$ はノード $v_{(i)}$ が $v_{(j)}$ より先にランク付けされる確率[^10]を，それらのノード埋め込みに基づき算出したものである．詳細にいえばこの確率は以下のようにモデル化される．
  
 
-$$ p\left\(v_{(i)}, v_{(j)}\right\) = \sigma\left\(\symbf{w}^{\top}(\symbf{u}\_{(i)} - \symbf{u}\_{(j)})\right\) $$
+$$ p\left(v_{(i)}, v_{(j)}\right) = \sigma\left(\symbf{w}^{\top}(\symbf{u}\_{(i)} - \symbf{u}\_{(j)})\right) $$
 
  
  $\symbf{u}\_{(i)}$ および $\symbf{u}\_{(j)}$ は，それぞれノード $v_{(i)}$ および $v_{(j)}$ のノード埋め込み（あるいは $v_{(i)}$ および $v_{(j)}$ についてのマッピング関数の出力）であり， $\symbf{w}$ は学習対象のパラメータベクトルである．
@@ -514,7 +514,7 @@ $$ \symbf{P} = \symbf{A} + \eta\cdot\symbf{S}. $$
  $\eta>0$ は近傍類似性の重要度を制御している．行列 $\symbf{P}$ は埋め込みドメインから $\symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}$ として再構成される（ $\symbf{W}\_{\text{con}}$ と $\symbf{W}\_{\text{cen}}$ は $2$ つのマッピング関数 $f_{\text{con}}$ と $f_{\text{cen}}$ のパラメータである）．これらはDeepWalkと同じ設計である．そして，目的関数は以下のように定式化される．
  
 
-$$ \symscr{L}\left\(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}\right\) = \|\symbf{P} - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\|^2_{\text{F}}. $$
+$$ \symscr{L}\left(\symbf{W}\_{\text{con}}, \symbf{W}\_{\text{cen}}\right) = \|\symbf{P} - \symbf{W}\_{\text{con}}\symbf{W}\_{\text{cen}}^{\top}\|^2_{\text{F}}. $$
 
  
 ここで， $\|\cdot\|_{\text{F}}$ は行列のフロベニウスノルムを表している．
@@ -526,7 +526,7 @@ maximization)に基づくものがある(Newman, 2006)．
 具体的には，ノードのコミュニティへの割り当てが既知の， $2$ つのコミュニティが存在するグラフが与えられたとすると，モジュラリティは
  
 
-$$ Q = \dfrac{1}{2\cdot \text{vol}(\symbfscr{G})}\sum_{ij}\left\(\symbf{A}\_{i,j} - \dfrac{d(v\_i)d(v\_j)}{\text{vol}(\symbfscr{G})}\right\)h\_ih\_j, $$
+$$ Q = \dfrac{1}{2\cdot \text{vol}(\symbfscr{G})}\sum_{ij}\left(\symbf{A}\_{i,j} - \dfrac{d(v\_i)d(v\_j)}{\text{vol}(\symbfscr{G})}\right)h\_ih\_j, $$
 
  
 と定義することができる．
@@ -542,7 +542,7 @@ $$ Q = \dfrac{1}{2\cdot \text{vol}(\symbfscr{G})}\sum_{ij}\left\(\symbf{A}\_{i,j
 $$ Q = \dfrac{1}{2\cdot\text{vol}(\symbfscr{G})}\symbf{h}^{\top}\symbf{B}\symbf{h}. $$
 
  
- $\symbf{h}\in \left\\{-1,1\right\\}^N$ は $i$ 番目の要素を $\symbf{h}[i]=h\_i$ としたコミュニティ割り当てベクトルであり， $\symbf{B}\in\mathbb{R}^{N\times N}$ は
+ $\symbf{h}\in \left\{-1,1\right\}^N$ は $i$ 番目の要素を $\symbf{h}[i]=h\_i$ としたコミュニティ割り当てベクトルであり， $\symbf{B}\in\mathbb{R}^{N\times N}$ は
  
 
 $$ \symbf{B}\_{i,j} = \symbf{A}\_{i,j} - \dfrac{d(v\_i)d(v\_j)}{\text{vol}(\symbfscr{G})}. $$
@@ -551,7 +551,7 @@ $$ \symbf{B}\_{i,j} = \symbf{A}\_{i,j} - \dfrac{d(v\_i)d(v\_j)}{\text{vol}(\symb
 と定義される．
 
 モジュラリティの定義は，コミュニティの個数が $m>2$ 個ある場合に拡張できる．
-具体的にコミュニティ割り当てベクトル $\symbf{h}$ は，行列 $\symbf{H}\in\left\\{0,1\right\\}^{N\times m}$ として， $\symbf{W}$ の各列がコミュニティを表すような行列として一般化できる．また行列 $\symbf{H}$ の $i$ 行目はノード $v\_i$ の属するコミュニティを示すワンホットベクトルであり，この行の要素は一つだけ $1$ で，他は $0$ の値をとる．したがって， $\mathrm{tr}(\symbf{H}^{\top}\symbf{H})=N$ を得る（ $\mathrm{tr}(\symbf{X})$ は行列 $\symbf{X}$ のトレースを表す）．いくつかの定数を無視すれば， $m$ 個のコミュニティを持つグラフのモジュラリティは $Q=\tr(\symbf{H}^{\top}\symbf{B}\symbf{H})$ と定義できる．
+具体的にコミュニティ割り当てベクトル $\symbf{h}$ は，行列 $\symbf{H}\in\left\{0,1\right\}^{N\times m}$ として， $\symbf{W}$ の各列がコミュニティを表すような行列として一般化できる．また行列 $\symbf{H}$ の $i$ 行目はノード $v\_i$ の属するコミュニティを示すワンホットベクトルであり，この行の要素は一つだけ $1$ で，他は $0$ の値をとる．したがって， $\mathrm{tr}(\symbf{H}^{\top}\symbf{H})=N$ を得る（ $\mathrm{tr}(\symbf{X})$ は行列 $\symbf{X}$ のトレースを表す）．いくつかの定数を無視すれば， $m$ 個のコミュニティを持つグラフのモジュラリティは $Q=\tr(\symbf{H}^{\top}\symbf{B}\symbf{H})$ と定義できる．
 割り当て行列 $\symbf{H}$ はモジュラリティ $Q$ を
  
 

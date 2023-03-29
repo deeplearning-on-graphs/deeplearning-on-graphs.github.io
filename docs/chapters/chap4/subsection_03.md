@@ -29,7 +29,7 @@ $$ p(\tilde{\symbf{A}}\_{i,j} =0) = 1-\sigma(\symbf{u}\_i^{\top}\symbf{u}_j). $$
 
  
 
-$$ -\sum^{N}\_{i,j=1}\left\(\symbf{A}\_{i,j}\log p(\tilde{\symbf{A}}=1) + (1-\symbf{A}\_{i,j})\log p(\tilde{\symbf{A}}\_{i,j} = 0)\right\). $$
+$$ -\sum^{N}\_{i,j=1}\left(\symbf{A}\_{i,j}\log p(\tilde{\symbf{A}}=1) + (1-\symbf{A}\_{i,j})\log p(\tilde{\symbf{A}}\_{i,j} = 0)\right). $$
 
  
 
@@ -73,7 +73,7 @@ relation)"を定義しており，その関係は $R = R\_1\circ R\_2\circ \cdot
 形式的には，この近傍は以下のように定義することができる．
  
 
-$$ \symscr{N}^{R\_t}\_{t+1}(v^{(t)}) = \left\\{v\_j | v\_j \in \symscr{N}(v^{(t)})\;\text{かつ}\;\phi\_n(v\_j) = A_{t+1}\;\text{かつ}\;\phi\_e(v^{(t)},v\_j) = R\_t\right\\}. $$
+$$ \symscr{N}^{R\_t}\_{t+1}(v^{(t)}) = \left\{v\_j | v\_j \in \symscr{N}(v^{(t)})\;\text{かつ}\;\phi\_n(v\_j) = A_{t+1}\;\text{かつ}\;\phi\_e(v^{(t)},v\_j) = R\_t\right\}. $$
 
  
 ここで， $\phi\_n(v\_j)$ はノード $v\_j$ の種類を取り出す関数で， $\phi\_e(v^{(t)},v\_j)$ はエッジ $(v^{(t)}, v\_j)$ の種類を取り出す関数である（いずれの関数もDefinition
@@ -224,7 +224,7 @@ SiNEは，埋め込みドメインにおいて敵よりも友に近い位置に�
 この三つ組を符号付きグラフの集合として $\symscr{I}_1$ と表すと，形式的には以下のように定義できる．
  
 
-$$ \symscr{I}_1 = \left\\{\left\(v\_i,v\_j,v\_k\right\) | \symbf{A}\_{i,j}=1,\;\;\symbf{A}\_{i,k}=-1,\;\;v\_i,v\_j,v\_k\in \symbfscr{V}\right\\}. $$
+$$ \symscr{I}_1 = \left\{\left(v\_i,v\_j,v\_k\right) | \symbf{A}\_{i,j}=1,\;\;\symbf{A}\_{i,k}=-1,\;\;v\_i,v\_j,v\_k\in \symbfscr{V}\right\}. $$
 
  
 ここで， $\symbf{A}$ はDefinition
@@ -303,13 +303,13 @@ $$ \symbf{u}_i = f(\symbf{A}_i;\,\symbf{\Theta}) $$
 
 抽出された $2$ 種類の情報を復元するために， $2$ つの情報再構成が用意される．
 まず，ハイパーエッジ集合 $\symbfscr{E}$ を復元する再構成を説明し，そのあと共起情報 $\symbf{A}$ を復元する再構成を説明していく．
-埋め込みからハイパーエッジの情報を復元するためには，任意のノード集合 $\left\\{v_{(1)},\dots,v_{(k)}\right\\}$ 内にハイパーエッジが存在する確率をモデル化し， $\symbfscr{E}$ 内のそれらのハイパーエッジの確率を最大化することを目指す．
+埋め込みからハイパーエッジの情報を復元するためには，任意のノード集合 $\left\{v_{(1)},\dots,v_{(k)}\right\}$ 内にハイパーエッジが存在する確率をモデル化し， $\symbfscr{E}$ 内のそれらのハイパーエッジの確率を最大化することを目指す．
 便宜上，Tu et
 al.(2018)では全てのハイパーエッジは $k$ 個のノード集合を持つと仮定している．
-（この仮定の下で）与えられたノード集合 $\symscr{V}^{i} = \left\\{v^{i}\_{(1)},\dots,v^{i}\_{(k)}\right\\}$ にハイパーエッジが存在する確率は以下のように定義される．
+（この仮定の下で）与えられたノード集合 $\symscr{V}^{i} = \left\{v^{i}\_{(1)},\dots,v^{i}\_{(k)}\right\}$ にハイパーエッジが存在する確率は以下のように定義される．
  
 
-$$ p(1|\symscr{V}^i) = \sigma\left\(g([\symbf{u}^{i}\_{(1)},\dots,\symbf{u}^{i}\_{(k)}])\right\). $$
+$$ p(1|\symscr{V}^i) = \sigma\left(g([\symbf{u}^{i}\_{(1)},\dots,\symbf{u}^{i}\_{(k)}])\right). $$
 
  
  $g()$ はノード埋め込みの連結(concatenation)を一つスカラーに写像する順伝播型ネットワークで， $\sigma()$ はそのスカラーを確率に変換するシグモイド関数である．
@@ -365,7 +365,7 @@ sequence)で構成される．
 ダイナミックグラフ $\symbfscr{G}$ のノード $v\_i\in\symscr{V}$ について，時点 $t$ におけるその時間的近傍は，時点 $t$ 以降に $v\_i$ と接続しているノードの集まりである．形式的には以下のように表すことができる．
  
 
-$$ \symscr{N}\_{(t)}(v\_i) = \left\\{v\_j|(v\_i, v\_j)\in\symbfscr{E}\;\text{かつ}\; \phi\_e((v\_i, v\_j))\symbfscr{G}eq t\right\\}. $$
+$$ \symscr{N}\_{(t)}(v\_i) = \left\{v\_j|(v\_i, v\_j)\in\symbfscr{E}\;\text{かつ}\; \phi\_e((v\_i, v\_j))\symbfscr{G}eq t\right\}. $$
 
  
  $\phi\_e((v\_i, v\_j))$ は，Definition
@@ -380,7 +380,7 @@ $$ \symscr{N}\_{(t)}(v\_i) = \left\\{v\_j|(v\_i, v\_j)\in\symbfscr{E}\;\text{か
  
 <strong>定義 4.8 時間的ランダムウォーク</strong>
 
- $\symbfscr{G}=\left\\{\symbfscr{V},\symbfscr{E},\phi\_e\right\\}$ をダイナミックグラフとし， $\phi\_e$ をエッジに紐づく時間を返す関数である．ここでは， $(v^{(0)},v^{(1)})$ を最初のエッジとするノード $v^{(0)}$ を出発点とする時間的ランダムウォークを考える．
+ $\symbfscr{G}=\left\{\symbfscr{V},\symbfscr{E},\phi\_e\right\}$ をダイナミックグラフとし， $\phi\_e$ をエッジに紐づく時間を返す関数である．ここでは， $(v^{(0)},v^{(1)})$ を最初のエッジとするノード $v^{(0)}$ を出発点とする時間的ランダムウォークを考える．
 今 $k$ 番目のステップで，ノード $v^{(k-1)}$ からノード $v^{(k)}$ まで進んだところであると仮定し，今度はノード $v^{(k)}$ の時間的近傍 $\symscr{N}\_{(\phi\_e((v^{(k-1)},v^{(k)})))}(v^{(k)})$ の中から移動先のノードを以下の確率でに沿って選択する．
  $$ p(v^{(k+1)}|v^{(k)}) =  
     \begin{cases}
@@ -390,7 +390,7 @@ $$ \symscr{N}\_{(t)}(v\_i) = \left\\{v\_j|(v\_i, v\_j)\in\symbfscr{E}\;\text{か
 ここで， $\mathrm{pre}(v^{(k+1)})$ は以下のように定義され，現在時点との時間差が小さいノードが高確率で選択されることになる．
  
 
-$$ \mathrm{pre}(v^{(k+1)}) = \dfrac{\exp\left\[\phi\_e((v^{(k-1)},v^{(k)}))-\phi\_e((v^{(k)},v^{(k+1)}))\right\]}{\displaystyle\sum_{v^{(j)}\in\;\symscr{N}\_{(\phi\_e((v^{(k-1)},v^{(k)})))}(v^{(k)})}\exp\left\[\phi\_e((v^{(k-1)}, v^{(k)}))-\phi\_e((v^{(k)}, v^{(j)}))\right\]}. $$
+$$ \mathrm{pre}(v^{(k+1)}) = \dfrac{\exp\left[\phi\_e((v^{(k-1)},v^{(k)}))-\phi\_e((v^{(k)},v^{(k+1)}))\right]}{\displaystyle\sum_{v^{(j)}\in\;\symscr{N}\_{(\phi\_e((v^{(k-1)},v^{(k)})))}(v^{(k)})}\exp\left[\phi\_e((v^{(k-1)}, v^{(k)}))-\phi\_e((v^{(k)}, v^{(j)}))\right]}. $$
 
  
 
