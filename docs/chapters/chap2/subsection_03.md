@@ -13,14 +13,15 @@
  
 <strong>定義 2.4 次数</strong>
 
- $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ において， $v\_i\in \symbfscr{V}$ の次数とは， $v\_i$ と隣接しているノードの数
- 
+ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ において， $v\_i\in \symbfscr{V}$ の次数とは， $v\_i$ と隣接しているノードの数
 
-$$ d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\}), $$
+ $$ \nonumber
+    d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\}), $$ 
 
- 
 である．ここで， $\symbb{1}\_{\symbfscr{E}}(\cdot)$ は次のような指示関数である．
- $$ \symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\}) = 
+
+ $$ \nonumber
+    \symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\}) = 
     \begin{cases}
         1 & (v\_i,v\_j)\in \symbfscr{E},\\
         0 & (v\_i,v\_j)\notin \symbfscr{E}.
@@ -29,11 +30,8 @@ $$ d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v
 
  $\symbfscr{G}$ におけるノード $v\_i$ の次数は，隣接行列を使うことによっても算出できる．例えば，あるノード $v\_i$ の次数は以下のように計算できる．
 
- 
-
-$$ d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$
-
- 
+ $$ \tag{2.1}
+    d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$ 
 
 
 <div class="eg">
@@ -48,7 +46,7 @@ $$ d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$
  
 <strong>定義 2.6 近傍</strong>
 
- $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ のノード $v\_i$ について，その近傍 $\symscr{N}(v\_i)$ とは， $v\_i$ と隣接している全ノードで構成される集合である．
+ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ のノード $v\_i$ について，その近傍 $\symscr{N}(v\_i)$ とは， $v\_i$ と隣接している全ノードで構成される集合である．
 
 </div>
 
@@ -58,19 +56,17 @@ $$ d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$
  
 <strong>定理 2.7</strong>
 
- $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ に対して，"総次数"（全ノードの次数の和）は，グラフに含まれる全エッジ数の $2$ 倍になる：
- 
+ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対して，"総次数"（全ノードの次数の和）は，グラフに含まれる全エッジ数の $2$ 倍になる：
 
-$$ \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$
-
- 
+ $$ \nonumber
+    \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$ 
 
 ::: prf
  $$ \begin{aligned}
-    \sum_{v\_i\in\symbfscr{V}}d(v\_i) &= \sum_{v\_i\in \symbfscr{V}}\sum_{v\_j\in\symbfscr{V}}\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\\
-    &=\sum_{\left\{v\_i,v\_j\right\}\in\symbfscr{E}}2\cdot\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\\
-    &=2\cdot\sum_{\left\{v\_i,v\_j\right\}\in\symbfscr{E}}\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\\
-    &=2\cdot|\symbfscr{E}|\tag*{\qed}\end{aligned} $$ 
+    \sum_{v\_i\in\symbfscr{V}}d(v\_i) &= \sum_{v\_i\in \symbfscr{V}}\sum_{v\_j\in\symbfscr{V}}\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
+    &=\sum_{\left\{v\_i,v\_j\right\}\in\symbfscr{E}}2\cdot\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
+    &=2\cdot\sum_{\left\{v\_i,v\_j\right\}\in\symbfscr{E}}\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
+    &=2\cdot|\symbfscr{E}|\nonumber\tag*{\qed}\end{aligned} $$ 
 :::
 
 
@@ -137,18 +133,15 @@ $$ \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$
  
 <strong>定理 2.13</strong>
 
-隣接行列 $\symbf{A}$ を持つグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ に対して，隣接行列の $n$ 乗を $\symbf{A}^{n}$ と表す．このとき，行列 $\symbf{A}^{n}$ の $i,j$ 成分は，長さ $n$ の $v\_i$ - $v\_j$ ウォークの数に等しい．
+隣接行列 $\symbf{A}$ を持つグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対して，隣接行列の $n$ 乗を $\symbf{A}^{n}$ と表す．このとき，行列 $\symbf{A}^{n}$ の $i,j$ 成分は，長さ $n$ の $v\_i$ - $v\_j$ ウォークの数に等しい．
 
 ::: prf
 帰納法によってこの定理を証明できる．
 まず $n=1$ に対して定義が成り立つことを示す．
  $\symbf{A}\_{i,j}=1$ の場合，隣接行列の定義より，ノード $v\_i$ と $v\_j$ の間にエッジが存在することがわかる．これは長さ $1$ の $v\_i$ - $v\_j$ ウォークとみなせる． $\symbf{A}\_{i,j}=0$ の場合，ノード $v\_i$ と $v\_j$ の間にエッジはないので，長さ $1$ の $v\_i$ - $v\_j$ ウォークは存在しない．以上から $n=1$ に対して定理が成り立つことがわかった．次に， $n=k$ のときに定理が成り立つと仮定する．つまり， $\symbf{A}^{k}$ の $i,h$ 成分は，長さ $k$ の $v\_i$ - $v\_h$ ウォークの数に等しいとする．ここから， $n=k+1$ の場合の証明に進む． $\symbf{A}^{k+1}$ の $i,j$ 成分は， $\symbf{A}^{k}$ と $\symbf{A}$ を用いて以下のように表すことができる．
 
- 
-
-$$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}. $$
-
- 
+ $$ \tag{2.2}
+    \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}. $$ 
 
 式(2.2)の各 $h$ について $\symbf{A}^{k}\_{i,h}$ と $\symbf{A}\_{h,j}$ の両方がゼロでなければ $\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}$ はゼロでない値を持つことになる．すると $\symbf{A}^{k}\_{i,h}$ は長さ $k$ の $v\_i$ - $v\_h$ ウォークの数を表し， $\symbf{A}\_{h,j}$ は長さ $1$ の $v\_h$ - $v\_j$ ウォークの数を示すことはすでにわかっているから， $\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}$ は，ウォークの最後から $2$ 番目のノードを $v\_h$ とした，長さ $k+1$ の $v\_i$ - $v\_j$ ウォークの数と等しいことになる．したがって，すべての可能なノード $v\_h$ について合計すると， $\symbf{A}^{k+1}$ の $i,j$ 成分は，長さ $k+1$ の $v\_i$ - $v\_j$ ウォークの数と等しいことが証明できた．0◻
 :::
@@ -160,7 +153,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.14 部分グラフ</strong>
 
-与えられたグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ の部分グラフ $\subsgraph$ は，ノードの部分集合 $\symbfscr{V}'\subset\symbfscr{V}$ およびエッジの部分集合 $\symbfscr{E}'\subset\symbfscr{E}$ で構成されるグラフである．このとき，部分集合 $\symbfscr{E}'$ 中のエッジに関係する全ノードが，部分集合 $\symbfscr{V}'$ に含まれていなければならない．
+与えられたグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ の部分グラフ $\symbfscr{G}' = \left\{\symbfscr{V}',\symbfscr{E}'\right\}$ は，ノードの部分集合 $\symbfscr{V}'\subset\symbfscr{V}$ およびエッジの部分集合 $\symbfscr{E}'\subset\symbfscr{E}$ で構成されるグラフである．このとき，部分集合 $\symbfscr{E}'$ 中のエッジに関係する全ノードが，部分集合 $\symbfscr{V}'$ に含まれていなければならない．
 
 </div>
  
@@ -168,7 +161,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>例 2.15</strong>
 
-図2.1のグラフ $\symbfscr{G}$ に対して，ノードの部分集合を $\subnodes=\left\{v\_1,v\_2,v\_3,v\_5\right\}$ ，エッジの部分集合を $\subedges = \left\{e\_1,e\_2,e\_3,e\_6\right\}$ とおくことで，部分グラフ $\subg$ が構成できる．
+図2.1のグラフ $\symbfscr{G}$ に対して，ノードの部分集合を $\symbfscr{V}'=\left\{v\_1,v\_2,v\_3,v\_5\right\}$ ，エッジの部分集合を $\symbfscr{E}' = \left\{e\_1,e\_2,e\_3,e\_6\right\}$ とおくことで，部分グラフ $\symbfscr{G}'$ が構成できる．
 
 </div>
  
@@ -176,7 +169,7 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.16 連結成分</strong>
 
-グラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ とその部分グラフ $\subsgraph$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\subnodes$ のノードが $\symbfscr{V}/\subnodes$ (訳注： $\symbfscr{V}$ から $\subnodes$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\subg$ はグラフ $\symbfscr{G}$ の連結成分であるという．
+グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ とその部分グラフ $\symbfscr{G}' = \left\{\symbfscr{V}',\symbfscr{E}'\right\}$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\symbfscr{V}'$ のノードが $\symbfscr{V}/\symbfscr{V}'$ (訳注： $\symbfscr{V}$ から $\symbfscr{V}'$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\symbfscr{G}'$ はグラフ $\symbfscr{G}$ の連結成分であるという．
 
 </div>
  
@@ -202,10 +195,10 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
  
 <strong>定義 2.18 連結グラフ</strong>
 
-連結成分が $1$ つだけのグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ を，連結グラフという． 
+連結成分が $1$ つだけのグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ を，連結グラフという．
+
 </div>
-
-
+ 
 <div class="eg">
  
 <strong>例 2.19</strong>
@@ -221,11 +214,10 @@ $$ \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{
 <strong>定義 2.20 最短パス</strong>
 
 グラフ $\symbfscr{G}$ において $2$ つのノード $v\_s,v\_t\in \symbfscr{V}$ が与えられたとき， $v\_s$ から $v\_t$ へのパスの集合を $\symbfscr{P}\_{st}$ と表す．ノード $v\_s$ とノード $v\_t$ の間の最短パスは以下のように定義される．
- 
 
-$$ p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$
+ $$ \nonumber
+p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$ 
 
- 
 ここで， $p$ は $\symbfscr{P}\_{st}$ に含まれるパスで $|p|$ はその長さ， $p^{sp}\_{st}$ は最短パスを表す．なお，任意のノードの間には複数の最短パスが存在する場合がある．
 
 </div>
@@ -236,12 +228,10 @@ $$ p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$
  
 <strong>定義 2.21 直径</strong>
 
-連結グラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ の直径は以下のように定義される．
- 
+連結グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ の直径は以下のように定義される．
 
-$$ \textrm{diameter}(\symbfscr{G}) = \max_{v\_s,v\_t\in \symbfscr{V}}\min_{p\in \symbfscr{P}\_{st}} |p|. $$
-
- 
+ $$ \nonumber
+    \textrm{diameter}(\symbfscr{G}) = \max_{v\_s,v\_t\in \symbfscr{V}}\min_{p\in \symbfscr{P}\_{st}} |p|. $$ 
 
 </div>
  
@@ -259,17 +249,16 @@ $$ \textrm{diameter}(\symbfscr{G}) = \max_{v\_s,v\_t\in \symbfscr{V}}\min_{p\in 
 
 ノードの中心性とは，グラフの各ノードの重要度を表す指標である．重要度の測り方にはいくつかの方法がある．本節では様々な中心性の定義を導入していく．
 
-### 次数中心性 {#次数中心性 .unnumbered}
+#### 次数中心性
 
 直感的には，たくさんのノードにつながっているようなノードは重要であると考えられる．そこで，各ノードの中心性を「次数に基づいて」測ることができる．具体的に述べると， $v\_i$ の"次数中心性"は次のように定義される．
- 
 
-$$ c\_d(v\_i) = d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j}. $$
+ $$ \nonumber
+    c\_d(v\_i) = d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j}. $$ 
 
-  
+
 <div class="eg">
-
-
+ 
 <strong>例 2.23</strong>
 
 図2.1のグラフについて，ノード $v\_1$ ， $v\_5$ の次数中心性は $3$ ，ノード $v\_2$ ， $v\_3$ ， $v\_4$ の次数中心性は $2$ である．
@@ -282,25 +271,20 @@ $$ c\_d(v\_i) = d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j}. $$
 次数中心性は「多くの近傍を持つノードがより重要である」という考え方に基づく指標であり，すべての近傍を平等に扱うという特徴を持つ．しかし，隣接ノード自体の重要度は各々異なり得るだろうから，中心性を求めたいノードの重要度に異なる影響を与えている可能性がある．"固有ベクトル中心性"(Bonacich,
 1972,
 2007)は，あるノード $v\_i$ の中心性スコアを，その隣接ノードの中心性スコアを考慮して計算する指標であり，以下のように定義される．
- 
 
-$$ c\_e(v\_i) = \dfrac{1}{\lambda}\sum^{N}\_{j=1}\symbf{A}\_{i,j}\cdot c\_e(v\_j). $$
+ $$ \nonumber
+    c\_e(v\_i) = \dfrac{1}{\lambda}\sum^{N}\_{j=1}\symbf{A}\_{i,j}\cdot c\_e(v\_j). $$ 
 
- 
 この式は行列形式として以下のようにかける．
 
- 
-
-$$ \symbf{c}\_e = \dfrac{1}{\lambda}\symbf{A}\cdot \symbf{c}\_e. $$
-
- 
+ $$ \tag{2.3}
+    \symbf{c}\_e = \dfrac{1}{\lambda}\symbf{A}\cdot \symbf{c}\_e. $$ 
 
 ここで， $\symbf{c}_e\in \mathbb{R}^N$ ，はグラフ内の全ノードの中心性スコアを成分に持ったベクトルである．式(2.3)を
- 
 
-$$ \lambda\cdot \symbf{c}_e = \symbf{A}\cdot\symbf{c}_e, $$
+ $$ \nonumber
+    \lambda\cdot \symbf{c}_e = \symbf{A}\cdot\symbf{c}_e, $$ 
 
- 
 と書き直すと， $\symbf{c}_e$ は，行列 $\symbf{A}$ の固有値 $\lambda$ に対応する固有ベクトルであることが明らかとなる．ただし，隣接行列 $\symbf{A}$ には，複数の固有ベクトルと固有値の組が存在する場合がある．通常，中心性スコアは正で表されるため，全要素が正となる固有ベクトルを選択することが望ましい．
 "ペロン・フロベニウスの定理"(Perron, 1907; Frobenius et al., 1912;
 Pillai et al.,
@@ -316,26 +300,22 @@ Pillai et al.,
 </div>
 
 
-### Katz中心性 {#katz中心性 .unnumbered}
+#### Katz中心性
 
 "Katz中心性"は固有ベクトル中心性の変種であり，近傍の中心性スコアを考慮するだけでなく，すべてのノードに一定量の中心性を小さな定数として与えている[^1]．具体的にノード $v\_i$ のKatz中心性は， $\beta$ を定数として，以下のように定義できる．
 
- 
-
-$$ c\_k(v\_i) = \alpha\sum^{N}\_{j=1}\symbf{A}\_{i,j}c\_k (v\_j) + \beta. $$
-
- 
+ $$ \tag{2.4}
+c\_k(v\_i) = \alpha\sum^{N}\_{j=1}\symbf{A}\_{i,j}c\_k (v\_j) + \beta. $$ 
 
 すべてのノードのKatz中心性スコアは行列形式として  $$ \begin{aligned}
-    \symbf{c}_k = \alpha \symbf{A}\symbf{c}_k + \symbf{\beta}\notag\\
-    (\symbf{I} - \alpha\cdot \symbf{A})\symbf{c}_k = \symbf{\beta},\end{aligned} $$ 
+    \symbf{c}_k = \alpha \symbf{A}\symbf{c}_k + \symbf{\beta}\nonumber\\
+    (\symbf{I} - \alpha\cdot \symbf{A})\symbf{c}_k = \symbf{\beta},\tag{2.5}\end{aligned} $$ 
 と表せる．ここで， $\symbf{c}_k\in \mathbb{R}^{N}$ は，すべてのノードに関するKatz中心性のスコアを表すベクトルで， $\symbf{\beta}$ は各ノードの定数項 $\beta$ を要素に持ったベクトルである．
 なお，隣接行列 $\symbf{A}$ の最大固有値を $\lambda_{\max}$ とし， $\alpha=\tfrac{1}{\lambda_{\max}}$ かつ $\beta=0$ とおくと，Katz中心性は固有ベクトル中心性と等価になる． $\alpha$ の選択は重要で， $\alpha$ の値が大きいと行列 $\symbf{I}-\alpha\cdot\symbf{A}$ は悪条件(ill-conditioned)になる[^2]．逆に $\alpha$ を小さくしすぎても得られる結果は $\beta$ に近いものとなり，非常に似たスコアを全ノードに割り当てることになるため，中心性スコアとして役に立たない．そこで実際には，可逆であることを保証するような， $\alpha < \tfrac{1}{\lambda_{\max}}$ とおいた行列 $\symbf{I}-\alpha\cdot\symbf{A}$ を選択することが多く，このとき $\symbf{c}_k$ は以下のように計算できる．
- 
 
-$$ \symbf{c}_k = (\symbf{I} - \alpha\cdot \symbf{A})^{-1}\symbf{\beta}. $$
+ $$ \nonumber
+    \symbf{c}_k = (\symbf{I} - \alpha\cdot \symbf{A})^{-1}\symbf{\beta}. $$ 
 
- 
 
 <div class="eg">
  
@@ -346,24 +326,20 @@ $$ \symbf{c}_k = (\symbf{I} - \alpha\cdot \symbf{A})^{-1}\symbf{\beta}. $$
 </div>
 
 
-### 媒介中心性 {#媒介中心性 .unnumbered}
+#### 媒介中心性
 
 これまでに述べてきた中心性スコアは，隣接するノードとのつながりに基づいて計算されていた．一方でノードの重要度を測るもう一つの方法がある．その方法とは，ノードが「グラフ内の重要な位置にいるか」を確認するものである．実際多くのパスが通るノードはグラフの中で重要な位置にあるといえる．この方法で測った中心性を"媒介中心性"といい， $v\_i$ の中心性スコアは以下のように形式的に定義される．
 
- 
-
-$$ c\_b(v\_i) = \sum_{v\_s\neq v\_i\neq v\_t}\dfrac{\sigma_{st}(v\_i)}{\sigma_{st}} $$
-
- 
+ $$ \tag{2.6}
+    c\_b(v\_i) = \sum_{v\_s\neq v\_i\neq v\_t}\dfrac{\sigma_{st}(v\_i)}{\sigma_{st}} $$ 
 
 ここで，（分母の） $\sigma_{st}$ はノード $v\_s$ からノード $v\_t$ までの全最短パスの数，（分子の） $\sigma_{st}(v\_i)$ は全最短パスのうち $v\_i$ を通るパスの個数を表す．
 式(2.16)から，可能なすべてのノードの組に対する総和を計算していることがわかる．したがって，グラフの大きさが大きくなるほど，媒介中心性スコアの値も大きくなる．このことから，中心性スコアを正規化することで，異なるグラフ間で比較できるようにする必要がある．有効な手段の一つとしては，「各ノードの中心性スコアを，グラフが与えうる最大の中心性スコアで割る」ことである．式(2.6)の $\sigma_{st}(v\_i)/\sigma_{st}$ が最大になるのは，任意のノード間の最短パスがすべてノード $v\_i$ を通るとき，すなわち $\sigma_{st}(v\_i)/\sigma_{st}=1,\,(\forall v\_s\neq v\_i\neq v\_t)$ のときである．このとき，無向グラフであればノードの組は全部で $\tfrac{(N-1)(N-2)}{2}$ 個存在するから，媒介中心性スコアの最大値は $\tfrac{(N-1)(N-2)}{2}$ となる．
 したがって，ノード $v\_i$ の正規化した媒介中心性スコア $c_{nb}(v\_i)$ は以下のように定義される．
- 
 
-$$ c_{nb}(v\_i) = \dfrac{\displaystyle 2\sum_{v\_s\neq v\_i\neq v\_t} \dfrac{\sigma_{st}(v\_i)}{\sigma_{st}}}{(N-1)(N-2)}. $$
+ $$ \nonumber
+    c_{nb}(v\_i) = \dfrac{\displaystyle 2\sum_{v\_s\neq v\_i\neq v\_t} \dfrac{\sigma_{st}(v\_i)}{\sigma_{st}}}{(N-1)(N-2)}. $$ 
 
- 
 
 <div class="eg">
  

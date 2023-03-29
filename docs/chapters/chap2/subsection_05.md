@@ -3,13 +3,12 @@
 [章目次](./chap2.md)
 ## 2.5. グラフ信号処理
 
-現実世界で現れる多くのグラフでは，各ノードに特徴や属性が与えられている場合が多い．このようなグラフは，構造情報（ノード間の接続性）とデータ（ノードの属性）の両方を捉えた，「信号(シグナル)を持つグラフ」として見ることができる．信号付きのグラフは「グラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ 」と，「ノードを実数値に写像する，グラフ領域で定義された写像 $f$ 」から構成される．
+現実世界で現れる多くのグラフでは，各ノードに特徴や属性が与えられている場合が多い．このようなグラフは，構造情報（ノード間の接続性）とデータ（ノードの属性）の両方を捉えた，「信号(シグナル)を持つグラフ」として見ることができる．信号付きのグラフは「グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ 」と，「ノードを実数値に写像する，グラフ領域で定義された写像 $f$ 」から構成される．
 数学的には，この写像は以下のように表される．
- 
 
-$$ f\colon \symbfscr{V} \rightarrow \mathbb{R}^{N\times d}. $$
+ $$ \nonumber
+f\colon \symbfscr{V} \rightarrow \mathbb{R}^{N\times d}. $$ 
 
- 
 ここで， $d$ は各ノードに与える値（ベクトル）の次元である．
 一般性を損なうことなく，本節では $d=1$ とおいて議論を進め，全ノードを写像して得た値を $\symbf{f}\in\mathbb{R}^{N}$ とする．また，ノード $v\_i$ に対応する値を $\symbf{f}[i]$ で表すことにする．
 
@@ -21,6 +20,15 @@ $$ f\colon \symbfscr{V} \rightarrow \mathbb{R}^{N\times d}. $$
 
 </div>
 
+
+<figure>
+
+<img src="./fig/fig2_3.png" width="100%"/>
+
+<figcaption>図2.3 一次元の信号付きのグラフ</figcaption>
+
+</figure>{width="0.6\\linewidth"}
+
 隣接するノードが与える値が互いに似ている場合，グラフは「滑らか」であるといわれる．滑らかなグラフの信号は，エッジを介してグラフ全体で値がゆっくりと変化するため，「低周波である」という．
 式(2.10)で示したラプラシアン行列の二次形式は，接続されたノードのすべての組の差の二乗和であるため，グラフ信号 $\symbf{f}$ の滑らかさ（周波数）を測定するために用いることができる．具体的には，グラフ信号 $\symbf{f}$ が滑らかであるならば， $\symbf{f}^T\symbf{L}\symbf{f}$ の値は小さくなる．この値 $\symbf{f}^T\symbf{L}\symbf{f}$ を信号 $\symbf{f}$ の"滑らかさ"（周波数）という．
 
@@ -30,45 +38,37 @@ $$ f\colon \symbfscr{V} \rightarrow \mathbb{R}^{N\times d}. $$
 ### グラフフーリエ変換
 
 古典的なフーリエ変換(Bracewell, n.d.)は，
- 
 
-$$ \hat{f}(\xi) = \langle f(t),\exp(-2\pi it \xi)\rangle = \int^{\infty}\_{-\infty}f(t)\exp (-2\pi i t \xi) dt $$
+ $$ \nonumber
+    \hat{f}(\xi) = \langle f(t),\exp(-2\pi it \xi)\rangle = \int^{\infty}\_{-\infty}f(t)\exp (-2\pi i t \xi) dt $$ 
 
- 
 と定義される．
 この変換は，信号 $f(t)$ を，任意の実数 $\xi$ に対する複素指数関数 $\exp (-2\pi it \xi)$ の級数で分解するもので， $\xi$ は周波数と考えることができる．
 以下の計算からわかるように，これらの複素指数関数は「一次元ラプラス作用素（二階微分作用素）の固有関数」であることがわかる．
  $$ \begin{aligned}
-    \nabla^2 (\exp(-2\pi i t \xi)) &= \dfrac{\partial^2}{\partial t^2} \exp (-2\pi it \xi)\notag\\
-    &= \dfrac{\partial}{\partial t}(-2\pi i\xi)\exp (-2\pi it \xi)\notag\\
-    &= (2\pi i \xi)^2 \exp (-2\pi it \xi).\end{aligned} $$ 
+    \nabla^2 (\exp(-2\pi i t \xi)) &= \dfrac{\partial^2}{\partial t^2} \exp (-2\pi it \xi)\nonumber\\
+    &= \dfrac{\partial}{\partial t}(-2\pi i\xi)\exp (-2\pi it \xi)\nonumber\\
+    &= (2\pi i \xi)^2 \exp (-2\pi it \xi).\nonumber\end{aligned} $$ 
 
 同様に，グラフ $\symbfscr{G}$ 上のグラフ信号 $\symbf{f}$ の"グラフフーリエ変換"は，以下のように表すことができる．
 
- 
-
-$$ \hat{\symbf{f}}[l] = \langle\symbf{f},\symbf{u}_l \rangle = \sum^{N}\_{i=1}\symbf{f}[i]\symbf{u}_l[i]. $$
-
- 
+ $$ \tag{2.11}
+    \hat{\symbf{f}}[l] = \langle\symbf{f},\symbf{u}_l \rangle = \sum^{N}\_{i=1}\symbf{f}[i]\symbf{u}_l[i]. $$ 
 
 ここで， $\symbf{u}_l$ は，ラプラシアン行列 $\symbf{L}$ の $l$ 番目の固有ベクトルであり，対応する固有値 $\lambda\_l$ は固有ベクトル $\symbf{u}_l$ の周波数(滑らかさ)を表している．
  $\symbf{f}$ のグラフフーリエ変換は，（ $\hat{\symbf{f}}[l]$ をその $l$ 番目の要素とする）ベクトル $\hat{\symbf{f}}$ として定義され，このときの固有ベクトルは，グラフ $\symbfscr{G}$ のグラフフーリエ基底である．つまり， $\hat{\symbf{f}}$ は，信号 $\symbf{f}$ をこれらの基底で分解して得られる"グラフフーリエ係数"で構成される．
 一方で， $\symbf{f}$ のグラフフーリエ変換は，
 
- 
-
-$$ \hat{\symbf{f}} = \symbf{U}^{T}\symbf{f}, $$
-
- 
+ $$ \tag{2.12}
+    \hat{\symbf{f}} = \symbf{U}^{T}\symbf{f}, $$ 
 
 と行列形式で表すこともできる．ここで，行列 $\symbf{U}$ の $l$ 番目の列は $\symbf{u}_l$ である．
 
 以下の式で示されるように，固有値 $\lambda\_l$ は，対応する固有ベクトル $\symbf{u}_l$ の滑らかさを測定している[^3]．
- 
 
-$$ \symbf{u}^T\_l \symbf{L}\symbf{u}_l = \lambda\_l \cdot\symbf{u}^T\_l\symbf{u}_l = \lambda\_l. $$
+ $$ \nonumber
+    \symbf{u}^T\_l \symbf{L}\symbf{u}_l = \lambda\_l \cdot\symbf{u}^T\_l\symbf{u}_l = \lambda\_l. $$ 
 
- 
 例えば，小さな固有値に対応する（隣接ノード間の）固有ベクトルの要素は，グラフ上でゆっくりと変化することになる．
 つまり，この固有ベクトルの下では接続したノードがとる要素は似たものとなる．したがって，これらの固有ベクトルの要素は滑らかで，グラフ上を低周波数で変化する．
 一方，大きな固有値に対応する固有ベクトルの要素は，接続した $2$ つのノードであっても非常に異なる値をとることがある．極端に小さい固有値の例として，固有値 $0$ に対応する第 $1$ 固有ベクトル $\symbf{u}_1$ がある．このベクトルはすべてのノードで同じ値を持つため，グラフ上で変化しない．そのため，このベクトルは極めて滑らかで周波数も $0$ であることが示される．
@@ -93,17 +93,14 @@ $$ \symbf{u}^T\_l \symbf{L}\symbf{u}_l = \lambda\_l \cdot\symbf{u}^T\_l\symbf{u}
 </figure>{width="0.8\\linewidth"}
 
 グラフフーリエ係数 $\hat{\symbf{f}}$ は，信号 $\symbf{f}$ をスペクトル(spectral)領域で表現したものである．また，スペクトル表現 $\hat{\symbf{f}}$ を空間(spatial)表現 $\symbf{f}$ に変換する逆グラフフーリエ変換も存在しており，以下のように定義される．
- 
 
-$$ \symbf{f}[i] = \sum^{N}\_{l=1}\hat{\symbf{f}}[l]\symbf{u}_l[i]. $$
+ $$ \nonumber
+    \symbf{f}[i] = \sum^{N}\_{l=1}\hat{\symbf{f}}[l]\symbf{u}_l[i]. $$ 
 
- 
 この変換は，次のように行列形式で表すこともできる．
- 
 
-$$ \symbf{f} = \symbf{U}\hat{\symbf{f}}. $$
-
- 
+ $$ \nonumber
+    \symbf{f} = \symbf{U}\hat{\symbf{f}}. $$ 
 
 以上の内容をまとめると，グラフ信号は $2$ つの領域，すなわち空間領域およびスペクトル領域で表すことができる．
 そして，これら $2$ つの領域での表現は，それぞれグラフフーリエ変換と逆グラフフーリエ変換によって相互に変換することができる．

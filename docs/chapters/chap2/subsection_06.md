@@ -31,13 +31,13 @@ Heterogeneous
 
 ### 二部グラフ
 
-二部グラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ におけるノード集合 $\symbfscr{V}$ は，互いに素な $2$ つの部分集合 $\symbfscr{V}\_1$ と $\symbfscr{V}\_2$ に分割することができ， $\symbfscr{E}$ のすべてのエッジは， $\symbfscr{V}\_1$ のノードと $\symbfscr{V}\_2$ のノードを接続する．このように二部グラフは，異なるオブジェクト間の相互作用を把握するために広く用いられている．例えばAmazonのようなECサイトにおいては，図2.7に示すように，ユーザのクリック履歴を二部グラフとしてのモデル化が可能である．このとき，ユーザとアイテムは互いに素な $2$ つのノード集合とし，ユーザのクリックはそれらの間のエッジとみなすことになる．以下に二部グラフの形式的な定義を示す．
+二部グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ におけるノード集合 $\symbfscr{V}$ は，互いに素な $2$ つの部分集合 $\symbfscr{V}_1$ と $\symbfscr{V}_2$ に分割することができ， $\symbfscr{E}$ のすべてのエッジは， $\symbfscr{V}_1$ のノードと $\symbfscr{V}_2$ のノードを接続する．このように二部グラフは，異なるオブジェクト間の相互作用を把握するために広く用いられている．例えばAmazonのようなECサイトにおいては，図2.7に示すように，ユーザのクリック履歴を二部グラフとしてのモデル化が可能である．このとき，ユーザとアイテムは互いに素な $2$ つのノード集合とし，ユーザのクリックはそれらの間のエッジとみなすことになる．以下に二部グラフの形式的な定義を示す．
 
 <div class="definition">
  
 <strong>定義 2.35 二部グラフ</strong>
 
-グラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ を考える． $\symbfscr{V} = \symbfscr{V}\_1\cup \symbfscr{V}\_2$ かつ $\symbfscr{V}\_1\cap \symbfscr{V}\_2 = \emptyset$ が成り立ち，さらにすべての $e = (v^1_e,v^2_e)\in \symbfscr{E}$ に対して， $v^1_e\in \symbfscr{V}\_1$ ,   $v^2_e\in \symbfscr{V}\_2$ が満たされるとき，このグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ は二部グラフであるという．
+グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ を考える． $\symbfscr{V} = \symbfscr{V}_1\cup \symbfscr{V}_2$ かつ $\symbfscr{V}_1\cap \symbfscr{V}_2 = \emptyset$ が成り立ち，さらにすべての $e = (v^1_e,v^2_e)\in \symbfscr{E}$ に対して， $v^1_e\in \symbfscr{V}_1$ ,   $v^2_e\in \symbfscr{V}_2$ が満たされるとき，このグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ は二部グラフであるという．
 
 </div>
 
@@ -60,8 +60,8 @@ Heterogeneous
  
 <strong>定義 2.36 Multidimensional グラフ</strong>
 
-Multidimensionalグラフは， $N$ 個のノードから成る集合 $\symbfscr{V} = \left\{v\_1,\dots,v\_N\right\}$ および $D$ 個のエッジ集合 $\left\{\symbfscr{E}\_1,\dots,\symbfscr{E}\_D\right\}$ で構成される．各エッジ集合 $\symbfscr{E}\_d$ は，それぞれの $d$ 次元における，ノード間の $d$ 番目の関係タイプを表している．
-また，これら $D$ 種類の関係は $D$ 個の隣接行列 $\symbf{A}^{(1)},\dots,\symbf{A}^{(D)}$ としても表現でき， $d$ 次元に対応する隣接行列 $\symbf{A}_d\in \mathbb{R}^{N\times N}$ は， $\symbfscr{V}$ 中のノード間にあるエッジ集合 $\symbfscr{E}\_d$ を記述している．例えば， $\symbf{A}_d$ の $i,j$ 要素 $\symbf{A}_d[i,j]$ は，ノード $v\_i$ と $v\_j$ の間に次元 $d$ のエッジが存在するとき（ $(v\_i,v\_j)\in\symbfscr{E}\_d$ ）にのみ $1$ ，次元 $d$ のエッジが存在しない場合は $0$ となる．
+Multidimensionalグラフは， $N$ 個のノードから成る集合 $\symbfscr{V} = \left\{v\_1,\dots,v\_N\right\}$ および $D$ 個のエッジ集合 $\left\{\symbfscr{E}_1,\dots,\symbfscr{E}_D\right\}$ で構成される．各エッジ集合 $\symbfscr{E}_d$ は，それぞれの $d$ 次元における，ノード間の $d$ 番目の関係タイプを表している．
+また，これら $D$ 種類の関係は $D$ 個の隣接行列 $\symbf{A}^{(1)},\dots,\symbf{A}^{(D)}$ としても表現でき， $d$ 次元に対応する隣接行列 $\symbf{A}_d\in \mathbb{R}^{N\times N}$ は， $\symbfscr{V}$ 中のノード間にあるエッジ集合 $\symbfscr{E}_d$ を記述している．例えば， $\symbf{A}_d$ の $i,j$ 要素 $\symbf{A}_d[i,j]$ は，ノード $v\_i$ と $v\_j$ の間に次元 $d$ のエッジが存在するとき（ $(v\_i,v\_j)\in\symbfscr{E}_d$ ）にのみ $1$ ，次元 $d$ のエッジが存在しない場合は $0$ となる．
 
 </div>
 
@@ -133,18 +133,18 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
  
 <strong>定義 2.39 ダイナミックグラフ</strong>
 
-ダイナミックグラフ $\symbfscr{G} = {\symbfscr{V},\symbfscr{E}}$ はノード集合 $\symbfscr{V}=\left\{v\_1,\dots,v\_N\right\}$ とエッジ集合 $\symbfscr{E}=\left\{e\_1,\dots,e\_M\right\}$ で構成され，各ノードと各エッジの両方（またはどちらか一方）にはそれが出現した時刻を示す時点(timestamp)が関連付けられている．具体的には，各ノードおよび各エッジからそれぞれの出現時点への対応を与える $2$ つの写像 $\phi\_v$ および $\phi\_e$ が存在する．
+ダイナミックグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ はノード集合 $\symbfscr{V}=\left\{v\_1,\dots,v\_N\right\}$ とエッジ集合 $\symbfscr{E}=\left\{e\_1,\dots,e\_M\right\}$ で構成され，各ノードと各エッジの両方（またはどちらか一方）にはそれが出現した時刻を示す時点(timestamp)が関連付けられている．具体的には，各ノードおよび各エッジからそれぞれの出現時点への対応を与える $2$ つの写像 $\phi\_v$ および $\phi\_e$ が存在する．
 
 </div>
 
 実際には，各ノード・各エッジの時点を記録することは困難である．その代わりの方法として，グラフがどのように変化していくかを「時点を区切って」観測すればよい．
-そのような場合，各時点 $t$ で観測されるグラフ $\symbfscr{G}\_t$ の"スナップショット"を記録値として取得することができる．このようなダイナミックグラフは，複数のグラフのスナップショットで構成される"離散型ダイナミックグラフ"とよばれる．以下に，離散型ダイナミックグラフの形式的な定義を与えた．
+そのような場合，各時点 $t$ で観測されるグラフ $\symbfscr{G}_t$ の"スナップショット"を記録値として取得することができる．このようなダイナミックグラフは，複数のグラフのスナップショットで構成される"離散型ダイナミックグラフ"とよばれる．以下に，離散型ダイナミックグラフの形式的な定義を与えた．
 
 <div class="definition">
  
 <strong>定義 2.40 離散型ダイナミックグラフ</strong>
 
-離散型ダイナミックグラフは，ダイナミックグラフの変化に沿って観測された $T$ 個のグラフのスナップショットで構成される．具体的には， $T$ 個のグラフスナップショットは，時点 $0$ に観測されたグラフを $\symbfscr{G}\_0$ とし， $\left\{\symbfscr{G}\_0,\dots,\symbfscr{G}\_T\right\}$ と表すことができる．
+離散型ダイナミックグラフは，ダイナミックグラフの変化に沿って観測された $T$ 個のグラフのスナップショットで構成される．具体的には， $T$ 個のグラフスナップショットは，時点 $0$ に観測されたグラフを $\symbfscr{G}_0$ とし， $\left\{\symbfscr{G}_0,\dots,\symbfscr{G}_T\right\}$ と表すことができる．
 
 </div>
 
