@@ -14,7 +14,7 @@ Deep Learning on Graphsの公開レビューサイトです.
 - 第3章 深層学習の基礎（近日公開予定）
 - 第4章 グラフ埋め込み（近日公開予定）
 - 第5章 Graph Neural Networks
-### 方法
+### 手法
 - 第6章 Robust Graph Neural Networks
 - 第7章 Scalable Graph Neural Networks
 - 第8章 Graph Neural Networks on Complex Graphs
