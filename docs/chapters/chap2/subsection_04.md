@@ -66,16 +66,16 @@
 
 グラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ について，ラプラシアン行列 $\symbf{L}$ の固有値は非負である．
 
-::: prf
+<div class="prf">
+
 ラプラシアン行列 $\symbf{L}$ の固有値を $\lambda$ とし，対応する正規化固有ベクトルを $\symbf{u}$ とする．固有値と固有ベクトルの定義によれば， $\lambda\symbf{u} = \symbf{L}\symbf{u}$ であり， $\symbf{u}$ は非ゼロの単位ベクトルで $\symbf{u}^{T}\symbf{u} = 1$ である．したがって，
 
  $$ \nonumber
     \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \symbf{u}^{T}\symbf{L}\symbf{u} \symbfscr{G}eq 0. $$ 
 
-0◻
-:::
-
-
+0◻ 
+</div>
+ 
 </div>
 
  $N$ 個のノードを持つグラフ $\mathcal{G}$ には，(重複も含めて)合計で $N$ 個の固有値・固有ベクトルが存在し，定理2.30によれば，それら全ての固有値は非負である．また， $0$ に等しい固有値は常に存在している．実際，ベクトル $\symbf{u}_1 = \tfrac{1}{\sqrt{N}}(1,\dots,1)$ を考えると，式(2.9)により， $\symbf{L}\symbf{u}_1 = \symbf{0}=0\symbf{u}_1$ であることがわかる．これは， $\symbf{u}_1$ が固有値 $0$ に対応する固有ベクトルであることを表している．便宜上，固有値を $0=\lambda\_1\leq\lambda\_2\leq,\dots,\leq\lambda\_N$ のように小さい順に並べ，それらに対応する正規化固有ベクトルを $\symbf{u}_1,\dots,\symbf{u}_N$ と表記することにする．
@@ -86,7 +86,8 @@
 
 グラフ $\mathcal{G}$ が与えられたとき，そのラプラシアン行列 $\symbf{L}$ の固有値 $0$ の個数（固有値 $0$ の重複度）は，グラフが持つ連結成分の数に等しい．
 
-::: prf
+<div class="prf">
+
  $\mathcal{G}$ は $K$ 個の連結成分を持つと仮定する．するとノード集合 $\mathcal{V}$ を $K$ 個の互いに素な部分集合 $\mathcal{V}_1,\dots,\mathcal{V}_K$ に分割することができる．
 
 まず，固有値 $0$ に対応する正規直交固有ベクトルが少なくとも $K$ 個存在することを示す． $K$ 個のベクトルを $\symbf{u}_1,\dots,\symbf{u}_K$ とおき， $v\_j\in \mathcal{V}_i$ なら $\symbf{u}_i[j] = \tfrac{1}{\sqrt{|\mathcal{V}_i|}}$ ，それ以外なら $0$ となるように構成する．すると， $i=1,\dots,K$ について $\symbf{L}\symbf{u}_i=0$ となるから， $K$ 個のベクトルはすべて固有値 $0$ に対応する $\symbf{L}$ の固有ベクトルであることがわかる．さらに構成したベクトルの値の定め方より， $i\neq j$ のとき $\symbf{u}^T\_i \symbf{u}_j = 0$ となることがわかるから， $K$ 個の固有ベクトルは互いに直交していることになる．したがって，固有値 $0$ の重複度は少なくとも $K$ であることが示せた．
@@ -97,9 +98,9 @@
     \symbf{u}^{\ast T}\symbf{L}\symbf{u}^{\ast} = \dfrac{1}{2}\sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{u}^{\ast}[i] - \symbf{u}^{\ast}[j])^2 $$ 
 
 と計算できる． $\symbf{u}^{\ast T}\symbf{L}\symbf{u}^{\ast}=0$ となることを保証するためには，( $v\_d$ と)同じ連結成分内のノードに対する要素の値も同一である必要がある．言い換えれば， $\mathcal{V}_i$ 内の全ノードに関連した要素の値 $\symbf{u}^{\ast}[i]$ は，ノード $v\_d$ に関連させた要素の値 $\symbf{u}^{\ast}[d]$ と同じになる．ゆえに， $\symbf{u}^T\_i\symbf{u}^{\ast}>0$ が成り立ってしまう．つまり， $\symbf{u}^{\ast}$ は $\symbf{u}_i$ に直交していないことになり， $\symbf{u}^{\ast}$ においた仮定と矛盾する．以上より，固有値 $0$ に対応する固有ベクトルは，最初に構成した $K$ 個のベクトルより多くは存在しないことになる．0◻
-:::
 
-
+</div>
+ 
 </div>
 
 

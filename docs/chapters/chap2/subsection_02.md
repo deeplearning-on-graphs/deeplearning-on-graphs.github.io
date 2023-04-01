@@ -37,7 +37,7 @@ graph)については本章の後半で見ていく．
 
 <figcaption>図2.1 ノード数5，エッジ数6のグラフ</figcaption>
 
-</figure>{width="0.5\\linewidth"}
+</figure>
 
 
 <div class="eg">

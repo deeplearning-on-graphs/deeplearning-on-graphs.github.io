@@ -61,13 +61,14 @@
  $$ \nonumber
     \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$ 
 
-::: prf
- $$ \begin{aligned}
+
+<div class="prf">
+  $$ \begin{aligned}
     \sum_{v\_i\in\mathcal{V}}d(v\_i) &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}2\cdot\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=2\cdot\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
-    &=2\cdot|\mathcal{E}|\nonumber\tag*{\qed}\end{aligned} $$ 
-:::
+    &=2\cdot|\mathcal{E}|\nonumber\tag*{\qed}\end{aligned} $$  
+</div>
 
 
 </div>
@@ -78,11 +79,11 @@
  
 <strong>系 2.8</strong>
 
-隣接行列の非ゼロ要素の数は，全エッジ数の $2$ 倍である．
+隣接行列の非ゼロ要素の数は，全エッジ数の $2$ 倍である． 
+<div class="prf">
 
-::: prf
-定理2.7に式(2.1)を代入することで成り立つことがわかる．0◻
-:::
+定理2.7に式(2.1)を代入することで成り立つことがわかる．0◻ 
+</div>
 
 
 </div>
@@ -140,8 +141,8 @@
 
 隣接行列 $\symbf{A}$ を持つグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ に対して，隣接行列の $n$ 乗を $\symbf{A}^{n}$ と表す．このとき，行列 $\symbf{A}^{n}$ の $i,j$ 成分は，長さ $n$ の $v\_i$ - $v\_j$ ウォークの数に等しい．
 
-::: prf
-帰納法によってこの定理を証明できる．
+<div class="prf">
+ 帰納法によってこの定理を証明できる．
 まず $n=1$ に対して定義が成り立つことを示す．
  $\symbf{A}\_{i,j}=1$ の場合，隣接行列の定義より，ノード $v\_i$ と $v\_j$ の間にエッジが存在することがわかる．これは長さ $1$ の $v\_i$ - $v\_j$ ウォークとみなせる． $\symbf{A}\_{i,j}=0$ の場合，ノード $v\_i$ と $v\_j$ の間にエッジはないので，長さ $1$ の $v\_i$ - $v\_j$ ウォークは存在しない．以上から $n=1$ に対して定理が成り立つことがわかった．次に， $n=k$ のときに定理が成り立つと仮定する．つまり， $\symbf{A}^{k}$ の $i,h$ 成分は，長さ $k$ の $v\_i$ - $v\_h$ ウォークの数に等しいとする．ここから， $n=k+1$ の場合の証明に進む． $\symbf{A}^{k+1}$ の $i,j$ 成分は， $\symbf{A}^{k}$ と $\symbf{A}$ を用いて以下のように表すことができる．
 
@@ -149,9 +150,9 @@
     \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}. $$ 
 
 式(2.2)の各 $h$ について $\symbf{A}^{k}\_{i,h}$ と $\symbf{A}\_{h,j}$ の両方がゼロでなければ $\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}$ はゼロでない値を持つことになる．すると $\symbf{A}^{k}\_{i,h}$ は長さ $k$ の $v\_i$ - $v\_h$ ウォークの数を表し， $\symbf{A}\_{h,j}$ は長さ $1$ の $v\_h$ - $v\_j$ ウォークの数を示すことはすでにわかっているから， $\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}$ は，ウォークの最後から $2$ 番目のノードを $v\_h$ とした，長さ $k+1$ の $v\_i$ - $v\_j$ ウォークの数と等しいことになる．したがって，すべての可能なノード $v\_h$ について合計すると， $\symbf{A}^{k+1}$ の $i,j$ 成分は，長さ $k+1$ の $v\_i$ - $v\_j$ ウォークの数と等しいことが証明できた．0◻
-:::
 
-
+</div>
+ 
 </div>
  
 <div class="definition">
@@ -193,7 +194,7 @@
 
 <figcaption>図2.2  $2$ つの連結成分を持つグラフ</figcaption>
 
-</figure>{width="0.8\\linewidth"}
+</figure>
 
 
 <div class="definition">

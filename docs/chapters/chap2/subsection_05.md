@@ -27,7 +27,7 @@ f\colon \mathcal{V} \right\arrow \mathbb{R}^{N\times d}. $$
 
 <figcaption>図2.3 1次元の信号付きのグラフ</figcaption>
 
-</figure>{width="0.6\\linewidth"}
+</figure>
 
 隣接するノードが与える値が互いに似ている場合，グラフは「滑らか」であるといわれる．滑らかなグラフの信号は，エッジを介してグラフ全体で値がゆっくりと変化するため，「低周波である」という．
 式(2.10)で示したラプラシアン行列の二次形式は，接続されたノードのすべての組の差の二乗和であるため，グラフ信号 $\symbf{f}$ の滑らかさ（周波数）を測定するために用いることができる．具体的には，グラフ信号 $\symbf{f}$ が滑らかであるならば， $\symbf{f}^T\symbf{L}\symbf{f}$ の値は小さくなる．この値 $\symbf{f}^T\symbf{L}\symbf{f}$ を信号 $\symbf{f}$ の"滑らかさ"（周波数）という．
@@ -91,7 +91,7 @@ f\colon \mathcal{V} \right\arrow \mathbb{R}^{N\times d}. $$
 
 <figcaption>図2.4 グラフフーリエ基底の周波数</figcaption>
 
-</figure>{width="0.8\\linewidth"}
+</figure>
 
 グラフフーリエ係数 $\hat{\symbf{f}}$ は，信号 $\symbf{f}$ をスペクトル(spectral)領域で表現したものである．また，スペクトル表現 $\hat{\symbf{f}}$ を空間(spatial)表現 $\symbf{f}$ に変換する逆グラフフーリエ変換も存在しており，以下のように定義される．
 
@@ -112,7 +112,7 @@ f\colon \mathcal{V} \right\arrow \mathbb{R}^{N\times d}. $$
 
 <figcaption>図2.5 グラフ信号は空間・スペクトルの領域で表現できる．</figcaption>
 
-</figure>{width="\\linewidth"}
+</figure>
 
 
 <div class="eg">

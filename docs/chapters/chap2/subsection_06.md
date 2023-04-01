@@ -26,7 +26,7 @@ graph)に関する形式的定義を紹介していく．
 
 <figcaption>図2.6 ヘテログラフの例：学術情報ネットワーク</figcaption>
 
-</figure>{width="0.73\\linewidth"}
+</figure>
 
 ### 二部グラフ
 
@@ -47,7 +47,7 @@ graph)に関する形式的定義を紹介していく．
 
 <figcaption>図2.7 二部グラフの例：オンラインショッピング</figcaption>
 
-</figure>{width="0.4\\linewidth"}
+</figure>
 
 ### 多次元グラフ
 
@@ -85,7 +85,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
 
 <figcaption>図2.8 符号付きグラフの例：友人関係</figcaption>
 
-</figure>{width="0.6\\linewidth"}
+</figure>
 
 ### ハイパーグラフ
 
@@ -110,7 +110,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
 
 <figcaption>図2.9 ハイパーグラフの例：学術論文ネットワーク</figcaption>
 
-</figure>{width="0.7\\linewidth"}
+</figure>
 
 ### ダイナミックグラフ
 
@@ -125,7 +125,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
 
 <figcaption>図2.10 ダイナミックグラフの模式図</figcaption>
 
-</figure>{width="0.6\\linewidth"}
+</figure>
 
 
 <div class="definition">
