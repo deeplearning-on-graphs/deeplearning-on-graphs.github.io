@@ -39,10 +39,16 @@
 ここからは，特に言及しない限り，定義2.28で導入した（非正規化）ラプラシアン行列の議論に焦点を当てる．しかし，本書の後半の章では，正規化ラプラシアン行列も利用されることに注意されたい．
 
 次数行列 $\symbf{D}$ と隣接行列 $\symbf{A}$ はどちらも対称行列であるため，ラプラシアン行列は対称行列である．ここで，ベクトル $\symbf{f}$ を考える．このベクトルの $i$ 番目の要素 $\symbf{f}[i]$ は，ノード $v\_i$ に関連しているものとする． $\symbf{L}$ に $\symbf{f}$ をかけると，新しいベクトル $\symbf{h}$ を得ることができる．
- $$ \begin{aligned}
+
+ \\[
+ \begin{aligned}
     \symbf{h} &= \symbf{L}\symbf{f}\nonumber\\
     &= (\symbf{D} - \symbf{A})\symbf{f}\nonumber\\
-    &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber\end{aligned} $$ 
+    &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber
+ \end{aligned}
+ \\]
+    
+    
  $\symbf{h}$ の $i$ 番目の要素は以下のようになる．  $$ \begin{aligned}
 \symbf{h}[i] &= d(v\_i)\cdot \symbf{f}[i] - \sum^{N}\_{j=1}\symbf{A}\_{i,j}\cdot\symbf{f}[j]\nonumber\\
 &= d(v\_i)\cdot\symbf{f}[i] - \sum_{v\_j\in \mathcal{N}(v\_i)}\symbf{A}\_{i,j}\cdot\symbf{f}[j] \nonumber\\
