@@ -25,7 +25,7 @@ f\colon \symbfscr{V} \rightarrow \mathbb{R}^{N\times d}. $$
 
 <img src="./fig/fig2_3.png" width="100%"/>
 
-<figcaption>図2.3 一次元の信号付きのグラフ</figcaption>
+<figcaption>図2.3 1次元の信号付きのグラフ</figcaption>
 
 </figure>{width="0.6\\linewidth"}
 
