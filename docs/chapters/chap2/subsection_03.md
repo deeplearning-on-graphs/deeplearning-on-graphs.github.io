@@ -73,18 +73,23 @@
 </div>
 
 
-::: cor
+
+<div class="cor">
+ 
+<strong>系 2.8</strong>
+
 隣接行列の非ゼロ要素の数は，全エッジ数の $2$ 倍である．
 
 ::: prf
 定理2.7に式(2.1)を代入することで成り立つことがわかる．0◻
 :::
-:::
 
 
+</div>
+ 
 <div class="eg">
  
-<strong>例 2.8</strong>
+<strong>例 2.9</strong>
 
 図2.1のグラフの場合，エッジの数は $6$ で，全次数は $12$ ，隣接行列非ゼロ要素の数も $12$ であることがわかる．
 
@@ -97,7 +102,7 @@
 
 <div class="definition">
  
-<strong>定義 2.9 ウォーク, </strong>
+<strong>定義 2.10 ウォーク, </strong>
 
 グラフ上のウォークとは，ノードとエッジが交互で現れる列(sequence)であり，ノードで始まり，ノードで終わるような列である．また，列にある各エッジはその前後にあるノード間に存在するエッジである．
 
@@ -107,7 +112,7 @@
 
 <div class="definition">
  
-<strong>定義 2.10 トレイル, </strong>
+<strong>定義 2.11 トレイル, </strong>
 
 トレイルとは，同じエッジを通らないウォークである． 
 </div>
@@ -115,7 +120,7 @@
 <div class="definition">
 
 
-<strong>定義 2.11 パス，</strong>
+<strong>定義 2.12 パス，</strong>
 
 パスとは，同じノードを通らないウォークである． 
 </div>
@@ -123,7 +128,7 @@
 <div class="eg">
 
 
-<strong>例 2.12</strong>
+<strong>例 2.13</strong>
 
 図2.1のグラフにおいて， $(v\_1,e\_4,v\_4,e\_5,v\_5,e\_6,v\_1,e\_1,v\_2)$ は長さ $4$ の $v\_1$ - $v\_2$ ウォークである．このウォークは，ノード $v\_1$ を二回通っているので，トレイルではあるがパスではない．一方， $(v\_1,e\_1,v\_2,e\_2,v\_3)$ は $v\_1$ - $v\_3$ ウォークである．このウォークはトレイルであると同時にパスでもある．
 
@@ -131,7 +136,7 @@
  
 <div class="theorem">
  
-<strong>定理 2.13</strong>
+<strong>定理 2.14</strong>
 
 隣接行列 $\symbf{A}$ を持つグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ に対して，隣接行列の $n$ 乗を $\symbf{A}^{n}$ と表す．このとき，行列 $\symbf{A}^{n}$ の $i,j$ 成分は，長さ $n$ の $v\_i$ - $v\_j$ ウォークの数に等しい．
 
@@ -151,7 +156,7 @@
  
 <div class="definition">
  
-<strong>定義 2.14 部分グラフ</strong>
+<strong>定義 2.15 部分グラフ</strong>
 
 与えられたグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ の部分グラフ $\mathcal{G}' = \left\{\mathcal{V}',\mathcal{E}'\right\}$ は，ノードの部分集合 $\mathcal{V}'\subset\mathcal{V}$ およびエッジの部分集合 $\mathcal{E}'\subset\mathcal{E}$ で構成されるグラフである．このとき，部分集合 $\mathcal{E}'$ 中のエッジに関係する全ノードが，部分集合 $\mathcal{V}'$ に含まれていなければならない．
 
@@ -159,7 +164,7 @@
  
 <div class="eg">
  
-<strong>例 2.15</strong>
+<strong>例 2.16</strong>
 
 図2.1のグラフ $\mathcal{G}$ に対して，ノードの部分集合を $\mathcal{V}'=\left\{v\_1,v\_2,v\_3,v\_5\right\}$ ，エッジの部分集合を $\mathcal{E}' = \left\{e\_1,e\_2,e\_3,e\_6\right\}$ とおくことで，部分グラフ $\mathcal{G}'$ が構成できる．
 
@@ -167,7 +172,7 @@
  
 <div class="definition">
  
-<strong>定義 2.16 連結成分</strong>
+<strong>定義 2.17 連結成分</strong>
 
 グラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ とその部分グラフ $\mathcal{G}' = \left\{\mathcal{V}',\mathcal{E}'\right\}$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\mathcal{V}'$ のノードが $\mathcal{V}/\mathcal{V}'$ (訳注： $\mathcal{V}$ から $\mathcal{V}'$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\mathcal{G}'$ はグラフ $\mathcal{G}$ の連結成分であるという．
 
@@ -175,7 +180,7 @@
  
 <div class="eg">
  
-<strong>例 2.17</strong>
+<strong>例 2.18</strong>
 
  $2$ つの連結成分を持ったグラフを図2.2に示した．これらの連結成分は互いに繋がっていないことがわかる．
 
@@ -193,7 +198,7 @@
 
 <div class="definition">
  
-<strong>定義 2.18 連結グラフ</strong>
+<strong>定義 2.19 連結グラフ</strong>
 
 連結成分が $1$ つだけのグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ を，連結グラフという．
 
@@ -201,7 +206,7 @@
  
 <div class="eg">
  
-<strong>例 2.19</strong>
+<strong>例 2.20</strong>
 
 図2.1のグラフは連結グラフであるが，図2.2のグラフは連結グラフではない．
 
@@ -211,7 +216,7 @@
 
 <div class="definition">
  
-<strong>定義 2.20 最短パス</strong>
+<strong>定義 2.21 最短パス</strong>
 
 グラフ $\mathcal{G}$ において $2$ つのノード $v\_s,v\_t\in \mathcal{V}$ が与えられたとき， $v\_s$ から $v\_t$ へのパスの集合を $\mathcal{P}\_{st}$ と表す．ノード $v\_s$ とノード $v\_t$ の間の最短パスは以下のように定義される．
 
@@ -226,7 +231,7 @@ p^{sp}\_{st} = \arg \min_{p\in\mathcal{P}\_{st}} |p|. $$
 
 <div class="definition">
  
-<strong>定義 2.21 直径</strong>
+<strong>定義 2.22 直径</strong>
 
 連結グラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ の直径は以下のように定義される．
 
@@ -237,7 +242,7 @@ p^{sp}\_{st} = \arg \min_{p\in\mathcal{P}\_{st}} |p|. $$
  
 <div class="eg">
  
-<strong>例 2.22</strong>
+<strong>例 2.23</strong>
 
 図2.1で示した連結グラフの直径は $2$ である．
 最も長い最短パスの $1$ つは， $(v\_2,e\_1,v\_1,e\_4,v\_4)$ と表されるノード $v\_2$ とノード $v\_4$ の間のパスである．
@@ -259,7 +264,7 @@ p^{sp}\_{st} = \arg \min_{p\in\mathcal{P}\_{st}} |p|. $$
 
 <div class="eg">
  
-<strong>例 2.23</strong>
+<strong>例 2.24</strong>
 
 図2.1のグラフについて，ノード $v\_1$ ， $v\_5$ の次数中心性は $3$ ，ノード $v\_2$ ， $v\_3$ ， $v\_4$ の次数中心性は $2$ である．
 
@@ -293,7 +298,7 @@ Pillai *et al*.,
 
 <div class="eg">
  
-<strong>例 2.24</strong>
+<strong>例 2.25</strong>
 
 図2.1に示したグラフの最大固有値は $2.481$ で，その対応する固有ベクトルは $[1,0.675,0.675,0.806,1]$ である．よって各ノード $v\_1,v\_2,v\_3,v\_4,v\_5$ の固有値ベクトル中心性のスコアは $[1,0.675,0.675,0.806,1]$ となる．この結果から，ノード $v\_2$ ， $v\_3$ ， $v\_4$ は次数でいえば $2$ であるが，ノード $v\_4$ の固有ベクトル中心性は，固有ベクトル中心性の高いノード $v\_1$ と $v\_5$ に直接つながっているため， $v\_2$ ， $v\_3$ よりスコアが高くなっていることがわかる．
 
@@ -324,7 +329,7 @@ number)が大きくなると，数値解析上の問題が生じる．一般に�
 
 <div class="eg">
  
-<strong>例 2.25</strong>
+<strong>例 2.26</strong>
 
 図2.1のグラフに対して， $\beta=1$ かつ $\alpha = \tfrac{1}{5}$ とおいたときのKatz中心性は，ノード $v\_1,\,v\_5$ は $2.16$ ，ノード $v\_2,\,v\_3$ は $1.79$ ，ノード $v\_4$ は $1.87$ である．
 
@@ -348,7 +353,7 @@ number)が大きくなると，数値解析上の問題が生じる．一般に�
 
 <div class="eg">
  
-<strong>例 2.26</strong>
+<strong>例 2.27</strong>
 
 図2.1のグラフにおいて，ノード $v\_1,\,v\_5$ の媒介中心性スコアは $\tfrac{3}{2}$ ，正規化した媒介中心性スコアは $\tfrac{1}{4}$ となる．また，ノード $v\_2,\,v\_3$ の媒介中心性スコアは $\tfrac{1}{2}$ ，正規化した媒介中心性スコアは $\tfrac{1}{12}$ となる．一方で，ノード $v\_4$ の媒介中心性スコアは $0$ だが，正規化した媒介中心性スコアも $0$ となる．
 

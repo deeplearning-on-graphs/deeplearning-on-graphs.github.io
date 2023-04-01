@@ -11,7 +11,7 @@
 
 <div class="definition">
  
-<strong>定義 2.27 ラプラシアン行列</strong>
+<strong>定義 2.28 ラプラシアン行列</strong>
 
  $\symbf{A}$ を隣接行列とするグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ に対して，ラプラシアン行列は以下のように定義される．
 
@@ -26,7 +26,7 @@
 
 <div class="definition">
  
-<strong>定義 2.28 正規化ラプラシアン行列</strong>
+<strong>定義 2.29 正規化ラプラシアン行列</strong>
 
 
  $\symbf{A}$ を隣接行列とするグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ について，その正規化ラプラシアン行列は以下のように定義される．
@@ -62,7 +62,7 @@
 
 <div class="theorem">
  
-<strong>定理 2.29</strong>
+<strong>定理 2.30</strong>
 
 グラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ について，ラプラシアン行列 $\symbf{L}$ の固有値は非負である．
 
@@ -70,7 +70,7 @@
 ラプラシアン行列 $\symbf{L}$ の固有値を $\lambda$ とし，対応する正規化固有ベクトルを $\symbf{u}$ とする．固有値と固有ベクトルの定義によれば， $\lambda\symbf{u} = \symbf{L}\symbf{u}$ であり， $\symbf{u}$ は非ゼロの単位ベクトルで $\symbf{u}^{T}\symbf{u} = 1$ である．したがって，
 
  $$ \nonumber
-    \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \symbf{u}^{T}\symbf{L}\symbf{u} \symbfscr{G}eq 0.\vspace{-2.5\intextsep} $$ 
+    \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \symbf{u}^{T}\symbf{L}\symbf{u} \symbfscr{G}eq 0. $$ 
 
 0◻
 :::
@@ -82,7 +82,7 @@
 
 <div class="definition">
  
-<strong>定義 2.30</strong>
+<strong>定義 2.31</strong>
 
 グラフ $\mathcal{G}$ が与えられたとき，そのラプラシアン行列 $\symbf{L}$ の固有値 $0$ の個数（固有値 $0$ の重複度）は，グラフが持つ連結成分の数に等しい．
 

@@ -29,7 +29,7 @@
 
 <div class="definition">
  
-<strong>定義 2.41 ノード分類</strong>
+<strong>定義 2.42 ノード分類</strong>
 
 
 ノード集合 $\mathcal{V}$ とエッジ集合 $\mathcal{E}$ を持つグラフを $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ と表す． $\mathcal{V}$ のノードの中にはラベルが貼られているものがあり，このラベルが付いたノード集合を $\mathcal{V}_l\subset\mathcal{V}$ と表す．残りのノードはラベルを持たないので，このラベルがないノード集合を $\mathcal{V}_u$ と表す．これらの集合は， $\mathcal{V}_l\cup\mathcal{V}_u = \mathcal{V}$ かつ $\mathcal{V}_l\cap\mathcal{V}_u = \emptyset$ を満たす．ノード分類タスクの目的は，ラベルのないノード( $v\in \mathcal{V}_u$ )のラベルを予測する写像 $\phi$ を， $\mathcal{G}$ と $\mathcal{V}_l$ のラベルを活用して学習することにある．
@@ -40,7 +40,7 @@
 
 <div class="eg">
  
-<strong>例 2.42 Flickrにおけるノード分類</strong>
+<strong>例 2.43 Flickrにおけるノード分類</strong>
 
 Flickrは，ユーザが個人で撮影した写真を管理できる画像管理プラットフォームであり，かつユーザ同士がフォローし合えるようなSNSとしての役割も担っている．したがって，Flickr上のユーザ同士の繋がりはグラフを形成する．さらに，Flickrのユーザは，"Black
 and White"(白黒写真)や"The Fog and The Rain"(霧と雲の写真)，"Dog
@@ -59,7 +59,7 @@ and Adar, 2003)やナレッジグラフ補完(Nickel *et al*.,
 <div class="definition">
  
 <strong>定義
-2.43 リンク予測</strong>
+2.44 リンク予測</strong>
 
  $\mathcal{V}$ をノード集合， $\mathcal{E}$ をエッジ集合とするグラフを $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ とする． $\mathcal{V}$ 中のノード間の可能な全てのエッジを $\mathcal{M}$ とすると， $\mathcal{M}$ を全体とした $\mathcal{E}$ の補集合を $\mathcal{E}^{\prime} = \mathcal{M} - \mathcal{E}$ と表す．集合 $\mathcal{E}^{\prime}$ にはノード間の未観測のエッジが含まれる．リンク予測タスクの目標は，最も可能性の高いエッジを予測することである．具体的には， $\mathcal{E}^{\prime}$ 内の各エッジにスコアを割り当てることができる．これは，それらのエッジが存在しているか，又は将来現れる可能性がどの程度あるかを示している．
 
@@ -69,7 +69,7 @@ and Adar, 2003)やナレッジグラフ補完(Nickel *et al*.,
 
 <div class="eg">
  
-<strong>例 2.44
+<strong>例 2.45
 DBLPサイトにおける新たな共同研究の予測</strong>
 
 DBLPは，コンピュータサイエンス分野の研究論文を包括的に収集・管理しているオンラインの学術文献データベースサイトである．DBLPに収録されている論文から，著者をノードとする共著グラフを作成できる．このグラフでは，一組の著者がDBLPに収録された共著論文を $1$ 件以上持っている場合，彼らの間につながりがあるとみなされる．これまで共著の経験がない著者同士がどのような新しい共同研究を行うかを予測することは，興味深いリンク予測問題である．リンク予測の研究に用いられた大規模なDBLP共同研究データセットの詳細については，Yang
@@ -90,7 +90,7 @@ and Leskovec(2015)を参照せよ．
 
 <div class="definition">
  
-<strong>定義 2.45 グラフ分類</strong>
+<strong>定義 2.46 グラフ分類</strong>
 
 
  $y\_i$ をグラフ $\mathcal{G}_i$ のラベルとする，ラベル付きグラフの集合 $\mathcal{D} = \left\{(\mathcal{G}_i, y\_i)\right\}$ が与えられたとき，グラフ分類タスクの目的は， $\mathcal{D}$ を使ってラベルのないグラフが持つラベルを予測するような写像 $\phi$ を学習することにある．
@@ -101,7 +101,7 @@ and Leskovec(2015)を参照せよ．
 
 <div class="eg">
  
-<strong>例 2.46
+<strong>例 2.47
 タンパク質の構造の酵素/非酵素への分類</strong>
 
 タンパク質は，アミノ酸をノードとするグラフで表すことができ， $2$ つのノード間距離が $6$ Å
