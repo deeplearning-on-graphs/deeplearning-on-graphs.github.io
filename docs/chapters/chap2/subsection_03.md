@@ -65,10 +65,6 @@
 
 <div class="prf">
 <strong>証明: </strong>
-    
-</div>
-
-</div>
 
 $$
 \begin{aligned}
@@ -76,9 +72,12 @@ $$
     &=\sum_{\left\{v_i,v_j\right\}\in\mathcal{E}}2\cdot\symbb{1}_{\mathcal{E}}(\left\{v_i,v_j\right\})\nonumber\\
     &=2\cdot\sum_{\left\{v_i,v_j\right\}\in\mathcal{E}}\symbb{1}_{\mathcal{E}}(\left\{v_i,v_j\right\})\nonumber\\
     &=2\cdot\|\mathcal{E}\|\nonumber
-\tag*{Q.E.D.}
 \end{aligned}
 $$
+
+</div>
+
+</div>
 
 
 <div class="cor">
