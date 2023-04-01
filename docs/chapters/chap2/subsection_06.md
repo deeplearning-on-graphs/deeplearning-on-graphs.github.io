@@ -15,7 +15,7 @@ graph)に関する形式的定義を紹介していく．
  
 <strong>定義 2.35 ヘテログラフ</strong>
 
-ヘテログラフ $\mathcal{G}$ は，ノード集合 $\mathcal{V} = \left\{v\_1,\dots,v\_N\right\}$ とエッジ集合 $\mathcal{E}=\left\{e\_1,\dots,e\_M\right\}$ で構成され，各ノードと各エッジには"タイプ"が関連付けられている．ノードタイプの集合を $\mathcal{T}_n$ ，エッジタイプの集合を $\mathcal{T}_e$ とする．そして各ノードと各エッジをそれぞれのタイプに対応付ける $2$ つの写像 $\phi\_n\colon \mathcal{V}\rightarrow\mathcal{T}_n$ と $\phi\_e\colon \mathcal{E}\rightarrow\mathcal{T}_e$ が存在している．
+ヘテログラフ $\mathcal{G}$ は，ノード集合 $\mathcal{V} = \left\{v_1,\dots,v_N\right\}$ とエッジ集合 $\mathcal{E}=\left\{e_1,\dots,e_M\right\}$ で構成され，各ノードと各エッジには"タイプ"が関連付けられている．ノードタイプの集合を $\mathcal{T}_n$ ，エッジタイプの集合を $\mathcal{T}_e$ とする．そして各ノードと各エッジをそれぞれのタイプに対応付ける $2$ つの写像 $\phi_n\colon \mathcal{V}\rightarrow\mathcal{T}_n$ と $\phi_e\colon \mathcal{E}\rightarrow\mathcal{T}_e$ が存在している．
 
 </div>
 
@@ -59,8 +59,8 @@ graph)に関する形式的定義を紹介していく．
  
 <strong>定義 2.37 多次元グラフ</strong>
 
-多次元グラフは， $N$ 個のノードから成る集合 $\mathcal{V} = \left\{v\_1,\dots,v\_N\right\}$ および $D$ 個のエッジ集合 $\left\{\mathcal{E}_1,\dots,\mathcal{E}_D\right\}$ で構成される．各エッジ集合 $\mathcal{E}_d$ は，それぞれの $d$ 次元における，ノード間の $d$ 番目の関係タイプを表している．
-また，これら $D$ 種類の関係は $D$ 個の隣接行列 $\symbf{A}^{(1)},\dots,\symbf{A}^{(D)}$ としても表現でき， $d$ 次元に対応する隣接行列 $\symbf{A}_d\in \mathbb{R}^{N\times N}$ は， $\mathcal{V}$ 中のノード間にあるエッジ集合 $\mathcal{E}_d$ を記述している．例えば， $\symbf{A}_d$ の $i,j$ 要素 $\symbf{A}_d[i,j]$ は，ノード $v\_i$ と $v\_j$ の間に次元 $d$ のエッジが存在するとき（ $(v\_i,v\_j)\in\mathcal{E}_d$ ）にのみ $1$ ，次元 $d$ のエッジが存在しない場合は $0$ となる．
+多次元グラフは， $N$ 個のノードから成る集合 $\mathcal{V} = \left\{v_1,\dots,v_N\right\}$ および $D$ 個のエッジ集合 $\left\{\mathcal{E}_1,\dots,\mathcal{E}_D\right\}$ で構成される．各エッジ集合 $\mathcal{E}_d$ は，それぞれの $d$ 次元における，ノード間の $d$ 番目の関係タイプを表している．
+また，これら $D$ 種類の関係は $D$ 個の隣接行列 $\symbf{A}^{(1)},\dots,\symbf{A}^{(D)}$ としても表現でき， $d$ 次元に対応する隣接行列 $\symbf{A}_d\in \mathbb{R}^{N\times N}$ は， $\mathcal{V}$ 中のノード間にあるエッジ集合 $\mathcal{E}_d$ を記述している．例えば， $\symbf{A}_d$ の $i,j$ 要素 $\symbf{A}_d[i,j]$ は，ノード $v_i$ と $v_j$ の間に次元 $d$ のエッジが存在するとき（ $(v_i,v_j)\in\mathcal{E}_d$ ）にのみ $1$ ，次元 $d$ のエッジが存在しない場合は $0$ となる．
 
 </div>
 
@@ -74,7 +74,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
 <strong>定義
 2.38 符号付きグラフ</strong>
 
- $\mathcal{V} = \left\{v\_1,\dots,v\_N\right\}$ を $N$ 個のノードから成る集合， $\mathcal{E}^{+}\subset\mathcal{V}\times\mathcal{V}$ と $\mathcal{E}^{-}\subset\mathcal{V}\times\mathcal{V}$ をそれぞれ正と負のエッジ集合を表す．ただし，エッジは正または負のどちらか一方に属すこととし， $\mathcal{E}^{+}\cap\mathcal{E}^{-}=\emptyset$ を満たす．このとき， $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}^{+},\mathcal{E}^{-}\right\}$ は符号付きグラフである．これらのノード間の正・負エッジは符号付き隣接行列 $\symbf{A}$ で記述することができ，ノード $v\_i$ とノード $v\_j$ の間に正のエッジがあるとき $\symbf{A}\_{i,j}=1$ ，負のエッジがあるとき $\symbf{A}\_{i,j}=-1$ ，それ以外の場合 $\symbf{A}\_{i,j}=0$ となる．
+ $\mathcal{V} = \left\{v_1,\dots,v_N\right\}$ を $N$ 個のノードから成る集合， $\mathcal{E}^{+}\subset\mathcal{V}\times\mathcal{V}$ と $\mathcal{E}^{-}\subset\mathcal{V}\times\mathcal{V}$ をそれぞれ正と負のエッジ集合を表す．ただし，エッジは正または負のどちらか一方に属すこととし， $\mathcal{E}^{+}\cap\mathcal{E}^{-}=\emptyset$ を満たす．このとき， $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}^{+},\mathcal{E}^{-}\right\}$ は符号付きグラフである．これらのノード間の正・負エッジは符号付き隣接行列 $\symbf{A}$ で記述することができ，ノード $v_i$ とノード $v_j$ の間に正のエッジがあるとき $\symbf{A}_{i,j}=1$ ，負のエッジがあるとき $\symbf{A}_{i,j}=-1$ ，それ以外の場合 $\symbf{A}_{i,j}=0$ となる．
 
 </div>
 
@@ -99,7 +99,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
  
 <strong>定義 2.39 ハイパーグラフ</strong>
 
- $\mathcal{V}$ を $N$ 個のノード集合， $\mathcal{E}$ をハイパーエッジ集合，そしてハイパーエッジ $e\_j$ の重みを $\symbf{W}[j,j]$ においた対角行列を $\symbf{W}\in \mathbb{R}^{|\mathcal{E}|\times|\mathcal{E}|}$ とする．このとき， $\mathcal{G}=\left\{\mathcal{V}, \mathcal{E}, \symbf{W}\right\}$ をハイパーグラフと定義する．ハイパーグラフ $\mathcal{G}$ は，ノード $v\_i$ がエッジ $e\_j$ に現れる場合にだけ $\symbf{H}\_{i,j}=1$ となる，接続行列 $\symbf{H}\in \mathbb{R}^{|\mathcal{V}|\times|\mathcal{E}|}$ を用いて記述することができる．また，ノード $v\_i$ について，その次数を $\displaystyle d(v\_i)=\sum^{|\mathcal{E}|}\_{j=1}\symbf{H}\_{i,j}$ と定義し，ハイパーエッジの次数を $\displaystyle d(e\_j) = \sum^{|\mathcal{V}|}\_{i=1}\symbf{H}\_{i,j}$ と定義する．さらに， $\symbf{D}\_e$ と $\symbf{D}\_v$ を，それぞれハイパーエッジとノードの(対角)次数行列を表すとする．
+ $\mathcal{V}$ を $N$ 個のノード集合， $\mathcal{E}$ をハイパーエッジ集合，そしてハイパーエッジ $e_j$ の重みを $\symbf{W}[j,j]$ においた対角行列を $\symbf{W}\in \mathbb{R}^{\|\mathcal{E}\|\times\|\mathcal{E}\|}$ とする．このとき， $\mathcal{G}=\left\{\mathcal{V}, \mathcal{E}, \symbf{W}\right\}$ をハイパーグラフと定義する．ハイパーグラフ $\mathcal{G}$ は，ノード $v_i$ がエッジ $e_j$ に現れる場合にだけ $\symbf{H}_{i,j}=1$ となる，接続行列 $\symbf{H}\in \mathbb{R}^{\|\mathcal{V}\|\times\|\mathcal{E}\|}$ を用いて記述することができる．また，ノード $v_i$ について，その次数を $\displaystyle d(v_i)=\sum^{\|\mathcal{E}\|}_{j=1}\symbf{H}_{i,j}$ と定義し，ハイパーエッジの次数を $\displaystyle d(e_j) = \sum^{\|\mathcal{V}\|}_{i=1}\symbf{H}_{i,j}$ と定義する．さらに， $\symbf{D}_e$ と $\symbf{D}_v$ を，それぞれハイパーエッジとノードの(対角)次数行列を表すとする．
 
 </div>
 
@@ -124,7 +124,7 @@ SNSの普及に伴い，正負のエッジを含む符号付きグラフはま�
  
 <strong>定義 2.40 ダイナミックグラフ</strong>
 
-ダイナミックグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ はノード集合 $\mathcal{V}=\left\{v\_1,\dots,v\_N\right\}$ とエッジ集合 $\mathcal{E}=\left\{e\_1,\dots,e\_M\right\}$ で構成され，各ノードと各エッジの両方（またはどちらか一方）にはそれが出現した時刻を示す時点(timestamp)が関連付けられている．具体的には，各ノードおよび各エッジからそれぞれの出現時点への対応を与える $2$ つの写像 $\phi\_v$ および $\phi\_e$ が存在する．
+ダイナミックグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ はノード集合 $\mathcal{V}=\left\{v_1,\dots,v_N\right\}$ とエッジ集合 $\mathcal{E}=\left\{e_1,\dots,e_M\right\}$ で構成され，各ノードと各エッジの両方（またはどちらか一方）にはそれが出現した時刻を示す時点(timestamp)が関連付けられている．具体的には，各ノードおよび各エッジからそれぞれの出現時点への対応を与える $2$ つの写像 $\phi_v$ および $\phi_e$ が存在する．
 
 </div>
 
