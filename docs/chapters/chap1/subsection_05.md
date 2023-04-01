@@ -56,7 +56,7 @@
 そのため, グラフにおける特徴量選択が研究されてきた.
  $\mathcal{V}$ をノードの集合,  $\mathcal{E}$ をエッジの集合として,
 グラフ $\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$ を考える.
-各ノードは $d$ この特徴量集合 $\mathcal{F}=\left\\{f\_1, f\_2, \ldots, f\_d\right\\}$ を持つとする.
+各ノードは $d$ この特徴量集合 $\mathcal{F}=\left\{f\_1, f\_2, \ldots, f\_d\right\}$ を持つとする.
 グラフにおける特徴量選択の目的は,
  $\mathcal{F}$ から各ノードを表現するような $K$ 個（ $K$ は $d$ よりも十分小さい）の特徴量を選ぶことである.
 この問題は, (Tang and Liu, 2012a; Gu and Han, 2011)で初めて,
@@ -180,8 +180,8 @@ DNNをグラフに一般化する取り組みが増えてきている. これら
 
 -   伝統的なDNNは敵対的攻撃に対して脆弱である.
     GNNもこの欠点を引き継いでいる.
-    様々なグラフ敵対的攻撃が研究されており（Zu ̈gner et al., 2018; Zu
-    ̈gner and Gu ̈nnemann, 2019; Dai et al., 2018; Ma et al., 2020a）,
+    様々なグラフ敵対的攻撃が研究されており（Zug̈ner et al., 2018; Zug̈ner
+    and Gun̈nemann, 2019; Dai et al., 2018; Ma et al., 2020a）,
     さまざまな防御手法が開発されている（Dai et al., 2018; Zhu et al.,
     2019a; Tang et al., 2019; Jin et al., 2020b）.
 
