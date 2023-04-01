@@ -55,6 +55,13 @@ d &= e - f
 \end{aligned}
 \\]
 
+$$
+\begin{aligned}
+a &= b + c \\
+d &= e - f
+\end{aligned}
+$$
+
     
     
  $\symbf{h}$ の $i$ 番目の要素は以下のようになる．  $$ \begin{aligned}
