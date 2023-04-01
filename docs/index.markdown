@@ -8,7 +8,7 @@ layout: default
 Deep Learning on Graphsの公開レビューサイトです.
 
 ## 目次
-- [第1章 グラフ上の深層学習:入門](./chapters/chap1/chap1.md)
+- [第1章 イントロダクション](./chapters/chap1/chap1.md)
 ### 基礎
 - [第2章 グラフ理論の基礎](./chapters/chap2/chap2.md)
 - 第3章 深層学習の基礎（近日公開予定）
