@@ -65,6 +65,7 @@
 
 <div class="prf">
 <strong>証明: </strong>
+  
 
 $$
 \begin{aligned}
@@ -72,12 +73,14 @@ $$
     &=\sum_{\left\{v_i,v_j\right\}\in\mathcal{E}}2\cdot\symbb{1}_{\mathcal{E}}(\left\{v_i,v_j\right\})\nonumber\\
     &=2\cdot\sum_{\left\{v_i,v_j\right\}\in\mathcal{E}}\symbb{1}_{\mathcal{E}}(\left\{v_i,v_j\right\})\nonumber\\
     &=2\cdot\|\mathcal{E}\|\nonumber
+    Q.E.D.
 \end{aligned}
 $$
-
+  
+</div>
+ 
 </div>
 
-</div>
 
 
 <div class="cor">
@@ -388,4 +391,4 @@ number)が大きくなると，数値解析上の問題が生じる．一般に�
 
 [章目次](./chap2.md)
 
-[前の章へ](./subsection_02.md) [次の章へ](./subsection_04.md)
+[前の節へ](./subsection_02.md) [次の節へ](./subsection_04.md)

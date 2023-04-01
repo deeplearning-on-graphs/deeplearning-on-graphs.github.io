@@ -66,4 +66,4 @@ graph)については本章の後半で見ていく．
 
 [章目次](./chap2.md)
 
-[前の章へ](./subsection_01.md) [次の章へ](./subsection_03.md)
+[前の節へ](./subsection_01.md) [次の節へ](./subsection_03.md)

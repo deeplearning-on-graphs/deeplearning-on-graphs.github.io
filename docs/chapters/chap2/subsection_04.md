@@ -134,4 +134,4 @@ Q.E.D.
 
 [章目次](./chap2.md)
 
-[前の章へ](./subsection_03.md) [次の章へ](./subsection_05.md)
+[前の節へ](./subsection_03.md) [次の節へ](./subsection_05.md)
