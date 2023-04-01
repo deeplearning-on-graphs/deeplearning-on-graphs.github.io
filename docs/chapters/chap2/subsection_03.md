@@ -65,6 +65,8 @@
 
 <div class="prf">
 <strong>証明: </strong>
+  
+</div>
 
 $$
 \begin{aligned}
@@ -73,8 +75,6 @@ $$
     &=2\cdot\sum_{\left\\{v\_i,v\_j\right\\}\in\mathcal{E}}\symbb{1}\_{\mathcal{E}}(\left\\{v\_i,v\_j\right\\})\nonumber\\
 \end{aligned}
 $$
-  
-</div>
 
 
 </div>
