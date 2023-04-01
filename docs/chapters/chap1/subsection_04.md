@@ -31,7 +31,7 @@ graph)は，より複雑な構造や条件を持つグラフである．これ�
 
 <img src="./fig/fig1_4.png" width="100%"/>
 
-<figcaption>図1.4 本書の読み進め方．各数字は図1.3の各章に対応している.</figcaption>
+<figcaption>図1.4 本書の読み進め方．各数字は図1.3の章番号に対応している.</figcaption>
 
 </figure>
 
