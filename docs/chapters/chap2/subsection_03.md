@@ -32,7 +32,7 @@
 
  $$ 
 \tag{2.1}
-    d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$ 
+    d(v\_i) = \sum^{N}\_\{j=1}\symbf{A}\_\{i,j} $$ 
 
 
 <div class="eg">
