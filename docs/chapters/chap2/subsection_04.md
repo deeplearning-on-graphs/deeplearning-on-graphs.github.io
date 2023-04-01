@@ -47,6 +47,13 @@
     &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber
  \end{aligned}
  \\]
+\\[
+\begin{aligned}
+a &= b + c \\
+d &= e - f
+\end{aligned}
+\\]
+
     
     
  $\symbf{h}$ の $i$ 番目の要素は以下のようになる．  $$ \begin{aligned}
