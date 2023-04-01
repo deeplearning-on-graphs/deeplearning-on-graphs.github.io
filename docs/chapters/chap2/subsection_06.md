@@ -7,16 +7,15 @@
 しかし，実際に扱われるグラフはより複雑である．本節では簡潔に，一般的な複雑グラフ(complex
 graph)に関する形式的定義を紹介していく．
 
-### Heterogeneousグラフ
+### ヘテログラフ
 
-ここまで説明してきた単純グラフは， $1$ 種類のノードと $1$ 種類のエッジしか含まないような同種的(homogeneous)なグラフであった．しかし，現実世界の多くの実用面では，「多種ノード間の多種な関係」をモデル化することが望まれる．図2.6に示すように，文献・引用を記述する学術ネットワークには，著者・論文・学会という $3$ 種類のノードが存在している．さらにこの図のノード間には異なる関係を表す様々なエッジも存在している．例えば，論文間の引用関係を表すエッジや，著者と論文間の著者関係を表すエッジなどがある．以下に，異種的(heterogeneous)なノードを含むグラフの定義を形式的に示す．
+ここまで説明してきた単純グラフは， $1$ 種類のノードと $1$ 種類のエッジしか含まないようなグラフであった．しかし，現実世界の多くの実用面では，「多種ノード間の多種な関係」をモデル化することが望まれる．図2.6に示すように，文献・引用を記述する学術ネットワークには，著者・論文・学会という $3$ 種類のノードが存在している．さらにこの図のノード間には異なる関係を表す様々なエッジも存在している．例えば，論文間の引用関係を表すエッジや，著者と論文間の著者関係を表すエッジなどがある．以下に，異なる種類のノードを含むグラフの定義を形式的に示す．
 
 <div class="definition">
  
-<strong>定義 2.34 Heterogeneousグラフ</strong>
+<strong>定義 2.34 ヘテログラフ</strong>
 
-Heterogeneous
-グラフ $\mathcal{G}$ は，ノード集合 $\mathcal{V} = \left\{v\_1,\dots,v\_N\right\}$ とエッジ集合 $\mathcal{E}=\left\{e\_1,\dots,e\_M\right\}$ で構成され，各ノードと各エッジには"タイプ"が関連付けられている．ノードタイプの集合を $\mathcal{T}_n$ ，エッジタイプの集合を $\mathcal{T}_e$ とする．そして各ノードと各エッジをそれぞれのタイプに対応付ける $2$ つの写像 $\phi\_n\colon \mathcal{V}\rightarrow\mathcal{T}_n$ と $\phi\_e\colon \mathcal{E}\rightarrow\mathcal{T}_e$ が存在している．
+ヘテログラフ $\mathcal{G}$ は，ノード集合 $\mathcal{V} = \left\{v\_1,\dots,v\_N\right\}$ とエッジ集合 $\mathcal{E}=\left\{e\_1,\dots,e\_M\right\}$ で構成され，各ノードと各エッジには"タイプ"が関連付けられている．ノードタイプの集合を $\mathcal{T}_n$ ，エッジタイプの集合を $\mathcal{T}_e$ とする．そして各ノードと各エッジをそれぞれのタイプに対応付ける $2$ つの写像 $\phi\_n\colon \mathcal{V}\rightarrow\mathcal{T}_n$ と $\phi\_e\colon \mathcal{E}\rightarrow\mathcal{T}_e$ が存在している．
 
 </div>
 
@@ -25,7 +24,7 @@ Heterogeneous
 
 <img src="./fig/fig2_6.png" width="100%"/>
 
-<figcaption>図2.6 Heterogeneousグラフの例：学術情報ネットワーク</figcaption>
+<figcaption>図2.6 ヘテログラフの例：学術情報ネットワーク</figcaption>
 
 </figure>{width="0.73\\linewidth"}
 
@@ -50,17 +49,17 @@ Heterogeneous
 
 </figure>{width="0.4\\linewidth"}
 
-### Multidimensionalグラフ
+### 多次元グラフ
 
 実世界における多くの場面では，一組のノード間に複数の関係が同時に存在することがある．
 このようなグラフの一例として，動画共有サイトYouTubeが挙げられる．YouTubeのユーザはお互いにチャンネル登録を行うことができ，それは一つの関係として見ることができる．また，他のユーザの動画を"共有"したり，"コメント"したりすることで，ユーザ同士は異なる種類の関係でつながることができる．他の例としてはAmazonなどのECサイトがある．Amazonのユーザは，"クリック"や"購入"，"レビュー"などの様々なアクションを介して，商品と相互に影響を与え合うことができる．
-これらの複数の関係を持つグラフは，関係の種類を1つの次元として考慮することで，自然にMultidimensionalグラフとしてモデル化することができる．
+これらの複数の関係を持つグラフは，関係の種類を1つの次元として考慮することで，自然に多次元グラフとしてモデル化することができる．
 
 <div class="definition">
  
-<strong>定義 2.36 Multidimensional グラフ</strong>
+<strong>定義 2.36 多次元グラフ</strong>
 
-Multidimensionalグラフは， $N$ 個のノードから成る集合 $\mathcal{V} = \left\{v\_1,\dots,v\_N\right\}$ および $D$ 個のエッジ集合 $\left\{\mathcal{E}_1,\dots,\mathcal{E}_D\right\}$ で構成される．各エッジ集合 $\mathcal{E}_d$ は，それぞれの $d$ 次元における，ノード間の $d$ 番目の関係タイプを表している．
+多次元グラフは， $N$ 個のノードから成る集合 $\mathcal{V} = \left\{v\_1,\dots,v\_N\right\}$ および $D$ 個のエッジ集合 $\left\{\mathcal{E}_1,\dots,\mathcal{E}_D\right\}$ で構成される．各エッジ集合 $\mathcal{E}_d$ は，それぞれの $d$ 次元における，ノード間の $d$ 番目の関係タイプを表している．
 また，これら $D$ 種類の関係は $D$ 個の隣接行列 $\symbf{A}^{(1)},\dots,\symbf{A}^{(D)}$ としても表現でき， $d$ 次元に対応する隣接行列 $\symbf{A}_d\in \mathbb{R}^{N\times N}$ は， $\mathcal{V}$ 中のノード間にあるエッジ集合 $\mathcal{E}_d$ を記述している．例えば， $\symbf{A}_d$ の $i,j$ 要素 $\symbf{A}_d[i,j]$ は，ノード $v\_i$ と $v\_j$ の間に次元 $d$ のエッジが存在するとき（ $(v\_i,v\_j)\in\mathcal{E}_d$ ）にのみ $1$ ，次元 $d$ のエッジが存在しない場合は $0$ となる．
 
 </div>

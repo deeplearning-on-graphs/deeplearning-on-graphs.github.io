@@ -64,7 +64,8 @@ f\colon \mathcal{V} \rightarrow \mathbb{R}^{N\times d}. $$
 
 と行列形式で表すこともできる．ここで，行列 $\symbf{U}$ の $l$ 番目の列は $\symbf{u}_l$ である．
 
-以下の式で示されるように，固有値 $\lambda\_l$ は，対応する固有ベクトル $\symbf{u}_l$ の滑らかさを測定している[^3]．
+以下の式で示されるように，固有値 $\lambda\_l$ は，対応する固有ベクトル $\symbf{u}_l$ の滑らかさを測定している[^3]
+． [^3]: 訳注： $\symbf{u}^T\_l \symbf{L}\symbf{u}_l$ は式(2.10)右辺の形に変形できるから，固有値（周波数）が大きければ，エッジで接続されたノードの固有ベクトルの要素は互いに大きく異なることになる．
 
  $$ \nonumber
     \symbf{u}^T\_l \symbf{L}\symbf{u}_l = \lambda\_l \cdot\symbf{u}^T\_l\symbf{u}_l = \lambda\_l. $$ 
@@ -105,9 +106,13 @@ f\colon \mathcal{V} \rightarrow \mathbb{R}^{N\times d}. $$
 以上の内容をまとめると，グラフ信号は $2$ つの領域，すなわち空間領域およびスペクトル領域で表すことができる．
 そして，これら $2$ つの領域での表現は，それぞれグラフフーリエ変換と逆グラフフーリエ変換によって相互に変換することができる．
 
-![グラフ信号は空間・スペクトルの領域で表現できる](./fig/fig2_5a.pdf){width="\\linewidth"}
+<figure>
 
-![グラフ信号は空間・スペクトルの領域で表現できる](./fig/fig2_5b.pdf){width="\\linewidth"}
+<img src="./fig/fig2_5.png" width="100%"/>
+
+<figcaption>図2.5 グラフ信号は空間・スペクトルの領域で表現できる．</figcaption>
+
+</figure>{width="\\linewidth"}
 
 
 <div class="eg">
