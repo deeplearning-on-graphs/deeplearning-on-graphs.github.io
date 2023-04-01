@@ -3,3 +3,33 @@
 
 @import "{{ site.theme }}";
 @import "custom";
+
+/* 脚注番号のスタイル */
+sup {
+  font-size: 0.8em;
+  vertical-align: super;
+  line-height: 0;
+  color: #333;
+}
+
+/* 脚注本文のスタイル */
+.footnotes {
+  font-size: 0.9em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* 脚注本文の各要素のスタイル */
+.footnotes li {
+  margin-bottom: 0.5em;
+}
+
+/* 脚注間の罫線のスタイル */
+.footnotes hr {
+  width: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
