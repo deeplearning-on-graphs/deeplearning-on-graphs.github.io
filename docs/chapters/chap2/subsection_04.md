@@ -40,6 +40,14 @@
 
 次数行列 $\symbf{D}$ と隣接行列 $\symbf{A}$ はどちらも対称行列であるため，ラプラシアン行列は対称行列である．ここで，ベクトル $\symbf{f}$ を考える．このベクトルの $i$ 番目の要素 $\symbf{f}[i]$ は，ノード $v\_i$ に関連しているものとする． $\symbf{L}$ に $\symbf{f}$ をかけると，新しいベクトル $\symbf{h}$ を得ることができる．
 
+$$
+ \begin{aligned}
+    \symbf{h} &= \symbf{L}\symbf{f}\nonumber\\
+    &= (\symbf{D} - \symbf{A})\symbf{f}\nonumber\\
+    &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber
+ \end{aligned}
+$$
+
  \\[
  \begin{aligned}
     \symbf{h} &= \symbf{L}\symbf{f}\nonumber\\
