@@ -23,3 +23,5 @@ and Graham,
 [メインページ](../../index.markdown)
 
 [章目次](./chap2.md)
+
+[前の章へ](./subsection_00.md) [次の章へ](./subsection_02.md)

@@ -65,3 +65,5 @@ graph)については本章の後半で見ていく．
 [メインページ](../../index.markdown)
 
 [章目次](./chap2.md)
+
+[前の章へ](./subsection_01.md) [次の章へ](./subsection_03.md)

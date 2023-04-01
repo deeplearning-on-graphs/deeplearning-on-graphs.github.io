@@ -114,3 +114,5 @@ and Leskovec(2015)を参照せよ．
 [メインページ](../../index.markdown)
 
 [章目次](./chap2.md)
+
+[前の章へ](./subsection_06.md) [次の章へ](./subsection_08.md)
