@@ -40,7 +40,7 @@
 しかしながら，多くの応用例におけるデータサンプルは本質的にi.i.d.ではないようなグラフに埋め込まれている．
 そのため，グラフにおける特徴量選択が研究されてきた．
 
- $\mathcal{V}$ をノードの集合， $\mathcal{E}$ をエッジの集合として，グラフ $\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$ を考える．
+ $\mathcal{V}$ をノードの集合， $\mathcal{E}$ をエッジの集合として，グラフ $\mathcal{G}=\left\{\mathcal{V}, \mathcal{E}\right\}$ を考える．
 各ノードは $d$ 個の特徴量から成る集合 $\mathcal{F}=\left\{f\_1, f\_2, \ldots, f\_d\right\}$ を持つとする．
 グラフにおける特徴量選択の目的は， $\mathcal{F}$ から各ノードを表現するような $K$ 個（ $K$ は $d$ よりも十分小さい）の特徴量を選ぶことである．
 この問題は，Gu and Han (2011)およびTang and Liu
