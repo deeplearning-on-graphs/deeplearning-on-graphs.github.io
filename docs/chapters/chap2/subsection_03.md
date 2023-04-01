@@ -65,7 +65,10 @@
 
 <div class="prf">
 <strong>証明: </strong>
-  
+    
+</div>
+
+</div>
 
 $$
 \begin{aligned}
@@ -76,12 +79,6 @@ $$
 \tag*{Q.E.D.}
 \end{aligned}
 $$
-  
-</div>
-
-
-</div>
-
 
 
 <div class="cor">
