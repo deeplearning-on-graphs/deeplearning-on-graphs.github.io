@@ -108,3 +108,5 @@
 [メインページ](../../index.markdown)
 
 [章目次](./chap1.md)
+
+[前の章へ](./subsection_02.md) [次の章へ](./subsection_04.md)
