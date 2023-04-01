@@ -7,28 +7,28 @@
 
 ### 次数
 
-グラフ $\symbfscr{G}$ におけるノード $v$ の"次数"とは，そのノードが隣接する他ノードの個数である．形式的な定義は以下となる．
+グラフ $\mathcal{G}$ におけるノード $v$ の"次数"とは，そのノードが隣接する他ノードの個数である．形式的な定義は以下となる．
 
 <div class="definition">
  
 <strong>定義 2.4 次数</strong>
 
- $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ において， $v\_i\in \symbfscr{V}$ の次数とは， $v\_i$ と隣接しているノードの数
+ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ において， $v\_i\in \mathcal{V}$ の次数とは， $v\_i$ と隣接しているノードの数
 
  $$ \nonumber
-    d(v\_i) = \sum_{v\_j\in \symbfscr{V}} \symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\}), $$ 
+    d(v\_i) = \sum_{v\_j\in \mathcal{V}} \symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\}), $$ 
 
-である．ここで， $\symbb{1}\_{\symbfscr{E}}(\cdot)$ は次のような指示関数である．
+である．ここで， $\symbb{1}\_{\mathcal{E}}(\cdot)$ は次のような指示関数である．
 
  $$ \nonumber
-    \symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\}) = 
+    \symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\}) = 
     \begin{cases}
-        1 & (v\_i,v\_j)\in \symbfscr{E},\\
-        0 & (v\_i,v\_j)\notin \symbfscr{E}.
+        1 & (v\_i,v\_j)\in \mathcal{E},\\
+        0 & (v\_i,v\_j)\notin \mathcal{E}.
     \end{cases} $$  
 </div>
 
- $\symbfscr{G}$ におけるノード $v\_i$ の次数は，隣接行列を使うことによっても算出できる．例えば，あるノード $v\_i$ の次数は以下のように計算できる．
+ $\mathcal{G}$ におけるノード $v\_i$ の次数は，隣接行列を使うことによっても算出できる．例えば，あるノード $v\_i$ の次数は以下のように計算できる．
 
  $$ \tag{2.1}
     d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$ 
@@ -46,7 +46,7 @@
  
 <strong>定義 2.6 近傍</strong>
 
- $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ のノード $v\_i$ について，その近傍 $\symscr{N}(v\_i)$ とは， $v\_i$ と隣接している全ノードで構成される集合である．
+ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ のノード $v\_i$ について，その近傍 $\symscr{N}(v\_i)$ とは， $v\_i$ と隣接している全ノードで構成される集合である．
 
 </div>
 
@@ -56,17 +56,17 @@
  
 <strong>定理 2.7</strong>
 
- $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対して，"総次数"（全ノードの次数の和）は，グラフに含まれる全エッジ数の $2$ 倍になる：
+ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ に対して，"総次数"（全ノードの次数の和）は，グラフに含まれる全エッジ数の $2$ 倍になる：
 
  $$ \nonumber
     \sum_{v\_i\in\symscr{V}}d(v\_i) = 2\cdot|\symscr{E}|. $$ 
 
 ::: prf
  $$ \begin{aligned}
-    \sum_{v\_i\in\symbfscr{V}}d(v\_i) &= \sum_{v\_i\in \symbfscr{V}}\sum_{v\_j\in\symbfscr{V}}\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
-    &=\sum_{\left\{v\_i,v\_j\right\}\in\symbfscr{E}}2\cdot\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
-    &=2\cdot\sum_{\left\{v\_i,v\_j\right\}\in\symbfscr{E}}\symbb{1}\_{\symbfscr{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
-    &=2\cdot|\symbfscr{E}|\nonumber\tag*{\qed}\end{aligned} $$ 
+    \sum_{v\_i\in\mathcal{V}}d(v\_i) &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
+    &=\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}2\cdot\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
+    &=2\cdot\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
+    &=2\cdot|\mathcal{E}|\nonumber\tag*{\qed}\end{aligned} $$ 
 :::
 
 
@@ -133,7 +133,7 @@
  
 <strong>定理 2.13</strong>
 
-隣接行列 $\symbf{A}$ を持つグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ に対して，隣接行列の $n$ 乗を $\symbf{A}^{n}$ と表す．このとき，行列 $\symbf{A}^{n}$ の $i,j$ 成分は，長さ $n$ の $v\_i$ - $v\_j$ ウォークの数に等しい．
+隣接行列 $\symbf{A}$ を持つグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ に対して，隣接行列の $n$ 乗を $\symbf{A}^{n}$ と表す．このとき，行列 $\symbf{A}^{n}$ の $i,j$ 成分は，長さ $n$ の $v\_i$ - $v\_j$ ウォークの数に等しい．
 
 ::: prf
 帰納法によってこの定理を証明できる．
@@ -153,7 +153,7 @@
  
 <strong>定義 2.14 部分グラフ</strong>
 
-与えられたグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ の部分グラフ $\symbfscr{G}' = \left\{\symbfscr{V}',\symbfscr{E}'\right\}$ は，ノードの部分集合 $\symbfscr{V}'\subset\symbfscr{V}$ およびエッジの部分集合 $\symbfscr{E}'\subset\symbfscr{E}$ で構成されるグラフである．このとき，部分集合 $\symbfscr{E}'$ 中のエッジに関係する全ノードが，部分集合 $\symbfscr{V}'$ に含まれていなければならない．
+与えられたグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ の部分グラフ $\mathcal{G}' = \left\{\mathcal{V}',\mathcal{E}'\right\}$ は，ノードの部分集合 $\mathcal{V}'\subset\mathcal{V}$ およびエッジの部分集合 $\mathcal{E}'\subset\mathcal{E}$ で構成されるグラフである．このとき，部分集合 $\mathcal{E}'$ 中のエッジに関係する全ノードが，部分集合 $\mathcal{V}'$ に含まれていなければならない．
 
 </div>
  
@@ -161,7 +161,7 @@
  
 <strong>例 2.15</strong>
 
-図2.1のグラフ $\symbfscr{G}$ に対して，ノードの部分集合を $\symbfscr{V}'=\left\{v\_1,v\_2,v\_3,v\_5\right\}$ ，エッジの部分集合を $\symbfscr{E}' = \left\{e\_1,e\_2,e\_3,e\_6\right\}$ とおくことで，部分グラフ $\symbfscr{G}'$ が構成できる．
+図2.1のグラフ $\mathcal{G}$ に対して，ノードの部分集合を $\mathcal{V}'=\left\{v\_1,v\_2,v\_3,v\_5\right\}$ ，エッジの部分集合を $\mathcal{E}' = \left\{e\_1,e\_2,e\_3,e\_6\right\}$ とおくことで，部分グラフ $\mathcal{G}'$ が構成できる．
 
 </div>
  
@@ -169,7 +169,7 @@
  
 <strong>定義 2.16 連結成分</strong>
 
-グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ とその部分グラフ $\symbfscr{G}' = \left\{\symbfscr{V}',\symbfscr{E}'\right\}$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\symbfscr{V}'$ のノードが $\symbfscr{V}/\symbfscr{V}'$ (訳注： $\symbfscr{V}$ から $\symbfscr{V}'$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\symbfscr{G}'$ はグラフ $\symbfscr{G}$ の連結成分であるという．
+グラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ とその部分グラフ $\mathcal{G}' = \left\{\mathcal{V}',\mathcal{E}'\right\}$ を考える．部分グラフの任意のノード間に少なくとも $1$ つのパスが存在し， $\mathcal{V}'$ のノードが $\mathcal{V}/\mathcal{V}'$ (訳注： $\mathcal{V}$ から $\mathcal{V}'$ のノードを取り去った集合)に含まれるどのノードとも隣接しないとき，部分グラフ $\mathcal{G}'$ はグラフ $\mathcal{G}$ の連結成分であるという．
 
 </div>
  
@@ -195,7 +195,7 @@
  
 <strong>定義 2.18 連結グラフ</strong>
 
-連結成分が $1$ つだけのグラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ を，連結グラフという．
+連結成分が $1$ つだけのグラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ を，連結グラフという．
 
 </div>
  
@@ -213,12 +213,12 @@
  
 <strong>定義 2.20 最短パス</strong>
 
-グラフ $\symbfscr{G}$ において $2$ つのノード $v\_s,v\_t\in \symbfscr{V}$ が与えられたとき， $v\_s$ から $v\_t$ へのパスの集合を $\symbfscr{P}\_{st}$ と表す．ノード $v\_s$ とノード $v\_t$ の間の最短パスは以下のように定義される．
+グラフ $\mathcal{G}$ において $2$ つのノード $v\_s,v\_t\in \mathcal{V}$ が与えられたとき， $v\_s$ から $v\_t$ へのパスの集合を $\mathcal{P}\_{st}$ と表す．ノード $v\_s$ とノード $v\_t$ の間の最短パスは以下のように定義される．
 
  $$ \nonumber
-p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$ 
+p^{sp}\_{st} = \arg \min_{p\in\mathcal{P}\_{st}} |p|. $$ 
 
-ここで， $p$ は $\symbfscr{P}\_{st}$ に含まれるパスで $|p|$ はその長さ， $p^{sp}\_{st}$ は最短パスを表す．なお，任意のノードの間には複数の最短パスが存在する場合がある．
+ここで， $p$ は $\mathcal{P}\_{st}$ に含まれるパスで $|p|$ はその長さ， $p^{sp}\_{st}$ は最短パスを表す．なお，任意のノードの間には複数の最短パスが存在する場合がある．
 
 </div>
 
@@ -228,10 +228,10 @@ p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$
  
 <strong>定義 2.21 直径</strong>
 
-連結グラフ $\symbfscr{G} = \left\{\symbfscr{V},\symbfscr{E}\right\}$ の直径は以下のように定義される．
+連結グラフ $\mathcal{G} = \left\{\mathcal{V},\mathcal{E}\right\}$ の直径は以下のように定義される．
 
  $$ \nonumber
-    \textrm{diameter}(\symbfscr{G}) = \max_{v\_s,v\_t\in \symbfscr{V}}\min_{p\in \symbfscr{P}\_{st}} |p|. $$ 
+    \textrm{diameter}(\mathcal{G}) = \max_{v\_s,v\_t\in \mathcal{V}}\min_{p\in \mathcal{P}\_{st}} |p|. $$ 
 
 </div>
  
@@ -286,8 +286,8 @@ p^{sp}\_{st} = \arg \min_{p\in\symbfscr{P}\_{st}} |p|. $$
     \lambda\cdot \symbf{c}_e = \symbf{A}\cdot\symbf{c}_e, $$ 
 
 と書き直すと， $\symbf{c}_e$ は，行列 $\symbf{A}$ の固有値 $\lambda$ に対応する固有ベクトルであることが明らかとなる．ただし，隣接行列 $\symbf{A}$ には，複数の固有ベクトルと固有値の組が存在する場合がある．通常，中心性スコアは正で表されるため，全要素が正となる固有ベクトルを選択することが望ましい．
-"ペロン・フロベニウスの定理"(Perron, 1907; Frobenius et al., 1912;
-Pillai et al.,
+"ペロン・フロベニウスの定理"(Perron, 1907; Frobenius *et al*., 1912;
+Pillai *et al*.,
 2005)によれば，「正成分を持つ実正方行列は，一意の最大固有値を持ち，対応する固有ベクトルの成分はすべて正となる」ことがわかっている．
 そこで行列の最大固有値を $\lambda$ とすることで，定理より，それに対応する固有ベクトルを中心性スコアベクトルとして選択することができる．
 
