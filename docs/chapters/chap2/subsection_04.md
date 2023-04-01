@@ -47,6 +47,7 @@
     &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber
  \end{aligned}
  \\]
+ 
 \\[
 \begin{aligned}
 a &= b + c \\
