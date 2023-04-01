@@ -7,10 +7,10 @@
 数学的には，この写像は以下のように表される．
 
  $$ \nonumber
-f\colon \mathcal{V} \rightarrow $$ 
+f\colon \mathcal{V} \rightarrow \mathbb{R}^{N\times d}. $$ 
 
 ここで， $d$ は各ノードに与える値（ベクトル）の次元である．
-一般性を損なうことなく，本節では $d=1$ とおいて議論を進め，全ノードを写像して得た値を $\symbf{f}\in\mathbb{R}^{N}$ とする．また，ノード $v\_i$ に対応する値を $\symbf{f}[i]$ で表すことにする．
+一般性を損なうことなく，本節では $d=1$ とおいて議論を進め，全ノードを写像して得た値を $\symbf{f}\in\mathbb{R}^{N}$ とする．また，ノード $v_i$ に対応する値を $\symbf{f}[i]$ で表すことにする．
 
 <div class="eg">
  
@@ -40,7 +40,7 @@ f\colon \mathcal{V} \rightarrow $$
 古典的なフーリエ変換(Bracewell, n.d.)は，
 
  $$ \nonumber
-    \hat{f}(\xi) = \langle f(t),\exp(-2\pi it \xi)\rangle = \int^{\infty}\_{-\infty}f(t)\exp (-2\pi i t \xi) dt $$ 
+    \hat{f}(\xi) = \langle f(t),\exp(-2\pi it \xi)\rangle = \int^{\infty}_{-\infty}f(t)\exp (-2\pi i t \xi) dt $$ 
 
 と定義される．
 この変換は，信号 $f(t)$ を，任意の実数 $\xi$ に対する複素指数関数 $\exp (-2\pi it \xi)$ の級数で分解するもので， $\xi$ は周波数と考えることができる．
@@ -60,9 +60,9 @@ $$
 
  $$ 
 \tag{2.11}
-    \hat{\symbf{f}}[l] = \langle\symbf{f},\symbf{u}_l \rangle = \sum^{N}\_{i=1}\symbf{f}[i]\symbf{u}_l[i]. $$ 
+    \hat{\symbf{f}}[l] = \langle\symbf{f},\symbf{u}_l \rangle = \sum^{N}_{i=1}\symbf{f}[i]\symbf{u}_l[i]. $$ 
 
-ここで， $\symbf{u}_l$ は，ラプラシアン行列 $\symbf{L}$ の $l$ 番目の固有ベクトルであり，対応する固有値 $\lambda\_l$ は固有ベクトル $\symbf{u}_l$ の周波数(滑らかさ)を表している．
+ここで， $\symbf{u}_l$ は，ラプラシアン行列 $\symbf{L}$ の $l$ 番目の固有ベクトルであり，対応する固有値 $\lambda_l$ は固有ベクトル $\symbf{u}_l$ の周波数(滑らかさ)を表している．
  $\symbf{f}$ のグラフフーリエ変換は，（ $\hat{\symbf{f}}[l]$ をその $l$ 番目の要素とする）ベクトル $\hat{\symbf{f}}$ として定義され，このときの固有ベクトルは，グラフ $\mathcal{G}$ のグラフフーリエ基底である．つまり， $\hat{\symbf{f}}$ は，信号 $\symbf{f}$ をこれらの基底で分解して得られる"グラフフーリエ係数"で構成される．
 一方で， $\symbf{f}$ のグラフフーリエ変換は，
 
@@ -72,11 +72,11 @@ $$
 
 と行列形式で表すこともできる．ここで，行列 $\symbf{U}$ の $l$ 番目の列は $\symbf{u}_l$ である．
 
-以下の式で示されるように，固有値 $\lambda\_l$ は，対応する固有ベクトル $\symbf{u}_l$ の滑らかさを測定している[^3]
-． [^3]: 訳注： $\symbf{u}^T\_l \symbf{L}\symbf{u}_l$ は式(2.10)右辺の形に変形できるから，固有値（周波数）が大きければ，エッジで接続されたノードの固有ベクトルの要素は互いに大きく異なることになる．
+以下の式で示されるように，固有値 $\lambda_l$ は，対応する固有ベクトル $\symbf{u}_l$ の滑らかさを測定している[^3]
+． [^3]: 訳注： $\symbf{u}^T_l \symbf{L}\symbf{u}_l$ は式(2.10)右辺の形に変形できるから，固有値（周波数）が大きければ，エッジで接続されたノードの固有ベクトルの要素は互いに大きく異なることになる．
 
  $$ \nonumber
-    \symbf{u}^T\_l \symbf{L}\symbf{u}_l = \lambda\_l \cdot\symbf{u}^T\_l\symbf{u}_l = \lambda\_l. $$ 
+    \symbf{u}^T_l \symbf{L}\symbf{u}_l = \lambda_l \cdot\symbf{u}^T_l\symbf{u}_l = \lambda_l. $$ 
 
 例えば，小さな固有値に対応する（隣接ノード間の）固有ベクトルの要素は，グラフ上でゆっくりと変化することになる．
 つまり，この固有ベクトルの下では接続したノードがとる要素は似たものとなる．したがって，これらの固有ベクトルの要素は滑らかで，グラフ上を低周波数で変化する．
@@ -104,7 +104,7 @@ $$
 グラフフーリエ係数 $\hat{\symbf{f}}$ は，信号 $\symbf{f}$ をスペクトル(spectral)領域で表現したものである．また，スペクトル表現 $\hat{\symbf{f}}$ を空間(spatial)表現 $\symbf{f}$ に変換する逆グラフフーリエ変換も存在しており，以下のように定義される．
 
  $$ \nonumber
-    \symbf{f}[i] = \sum^{N}\_{l=1}\hat{\symbf{f}}[l]\symbf{u}_l[i]. $$ 
+    \symbf{f}[i] = \sum^{N}_{l=1}\hat{\symbf{f}}[l]\symbf{u}_l[i]. $$ 
 
 この変換は，次のように行列形式で表すこともできる．
 

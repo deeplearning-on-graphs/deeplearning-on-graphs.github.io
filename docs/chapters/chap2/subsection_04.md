@@ -40,7 +40,7 @@
 
 ここからは，特に言及しない限り，定義2.28で導入した（非正規化）ラプラシアン行列の議論に焦点を当てる．しかし，本書の後半の章では，正規化ラプラシアン行列も利用されることに注意されたい．
 
-次数行列 $\symbf{D}$ と隣接行列 $\symbf{A}$ はどちらも対称行列であるため，ラプラシアン行列は対称行列である．ここで，ベクトル $\symbf{f}$ を考える．このベクトルの $i$ 番目の要素 $\symbf{f}[i]$ は，ノード $v\_i$ に関連しているものとする． $\symbf{L}$ に $\symbf{f}$ をかけると，新しいベクトル $\symbf{h}$ を得ることができる．
+次数行列 $\symbf{D}$ と隣接行列 $\symbf{A}$ はどちらも対称行列であるため，ラプラシアン行列は対称行列である．ここで，ベクトル $\symbf{f}$ を考える．このベクトルの $i$ 番目の要素 $\symbf{f}[i]$ は，ノード $v_i$ に関連しているものとする． $\symbf{L}$ に $\symbf{f}$ をかけると，新しいベクトル $\symbf{h}$ を得ることができる．
  
 
 $$
@@ -55,22 +55,22 @@ $$
 
 $$
 \begin{aligned}
-\symbf{h}[i] &= d(v\_i)\cdot \symbf{f}[i] - \sum^{N}\_{j=1}\symbf{A}\_{i,j}\cdot\symbf{f}[j]\nonumber\\
-&= d(v\_i)\cdot\symbf{f}[i] - \sum_{v\_j\in \mathcal{N}(v\_i)}\symbf{A}\_{i,j}\cdot\symbf{f}[j] \nonumber\\
-&= \sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i] - \symbf{f}[j]).
+\symbf{h}[i] &= d(v_i)\cdot \symbf{f}[i] - \sum^{N}_{j=1}\symbf{A}_{i,j}\cdot\symbf{f}[j]\nonumber\\
+&= d(v_i)\cdot\symbf{f}[i] - \sum_{v_j\in \mathcal{N}(v_i)}\symbf{A}_{i,j}\cdot\symbf{f}[j] \nonumber\\
+&= \sum_{v_j\in \mathcal{N}(v_i)}(\symbf{f}[i] - \symbf{f}[j]).
 \end{aligned}
 \tag{2.9}
 $$
  
-式(2.9)から明らかのように， $\symbf{h}[i]$ は，ノード $v\_i$ とその近傍ノード $\mathcal{N}(v\_i)$ との間における， $\symbf{f}$ の差を合計したものになる．次に， $\symbf{f}^{T}\symbf{L}\symbf{f}$ を以下のように求める．
+式(2.9)から明らかのように， $\symbf{h}[i]$ は，ノード $v_i$ とその近傍ノード $\mathcal{N}(v_i)$ との間における， $\symbf{f}$ の差を合計したものになる．次に， $\symbf{f}^{T}\symbf{L}\symbf{f}$ を以下のように求める．
  
 
 $$
 \begin{aligned}
-    \symbf{f}^{T}\symbf{L}\symbf{f} &= \sum_{v\_i\in \mathcal{V}}\symbf{f}[i] \sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i] - \symbf{f}[j])\nonumber\\
-    &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i]\cdot\symbf{f}[i] - \symbf{f}[i]\cdot\symbf{f}[j])\nonumber\\
-    &=\sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{N}(v\_i)}(\dfrac{1}{2}\symbf{f}[i]\cdot\symbf{f}[i] - \symbf{f}[i]\cdot\symbf{f}[j] + \dfrac{1}{2}\symbf{f}[j]\cdot\symbf{f}[j])\nonumber\\
-    &= \dfrac{1}{2}\sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}(v\_i)}(\symbf{f}[i] - \symbf{f}[j])^{2}.
+    \symbf{f}^{T}\symbf{L}\symbf{f} &= \sum_{v_i\in \mathcal{V}}\symbf{f}[i] \sum_{v_j\in \mathcal{N}(v_i)}(\symbf{f}[i] - \symbf{f}[j])\nonumber\\
+    &= \sum_{v_i\in \mathcal{V}}\sum_{v_j\in \mathcal{N}(v_i)}(\symbf{f}[i]\cdot\symbf{f}[i] - \symbf{f}[i]\cdot\symbf{f}[j])\nonumber\\
+    &=\sum_{v_i\in \mathcal{V}}\sum_{v_j\in\mathcal{N}(v_i)}(\dfrac{1}{2}\symbf{f}[i]\cdot\symbf{f}[i] - \symbf{f}[i]\cdot\symbf{f}[j] + \dfrac{1}{2}\symbf{f}[j]\cdot\symbf{f}[j])\nonumber\\
+    &= \dfrac{1}{2}\sum_{v_i\in \mathcal{V}}\sum_{v_j\in\mathcal{V}(v_i)}(\symbf{f}[i] - \symbf{f}[j])^{2}.
 \end{aligned}
 \tag{2.10}
 $$
@@ -102,7 +102,7 @@ Q.E.D.
 </div>
 
 
- $N$ 個のノードを持つグラフ $\mathcal{G}$ には，(重複も含めて)合計で $N$ 個の固有値・固有ベクトルが存在し，定理2.30によれば，それら全ての固有値は非負である．また， $0$ に等しい固有値は常に存在している．実際，ベクトル $\symbf{u}_1 = \tfrac{1}{\sqrt{N}}(1,\dots,1)$ を考えると，式(2.9)により， $\symbf{L}\symbf{u}_1 = \symbf{0}=0\symbf{u}_1$ であることがわかる．これは， $\symbf{u}_1$ が固有値 $0$ に対応する固有ベクトルであることを表している．便宜上，固有値を $0=\lambda\_1\leq\lambda\_2\leq,\dots,\leq\lambda\_N$ のように小さい順に並べ，それらに対応する正規化固有ベクトルを $\symbf{u}_1,\dots,\symbf{u}_N$ と表記することにする．
+ $N$ 個のノードを持つグラフ $\mathcal{G}$ には，(重複も含めて)合計で $N$ 個の固有値・固有ベクトルが存在し，定理2.30によれば，それら全ての固有値は非負である．また， $0$ に等しい固有値は常に存在している．実際，ベクトル $\symbf{u}_1 = \tfrac{1}{\sqrt{N}}(1,\dots,1)$ を考えると，式(2.9)により， $\symbf{L}\symbf{u}_1 = \symbf{0}=0\symbf{u}_1$ であることがわかる．これは， $\symbf{u}_1$ が固有値 $0$ に対応する固有ベクトルであることを表している．便宜上，固有値を $0=\lambda_1\leq\lambda_2\leq,\dots,\leq\lambda_N$ のように小さい順に並べ，それらに対応する正規化固有ベクトルを $\symbf{u}_1,\dots,\symbf{u}_N$ と表記することにする．
 
 <div class="definition">
  
