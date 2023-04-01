@@ -30,7 +30,8 @@
 
  $\mathcal{G}$ におけるノード $v\_i$ の次数は，隣接行列を使うことによっても算出できる．例えば，あるノード $v\_i$ の次数は以下のように計算できる．
 
- $$ \tag{2.1}
+ $$ 
+\tag{2.1}
     d(v\_i) = \sum^{N}\_{j=1}\symbf{A}\_{i,j} $$ 
 
 
@@ -71,7 +72,8 @@ $$
     \sum_{v\_i\in\mathcal{V}}d(v\_i) &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}2\cdot\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=2\cdot\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
-    &=2\cdot|\mathcal{E}|\nonumber\tag*{Q.E.D.}
+    &=2\cdot|\mathcal{E}|\nonumber
+\tag*{Q.E.D.}
 \end{aligned}
 $$
   
@@ -95,7 +97,9 @@ $$
 
 
 </div>
- 
+
+
+
 <div class="eg">
  
 <strong>例 2.9</strong>
@@ -155,7 +159,8 @@ $$
 まず $n=1$ に対して定義が成り立つことを示す．
  $\symbf{A}\_{i,j}=1$ の場合，隣接行列の定義より，ノード $v\_i$ と $v\_j$ の間にエッジが存在することがわかる．これは長さ $1$ の $v\_i$ - $v\_j$ ウォークとみなせる． $\symbf{A}\_{i,j}=0$ の場合，ノード $v\_i$ と $v\_j$ の間にエッジはないので，長さ $1$ の $v\_i$ - $v\_j$ ウォークは存在しない．以上から $n=1$ に対して定理が成り立つことがわかった．次に， $n=k$ のときに定理が成り立つと仮定する．つまり， $\symbf{A}^{k}$ の $i,h$ 成分は，長さ $k$ の $v\_i$ - $v\_h$ ウォークの数に等しいとする．ここから， $n=k+1$ の場合の証明に進む． $\symbf{A}^{k+1}$ の $i,j$ 成分は， $\symbf{A}^{k}$ と $\symbf{A}$ を用いて以下のように表すことができる．
 
- $$ \tag{2.2}
+ $$ 
+\tag{2.2}
     \symbf{A}^{k+1}\_{i,j} = \sum^{N}\_{h=1}\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}. $$ 
 
 式(2.2)の各 $h$ について $\symbf{A}^{k}\_{i,h}$ と $\symbf{A}\_{h,j}$ の両方がゼロでなければ $\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}$ はゼロでない値を持つことになる．すると $\symbf{A}^{k}\_{i,h}$ は長さ $k$ の $v\_i$ - $v\_h$ ウォークの数を表し， $\symbf{A}\_{h,j}$ は長さ $1$ の $v\_h$ - $v\_j$ ウォークの数を示すことはすでにわかっているから， $\symbf{A}^{k}\_{i,h}\cdot\symbf{A}\_{h,j}$ は，ウォークの最後から $2$ 番目のノードを $v\_h$ とした，長さ $k+1$ の $v\_i$ - $v\_j$ ウォークの数と等しいことになる．したがって，すべての可能なノード $v\_h$ について合計すると， $\symbf{A}^{k+1}$ の $i,j$ 成分は，長さ $k+1$ の $v\_i$ - $v\_j$ ウォークの数と等しいことが証明できた．Q.E.D.
@@ -163,7 +168,9 @@ $$
 </div>
  
 </div>
- 
+
+
+
 <div class="definition">
  
 <strong>定義 2.15 部分グラフ</strong>
@@ -292,7 +299,8 @@ p^{sp}\_{st} = \arg \min_{p\in\mathcal{P}\_{st}} |p|. $$
 
 この式は行列形式として以下のようにかける．
 
- $$ \tag{2.3}
+ $$ 
+\tag{2.3}
     \symbf{c}\_e = \dfrac{1}{\lambda}\symbf{A}\cdot \symbf{c}\_e. $$ 
 
 ここで， $\symbf{c}_e\in \mathbb{R}^N$ ，はグラフ内の全ノードの中心性スコアを成分に持ったベクトルである．式(2.3)を
@@ -321,7 +329,8 @@ Pillai *et al*.,
 ．具体的にノード $v\_i$ のKatz中心性は， $\beta$ を定数として，以下のように定義できる．
 [^1]: 訳注：辺の向きがある有向グラフでは，どのノードからもエッジの入射がないノードの中心性は $0$ となる．さらに，そのようなノードに隣接するノードも，中心性が $0$ となってしまう可能性がある．Katz中心性は，中心性が $0$ となるノードから入射するエッジにも一定のスコアを与えることで，より妥当な中心性の算出を可能にする指標である．
 
- $$ \tag{2.4}
+ $$ 
+\tag{2.4}
 c\_k(v\_i) = \alpha\sum^{N}\_{j=1}\symbf{A}\_{i,j}c\_k (v\_j) + \beta. $$ 
 
 すべてのノードのKatz中心性スコアは行列形式として  
@@ -329,15 +338,16 @@ c\_k(v\_i) = \alpha\sum^{N}\_{j=1}\symbf{A}\_{i,j}c\_k (v\_j) + \beta. $$
 $$
 \begin{aligned}
     \symbf{c}_k = \alpha \symbf{A}\symbf{c}_k + \symbf{\beta}\nonumber\\
-    (\symbf{I} - \alpha\cdot \symbf{A})\symbf{c}_k = \symbf{\beta},\tag{2.5}
+    (\symbf{I} - \alpha\cdot \symbf{A})\symbf{c}_k = \symbf{\beta},
 \end{aligned}
+\tag{2.5}
 $$
  
 と表せる．ここで， $\symbf{c}_k\in \mathbb{R}^{N}$ は，すべてのノードに関するKatz中心性のスコアを表すベクトルで， $\symbf{\beta}$ は各ノードの定数項 $\beta$ を要素に持ったベクトルである．
-なお，隣接行列 $\symbf{A}$ の最大固有値を $\lambda_{\max}$ とし， $\alpha=\tfrac{1}{\lambda_{\max}}$ かつ $\beta=0$ とおくと，Katz中心性は固有ベクトル中心性と等価になる． $\alpha$ の選択は重要で， $\alpha$ の値が大きいと行列 $\symbf{I}-\alpha\cdot\symbf{A}$ は悪条件(ill-conditioned)になる[^2]
-．逆に $\alpha$ を小さくしすぎても得られる結果は $\beta$ に近いものとなり，非常に似たスコアを全ノードに割り当てることになるため，中心性スコアとして役に立たない．そこで実際には，可逆であることを保証するような， $\alpha < \tfrac{1}{\lambda_{\max}}$ とおいた行列 $\symbf{I}-\alpha\cdot\symbf{A}$ を選択することが多く，このとき $\symbf{c}_k$ は以下のように計算できる．
-[^2]: 訳注：式(2.5)の"条件数"(condition
+なお，隣接行列 $\symbf{A}$ の最大固有値を $\lambda_{\max}$ とし， $\alpha=\tfrac{1}{\lambda_{\max}}$ かつ $\beta=0$ とおくと，Katz中心性は固有ベクトル中心性と等価になる． $\alpha$ の選択は重要で， $\alpha$ の値が大きいと行列 $\symbf{I}-\alpha\cdot\symbf{A}$ は悪条件(ill-conditioned)になる
+[^2] ． [^2]: 訳注：式(2.5)の"条件数"(condition
 number)が大きくなると，数値解析上の問題が生じる．一般に，方程式 $\symbf{C}\symbf{x}=\symbf{b}$ の条件数 $\kappa(\symbf{C})$ とは， $\kappa(\symbf{C})=\|\symbf{C}\|\,\|\symbf{C}^{-1}\|$ で定義される値であり( $\|\cdot\|$ は適当な行列ノルム)，この値が大きいほど，数値的な不安定性や誤差が生じることがある．そのため，Katz中心性を計算する際には，条件数 $\kappa(\symbf{I}-\alpha\cdot\symbf{A})$ を小さくするため， $\alpha$ の値の決め方が重要となってくる．
+逆に $\alpha$ を小さくしすぎても得られる結果は $\beta$ に近いものとなり，非常に似たスコアを全ノードに割り当てることになるため，中心性スコアとして役に立たない．そこで実際には，可逆であることを保証するような， $\alpha < \tfrac{1}{\lambda_{\max}}$ とおいた行列 $\symbf{I}-\alpha\cdot\symbf{A}$ を選択することが多く，このとき $\symbf{c}_k$ は以下のように計算できる．
 
  $$ \nonumber
     \symbf{c}_k = (\symbf{I} - \alpha\cdot \symbf{A})^{-1}\symbf{\beta}. $$ 
@@ -356,7 +366,8 @@ number)が大きくなると，数値解析上の問題が生じる．一般に�
 
 これまでに述べてきた中心性スコアは，隣接するノードとのつながりに基づいて計算されていた．一方でノードの重要度を測るもう一つの方法がある．その方法とは，ノードが「グラフ内の重要な位置にいるか」を確認するものである．実際多くのパスが通るノードはグラフの中で重要な位置にあるといえる．この方法で測った中心性を"媒介中心性"といい， $v\_i$ の中心性スコアは以下のように形式的に定義される．
 
- $$ \tag{2.6}
+ $$ 
+\tag{2.6}
     c\_b(v\_i) = \sum_{v\_s\neq v\_i\neq v\_t}\dfrac{\sigma_{st}(v\_i)}{\sigma_{st}} $$ 
 
 ここで，（分母の） $\sigma_{st}$ はノード $v\_s$ からノード $v\_t$ までの全最短パスの数，（分子の） $\sigma_{st}(v\_i)$ は全最短パスのうち $v\_i$ を通るパスの個数を表す．
