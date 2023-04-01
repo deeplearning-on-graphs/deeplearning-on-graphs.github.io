@@ -65,9 +65,9 @@
 <div class="prf">
 <strong>証明: </strong>
   
+
 $$
 \begin{aligned}
-
     \sum_{v\_i\in\mathcal{V}}d(v\_i) &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}2\cdot\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=2\cdot\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
@@ -325,9 +325,9 @@ Pillai *et al*.,
 c\_k(v\_i) = \alpha\sum^{N}\_{j=1}\symbf{A}\_{i,j}c\_k (v\_j) + \beta. $$ 
 
 すべてのノードのKatz中心性スコアは行列形式として  
+
 $$
 \begin{aligned}
-
     \symbf{c}_k = \alpha \symbf{A}\symbf{c}_k + \symbf{\beta}\nonumber\\
     (\symbf{I} - \alpha\cdot \symbf{A})\symbf{c}_k = \symbf{\beta},\tag{2.5}
 \end{aligned}

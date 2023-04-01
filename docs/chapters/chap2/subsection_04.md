@@ -40,9 +40,9 @@
 
 次数行列 $\symbf{D}$ と隣接行列 $\symbf{A}$ はどちらも対称行列であるため，ラプラシアン行列は対称行列である．ここで，ベクトル $\symbf{f}$ を考える．このベクトルの $i$ 番目の要素 $\symbf{f}[i]$ は，ノード $v\_i$ に関連しているものとする． $\symbf{L}$ に $\symbf{f}$ をかけると，新しいベクトル $\symbf{h}$ を得ることができる．
  
+
 $$
 \begin{aligned}
-
     \symbf{h} &= \symbf{L}\symbf{f}\nonumber\\
     &= (\symbf{D} - \symbf{A})\symbf{f}\nonumber\\
     &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber
@@ -50,9 +50,9 @@ $$
 $$
  
  $\symbf{h}$ の $i$ 番目の要素は以下のようになる．  
+
 $$
 \begin{aligned}
-
 \symbf{h}[i] &= d(v\_i)\cdot \symbf{f}[i] - \sum^{N}\_{j=1}\symbf{A}\_{i,j}\cdot\symbf{f}[j]\nonumber\\
 &= d(v\_i)\cdot\symbf{f}[i] - \sum_{v\_j\in \mathcal{N}(v\_i)}\symbf{A}\_{i,j}\cdot\symbf{f}[j] \nonumber\\
 &= \sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i] - \symbf{f}[j]).\tag{2.9}
@@ -61,9 +61,9 @@ $$
  
 式(2.9)から明らかのように， $\symbf{h}[i]$ は，ノード $v\_i$ とその近傍ノード $\mathcal{N}(v\_i)$ との間における， $\symbf{f}$ の差を合計したものになる．次に， $\symbf{f}^{T}\symbf{L}\symbf{f}$ を以下のように求める．
  
+
 $$
 \begin{aligned}
-
     \symbf{f}^{T}\symbf{L}\symbf{f} &= \sum_{v\_i\in \mathcal{V}}\symbf{f}[i] \sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i] - \symbf{f}[j])\nonumber\\
     &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i]\cdot\symbf{f}[i] - \symbf{f}[i]\cdot\symbf{f}[j])\nonumber\\
     &=\sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{N}(v\_i)}(\dfrac{1}{2}\symbf{f}[i]\cdot\symbf{f}[i] - \symbf{f}[i]\cdot\symbf{f}[j] + \dfrac{1}{2}\symbf{f}[j]\cdot\symbf{f}[j])\nonumber\\
