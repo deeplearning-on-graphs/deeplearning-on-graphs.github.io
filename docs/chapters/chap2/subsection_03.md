@@ -65,14 +65,13 @@
 
 <div class="prf">
 <strong>証明: </strong>
-  
 
 $$
 \begin{aligned}
     \sum_{v\_i\in\mathcal{V}}d(v\_i) &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}2\cdot\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\\})\nonumber\\
     &=2\cdot\sum_{\left\\{v\_i,v\_j\right\\}\in\mathcal{E}}\symbb{1}\_{\mathcal{E}}(\left\\{v\_i,v\_j\right\\})\nonumber\\
-    &=2\cdot|\mathcal{E}|\nonumber
+    &=2\cdot\|\mathcal{E}\|\nonumber
 \end{aligned}
 $$
   
