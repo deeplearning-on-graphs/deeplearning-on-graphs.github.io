@@ -5,7 +5,7 @@
 layout: default
 ---
 
-Deep Learning on Graphsの公開レビューサイトです.
+グラフ深層学習(Deep Learning on Graphs)の公開レビューサイトです.
 
 ## 目次
 - [第1章 イントロダクション](./chapters/chap1/chap1.md)
@@ -28,6 +28,5 @@ Deep Learning on Graphsの公開レビューサイトです.
 - 第14章 Advanced Topics in Graph Neural Networks
 - 第15章 Advanced Applications in Graph Neural Networks
 
-## 公開レビューへの参加方法
-### 本レポジトリにプルリクを送る
-### フォームに記載して送る
+## 公開レビューに関して
+方法・形式については，後日お知らせします．
