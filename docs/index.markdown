@@ -11,8 +11,8 @@ Deep Learning on Graphsの公開レビューサイトです.
 - [第1章 グラフ上の深層学習:入門](./chapters/chap1/chap1.md)
 ### 基礎
 - [第2章 グラフ理論の基礎](./chapters/chap2/chap2.md)
-- [第3章 深層学習の基礎](./chapters/chap3/chap3.md)
-- [第4章 グラフ埋め込み](./chapters/chap4/chap4.md)
+- 第3章 深層学習の基礎（近日公開予定）
+- 第4章 グラフ埋め込み(近日公開予定
 - 第5章 Graph Neural Networks
 ### 方法
 - 第6章 Robust Graph Neural Networks
