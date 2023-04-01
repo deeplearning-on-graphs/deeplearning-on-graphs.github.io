@@ -45,10 +45,16 @@ f\colon \mathcal{V} \right\arrow \mathbb{R}^{N\times d}. $$
 と定義される．
 この変換は，信号 $f(t)$ を，任意の実数 $\xi$ に対する複素指数関数 $\exp (-2\pi it \xi)$ の級数で分解するもので， $\xi$ は周波数と考えることができる．
 以下の計算からわかるように，これらの複素指数関数は「一次元ラプラス作用素（二階微分作用素）の固有関数」であることがわかる．
- $$ \begin{aligned}
+ 
+$$
+\begin{aligned}
+
     \nabla^2 (\exp(-2\pi i t \xi)) &= \dfrac{\partial^2}{\partial t^2} \exp (-2\pi it \xi)\nonumber\\
     &= \dfrac{\partial}{\partial t}(-2\pi i\xi)\exp (-2\pi it \xi)\nonumber\\
-    &= (2\pi i \xi)^2 \exp (-2\pi it \xi).\nonumber\end{aligned} $$ 
+    &= (2\pi i \xi)^2 \exp (-2\pi it \xi).\nonumber
+\end{aligned}
+$$
+ 
 
 同様に，グラフ $\mathcal{G}$ 上のグラフ信号 $\symbf{f}$ の"グラフフーリエ変換"は，以下のように表すことができる．
 

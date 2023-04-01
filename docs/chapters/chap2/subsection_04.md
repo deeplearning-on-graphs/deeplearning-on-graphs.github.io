@@ -39,49 +39,38 @@
 ここからは，特に言及しない限り，定義2.28で導入した（非正規化）ラプラシアン行列の議論に焦点を当てる．しかし，本書の後半の章では，正規化ラプラシアン行列も利用されることに注意されたい．
 
 次数行列 $\symbf{D}$ と隣接行列 $\symbf{A}$ はどちらも対称行列であるため，ラプラシアン行列は対称行列である．ここで，ベクトル $\symbf{f}$ を考える．このベクトルの $i$ 番目の要素 $\symbf{f}[i]$ は，ノード $v\_i$ に関連しているものとする． $\symbf{L}$ に $\symbf{f}$ をかけると，新しいベクトル $\symbf{h}$ を得ることができる．
-
-$$
- \begin{aligned}
-    \symbf{h} &= \symbf{L}\symbf{f}\nonumber\\
-    &= (\symbf{D} - \symbf{A})\symbf{f}\nonumber\\
-    &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber
- \end{aligned}
-$$
-
- \\[
- \begin{aligned}
-    \symbf{h} &= \symbf{L}\symbf{f}\nonumber\\
-    &= (\symbf{D} - \symbf{A})\symbf{f}\nonumber\\
-    &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber
- \end{aligned}
- \\]
  
-\\[
-\begin{aligned}
-a &= b + c \\
-d &= e - f
-\end{aligned}
-\\]
-
 $$
 \begin{aligned}
-a &= b + c \\
-d &= e - f
+
+    \symbf{h} &= \symbf{L}\symbf{f}\nonumber\\
+    &= (\symbf{D} - \symbf{A})\symbf{f}\nonumber\\
+    &= \symbf{D}\symbf{f} - \symbf{A}\symbf{f}.\nonumber
 \end{aligned}
 $$
+ 
+ $\symbf{h}$ の $i$ 番目の要素は以下のようになる．  
+$$
+\begin{aligned}
 
-    
-    
- $\symbf{h}$ の $i$ 番目の要素は以下のようになる．  $$ \begin{aligned}
 \symbf{h}[i] &= d(v\_i)\cdot \symbf{f}[i] - \sum^{N}\_{j=1}\symbf{A}\_{i,j}\cdot\symbf{f}[j]\nonumber\\
 &= d(v\_i)\cdot\symbf{f}[i] - \sum_{v\_j\in \mathcal{N}(v\_i)}\symbf{A}\_{i,j}\cdot\symbf{f}[j] \nonumber\\
-&= \sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i] - \symbf{f}[j]).\tag{2.9}\end{aligned} $$ 
+&= \sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i] - \symbf{f}[j]).\tag{2.9}
+\end{aligned}
+$$
+ 
 式(2.9)から明らかのように， $\symbf{h}[i]$ は，ノード $v\_i$ とその近傍ノード $\mathcal{N}(v\_i)$ との間における， $\symbf{f}$ の差を合計したものになる．次に， $\symbf{f}^{T}\symbf{L}\symbf{f}$ を以下のように求める．
- $$ \begin{aligned}
+ 
+$$
+\begin{aligned}
+
     \symbf{f}^{T}\symbf{L}\symbf{f} &= \sum_{v\_i\in \mathcal{V}}\symbf{f}[i] \sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i] - \symbf{f}[j])\nonumber\\
     &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in \mathcal{N}(v\_i)}(\symbf{f}[i]\cdot\symbf{f}[i] - \symbf{f}[i]\cdot\symbf{f}[j])\nonumber\\
     &=\sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{N}(v\_i)}(\dfrac{1}{2}\symbf{f}[i]\cdot\symbf{f}[i] - \symbf{f}[i]\cdot\symbf{f}[j] + \dfrac{1}{2}\symbf{f}[j]\cdot\symbf{f}[j])\nonumber\\
-    &= \dfrac{1}{2}\sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}(v\_i)}(\symbf{f}[i] - \symbf{f}[j])^{2}.\tag{2.10}\end{aligned} $$ 
+    &= \dfrac{1}{2}\sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}(v\_i)}(\symbf{f}[i] - \symbf{f}[j])^{2}.\tag{2.10}
+\end{aligned}
+$$
+ 
 以上から， $\symbf{f}^{T}\symbf{L}\symbf{f}$ は隣接するノード間における， $\symbf{f}$ の差の二乗を合計したものとなる．言い換えれば，隣接するノード（に付随した $\symbf{f}$ ）の値がどれだけ異なるかを測定していることになる．
  $\symbf{f}^{T}\symbf{L}\symbf{f}$ は，どんな非ゼロ実数ベクトル $\symbf{f}$ を選んでも常に非負であり，このことは，ラプラシアン行列が半正定値であることを示している．
 

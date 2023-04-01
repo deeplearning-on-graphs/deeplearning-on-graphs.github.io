@@ -64,11 +64,17 @@
 
 <div class="prf">
 <strong>証明: </strong>
-  $$ \begin{aligned}
+  
+$$
+\begin{aligned}
+
     \sum_{v\_i\in\mathcal{V}}d(v\_i) &= \sum_{v\_i\in \mathcal{V}}\sum_{v\_j\in\mathcal{V}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}2\cdot\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
     &=2\cdot\sum_{\left\{v\_i,v\_j\right\}\in\mathcal{E}}\symbb{1}\_{\mathcal{E}}(\left\{v\_i,v\_j\right\})\nonumber\\
-    &=2\cdot|\mathcal{E}|\nonumber\tag*{Q.E.D.}\end{aligned} $$  
+    &=2\cdot|\mathcal{E}|\nonumber\tag*{Q.E.D.}
+\end{aligned}
+$$
+  
 </div>
 
 
@@ -318,9 +324,15 @@ Pillai *et al*.,
  $$ \tag{2.4}
 c\_k(v\_i) = \alpha\sum^{N}\_{j=1}\symbf{A}\_{i,j}c\_k (v\_j) + \beta. $$ 
 
-すべてのノードのKatz中心性スコアは行列形式として  $$ \begin{aligned}
+すべてのノードのKatz中心性スコアは行列形式として  
+$$
+\begin{aligned}
+
     \symbf{c}_k = \alpha \symbf{A}\symbf{c}_k + \symbf{\beta}\nonumber\\
-    (\symbf{I} - \alpha\cdot \symbf{A})\symbf{c}_k = \symbf{\beta},\tag{2.5}\end{aligned} $$ 
+    (\symbf{I} - \alpha\cdot \symbf{A})\symbf{c}_k = \symbf{\beta},\tag{2.5}
+\end{aligned}
+$$
+ 
 と表せる．ここで， $\symbf{c}_k\in \mathbb{R}^{N}$ は，すべてのノードに関するKatz中心性のスコアを表すベクトルで， $\symbf{\beta}$ は各ノードの定数項 $\beta$ を要素に持ったベクトルである．
 なお，隣接行列 $\symbf{A}$ の最大固有値を $\lambda_{\max}$ とし， $\alpha=\tfrac{1}{\lambda_{\max}}$ かつ $\beta=0$ とおくと，Katz中心性は固有ベクトル中心性と等価になる． $\alpha$ の選択は重要で， $\alpha$ の値が大きいと行列 $\symbf{I}-\alpha\cdot\symbf{A}$ は悪条件(ill-conditioned)になる[^2]
 ．逆に $\alpha$ を小さくしすぎても得られる結果は $\beta$ に近いものとなり，非常に似たスコアを全ノードに割り当てることになるため，中心性スコアとして役に立たない．そこで実際には，可逆であることを保証するような， $\alpha < \tfrac{1}{\lambda_{\max}}$ とおいた行列 $\symbf{I}-\alpha\cdot\symbf{A}$ を選択することが多く，このとき $\symbf{c}_k$ は以下のように計算できる．
