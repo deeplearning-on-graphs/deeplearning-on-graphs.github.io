@@ -65,6 +65,14 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  
 sass:
   style: :compressed
   sass_dir: _sass
