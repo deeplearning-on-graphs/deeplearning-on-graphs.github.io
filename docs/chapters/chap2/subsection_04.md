@@ -94,7 +94,7 @@ $$
 ラプラシアン行列 $\symbf{L}$ の固有値を $\lambda$ とし，対応する正規化固有ベクトルを $\symbf{u}$ とする．固有値と固有ベクトルの定義によれば， $\lambda\symbf{u} = \symbf{L}\symbf{u}$ であり， $\symbf{u}$ は非ゼロの単位ベクトルで $\symbf{u}^{T}\symbf{u} = 1$ である．したがって，
 
  $$ \nonumber
-    \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \symbf{u}^{T}\symbf{L}\symbf{u} \symbfscr{G}eq 0. $$ 
+    \lambda = \lambda \symbf{u}^{T}\symbf{u} = \symbf{u}^{T}\lambda\symbf{u} = \symbf{u}^{T}\symbf{L}\symbf{u} \geq 0. $$ 
 
 Q.E.D. 
 </div>
