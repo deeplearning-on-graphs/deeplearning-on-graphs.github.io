@@ -347,7 +347,7 @@ $$
 $\alpha$ の選択は重要で， $\alpha$ の値が大きいと行列 $\symbf{I}-\alpha\cdot\symbf{A}$ は悪条件(ill-conditioned)になる[^2]
 ． 
 
-逆に $\alpha$ を小さくしすぎても得られる結果は $\beta$ に近いものとなり，非常に似たスコアを全ノードに割り当てることになるため，中心性スコアとして役に立たない．そこで実際には，可逆であることを保証するような， $\alpha < \tfrac{1}{\lambda_{\max}}$ とおいた行列 $\symbf{I}-\alpha\cdot\symbf{A}$ を選択することが多く，このとき $\symbf{c}_k$ は以下のように計算できる．
+逆に $\alpha$ を小さくしすぎても得られる結果は $\beta$ に近いものとなり，非常に似たスコアを全ノードに割り当てることになるため，中心性スコアとして役に立たない．そこで実際には，可逆であることを保証するような， $\alpha < \tfrac{1}{\lambda\_{\max}}$ とおいた行列 $\symbf{I}-\alpha\cdot\symbf{A}$ を選択することが多く，このとき $\symbf{c}_k$ は以下のように計算できる．
 
  $$ \nonumber
     \symbf{c}_k = (\symbf{I} - \alpha\cdot \symbf{A})^{-1}\symbf{\beta}. $$ 
