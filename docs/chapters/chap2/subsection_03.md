@@ -343,7 +343,7 @@ $$
 $$
  
 と表せる．ここで， $\symbf{c}_k\in \mathbb{R}^{N}$ は，すべてのノードに関するKatz中心性のスコアを表すベクトルで， $\symbf{\beta}$ は各ノードの定数項 $\beta$ を要素に持ったベクトルである．
-なお，隣接行列 $\symbf{A}$ の最大固有値を $\lambda$ とし， $\alpha=\tfrac{1}{\lambda}$ かつ $\beta=0$ とおくと，Katz中心性は固有ベクトル中心性と等価になる． 
+なお，隣接行列 $\symbf{A}$ の最大固有値を $\lambda\_{\max}$ とし， $\alpha=\tfrac{1}{\lambda\_{\max}}$ かつ $\beta=0$ とおくと，Katz中心性は固有ベクトル中心性と等価になる． 
 $\alpha$ の選択は重要で， $\alpha$ の値が大きいと行列 $\symbf{I}-\alpha\cdot\symbf{A}$ は悪条件(ill-conditioned)になる[^2]
 ． 
 
