@@ -34,6 +34,8 @@ layout: default
 ### 訳者について
 2名体制による共訳で進めています([略歴](./bio.markdown))．
 
-### 問い合わせ先
-- フォーム
+#### 問い合わせ先
+Twitterアカウントを運営しておりますので，
+ご不明点などがございましたら，どうぞお問い合わせください．
+
 - [Twitter](https://twitter.com/deepL_on_graphs)
