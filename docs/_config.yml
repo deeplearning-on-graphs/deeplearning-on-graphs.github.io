@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Deep Learning on Graphs（日本語訳版）
+title: 【日本語訳版】 Deep Learning on Graphs
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  日本語タイトル：グラフ深層学習
+  グラフ深層学習（仮題）
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
