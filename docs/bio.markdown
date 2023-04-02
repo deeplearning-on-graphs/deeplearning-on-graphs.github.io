@@ -23,4 +23,4 @@ layout: default
 現在 民間企業にてデータ分析業務に従事.
 
 
-[メインページ](.index.markdown)
+[メインページ](index.markdown)
