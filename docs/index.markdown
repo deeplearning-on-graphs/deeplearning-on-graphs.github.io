@@ -5,7 +5,7 @@
 layout: default
 ---
 
-グラフ深層学習(Deep Learning on Graphs)の公開レビューサイトです.
+グラフ深層学習(Deep Learning on Graphs)の日本語訳オンライン公開サイトです.
 
 ## 目次
 - [第1章 イントロダクション](./chapters/chap1/chap1.md)
@@ -30,3 +30,10 @@ layout: default
 
 ## 公開レビューに関して
 方法・形式については，後日お知らせします．
+
+### 訳者について
+2名体制による共訳で進めています([略歴](./translators.markdown))．
+
+### 問い合わせ先
+- フォーム
+- [Twitter](https://twitter.com/deepL_on_graphs)
