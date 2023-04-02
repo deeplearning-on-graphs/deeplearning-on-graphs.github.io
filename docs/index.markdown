@@ -37,4 +37,4 @@ layout: default
 #### 問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
 - [フォーム](https://docs.google.com/forms/d/e/1FAIpQLSflcB2NN6H8tToXWLhrRWX3IonWJEC6SY5X3b8l-UBUJkvTyw/viewform?usp=sf_link)
-- [Twitter](https://twitter.com/deepL_on_graphs)
+- [Twitter](https://twitter.com/deepL_on_graphs)のDM
