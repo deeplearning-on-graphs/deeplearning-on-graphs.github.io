@@ -18,6 +18,6 @@ and Liu, 2018; Kamath *et al*., 2019）に関する書籍もある．
 
 [章目次](./chap1.md)
 
-[前の節へ](./subsection_06.md) [次の節へ](./subsection_08.md)
+[前の節へ](./subsection_06.md)
 
 
