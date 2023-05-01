@@ -42,7 +42,7 @@
 
 <figure>
 
-<img src="./fig/fig2_7.png" width="100%"/>
+<img src="./fig/fig2_7.png" width="70%"/>
 
 <figcaption>図2.7 二部グラフの例：オンラインショッピング</figcaption>
 
