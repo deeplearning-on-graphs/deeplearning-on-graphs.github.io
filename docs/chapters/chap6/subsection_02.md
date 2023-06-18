@@ -173,8 +173,8 @@ FGSMでは，「1ステップの勾配**上昇**法」を用いて損失関数�
 $$
 
 \begin{aligned}
-\operatorname{IG}_{\symbf{H}}(i,\,j) &= \dfrac{\symbf{H}_{i,\,j}}{m}\sum^{m}_{k=1}\dfrac{\partial \mathcal{L}\_i\left(\dfrac{k}{m}(\symbf{H}_{i,\,j} - 0)\right)}{\partial \symbf{H}_{i,\, j}};\quad 1\to 0\quad (\symbf{H}_{i,\, j} = 1);\\[1ex]
-\operatorname{IG}_{\symbf{H}}(i,\,j) &= \dfrac{1-\symbf{H}_{i,\,j}}{m}\sum^{m}_{k=1}\dfrac{\partial \mathcal{L}\_i\left( 0 + \dfrac{k}{m}( 1- \symbf{H}_{i,\,j})\right)}{\partial \symbf{H}_{i,\, j}};\quad 0\to 1\quad (\symbf{H}_{i,\, j} = 0);
+\operatorname{IG}_{\symbf{H}}(i,\,j) &= \dfrac{\symbf{H}_{i,\,j}}{m}\sum^{m}_{k=1}\dfrac{\partial \mathcal{L}_i\left(\dfrac{k}{m}(\symbf{H}_{i,\,j} - 0)\right)}{\partial \symbf{H}_{i,\, j}};\quad 1\to 0\quad (\symbf{H}_{i,\, j} = 1);\\[1ex]
+\operatorname{IG}_{\symbf{H}}(i,\,j) &= \dfrac{1-\symbf{H}_{i,\,j}}{m}\sum^{m}_{k=1}\dfrac{\partial \mathcal{L}_i\left( 0 + \dfrac{k}{m}( 1- \symbf{H}_{i,\,j})\right)}{\partial \symbf{H}_{i,\, j}};\quad 0\to 1\quad (\symbf{H}_{i,\, j} = 0);
 \end{aligned}
 $$
 
