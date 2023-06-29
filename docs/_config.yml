@@ -79,3 +79,5 @@ sass:
   sass_dir: _sass
   assets:
     - styles.css
+
+google_analytics: G-3R2S5WL5ZN
