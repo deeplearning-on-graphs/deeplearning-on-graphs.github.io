@@ -24,8 +24,8 @@ layout: default
 - [第5章 グラフニューラルネットワーク](./chapters/chap5/chap5.md)
 ### 手法
 - [第6章 グラフニューラルネットワークの敵対的ロバスト性](./chapters/chap6/chap6.md)
-- [第7章 グラフニューラルネットワークの拡張性](./chapters/chap7/chap7.md)
-- 第8章 Graph Neural Networks on Complex Graphs
+- [第7章 グラフニューラルネットワークのスケーラビリティ](./chapters/chap7/chap7.md)
+- [第8章 複雑グラフ上のグラフニューラルネットワーク](./chapters/chap8/chap8.md)
 - 第9章 Beyond GNNs: More Deep Models on Graphs
 ### 応用
 - 第10章 Graph Neural Networks in Natural Language Processing
