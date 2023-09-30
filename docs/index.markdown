@@ -20,21 +20,21 @@ layout: default
 ### 基礎
 - [第2章 グラフ理論の基礎](./chapters/chap2/chap2.md)
 - [第3章 深層学習の基礎](./chapters/chap3/chap3.md)
+### 手法
 - [第4章 グラフ埋め込み](./chapters/chap4/chap4.md)
 - [第5章 グラフニューラルネットワーク](./chapters/chap5/chap5.md)
-### 手法
 - [第6章 グラフニューラルネットワークの敵対的ロバスト性](./chapters/chap6/chap6.md)
 - [第7章 グラフニューラルネットワークのスケーラビリティ](./chapters/chap7/chap7.md)
 - [第8章 複雑グラフ上のグラフニューラルネットワーク](./chapters/chap8/chap8.md)
-- 第9章 Beyond GNNs: More Deep Models on Graphs
+- [第9章 GNNのその先へ：グラフ上の深層学習モデル](./chapters/chap9/chap9.md)
 ### 応用
-- 第10章 Graph Neural Networks in Natural Language Processing
-- 第11章 Graph Neural Networks in Computer Vision
-- 第12章 Graph Neural Networks in Data Mining
-- 第13章 Graph Neural Networks in Biochemistry and Healthcare
+- [第10章 自然言語処理におけるグラフニューラルネットワークの応用](./chapters/chap10/chap10.md)
+- [第11章 画像認識におけるグラフニューラルネットワークの応用](./chapters/chap11/chap11.md)
+- [第12章 データマイニングにおけるグラフニューラルネットワーク](./chapters/chap12/chap12.md)
+- [第13章 生化学とヘルスケアにおけるグラフニューラルネットワーク](./chapters/chap13/chap13.md)
 ### 発展
-- 第14章 Advanced Topics in Graph Neural Networks
-- 第15章 Advanced Applications in Graph Neural Networks
+- [第14章 グラフニューラルネットワークにおける高度なトピック](./chapters/chap14/chap14.md)
+- [第15章 グラフニューラルネットワークの発展的な応用](./chapters/chap15/chap15.md)
 
 ## 公開レビューに関して
 方法・形式については，後日お知らせします．
