@@ -36,14 +36,14 @@ layout: default
 - [第14章 グラフニューラルネットワークに関する発展的な話題](./chapters/chap14/chap14.md)
 - [第15章 グラフニューラルネットワークにおける発展的な応用例](./chapters/chap15/chap15.md)
 
-## 公開レビューに参加する
-- [フォームからコメントを送る](https://forms.gle/xUY5h9eH4psE7fXi7)
-- [プルリクエストを送る](https://github.com/deeplearning-on-graphs/deeplearning-on-graphs.github.io/tree/main/docs/chapters/)
-
-### 訳者について
+## 訳者について
 2名体制による共訳で進めています([略歴](./bio.markdown))．
 
-#### 問い合わせ先
+## 問い合わせ
+### 誤植報告など
+- [フォーム](https://forms.gle/xUY5h9eH4psE7fXi7)から送る、または、[プルリクエスト](https://github.com/deeplearning-on-graphs/deeplearning-on-graphs.github.io/tree/main/docs/chapters/chap7)を送る
+
+### その他問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
 - [フォーム](https://docs.google.com/forms/d/e/1FAIpQLSflcB2NN6H8tToXWLhrRWX3IonWJEC6SY5X3b8l-UBUJkvTyw/viewform?usp=sf_link)
 - [Twitter](https://twitter.com/deepL_on_graphs)のDM
