@@ -17,6 +17,5 @@
 
 [章目次](./chap8.md)
 
-[前の節へ](./subsection_08.md)
-
+[前の節へ](./subsection_08.md) 
 
