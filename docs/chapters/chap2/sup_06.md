@@ -1,11 +1,11 @@
 # 2.6 サポートページ
-注：このサポートページは、内容の理解のために訳者側で作成したものです。
-
 ## ヘテログラフ
 ヘテログラフは、異なるタイプのノードとエッジを含むグラフのことを指します。
 それぞれのノードとエッジは特定のタイプに関連付けられています。
 ノードタイプの集合を $\mathcal{T}_n$ ，エッジタイプの集合を $\mathcal{T}_e$ とし、
 各ノードと各エッジをそれぞれのタイプに対応付ける写像 $\phi_n\colon \mathcal{V}\rightarrow\mathcal{T}_n$ と $\phi_e\colon \mathcal{E}\rightarrow\mathcal{T}_e$ が存在します。
+
+### numpy
 
 ### networkx
 ```python
@@ -53,6 +53,9 @@ for edge in G.edges(data=True):
  $\mathcal{V} = \mathcal{V}_1\cup \mathcal{V}_2$ かつ $\mathcal{V}_1\cap \mathcal{V}_2 = \emptyset$ が成り立ち、
  さらにすべての $e = (v^1_e,v^2_e)\in \mathcal{E}$ に対して、 $v^1_e\in \mathcal{V}_1$ ,,, $v^2_e\in \mathcal{V}_2$ が満たされるときを指します。
 
+### numpy
+
+
 ### networkx
 ```python
 import networkx as nx
@@ -88,6 +91,8 @@ plt.show()
  $d$ 次元に対応する隣接行列 $\symbf{A}\_d\in \mathbb{R}^{N\times N}$ は、ノード間にあるエッジ集合 $\mathcal{E}_d$ を記述します。
   $\symbf{A}\_d$ の $i,j$ 要素 $\symbf{A}\_d\[i,j\]$ は、ノード $v_i$ と $v_j$ の間に次元$d$のエッジが存在するとき（ $(v_i,v_j)\in\mathcal{E}\_d$ ）にのみ $1$ 、存在しない場合は $0$ となります。
   
+### numpy
+
 ### networkx
 ```python
 import networkx as nx
@@ -126,6 +131,7 @@ for u, v, data in G.edges(data=True):
 符号付きグラフはエッジに正または負の符号を持つグラフで、正のエッジは通常の関係を、負のエッジは対立する関係を表すことが多いです。
 ノード間の関係が協力的（友好的）か競争的（敵対的）かを明示的に表すことができます。
 たとえば、ソーシャルネットワークでは友達関係（正）とブロック関係（負）を表現できます。
+### numpy
 
 ### networkx
 ```python
@@ -160,6 +166,8 @@ for u, v, data in G.edges(data=True):
 ハイパーグラフとは、通常のグラフが2つのノード間の関係（エッジ）のみを表現するのに対し、3つ以上のノード間の関係（ハイパーエッジ）を表現できるグラフの一種です。
 例えば、複数の著者が共同で論文を書いた場合、それらの著者と論文の関係はハイパーエッジで表現できます。
 
+### numpy
+
 ### networkx
 ```python
 import networkx as nx
@@ -191,6 +199,8 @@ plt.show()
 ダイナミックグラフ（または時間依存グラフ）は、時間とともにその構造が変化するグラフです。
 これは一連のグラフのスナップショットとして表現され、各スナップショットはある特定の時間点でのグラフの状態を表現します。
 このような表現方法は、特にグラフの構造が時間とともに動的に変化する現象をモデル化する際に用いられます。
+
+### numpy
 
 ### networkx
 ```python
