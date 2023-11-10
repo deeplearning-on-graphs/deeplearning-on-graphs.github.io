@@ -48,10 +48,6 @@ layout: default
 ## 訳者について
 2名体制による共訳で進めています([略歴](./bio.markdown))．
 
-## 問い合わせ
-### 誤植報告など
-- [フォーム](https://forms.gle/xUY5h9eH4psE7fXi7)から送る、または、[プルリクエスト](https://github.com/deeplearning-on-graphs/deeplearning-on-graphs.github.io/tree/main/docs/chapters/chap7)を送る
-
 ### その他問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
 - [フォーム](https://docs.google.com/forms/d/e/1FAIpQLSflcB2NN6H8tToXWLhrRWX3IonWJEC6SY5X3b8l-UBUJkvTyw/viewform?usp=sf_link)
