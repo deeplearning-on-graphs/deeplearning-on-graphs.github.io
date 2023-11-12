@@ -9,5 +9,4 @@
 - [11.6 本章のまとめ](./subsection_06.md)
 - [11.7 参考文献](./subsection_07.md)
 
-### 誤植報告・問い合わせはこちら
-- [フォーム](https://forms.gle/xUY5h9eH4psE7fXi7)から送る、または、[プルリクエスト](https://github.com/deeplearning-on-graphs/deeplearning-on-graphs.github.io/tree/main/docs/chapters/chap11)を送る
+### [公開レビューに参加する](https://github.com/deeplearning-on-graphs/deeplearning-on-graphs.github.io/blob/main/docs/index.markdown#%E5%85%AC%E9%96%8B%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%99%E3%82%8B)
