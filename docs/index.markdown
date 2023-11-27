@@ -8,7 +8,6 @@ layout: default
 グラフ深層学習(Deep Learning on Graphs)の日本語訳オンライン公開サイトです.
 
 ## 公開レビューに参加する
-- 期間：2023年12月25日まで
 - 先着50名限定で公開レビュー用にドラフトのPDFを配布します
     - 希望される方は[こちら](https://docs.google.com/forms/d/e/1FAIpQLSeqD772Kpj3_4l4hePllXuTo1w-Z-N4DrrqlpbNrAjttKxwfw/viewform?usp=sf_link)よりご連絡ください
 - 参加いただいた方で希望される場合には謝辞に記載させていただきます
