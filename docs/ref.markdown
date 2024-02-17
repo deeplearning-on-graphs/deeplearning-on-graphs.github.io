@@ -6,17 +6,16 @@
         /* iframeのサイズ調整 */
         iframe {
             width: 100%; /* ビューポートの幅に合わせて広がる */
-            height: 500px; /* 適切な高さを設定 */
             border: none; /* 枠線を非表示に */
         }
     </style>
 </head>
 <body>
 
-<h2>PDFファイルの埋め込み表示</h2>
+<h2>参考文献（PDF）</h2>
 
 <!-- PDFファイルの埋め込み表示 -->
-<iframe src="https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
+<iframe src="https://deeplearning-on-graphs.github.io/References.pdf#toolbar=0&navpanes=0"></iframe>
 
 </body>
 </html>
