@@ -37,7 +37,8 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 
 ## 読書アシスタント
 - 読書アシスタントは[こちら](https://chat.openai.com/g/g-yDqZojV1t-gurahushen-ceng-xue-xi-du-shu-asisutanto)
-    - OpenAI Plusのアカウントが必要になります 
+    - OpenAI Plusのアカウントが必要になります
+    - 2024/2/17現在, GPTsによるKnowledgeアクセスの問題があるため, 動作が不安定になっています（[関連フォーラム](https://community.openai.com/t/file-access-issues-w-gpt-builder/612103)）
 - [GPTsによる読書アシスタントの作成](https://qiita.com/deeplearning-on-graphs/items/a6de9bcdad540dab5ecb)
 
 ## 問い合わせ先
