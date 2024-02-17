@@ -1,26 +1,30 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+<title>参考文献リスト</title>
+<style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: 20px;
         background-color: #f4f4f4;
+        line-height: 1.4; /* 行間を狭める */
     }
     h2 {
         color: #333;
     }
     table {
-        width: 100%;
+        width: 100%; /* 表の幅を最大に */
+        max-width: 100%; /* 念のための最大幅設定 */
         border-collapse: collapse;
         margin-top: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     th, td {
-        padding: 12px 15px;
+        padding: 8px 10px; /* セルの内側の余白を調整 */
         text-align: left;
         border-bottom: 1px solid #ddd;
+        font-size: 14px; /* 文字サイズを小さく */
     }
     th {
         background-color: #009879;
@@ -33,44 +37,32 @@
 </head>
 <body>
 
-<h2>参考文献</h2>
+<h2>参考文献リスト</h2>
 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Details</th>
-    <th>URL</th>
-  </tr>
-  <tr>
-    <td>TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems</td>
-    <td>Abadi, Martín, et al. 2015. Software available from tensorflow.org.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Friends and neighbors on the web</td>
-    <td>Adamic, Lada A, and Adar, Eytan. 2003. Social networks, 25(3), 211-230.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>PAIRpred: Partner-specific prediction of interacting residues from sequence and structure</td>
-    <td>Afsar Minhas, Fayyaz ul Amir, et al. 2014. Proteins: Structure, Function, and Bioinformatics, 82(7), 1142-1155.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Linear Algebra and Optimization for Machine Learning</td>
-    <td>Aggarwal, Charu C. 2020. Springer.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Neural Networks and Deep Learning</td>
-    <td>Aggarwal, Charu C. 2023. Springer.</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Learning to represent programs with graphs</td>
-    <td>Allamanis, Miltiadis, et al. 2017. International Conference on Learning Representations.</td>
-    <td></td>
-  </tr>
+    <tr>
+        <th>Title</th>
+        <th>Publication Year</th>
+        <th>Source</th>
+        <th>Author</th> <!-- Author列の追加 -->
+        <th>URL</th> <!-- URL列の追加 -->
+    </tr>
+    <!-- 参考文献のデータをここに挿入 -->
+    <tr>
+        <td>TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems</td>
+        <td>2015</td>
+        <td>Software available from tensorflow.org</td>
+        <td></td> <!-- Author列のデータ -->
+        <td></td> <!-- URL列のデータ -->
+    </tr>
+    <tr>
+        <td>Friends and neighbors on the web</td>
+        <td>2003</td>
+        <td>Social networks, 25(3), 211-230</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <!-- その他の参考文献を追加 -->
 </table>
 
 </body>
