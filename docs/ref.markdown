@@ -24,7 +24,7 @@
 <!-- PDFファイルの埋め込み表示 -->
 <div id="iframeBlock">
     <div class="iframeBody">
-    <iframe src="https://deeplearning-on-graphs.github.io/References.pdf#navpanes=0"></iframe>
+    <iframe src="https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
     </div>
 </div>
 
