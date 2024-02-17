@@ -17,7 +17,7 @@
 <h2>PDFファイルの埋め込み表示</h2>
 
 <!-- PDFファイルの埋め込み表示 -->
-<iframe src="https://deeplearning-on-graphs.github.io/docs/References.pdf"></iframe>
+<iframe src="https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
 
 </body>
 </html>
