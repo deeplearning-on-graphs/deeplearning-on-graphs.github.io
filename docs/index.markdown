@@ -7,7 +7,9 @@ layout: default
 
 「グラフ深層学習」(Deep Learning on Graphs)のサポートページです．
 
-![71R7eVv1SvL _SY522_](https://github.com/deeplearning-on-graphs/deeplearning-on-graphs.github.io/assets/125181984/e719190b-afae-4977-a850-1b455542cb34)
+<div align="center">
+    <img src="./cover.jpg" alt="">
+</div>
 
 Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 
