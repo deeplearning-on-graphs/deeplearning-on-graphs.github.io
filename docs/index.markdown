@@ -36,7 +36,7 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 - 読書アシスタントはこちら
 - [GPTsによる読書アシスタントの作成](https://qiita.com/deeplearning-on-graphs/items/a6de9bcdad540dab5ecb)
 
-## 参考文献
+## [参考文献](./ref.markdown)
 
 ## 問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
