@@ -5,23 +5,15 @@
 layout: default
 ---
 
-グラフ深層学習(Deep Learning on Graphs)の日本語訳オンライン公開サイトです.
+「グラフ深層学習」(Deep Learning on Graphs)のサポートページです．
 
-## 公開レビューに参加する
-- 先着50名限定で公開レビュー用にドラフトのPDFを配布します
-    - 希望される方は[こちら](https://docs.google.com/forms/d/e/1FAIpQLSeqD772Kpj3_4l4hePllXuTo1w-Z-N4DrrqlpbNrAjttKxwfw/viewform?usp=sf_link)よりご連絡ください
-- 参加いただいた方で希望される場合には謝辞に記載させていただきます
-- コメント投稿方法
-    - [フォームからコメントを送る](https://forms.gle/xUY5h9eH4psE7fXi7)
-    - [プルリクエストを送る](https://github.com/deeplearning-on-graphs/deeplearning-on-graphs.github.io/tree/main/docs/chapters/)
+![71R7eVv1SvL _SY522_](https://github.com/deeplearning-on-graphs/deeplearning-on-graphs.github.io/assets/125181984/e719190b-afae-4977-a850-1b455542cb34)
+
+Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
+
 
 ## 本書の概要
-この本では，グラフ構造データに対するディープラーニング技術の開発に焦点を当てた包括的な内容を扱っており，特にグラフニューラルネットワーク（GNN）に重点を置いています．
-
-- GNNモデルの基礎について詳しく紹介し，「グラフフィルタリング」や「プーリング」操作という2つの主要な構築手法を取り上げます．
-- 実用的なシーンでGNNを利用するために非常に重要な，GNNの「ロバスト性」および「スケーラビリティ」について議論します．
-- さらに幅広い状況に適応できるよう，深層学習における既存モデル(LSTM, GAN, AutoEncoderなど)をグラフ上に適応させた，GNNを発展させた様々なディープグラフモデルを紹介します．
-- 自然言語処理や，コンピュータビジョン，データマイニング，ヘルスケアといった様々な分野でのGNNの代表的な応用例を紹介します．
+世界は「グラフ」でできている。ソーシャルネットワーク、交通ネットワーク、タンパク質の相互作用など、身の回りの様々な現象は、ノード(頂点)とエッジ(辺)から構成されるグラフによって記述することができる。本書はこのグラフを深層学習(ディープラーニング)に適用した「グラフ深層学習」を、初学者にも分かりやすく解説した入門書である。グラフ理論や深層学習の基礎からはじめ、グラフニューラルネットワーク(GNN)の理論的な側面やその実践的な応用例を幅広く取り上げている。自然言語処理、画像処理、データマイニング、生化学・ヘルスケアなど、様々な分野でのGNNの活用が理解できるようになってる。GNNに興味を持つ学生や研究者、さらには実際の業界でGNNを応用したいと考えている専門家にとって、理解の手引きとなる一冊である。
 
 ## 目次
 - 第1章 イントロダクション
@@ -44,10 +36,11 @@ layout: default
 - 第14章 グラフニューラルネットワークに関する発展的な話題
 - 第15章 グラフニューラルネットワークにおける発展的な応用例
 
-## 訳者について
-2名体制による共訳で進めています([略歴](./bio.markdown))．
+## 読書アシスタント
 
-### その他問い合わせ先
+## 参考文献
+
+## 問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
 - [フォーム](https://docs.google.com/forms/d/e/1FAIpQLSflcB2NN6H8tToXWLhrRWX3IonWJEC6SY5X3b8l-UBUJkvTyw/viewform?usp=sf_link)
 - [Twitter](https://twitter.com/deepL_on_graphs)のDM
