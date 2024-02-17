@@ -36,7 +36,8 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 - [参考文献](./ref.markdown)
 
 ## 読書アシスタント
-- 読書アシスタントはこちら
+- 読書アシスタントは[こちら](https://chat.openai.com/g/g-yDqZojV1t-gurahushen-ceng-xue-xi-du-shu-asisutanto)
+    - OpenAI Plusのアカウントが必要になります 
 - [GPTsによる読書アシスタントの作成](https://qiita.com/deeplearning-on-graphs/items/a6de9bcdad540dab5ecb)
 
 ## 問い合わせ先
