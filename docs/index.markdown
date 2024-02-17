@@ -33,6 +33,8 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 - 第15章 グラフニューラルネットワークにおける発展的な応用例
 
 ## 読書アシスタント
+- 読書アシスタントはこちら
+- [GPTsによる読書アシスタントの作成](https://qiita.com/deeplearning-on-graphs/items/a6de9bcdad540dab5ecb)
 
 ## 参考文献
 
