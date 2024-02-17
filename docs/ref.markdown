@@ -6,7 +6,7 @@
         /* iframeのサイズ調整 */
         iframe {
             width: 100%; /* ビューポートの幅に合わせて広がる */
-            border: none; /* 枠線を非表示に */
+            height: 100%
         }
     </style>
 </head>
