@@ -11,7 +11,7 @@
         iframe {
             border: none; /* 枠線を非表示に */
             width: 100%;
-            height: 700px;
+            height: 750px;
         }
         }
             }
