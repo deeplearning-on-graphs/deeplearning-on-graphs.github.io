@@ -8,6 +8,11 @@
             width: 100%;
             height: 830px;
             }
+        .iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding: calc(アイフレームの高さ / アイフレームの横幅 * 100%) 0 0;
+}
     </style>
 </head>
 <body>
@@ -20,8 +25,9 @@
 
 <!--読者の便宜のために，本文中に述べられている文献に簡単にアクセス参考文献を参照しています-->
 <!-- PDFファイルの埋め込み表示 -->
+<div class="iframe-wrap">
 <iframe src="https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
-
+</div>
 </body>
 </html>
 
