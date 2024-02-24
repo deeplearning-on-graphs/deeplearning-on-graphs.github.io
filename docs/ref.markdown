@@ -3,12 +3,19 @@
     <meta charset="UTF-8">
     <title>PDFの埋め込み表示</title>
     <style>
-        iframe {
-            border: none; /* 枠線を非表示に */
+        /*iframe {
+            border: none;
             width: 100%;
             height: 830px;
-            }
-        .iframe-wrap {
+            }*/
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.iframe-wrap {
   position: relative;
   width: 100%;
   padding: calc(アイフレームの高さ / アイフレームの横幅 * 100%) 0 0;
