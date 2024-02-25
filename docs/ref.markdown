@@ -3,26 +3,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- スマホ対応のビューポート設定を追加 -->
     <title>PDFの埋め込み表示</title>
-    <style>
-        .iframe-wrap {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            /* パディングトップを16:9のアスペクト比から動的に計算するように変更する */
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-        }
-
-        .iframe-wrap iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+<style>
+    .iframe-wrap {
+        overflow: auto; /* スクロールを可能にする */
+        -webkit-overflow-scrolling: touch; /* iOSデバイスでのスムーズなスクロールを有効にする */
+        height: 100vh; /* ビューポートの高さに合わせる */
+        border: none;
+    }
+    .iframe-wrap iframe {
+        width: 100%; /* コンテナの幅に合わせる */
+        height: 100%; /* スクロールを有効にするため、高さを指定 */
+    }
+</style>
 </head>
 <body>
 
