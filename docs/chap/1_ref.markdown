@@ -15,9 +15,9 @@ layout: default
 <style>
     body {
         font-family: 'Verdana', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 20px;
+        /*padding: 20px;
         background-color: #f4f4f4;
-        line-height: 1.4;
+        line-height: 1.4;*/
     }
     h2 {
         color: #333;
