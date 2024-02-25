@@ -3,22 +3,22 @@
     <meta charset="UTF-8">
     <title>PDFの埋め込み表示</title>
     <style>
-        /*iframe {
-            border: none;
+        .iframe-wrap iframe {
+            aspect-ratio: 16 / 9;
             width: 100%;
-            height: 830px;
-            }*/
-.iframe-wrap iframe {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-.iframe-wrap {
-  position: relative;
-  width: 100%;
-  padding: calc(アイフレームの高さ / アイフレームの横幅 * 100%) 0 0;
-}
+            height: 100%;
+            border: none;
+        }
+        .iframe-wrap {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9のアスペクト比 */
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     </style>
 </head>
 <body>
@@ -28,11 +28,9 @@
 引用文を転載するときなどはご注意ください。
 
 <!--CSV形式でもご用意しておりますのでご自由にお使いください(<a href="" target="_blank">CSV形式はこちら</a>)。-->
-
-<!--読者の便宜のために，本文中に述べられている文献に簡単にアクセス参考文献を参照しています-->
 <!-- PDFファイルの埋め込み表示 -->
 <div class="iframe-wrap">
-<iframe src="https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
+    <iframe src="http://docs.google.com/gview?embedded=true&url=https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
 </div>
 </body>
 </html>
