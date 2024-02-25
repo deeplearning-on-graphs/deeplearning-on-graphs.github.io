@@ -30,7 +30,8 @@
 <!--CSV形式でもご用意しておりますのでご自由にお使いください(<a href="" target="_blank">CSV形式はこちら</a>)。-->
 <!-- PDFファイルの埋め込み表示 -->
 <div class="iframe-wrap">
-<iframe src="http://docs.google.com/gview?embedded=true&url=https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
+<!--<iframe src="http://docs.google.com/gview?embedded=true&url=https://deeplearning-on-graphs.github.io/References.pdf"></iframe>-->
+<iframe src="https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
 </div>
 </body>
 </html>
