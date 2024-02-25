@@ -56,7 +56,7 @@ layout: default
 </style>
 </head>
 <body>
-[\<メインページ](index.markdown)
+[メインページ](index.markdown)
 
 <h2>1.2節 なぜグラフニューラルネットワークなのか？</h2>
 <table class="dataframe display">
