@@ -1,5 +1,7 @@
 <html lang="ja">
 <head>
+    <!-- scriptタグでライブラリを読み込み -->
+<script src="https://deno.land/x/embed_pdf@v1.2.0/mod.js" type="module"></script>
     <meta charset="UTF-8">
     <title>PDFの埋め込み表示</title>
     <style>
@@ -30,9 +32,10 @@
 <!--CSV形式でもご用意しておりますのでご自由にお使いください(<a href="" target="_blank">CSV形式はこちら</a>)。-->
 <!-- PDFファイルの埋め込み表示 -->
 <!-- <div class="iframe-wrap"> -->
-<div class="container">
-<iframe src="http://docs.google.com/gview?embedded=true&url=https://deeplearning-on-graphs.github.io/References.pdf", frameborder="0"></iframe>
-</div>
+
+<!-- src属性にpdfのファイルパスを指定する -->
+<embed-pdf src="https://deeplearning-on-graphs.github.io/References.pdf"></embed-pdf>
+
 <!--<iframe src="https://deeplearning-on-graphs.github.io/References.pdf"></iframe>-->
 <!--</div> -->
 </body>
