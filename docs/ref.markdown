@@ -29,5 +29,6 @@ PDFは以下をご確認ください．
     <iframe src="https://deeplearning-on-graphs.github.io/References.pdf" allow="fullscreen"></iframe>
 </div>
 
+[メインページ](index.markdown)
 </body>
 </html>
