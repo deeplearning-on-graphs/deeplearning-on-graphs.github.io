@@ -1,45 +1,96 @@
 <html lang="ja">
 <head>
-    <!-- scriptタグでライブラリを読み込み -->
-<script src="https://deno.land/x/embed_pdf@v1.2.0/mod.js" type="module"></script>
     <meta charset="UTF-8">
     <title>PDFの埋め込み表示</title>
+    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
     <style>
-        .iframe-wrap iframe {
-            aspect-ratio: 16 / 9;
+        #canvas-container {
             width: 100%;
-            height: 100%;
-            border: none;
+            text-align: center;
         }
-        .iframe-wrap {
-            position: relative;
+        canvas {
             width: 100%;
-            padding-top: 56.25%; /* 16:9のアスペクト比 */
+            border: 1px solid black;
         }
-        /*iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-        } */
     </style>
 </head>
 <body>
 
 <h2>参考文献（PDF）</h2>
-本書で参照されている論文・書籍をまとめています。原著の出版当時(2021年9月)の情報をそのまま載せていますので、記載している内容からアップデートされている可能性がございます。
-引用文を転載するときなどはご注意ください。
+<div id="canvas-container">
+    <canvas id="pdf-canvas"></canvas>
+</div>
+<button id="prev">前のページ</button>
+<button id="next">次のページ</button>
+<span id="page_num"></span> / <span id="page_count"></span>
 
-<!--CSV形式でもご用意しておりますのでご自由にお使いください(<a href="" target="_blank">CSV形式はこちら</a>)。-->
-<!-- PDFファイルの埋め込み表示 -->
-<!-- <div class="iframe-wrap"> -->
+<script>
+    var url = 'https://deeplearning-on-graphs.github.io/References.pdf';
 
-<!-- src属性にpdfのファイルパスを指定する -->
-<embed-pdf src="https://deeplearning-on-graphs.github.io/References.pdf"></embed-pdf>
+    let pdfDoc = null,
+        pageNum = 1,
+        pageIsRendering = false,
+        pageNumIsPending = null;
 
-<!--<iframe src="https://deeplearning-on-graphs.github.io/References.pdf"></iframe>-->
-<!--</div> -->
+    const scale = 1.5,
+          canvas = document.getElementById('pdf-canvas'),
+          ctx = canvas.getContext('2d');
+
+    // PDFを読み込む
+    pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
+        pdfDoc = pdfDoc_;
+        document.getElementById('page_count').textContent = pdfDoc.numPages;
+        renderPage(pageNum);
+    });
+
+    // ページをレンダリングする
+    const renderPage = num => {
+        pageIsRendering = true;
+
+        // ページを取得する
+        pdfDoc.getPage(num).then(page => {
+            // ビューポートを設定する
+            const viewport = page.getViewport({scale: scale});
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            const renderCtx = {
+                canvasContext: ctx,
+                viewport: viewport
+            };
+
+            page.render(renderCtx).promise.then(() => {
+                pageIsRendering = false;
+
+                if (pageNumIsPending !== null) {
+                    renderPage(pageNumIsPending);
+                    pageNumIsPending = null;
+                }
+            });
+
+            // 現在のページ番号を表示する
+            document.getElementById('page_num').textContent = num;
+        });
+    };
+
+    // 前のページを表示する
+    document.getElementById('prev').addEventListener('click', () => {
+        if (pageNum <= 1) {
+            return;
+        }
+        pageNum--;
+        renderPage(pageNum);
+    });
+
+    // 次のページを表示する
+    document.getElementById('next').addEventListener('click', () => {
+        if (pageNum >= pdfDoc.numPages) {
+            return;
+        }
+        pageNum++;
+        renderPage(pageNum);
+    });
+</script>
+
 </body>
 </html>
-
-
-[メインページ](index.markdown)
