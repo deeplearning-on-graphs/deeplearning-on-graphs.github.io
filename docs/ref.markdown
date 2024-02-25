@@ -14,11 +14,11 @@
             width: 100%;
             padding-top: 56.25%; /* 16:9のアスペクト比 */
         }
-        iframe {
+        /*iframe {
             position: absolute;
             top: 0;
             left: 0;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -30,7 +30,7 @@
 <!--CSV形式でもご用意しておりますのでご自由にお使いください(<a href="" target="_blank">CSV形式はこちら</a>)。-->
 <!-- PDFファイルの埋め込み表示 -->
 <div class="iframe-wrap">
-    <iframe src="http://docs.google.com/gview?embedded=true&url=https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
+<iframe src="http://docs.google.com/gview?embedded=true&url=https://deeplearning-on-graphs.github.io/References.pdf"></iframe>
 </div>
 </body>
 </html>
