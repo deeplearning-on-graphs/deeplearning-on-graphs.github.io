@@ -16,8 +16,8 @@
         color: #333;
     }
     table {
-        width: 90%;
-        max-width: 90%;
+        width: 100%;
+        max-width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
