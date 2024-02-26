@@ -121,7 +121,7 @@
     </tbody>
 </table>
 
-<a href="docs/index.markdown">メインページ</a>
+<a href="./">メインページ</a>
 
 </body>
 </html>
