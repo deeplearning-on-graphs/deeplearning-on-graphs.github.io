@@ -1,8 +1,5 @@
 <html lang="ja">
 <head>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 <meta charset="UTF-8">
 <title>誤植情報</title>
 <style>
@@ -57,78 +54,78 @@
     </thead>
     <tbody>
         <tr>
-            <td>1.4節</td>
             <td>p.8</td>
+            <td>1.4節</td>
             <td>責任者にとっても有用であろう．．</td>
             <td>責任者にとっても有用であろう．</td>
             <td>誤植</td>
         </tr>
         <tr>
-            <td>1.5.2節<br>6.2.4.2節<br>6.2.4.2節</td>
             <td>p.15<br>P193<br>P195</td>
+            <td>1.5.2節<br>6.2.4.2節<br>6.2.4.2節</td>
             <td>Ma <em>et al</em>., 2020a</td>
             <td>Ma <em>et al</em>., 2019d</td>
             <td>修正</td>
         </tr>
         <tr>
-            <td>3.8節</td>
             <td>p.90</td>
+            <td>3.8節</td>
             <td>Paszke <em>et al</em>., 2017</td>
             <td>Paszke <em>et al</em>., 2019</td>
             <td>文献更新</td>
         </tr>
         <tr>
-            <td>6.3.1節</td>
             <td>p.196</td>
+            <td>6.3.1節</td>
             <td>ロバストなな</td>
             <td>ロバストな</td>
             <td>誤植</td>
         </tr>
         <tr>
-            <td>6.3.2.1節</td>
             <td>p.200</td>
+            <td>6.3.2.1節</td>
             <td>Tan <em>et al</em>., 2016</td>
             <td>Tan <em>et al</em>., 2021</td>
             <td>文献更新</td>
         </tr>
         <tr>
-            <td>7.3節</td>
             <td>p.218</td>
+            <td>7.3節</td>
             <td>重要度サンプリング</td>
             <td>重要度サンプリング(IS; Importance Sampling)</td>
             <td>修正</td>
         </tr>
         <tr>
-            <td>12.1節</td>
             <td>p.303</td>
+            <td>12.1節</td>
             <td>Han <em>et al</em>., 2011</td>
             <td>Han <em>et al</em>., 2022</td>
             <td>文献更新</td>
         </tr>
         <tr>
-            <td>12.2.2節</td>
             <td>p.310</td>
+            <td>12.2.2節</td>
             <td>Ying <em>et al</em>., 2018b</td>
             <td>Ying <em>et al</em>., 2018a</td>
             <td>修正</td>
         </tr>
         <tr>
-            <td>13.2.3節</td>
             <td>p.331</td>
+            <td>13.2.3節</td>
             <td>Nguyen <em>et al</em>., 2019</td>
             <td>Nguyen <em>et al</em>., 2020</td>
             <td>修正</td>
         </tr>
         <tr>
-            <td>14.4.1節</td>
             <td>p.356</td>
+            <td>14.4.1節</td>
             <td>Garey and Johnson, n.d.</td>
             <td>Garey and Johnson, 1979</td>
             <td>修正</td>
         </tr>
         <tr>
-            <td>14.6節</td>
             <td>p.360</td>
+            <td>14.6節</td>
             <td>yuan <em>et al</em>.(2020)</td>
             <td>Yuan <em>et al</em>.(2020)</td>
             <td>誤植</td>
@@ -137,15 +134,4 @@
 </table>
 <a href="./">メインページ</a>
 </body>
-<script>
-$(document).ready(function() {
-    $('.display').DataTable({
-     "lengthChange": false,  // Show 10 entriesの選択機能を非表示にする
-     "pageLength": 10000,  // ページごとに表示する行数を20行に設定
-     "info": false,  // "Showing 1 to X of Y entries" の情報テキストを非表示にする
-     "order": [],
-     "searching": false
-    });
-});
-</script>
 </html>
