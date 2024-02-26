@@ -1,7 +1,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>誤植情報</title>
 <style>
     body {
         font-family: 'Verdana', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,6 +30,7 @@
     }
     </style>
 </head>
+<title>誤植情報</title>
 <body>
   
 <a href="./">メインページ</a>
@@ -42,7 +42,7 @@
 
 <h3>1刷〜</h3>
 
-<table class="dataTables">
+<table>
     <thead>
         <tr>
             <th>ページ</th>
