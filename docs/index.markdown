@@ -52,11 +52,11 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 本書は，例題を解きながら本文を理解していくというスタイルの教材になっています．
 ぜひ学習の補助にご活用ください．
 
-- 予備知識の復習：微積分，行列，複素数（第1章）
+- 第1章：予備知識の復習：微積分，行列，複素数
 
 [本文(PDF)](./admath_basic_cal_text.pdf){:target="_blank"} / [例題(PDF)](./admath_basic_cal_exercise.pdf){:target="_blank"}
 
-- 線形代数(第15章)
+- 第15章：線形代数
 
 [本文(PDF)](./admath_linear_algebra_text.pdf){:target="_blank"} / [例題(PDF)](./admath_linear_algebra_exercise.pdf){:target="_blank"}
 
