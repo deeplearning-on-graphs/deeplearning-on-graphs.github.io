@@ -132,6 +132,7 @@
         </tr>
     </tbody>
 </table>
+<br>
 <a href="./">メインページ</a>
 </body>
 </html>
