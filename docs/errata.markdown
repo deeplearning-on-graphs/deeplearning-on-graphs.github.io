@@ -1,10 +1,10 @@
 <html lang="ja">
 <head>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
-    <meta charset="UTF-8">
-    <title>誤植情報</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+<meta charset="UTF-8">
+<title>誤植情報</title>
 <style>
     body {
         font-family: 'Verdana', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,9 +135,7 @@
         </tr>
     </tbody>
 </table>
-
 <a href="./">メインページ</a>
-
 </body>
 <script>
 $(document).ready(function() {
