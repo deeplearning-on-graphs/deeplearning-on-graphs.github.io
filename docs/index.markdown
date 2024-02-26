@@ -41,7 +41,9 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
     - 2024/2/17現在, GPTsによるKnowledgeアクセスの問題があるため, 動作が不安定になっています（[関連フォーラム](https://community.openai.com/t/file-access-issues-w-gpt-builder/612103)）
 - [GPTsによる読書アシスタントの作成](https://qiita.com/deeplearning-on-graphs/items/a6de9bcdad540dab5ecb)
 
+## 誤植情報
+[こちら](./errata.markdown)
+
 ## 問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
-- [フォーム](https://docs.google.com/forms/d/e/1FAIpQLSflcB2NN6H8tToXWLhrRWX3IonWJEC6SY5X3b8l-UBUJkvTyw/viewform?usp=sf_link)
 - [Twitter](https://twitter.com/deepL_on_graphs)のDM
