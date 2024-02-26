@@ -2,7 +2,33 @@
 <head>
     <meta charset="UTF-8">
     <title>誤植情報</title>
-    <style>
+<style>
+    body {
+        font-family: 'Verdana', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h2 {
+        color: #333;
+    }
+    table {
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+        padding: 8px 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        font-size: 11px;
+    }
+    th {
+        background-color: #009879;
+        color: #ffffff;
+    }
+    tr:hover {
+        background-color: #f5f5f5;
+    }
     </style>
 </head>
 <body>
@@ -15,19 +41,84 @@
 誤植・修正箇所は以下の通りです．
 
 ### 1刷〜
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>ページ<br>&nbsp; |  &nbsp;<br>誤<br>&nbsp;  |  &nbsp;<br>正<br>&nbsp;  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>備考<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| :---: | ---- | ---- | ---- |
-|p.8|責任者にとっても有用であろう．．|責任者にとっても有用であろう．|誤植|
-|p.15<br> P193<br> P195|Ma _et al_., 2020a|Ma _et al_ ., 2019d|修正|
-|p.90|Paszke _et al_., 2017|Paszke _et al_., 2019|文献更新|
-|p.196|ロバストなな|ロバストな|誤植|
-|p.200|Tan _et al_., 2016|Tan _et al_., 2021|文献更新|
-|p.218|重要度サンプリング|重要度サンプリング(IS; Importance Sampling)|修正|
-|p.303|Han _et al_., 2011|Han _et al_., 2022|文献更新|
-|p.310|Ying _et al_., 2018b|Ying _et al_., 2018a|修正|
-|p.331|Nguyen _et al_., 2019|Nguyen _et al_., 2020|修正|
-|p.356|Garey and Johnson, n.d.|Garey and Johnson, n.d.|修正|
-|p.360|yuan _et al_.(2020)|Yuan _et al_.(2020)|誤植|
+<table>
+    <thead>
+        <tr>
+            <th>ページ</th>
+            <th>誤</th>
+            <th>正</th>
+            <th>備考</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>p.8</td>
+            <td>責任者にとっても有用であろう．．</td>
+            <td>責任者にとっても有用であろう．</td>
+            <td>誤植</td>
+        </tr>
+        <tr>
+            <td>p.15<br>P193<br>P195</td>
+            <td>Ma <em>et al</em>., 2020a</td>
+            <td>Ma <em>et al</em>., 2019d</td>
+            <td>修正</td>
+        </tr>
+        <tr>
+            <td>p.90</td>
+            <td>Paszke <em>et al</em>., 2017</td>
+            <td>Paszke <em>et al</em>., 2019</td>
+            <td>文献更新</td>
+        </tr>
+        <tr>
+            <td>p.196</td>
+            <td>ロバストなな</td>
+            <td>ロバストな</td>
+            <td>誤植</td>
+        </tr>
+        <tr>
+            <td>p.200</td>
+            <td>Tan <em>et al</em>., 2016</td>
+            <td>Tan <em>et al</em>., 2021</td>
+            <td>文献更新</td>
+        </tr>
+        <tr>
+            <td>p.218</td>
+            <td>重要度サンプリング</td>
+            <td>重要度サンプリング(IS; Importance Sampling)</td>
+            <td>修正</td>
+        </tr>
+        <tr>
+            <td>p.303</td>
+            <td>Han <em>et al</em>., 2011</td>
+            <td>Han <em>et al</em>., 2022</td>
+            <td>文献更新</td>
+        </tr>
+        <tr>
+            <td>p.310</td>
+            <td>Ying <em>et al</em>., 2018b</td>
+            <td>Ying <em>et al</em>., 2018a</td>
+            <td>修正</td>
+        </tr>
+        <tr>
+            <td>p.331</td>
+            <td>Nguyen <em>et al</em>., 2019</td>
+            <td>Nguyen <em>et al</em>., 2020</td>
+            <td>修正</td>
+        </tr>
+        <tr>
+            <td>p.356</td>
+            <td>Garey and Johnson, n.d.</td>
+            <td>Garey and Johnson, n.d.</td>
+            <td>修正</td>
+        </tr>
+        <tr>
+            <td>p.360</td>
+            <td>yuan <em>et al</em>.(2020)</td>
+            <td>Yuan <em>et al</em>.(2020)</td>
+            <td>誤植</td>
+        </tr>
+    </tbody>
+</table>
 
 
 
