@@ -42,7 +42,7 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 - [GPTsによる読書アシスタントの作成](https://qiita.com/deeplearning-on-graphs/items/a6de9bcdad540dab5ecb)
 
 ## 誤植情報
-[こちら](./errata.markdown)
+誤植・修正情報は[こちら](./errata.markdown)．
 
 ## 問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
