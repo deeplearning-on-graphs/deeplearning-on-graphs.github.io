@@ -18,8 +18,8 @@
     }
     th, td {
 /*     padding: 8px 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;*/
+        text-align: left;*/
+        border-bottom: 1px solid #ddd;
         font-size: 11px;
     }
     th {
