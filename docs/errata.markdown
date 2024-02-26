@@ -16,12 +16,12 @@
         width: 100%;
         max-width: 100%;
         border-collapse: collapse;
-/*        margin-top: 20px; */
+        margin-top: 20px; 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     th, td {
-/*     padding: 8px 10px;
-        text-align: left;*/
+        padding: 8px 10px;
+        text-align: left;
         border-bottom: 1px solid #ddd;
         font-size: 14px;
     }
@@ -131,7 +131,7 @@
 $(document).ready(function() {
     $('.display').DataTable({
      "lengthChange": false,  // Show 10 entriesの選択機能を非表示にする
-     "pageLength": ,  // ページごとに表示する行数を20行に設定
+     "pageLength": 10000,  // ページごとに表示する行数を20行に設定
      "info": false,  // "Showing 1 to X of Y entries" の情報テキストを非表示にする
      "order": [],
      "searching": false
