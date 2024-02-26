@@ -44,9 +44,7 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 ## 誤植情報
 誤植・修正情報は[こちら](./errata.markdown)．
 
-## 補助資料
-
-#### 応用数学
+## 補助資料（応用数学教材）
 
 深層学習分野への前提知識として「応用数学」の体系的な理解が必要となります．
 
@@ -56,11 +54,11 @@ Amazonのリンクは[こちら](https://amzn.asia/d/6agPggA)
 
 - 予備知識の復習：微積分，行列，複素数（第1章）
 
-[本文(PDF)](./admath_basic_cal_text.pdf) / [例題(PDF)](./admath_basic_cal_exercise.pdf)
+[本文(PDF)](./admath_basic_cal_text.pdf){:target="_blank"} / [例題(PDF)](./admath_basic_cal_exercise.pdf){:target="_blank"}
 
 - 線形代数(第15章)
 
-[本文(PDF)](./admath_linear_algebra_text.pdf) / [例題(PDF)](./admath_linear_algebra_exercise.pdf)
+[本文(PDF)](./admath_linear_algebra_text.pdf){:target="_blank"} / [例題(PDF)](./admath_linear_algebra_exercise.pdf){:target="_blank"}
 
 ## 問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
