@@ -122,6 +122,11 @@
             <td>誤植</td>
         </tr>
         <tr>
+            <td>p.238</td>
+            <td>Fent <em>et al</em>., 2019b</td>
+            <td>Feng <em>et al</em>., 2019b</td>
+        </tr>
+        <tr>
             <td>p.303</td>
             <td>12.1節</td>
             <td>Han <em>et al</em>., 2011</td>
