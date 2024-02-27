@@ -61,7 +61,7 @@
             <td>誤植</td>
         </tr>
         <tr>
-            <td>p.15<br>P193<br>P195</td>
+            <td>p.15<br>p.193<br>p.195</td>
             <td>1.5.2節<br>6.2.4.2節<br>6.2.4.2節</td>
             <td>Ma <em>et al</em>., 2020a</td>
             <td>Ma <em>et al</em>., 2019d</td>
