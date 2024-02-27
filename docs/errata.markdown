@@ -81,6 +81,12 @@
             <td>Borgatti _et al_., 2009</td>
         </tr>
         <tr>
+            <td>p.53</td>
+            <td>2.9節</td>
+            <td>Hag-berg _et al_., 2008</td>
+            <td>Hagberg _et al_., 2008</td>
+        </tr>
+        <tr>
             <td>p.90</td>
             <td>3.8節</td>
             <td>Paszke <em>et al</em>., 2017</td>
