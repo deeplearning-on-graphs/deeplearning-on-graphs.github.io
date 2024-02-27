@@ -77,14 +77,14 @@
         <tr>
             <td>p.53</td>
             <td>2.9節</td>
-            <td>Boragatti _et al_., 2009</td>
-            <td>Borgatti _et al_., 2009</td>
+            <td>Boragatti <em>et al</em>., 2009</td>
+            <td>Borgatti <em>et al</em>., 2009</td>
         </tr>
         <tr>
             <td>p.53</td>
             <td>2.9節</td>
-            <td>Hag-berg _et al_., 2008</td>
-            <td>Hagberg _et al_., 2008</td>
+            <td>Hag-berg <em>et al</em>., 2008</td>
+            <td>Hagberg <em>et al</em>., 2008</td>
         </tr>
         <tr>
             <td>p.90</td>
@@ -113,6 +113,12 @@
             <td>重要度サンプリング</td>
             <td>重要度サンプリング(IS; Importance Sampling)</td>
             <td>修正</td>
+        </tr>
+        <tr>
+            <td>p.228<br>p.229</td>
+            <td>Wang <em>et al</em>., 2021</td>
+            <td>Wang <em>et al</em>., 2019i</td>
+            <td>誤植</td>
         </tr>
         <tr>
             <td>p.303</td>
