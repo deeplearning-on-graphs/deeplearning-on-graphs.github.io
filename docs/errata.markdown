@@ -68,6 +68,13 @@
             <td>修正</td>
         </tr>
         <tr>
+            <td>p.50</td>
+            <td>2.7.1.1節</td>
+            <td>Tang and Lie (2009)</td>
+            <td>Tang and Liu (2009)</td>
+            <td>誤植</td>
+        </tr>
+        <tr>
             <td>p.90</td>
             <td>3.8節</td>
             <td>Paszke <em>et al</em>., 2017</td>
