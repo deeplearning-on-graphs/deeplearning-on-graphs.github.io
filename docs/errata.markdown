@@ -158,6 +158,13 @@
             <td>修正</td>
         </tr>
         <tr>
+            <td></td>
+            <td>14.3.1.2節</td>
+            <td>Neville and Jensen, n.d.</td>
+            <td>Neville and Jensen, 2000</td>
+            <td>修正</td>
+        </tr>
+        <tr>
             <td>p.356</td>
             <td>14.4.1節</td>
             <td>Garey and Johnson, n.d.</td>
