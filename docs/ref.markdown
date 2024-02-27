@@ -17,6 +17,7 @@
     </style>
 </head>
 <body>
+<a href="./">メインページ</a>
 
 <h2>参考文献（PDF）</h2>
 本書で参照されている論文・書籍をまとめています．
@@ -28,7 +29,7 @@ PDFは以下をご確認ください．
 <div class="iframe-wrap">
     <iframe src="https://deeplearning-on-graphs.github.io/References.pdf" allow="fullscreen"></iframe>
 </div>
-
-[メインページ](index.markdown)
+<br>
+<a href="./">メインページ</a>
 </body>
 </html>
