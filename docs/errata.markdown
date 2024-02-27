@@ -79,12 +79,14 @@
             <td>2.9節</td>
             <td>Boragatti <em>et al</em>., 2009</td>
             <td>Borgatti <em>et al</em>., 2009</td>
+            <td>誤植</td>
         </tr>
         <tr>
             <td>p.53</td>
             <td>2.9節</td>
             <td>Hag-berg <em>et al</em>., 2008</td>
             <td>Hagberg <em>et al</em>., 2008</td>
+            <td>誤植</td>
         </tr>
         <tr>
             <td>p.90</td>
@@ -125,6 +127,7 @@
             <td>p.238</td>
             <td>Fent <em>et al</em>., 2019b</td>
             <td>Feng <em>et al</em>., 2019b</td>
+            <td>誤植</td>
         </tr>
         <tr>
             <td>p.303</td>
@@ -145,6 +148,7 @@
             <td>12.4.1.1節</td>
             <td>Lie <em>et al</em>.(2018b)</td>
             <td>Liu <em>et al</em>.(2018b)</td>
+            <td>誤植</td>
         </tr>
         <tr>
             <td>p.331</td>
