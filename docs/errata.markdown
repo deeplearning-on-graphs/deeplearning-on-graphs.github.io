@@ -116,6 +116,7 @@
         </tr>
         <tr>
             <td>p.228<br>p.229</td>
+            <td>8.2節</td>
             <td>Wang <em>et al</em>., 2021</td>
             <td>Wang <em>et al</em>., 2019i</td>
             <td>誤植</td>
