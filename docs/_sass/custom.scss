@@ -16,7 +16,7 @@ h3 {
 
 // 本文のフォントサイズを変更
 body {
-  line-height: 1.0; // ここで行間を調整します。数字を大きくすると行間が広くなります。
+  line-height: 1.5; // ここで行間を調整します。数字を大きくすると行間が広くなります。
   color: #333333; // ここで文字色を設定します。好みの色に変更してください。
 }
 
@@ -33,6 +33,7 @@ p {
   ont-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   font-size: 16.5px;
   text-indent: 1em; // ここでインデントの幅を調整します。数字を大きくするとインデントが広くなります。
+  line-height:1.0;
 }
 li {
   ont-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
