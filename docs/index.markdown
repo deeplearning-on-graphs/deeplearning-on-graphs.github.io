@@ -62,6 +62,16 @@ layout: default
 
 [本文(PDF)](./admath_linear_algebra_text.pdf){:target="_blank"} / [例題(PDF)](./admath_linear_algebra_exercise.pdf){:target="_blank"}
 
+## 訳者略歴
+#### 宮原太陽（みやはら たいよう）
+慶應義塾大学環境情報学部卒業．
+
+スカイウィル株式会社にて，データサイエンティストとして分析業務に従事．
+
+#### DeepGraph
+東京大学理学部物理学科卒，東京大学大学院理学系研究科物理学専攻修了．
+博士（理学）．証券会社にて，クオンツアナリスト・データサイエンティストとしてネットワークデータを活用した分析業務に従事．
+
 ## 問い合わせ先
 ご不明点などがございましたら，どうぞお問い合わせください．
 - [Twitter](https://twitter.com/deepL_on_graphs)のDM
