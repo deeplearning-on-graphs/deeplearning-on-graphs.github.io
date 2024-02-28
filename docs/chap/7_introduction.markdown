@@ -79,6 +79,7 @@ $$
  
 \tag{7.6}
     \symcal{L}_{\symcal{B}}=\sum_{v_i \in \symcal{B}}\ell\left(f_{\text{GCN}}\left(\symbf{A}\left\\{\symcal{N}^{L}\left(v_i\right)\right\\}, \symbf{F}\left\\{\symcal{N}^{L}\left(v_i\right)\right\\} ; \symbf{\Theta}\right), y_i\right)
+
 $$
  
 
