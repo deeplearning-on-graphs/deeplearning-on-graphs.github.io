@@ -20,15 +20,15 @@ layout: default
 本章の最後では，グラフ深層学習の下流タスクとして広く利用されている，「グラフ上の代表的な分析タスク」について説明する．
 
 <h2>目次</h2>
-<ul style="list-style-type: none; padding-left:0;">
+<ul style="list-style-type: none; margin-left:0;">
   <li>2.1節 はじめに</li>
   <li>2.2節 グラフの表現</li>
   <li>2.3節 グラフの性質と様々な指標</li>
-  <ul style="list-style-type: none; padding-left:0;">
+  <ul style="list-style-type: none; margin-left:0;">
     <li>2.3.1 次数</li>
     <li>2.3.2 連結性</li>
     <li>2.3.3 中心性</li>
-    <ul style="list-style-type: none; padding-left:0;">
+    <ul style="list-style-type: none; margin-left:0;">
       <li>2.3.3.1 次数中心性</li>
       <li>2.3.3.2 固有ベクトル中心性</li>
       <li>2.3.3.3 Katz中心性</li>
@@ -36,18 +36,18 @@ layout: default
     </ul>
   </ul>
   <li>2.4節 スペクトルグラフ理論
-  <ul style="list-style-type: none; padding-left:0;">
+  <ul style="list-style-type: none; margin-left:0;">
     <li>2.4.1 ラプラシアン行列</li>
     <li>2.4.2 ラプラシアン行列の固有値と固有ベクトル</li>
   </ul>
   </li>
   <li>2.5節 グラフ信号処理
-  <ul style="list-style-type: none; padding-left:0;">
+  <ul style="list-style-type: none; margin-left:0;">
     <li>2.5.1 グラフフーリエ変換</li>
   </ul>
   </li>
   <li>2.6節 複雑グラフ
-  <ul style="list-style-type: none; padding-left:0;">
+  <ul style="list-style-type: none; margin-left:0;">
     <li>2.6.1 ヘテログラフ</li>
     <li>2.6.2 二部グラフ</li>
     <li>2.6.3 多次元グラフ</li>
@@ -57,7 +57,7 @@ layout: default
   </ul>
   </li>
   <li>2.7節 グラフを使った分析タスク
-    <ul style="list-style-type: none; padding-left:0;">
+    <ul style="list-style-type: none; margin-left:0;">
       <li>2.7.1 ノードを対象としたタスク
         <ul style="list-style-type: none; padding-left:0;">
           <li>2.7.1.1 ノード分類</li>
@@ -65,7 +65,7 @@ layout: default
         </ul>
       </li>
       <li>2.7.2 グラフと対象としたタスク
-        <ul style="list-style-type: none; padding-left:0;">
+        <ul style="list-style-type: none; margin-left:0;">
           <li>2.7.2.1 グラフ分類</li>
         </ul>
       </li>
