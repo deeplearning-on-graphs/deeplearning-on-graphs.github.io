@@ -20,7 +20,7 @@ layout: default
 本章の最後では，グラフ深層学習の下流タスクとして広く利用されている，「グラフ上の代表的な分析タスク」について説明する．
 
 <h2>目次</h2>
-<ul style="list-style-type: none; margin-left:0;">
+<ul style="list-style-type: none; padding-left:0; margin-left:0;">
   <li>2.1節 はじめに</li>
   <li>2.2節 グラフの表現</li>
   <li>2.3節 グラフの性質と様々な指標</li>
