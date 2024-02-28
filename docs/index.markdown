@@ -6,7 +6,7 @@ layout: default
 ---
 <h2>本書の概要</h2>
 <div style="display: flex; align-items: center;">
-    <div style="flex: 0.8;">
+    <div style="flex: 0.6;">
         <img src="./cover.jpg" alt="" style="max-width: 100%; height: auto;">
     </div>
     <div style="flex: 1; margin-left: 20px;">
