@@ -78,7 +78,7 @@ $$
  $$
  
 \tag{7.6}
-    \mathcal{L}_{\mathcal{B}}=\sum_{v_i \in \mathcal{B}}\ell\left(f_{\text{GCN}}\left(\symbf{A}\left\\{\mathcal{N}^{L}\left(v_i\right)\right\\}, \symbf{F}\left\\{\mathcal{N}^{L}\left(v_i\right)\right\\} ; \symbf{\Theta}\right), y_i\right)
+    \mathcal{L}_{\mathcal{B}}=\sum_{v_i \in \mathcal{B}}\ell\left(f_{\text{GCN}}\left(\symbf{A}\left\{\mathcal{N}^{L}\left(v_i\right)\right\}, \symbf{F}\left\{\mathcal{N}^{L}\left(v_i\right)\right\} ; \symbf{\Theta}\right), y_i\right)
     
  $$
  
