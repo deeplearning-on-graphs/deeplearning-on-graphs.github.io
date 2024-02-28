@@ -40,5 +40,7 @@ figure {
 
 // 文頭インデントを調整
 p {
+  base-font-size: 2px;
+  font-size: 2px;
   text-indent: 1em; // ここでインデントの幅を調整します。数字を大きくするとインデントが広くなります。
 }
