@@ -22,7 +22,7 @@ layout: default
 
 <figure>
 
-<img src="./fig/fig5_1.png" width="100%"/>
+<img src="./chap/fig5_1.png" width="55%"/>
 
 <figcaption>図5.1 グラフフィルタリング</figcaption>
 
@@ -38,14 +38,14 @@ layout: default
 \tag{5.2}
     \symbf{A}^{(\mathrm{op})}, \symbf{F}^{(\mathrm{op})}=\operatorname{pool}\left(\symbf{A}^{(\mathrm{ip})}, \symbf{F}^{(\mathrm{ip})}\right)
     
-\tag{5.2} $$
+$$
  
 
 ここで， $\symbf{A}^{(\mathrm{ip})} \in \mathbb{R}^{N_{\mathrm{ip}} \times N_{\mathrm{ip}}}$ と $\symbf{F}^{(\mathrm{ip})} \in \mathbb{R}^{N_{\mathrm{ip}} \times d_{\mathrm{ip}}}$ ，そして  $\symbf{A}^{(\mathrm{op})} \in \mathbb{R}^{N_{\mathrm{op}} \times N_{\mathrm{op}}}$ と  $\symbf{F}^{(\mathrm{op})} \in \mathbb{R}^{N_{\mathrm{op}} \times d_{\mathrm{op}}}$  はそれぞれ，プーリング前後の隣接行列と特徴量行列を表す． また，上付き文字（または下付き文字）"ip"と "op"はそれぞれ，プーリングの入力(input of pooling)と出力(output of pooling)を表す． なお，粗化グラフのノード数 $N_{\mathrm{op}}$ に対しては， $N_{\mathrm{op}}<N_{\mathrm{ip}}$ を満たすことになる．
 
 <figure>
 
-<img src="./fig/fig5_2.png" width="100%"/>
+<img src="./chap/fig5_2.png" width="55%"/>
 
 <figcaption>図5.2 グラフプーリング</figcaption>
 
