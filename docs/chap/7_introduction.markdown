@@ -57,7 +57,7 @@ $$
 
 <figure>
 
-<img src="./chap/fig7_1.png" width="100%"/>
+<img src="./fig7_1.png" width="100%"/>
 
 <figcaption>図7.1 集約の過程</figcaption>
 
@@ -79,8 +79,8 @@ $$
  
 \tag{7.6}
     \symcal{L}_{\symcal{B}}=\sum_{v_i \in \symcal{B}}\ell\left(f_{\text{GCN}}\left(\symbf{A}\left\\{\symcal{N}^{L}\left(v_i\right)\right\\}, \symbf{F}\left\\{\symcal{N}^{L}\left(v_i\right)\right\\} ; \symbf{\Theta}\right), y_i\right)
-
-$$
+    
+ $$
  
 
 ここで， $\symcal{B} \subset \symcal{V}\_l$ はサンプリングされたミニバッチである．
