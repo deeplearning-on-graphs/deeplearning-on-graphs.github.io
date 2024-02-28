@@ -50,8 +50,8 @@ ImageNet Large-Scale Visual Recognition Challengeは，画像認識における�
       <li>3.2.1 ネットワークの構成</li>
       <li>3.2.2 活性化関数
         <ul>
-          <li>3.2.2.1 ReLU関数</li>
-          <li>3.2.2.2 ロジスティックシグモイド関数とtanh関数</li>
+          <li>3.2.2.1 ReLU 関数</li>
+          <li>3.2.2.2 ロジスティックシグモイド関数と tanh 関数</li>
         </ul>
       </li>
       <li>3.2.3 出力層と損失関数
@@ -68,14 +68,42 @@ ImageNet Large-Scale Visual Recognition Challengeは，画像認識における�
         <ul>
           <li>3.3.1.1 スパース結合</li>
           <li>3.3.1.2 パラメータ共有</li>
-          <li>3.3.1.3 平行移動に対する同変性(equivariant representation)</li>
+          <li>3.3.1.3 平行移動に対する同変性 (equivariant representation)</li>
+        </ul>
+      </li>
+      <li>3.3.2 実際の畳み込み層</li>
+      <li>3.3.3 検出層（非線形活性化層）</li>
+      <li>3.3.4 プーリング層</li>
+      <li>3.3.5 CNN フレームワークの全体像</li>
+    </ul>
+  </li>
+  <li>3.4節 RNN：リカレントニューラルネットワーク
+    <ul>
+      <li>3.4.1 従来の RNN の構成</li>
+      <li>3.4.2 LSTM (Long Short-Term Memory)</li>
+      <li>3.4.3 GRU (Gated Recurrent Unit)</li>
+    </ul>
+  </li>
+  <li>3.5節 オートエンコーダー（自己符号化器）
+    <ul>
+      <li>3.5.1 不完全オートエンコーダー</li>
+      <li>3.5.2 正則化オートエンコーダー</li>
+    </ul>
+  </li>
+  <li>3.6節 深層ニューラルネットワークの学習
+    <ul>
+      <li>3.6.1 勾配降下法</li>
+      <li>3.6.2 誤差逆伝播法</li>
+      <li>3.6.3 過学習の抑制
+        <ul>
+          <li>3.6.3.1 重み正則化</li>
+          <li>3.6.3.2 ドロップアウト</li>
+          <li>3.6.3.3 バッチ正規化</li>
         </ul>
       </li>
     </ul>
   </li>
-  <li>3.4節 RNN：リカレントニューラルネットワーク</li>
-  <li>3.5節 オートエンコーダー（自己符号化器）</li>
-  <li>3.6節 深層ニューラルネットワークの学習</li>
   <li>3.7節 本章のまとめ</li>
   <li>3.8節 参考文献</li>
 </ul>
+
