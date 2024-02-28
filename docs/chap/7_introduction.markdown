@@ -57,7 +57,7 @@ $$
 
 <figure>
 
-<img src="./fig7_1.png" width="100%"/>
+<img src="./fig7_1.png" width="80%"/>
 
 <figcaption>図7.1 集約の過程</figcaption>
 
