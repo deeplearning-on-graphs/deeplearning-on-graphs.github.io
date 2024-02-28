@@ -22,7 +22,7 @@ layout: default
 
 <figure>
 
-<img src="./chap/fig5_1.png" width="55%"/>
+<img src="./fig5_1.png" width="55%"/>
 
 <figcaption>図5.1 グラフフィルタリング</figcaption>
 
@@ -45,7 +45,7 @@ $$
 
 <figure>
 
-<img src="./chap/fig5_2.png" width="55%"/>
+<img src="./fig5_2.png" width="55%"/>
 
 <figcaption>図5.2 グラフプーリング</figcaption>
 
