@@ -12,6 +12,14 @@ sup {
   color: #333;
 }
 
+// 本文のフォントサイズを変更
+body {
+  base-font-size: 2px;
+  font-size: 2px;
+  line-height: 1.8; // ここで行間を調整します。数字を大きくすると行間が広くなります。
+  color: #333333; // ここで文字色を設定します。好みの色に変更してください。
+}
+
 /* 脚注本文のスタイル */
 .footnotes {
   font-size: 0.9em;
