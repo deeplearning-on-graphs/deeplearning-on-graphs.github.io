@@ -38,11 +38,10 @@ figure {
 
 // 文頭インデントを調整
 p {
-  base-font-size: 2px;
-  small-font-size: 2px;
+  font-size: 16px;
   text-indent: 1em; // ここでインデントの幅を調整します。数字を大きくするとインデントが広くなります。
 }
 li {
-  base-font-size: 2px;
+  font-size: 16px;
   line-height: 1.8;
 }
