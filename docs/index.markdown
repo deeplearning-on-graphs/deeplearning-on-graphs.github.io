@@ -4,10 +4,9 @@
 
 layout: default
 ---
-「グラフ深層学習」(Deep Learning on Graphs)のサポートページです．
 <h2>本書の概要</h2>
 <div style="display: flex; align-items: center;">
-    <div style="flex: 2;">
+    <div style="flex: 1.5;">
         <img src="./cover.jpg" alt="" style="max-width: 100%; height: auto;">
     </div>
     <div style="flex: 1; margin-left: 20px;">
