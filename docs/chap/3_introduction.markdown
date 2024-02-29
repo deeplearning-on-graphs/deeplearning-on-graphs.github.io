@@ -4,7 +4,7 @@
 
 layout: default
 ---
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
 
 <h1>第3章 深層学習の基礎</h1>
 
@@ -109,4 +109,4 @@ ImageNet Large-Scale Visual Recognition Challengeは，画像認識における�
   <li>3.8節 参考文献</li>
 </ul>
 <br>
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
