@@ -4,7 +4,7 @@
 
 layout: default
 ---
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
 
 <h1>第4章 グラフ埋め込み</h1>
 
@@ -123,4 +123,4 @@ layout: default
   <li>4.5 参考文献</li>
 </ul>
 <br>
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
