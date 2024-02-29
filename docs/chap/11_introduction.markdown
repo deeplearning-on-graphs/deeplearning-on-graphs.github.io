@@ -4,6 +4,7 @@
 
 layout: default
 ---
+<a href="./">メインページ</a>
 <h1>第11章 画像処理分野におけるGNN</h1>
 
 <h2>はじめに</h2>
@@ -32,3 +33,5 @@ layout: default
   <li>11.6 本章のまとめ</li>
   <li>11.7 参考文献</li>
 </ul>
+<br>
+<a href="./">メインページ</a>
