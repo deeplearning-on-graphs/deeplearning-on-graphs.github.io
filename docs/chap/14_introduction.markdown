@@ -4,6 +4,7 @@
 
 layout: default
 ---
+<a href="./">メインページ</a>
 <h1>第14章 GNNにおける発展的な話題</h1>
 
 <h2>はじめに</h2>
@@ -42,3 +43,5 @@ layout: default
   <li>14.5 本章のまとめ</li>
   <li>14.6 参考文献</li>
 </ul>
+<br>
+<a href="./">メインページ</a>
