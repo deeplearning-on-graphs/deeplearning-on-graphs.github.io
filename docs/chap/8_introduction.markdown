@@ -4,7 +4,7 @@
 
 layout: default
 ---
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
 
 <h1>第8章 複雑グラフ上のGNN</h1>
 <h2>はじめに</h2>
@@ -25,4 +25,4 @@ layout: default
   <li>8.9 参考文献</li>
 </ul>
 <br>
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
