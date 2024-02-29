@@ -4,7 +4,7 @@
 
 layout: default
 ---
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
 
 <h1>第10章 自然言語処理分野におけるGNN</h1>
 
@@ -70,4 +70,4 @@ layout: default
   <li>10.9 参考文献</li>
 </ul>
 <br>
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
