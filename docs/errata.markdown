@@ -130,6 +130,12 @@
             <td>誤植</td>
         </tr>
         <tr>
+            <td>p.265</td>
+            <td>Jurafsky and Martin, n.d.</td>
+            <td>Jurafsky and Martin, 2000</td>
+            <td>修正</td>
+        </tr>
+        <tr>
             <td>p.303</td>
             <td>12.1節</td>
             <td>Han <em>et al</em>., 2011</td>
