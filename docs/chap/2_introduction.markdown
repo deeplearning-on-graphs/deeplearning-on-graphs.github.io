@@ -4,7 +4,7 @@
 
 layout: default
 ---
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
 
 <h1>第2章 グラフ理論の基礎</h1>
 
@@ -77,4 +77,4 @@ layout: default
   <li>2.9 参考文献</li>
 </ul>
 <br>
-<a href="./">メインページ</a>
+<a href="../">メインページ</a>
