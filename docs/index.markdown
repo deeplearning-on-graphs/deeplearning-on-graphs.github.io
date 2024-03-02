@@ -15,6 +15,7 @@ layout: default
 </div>
 
 <p>Amazonのリンクは<a href="https://amzn.asia/d/6agPggA">こちら</a></p>
+<p>プレアデス出版社のリンクは<a href="http://www.pleiades-publishing.co.jp/genre/kakuritsu.html#bk05"></a>こちら</p>
 
 ## 目次
 - 第1章 イントロダクション（[はじめに](./chap/1_introduction.markdown) / [参考文献](./chap/1_ref.markdown)）
@@ -65,7 +66,6 @@ layout: default
 ## 訳者略歴
 #### 宮原 太陽（みやはら たいよう）
 慶應義塾大学環境情報学部卒業．
-
 スカイウィル株式会社にて，データサイエンティストとして分析業務に従事．
 
 #### 中尾 光孝（なかお みつたか）
@@ -73,5 +73,5 @@ layout: default
 博士（理学）．証券会社にて，クオンツアナリスト・データサイエンティストとしてネットワークデータを活用した分析業務に従事．
 
 ## 問い合わせ先
-ご不明点などがございましたら，どうぞお問い合わせください．
-- [Twitter](https://twitter.com/deepL_on_graphs)のDM
+- deeplearning.on.graphs@gmail.com
+- [X](https://twitter.com/deepL_on_graphs)
