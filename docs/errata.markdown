@@ -5,9 +5,6 @@
     body {
         font-family: 'Verdana', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    h2 {
-        color: #333;
-    }
     table {
         width: 100%;
         max-width: 100%;
