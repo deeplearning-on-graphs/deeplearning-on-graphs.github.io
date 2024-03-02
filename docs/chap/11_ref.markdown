@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -33,16 +33,16 @@
     tr:hover {
         background-color: #f5f5f5;
     }
-    /* 1番目の列の幅を48%に設定 */
+    /* 1番目の列の幅を55%に設定 */
     table.display td:nth-child(1),
     table.display th:nth-child(1) {
-        width: 48%;
+        width: 55%;
     }
 
-    /* 2番目の列の幅を20%に設定 */
+    /* 2番目の列の幅を25%に設定 */
     table.display td:nth-child(2),
     table.display th:nth-child(2) {
-        width: 20%;
+        width: 25%;
     }
 </style>
 </head>
@@ -286,7 +286,7 @@
 $(document).ready(function() {
     $('.display').DataTable({
      "lengthChange": false,  // Show 10 entriesの選択機能を非表示にする
-     "pageLength": 20,  // ページごとに表示する行数を20行に設定
+     "pageLength": 25,  // ページごとに表示する行数を20行に設定
      "info": false,  // "Showing 1 to X of Y entries" の情報テキストを非表示にする
      "order": [],
      "searching": false
