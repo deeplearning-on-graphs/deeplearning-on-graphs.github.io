@@ -27,7 +27,6 @@
     }
     </style>
 </head>
-<title>誤植情報</title>
 <body>
   
 <a href="./">メインページ</a>
