@@ -57,12 +57,10 @@ layout: default
 学習の補助にご活用ください．
 
 - 第1章：予備知識の復習：微積分，行列，複素数
-
-[本文(PDF)](./admath_basic_cal_text.pdf){:target="_blank"} / [例題(PDF)](./admath_basic_cal_exercise.pdf){:target="_blank"}
+    - [本文(PDF)](./admath_basic_cal_text.pdf){:target="_blank"} / [例題(PDF)](./admath_basic_cal_exercise.pdf){:target="_blank"}
 
 - 第15章：線形代数
-
-[本文(PDF)](./admath_linear_algebra_text.pdf){:target="_blank"} / [例題(PDF)](./admath_linear_algebra_exercise.pdf){:target="_blank"}
+    - [本文(PDF)](./admath_linear_algebra_text.pdf){:target="_blank"} / [例題(PDF)](./admath_linear_algebra_exercise.pdf){:target="_blank"}
 
 ## 訳者略歴
 #### 宮原 太陽（みやはら たいよう）
