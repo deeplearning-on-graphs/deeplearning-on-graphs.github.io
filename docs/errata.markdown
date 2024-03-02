@@ -68,6 +68,13 @@
             <td>修正</td>
         </tr>
         <tr>
+            <td>p.15</td>
+            <td>1.5.2節</td>
+            <td>Zug̈ner <em>et al</em>., 2018; Zug̈ner and Gun̈nemann</td>
+            <td>Zügner <em>et al</em>., 2018; Zügner and Günnemann</td>
+            <td>誤植</td>
+        </tr>
+        <tr>
             <td>p.50</td>
             <td>2.7.1.1節</td>
             <td>Tang and Lie (2009)</td>
