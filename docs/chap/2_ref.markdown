@@ -1,0 +1,32 @@
+## 2.1節 はじめに
+- Chemical Graph Theory: Introduction and Fundamentals [amazon](https://www.amazon.co.jp/dp/0367450704)
+- Abstract Meaning Representation for Sembanking [PDF](https://aclanthology.org/W13-2322.pdf)
+- Spectral Graph Theory [amazon](https://www.amazon.co.jp/dp/0821803158)
+- The Emerging Field of Signal Processing on Graphs: Extending High-Dimensional Data Analysis to Networks and Other Irregular Domains [arxiv](https://arxiv.org/abs/1211.0053)
+## 2.3節 グラフの性質と様々な指標
+- Factoring and weighting approaches to status scores and clique identification [リンク](https://www.tandfonline.com/doi/pdf/10.1080/0022250X.1972.9989806)
+- Some unique properties of eigenvector centrality [リンク](https://www.sciencedirect.com/science/article/abs/pii/S0378873307000342?via%3Dihub)
+- Zur Theorie der Matrices [リンク](https://eudml.org/doc/158317)
+- Über Matrizen aus nicht negativen Elementen [PDF](https://upload.wikimedia.org/wikipedia/commons/4/44/Ueber_Matrizen_aus_nicht_negativen_Elementen.pdf)
+- The Perron-Frobenius theorem: some of its applications [リンク](https://ieeexplore.ieee.org/document/1406483)
+## 2.5節 グラフ信号処理
+- The Fourier Transform and Its Applications [amazon](https://www.amazon.com/dp/0071160434)
+## 2.7節 グラフを使った分析タスク
+- Relational Learning via Latent Social Dimensions [リンク](https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=Uex-uzMAAAAJ&citation_for_view=Uex-uzMAAAAJ:d1gkVwhDpl0C)
+- Friends and neighbors on the Web [リンク](https://www.sciencedirect.com/science/article/abs/pii/S0378873303000091?via%3Dihub)
+- A Review of Relational Machine Learning for Knowledge Graphs [arxiv](https://arxiv.org/abs/1503.00759)
+- Link Prediction in Criminal Networks: A Tool for Criminal Intelligence Analysis [リンク](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4841537/)
+- Defining and Evaluating Network Communities based on Ground-truth [arxiv](https://arxiv.org/abs/1205.6233)
+## 2.9節 参考文献
+- Graph Theory with Applications [amazon](https://www.amazon.co.jp/dp/0333226941)
+- Networks: An Introduction [amazon](https://www.amazon.co.jp/dp/0198839979)
+- Spectral Graph Theory [amazon](https://www.amazon.co.jp/dp/0821803158)
+- Network Analysis in the Social Sciences [リンク](https://www.researchgate.net/publication/24004962_Network_Analysis_in_the_Social_Sciences)
+- A survey of graphs in natural language processing [PDF](https://web.eecs.umich.edu/~mihalcea/papers/nastase.jnle15.pdf)
+- Chemical Graph Theory [amazon](https://www.amazon.co.jp/dp/0367450399)
+- SNAP Datasets: Stanford Large Network Dataset Collection [リンク](https://snap.stanford.edu/data/)
+- The Network Data Repository with Interactive Graph Analytics and Visualization [リンク](https://ojs.aaai.org/index.php/AAAI/article/view/9277)
+- Exploring Network Structure, Dynamics, and Function using NetworkX [リンク](https://conference.scipy.org/proceedings/scipy2008/paper_2/)
+- The graph-tool python library [リンク](https://graph-tool.skewed.de/)
+- SNAP: A General Purpose Network Analysis and Graph Mining Library [arxiv](https://arxiv.org/abs/1606.07550)
+- GSPBOX: A toolbox for signal processing on graphs [arxiv](https://arxiv.org/abs/1408.5781)
