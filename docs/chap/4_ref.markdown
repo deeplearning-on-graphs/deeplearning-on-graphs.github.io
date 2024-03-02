@@ -58,7 +58,7 @@
       <th>著者名</th>
       <th>年</th>
       <th>リンク</th>
-      <th>節内順序</th>
+      <th>登場順</th>
     </tr>
   </thead>
   <tbody>
@@ -128,7 +128,7 @@
       <th>著者名</th>
       <th>年</th>
       <th>リンク</th>
-      <th>節内順序</th>
+      <th>登場順</th>
     </tr>
   </thead>
   <tbody>
@@ -254,7 +254,7 @@
       <th>著者名</th>
       <th>年</th>
       <th>リンク</th>
-      <th>節内順序</th>
+      <th>登場順</th>
     </tr>
   </thead>
   <tbody>
@@ -331,7 +331,7 @@
       <th>著者名</th>
       <th>年</th>
       <th>リンク</th>
-      <th>節内順序</th>
+      <th>登場順</th>
     </tr>
   </thead>
   <tbody>
