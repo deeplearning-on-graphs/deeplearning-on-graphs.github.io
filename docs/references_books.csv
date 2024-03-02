@@ -1,397 +1,401 @@
-タイトル,著者名,年,リンク
-TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems,"Abadi, Martín, Agarwal, Ashish, Barham, Paul, Brevdo, Eugene, Chen, Zhifeng, et al",2015,"<a href=""https://arxiv.org/abs/1603.04467"" target=""_blank"">arxiv</a>"
-Friends and neighbors on the Web,"Adamic, Lada A, and Adar, Eytan",2003,"<a href=""https://www.sciencedirect.com/science/article/abs/pii/S0378873303000091?via%3Dihub"" target=""_blank"">リンク</a>"
-PAIRpred: Partner-specific prediction of interacting residues from sequence and structure,"Afsar Minhas, Fayyaz ul Amir, Geiss, Brian J, and Ben-Hur, Asa",2014,"<a href=""https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4329725/"" target=""_blank"">リンク</a>"
-Linear Algebra and Optimization for Machine Learning,"Aggarwal, Charu C",2020,"<a href=""https://www.amazon.co.jp/dp/3030403432"" target=""_blank"">amazon</a>"
-Neural Networks and Deep Learning,"Aggarwal, Charu C",2023,"<a href=""https://www.amazon.co.jp/dp/3031296419"" target=""_blank"">amazon</a>"
-Learning to Represent Programs with Graphs,"Allamanis, Miltiadis, Brockschmidt, Marc, and Khademi, Mahmoud",2017,"<a href=""https://arxiv.org/abs/1711.00740"" target=""_blank"">arxiv</a>"
-Local Graph Partitioning using PageRank Vectors,"Andersen, Reid, Chung, Fan, and Lang, Kevin",2006,"<a href=""https://www.cs.cmu.edu/afs/cs/user/glmiller/public/Scientific-Computing/F-11/RelatedWork/local_partitioning_full.pdf"" target=""_blank"">PDF</a>"
-Diffusion-Convolutional Neural Networks,"Atwood, James, and Towsley, Don",2016,"<a href=""https://arxiv.org/abs/1511.02136"" target=""_blank"">arxiv</a>"
-Graph Isomorphism in Quasipolynomial Time,"Babai, László",2016,"<a href=""https://arxiv.org/abs/1512.03547"" target=""_blank"">arxiv</a>"
-Neural Machine Translation by Jointly Learning to Align and Translate,"Bahdanau, Dzmitry, Cho, Kyunghyun, and Bengio, Yoshua",2014,"<a href=""https://arxiv.org/abs/1409.0473"" target=""_blank"">arxiv</a>"
-Hypergraph Convolution and Hypergraph Attention,"Bai, Song, Zhang, Feihu, and Torr, Philip HS",2019,"<a href=""https://arxiv.org/abs/1901.08150"" target=""_blank"">arxiv</a>"
-Abstract Meaning Representation for Sembanking,"Banarescu, Laura, Bonial, Claire, Cai, Shu, Georgescu, Madalina, Griffitt, Kira, et al",2013,"<a href=""https://aclanthology.org/W13-2322.pdf"" target=""_blank"">PDF</a>"
-Graph Convolutional Encoders for Syntax-aware Neural Machine Translation,"Bastings, Jasmijn, Titov, Ivan, Aziz, Wilker, Marcheggiani, Diego, and Sima’an, Khalil",2017,"<a href=""https://arxiv.org/abs/1704.04675"" target=""_blank"">arxiv</a>"
-"Relational inductive biases, deep learning, and graph networks","Battaglia, Peter W, Hamrick, Jessica B, Bapst, Victor, Sanchez-Gonzalez, Alvaro, Zambaldi, et al",2018,"<a href=""https://arxiv.org/abs/1806.01261"" target=""_blank"">arxiv</a>"
-"Interaction Networks for Learning about Objects, Relations and Physics","Battaglia, Peter W, Pascanu, Razvan, Lai, Matthew, Rezende, Danilo Jimenez, et al",2016,"<a href=""https://arxiv.org/abs/1612.00222"" target=""_blank"">arxiv</a>"
-Heterogeneous Hyper-Network Embedding,"Baytas, Inci M, Xiao, Cao, Wang, Fei, Jain, Anil K, and Zhou, Jiayu",2018,"<a href=""https://par.nsf.gov/servlets/purl/10098519"" target=""_blank"">リンク</a>"
-Graph-to-Sequence Learning using Gated Graph Neural Networks,"Beck, Daniel, Haffari, Gholamreza, and Cohn, Trevor",2018,"<a href=""https://arxiv.org/abs/1806.09835"" target=""_blank"">arxiv</a>"
-Laplacian Eigenmaps for Dimensionality Reduction and Data Representation,"Belkin, Mikhail, and Niyogi, Partha",2003,"<a href=""https://www2.imm.dtu.dk/projects/manifold/Papers/Laplacian.pdf"" target=""_blank"">PDF</a>"
-Graph Convolutional Matrix Completion,"Berg, Rianne van den, Kipf, Thomas N, and Welling, Max",2017,"<a href=""https://arxiv.org/abs/1706.02263"" target=""_blank"">arxiv</a>"
-Link Prediction in Criminal Networks: A Tool for Criminal Intelligence Analysis,"Berlusconi, Giulia, Calderoni, Francesco, Parolini, Nicola, Verani, Marco, and Piccardi, Carlo",2016,"<a href=""https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4841537/"" target=""_blank"">リンク</a>"
-Node Classification in Social Networks,"Bhagat, Smriti, Cormode, Graham, and Muthukrishnan, S",2011,"<a href=""https://arxiv.org/abs/1101.3291"" target=""_blank"">arxiv</a>"
-Pattern Recognition and Machine Learning,"Bishop, Christopher M",2006,"<a href=""https://www.amazon.co.jp/dp/0387310738"" target=""_blank"">amazon</a><br><a href=""https://www.amazon.co.jp/dp/4621061224"" target=""_blank"">amazon</a><br><a href=""https://www.amazon.co.jp/dp/4621061240"" target=""_blank"">amazon</a>"
-Some unique properties of eigenvector centrality,"Bonacich, Phillip",2007,"<a href=""https://www.sciencedirect.com/science/article/abs/pii/S0378873307000342?via%3Dihub"" target=""_blank"">リンク</a>"
-Factoring and weighting approaches to status scores and clique identification,"Bonacich, Phillip",1972,"<a href=""https://www.tandfonline.com/doi/pdf/10.1080/0022250X.1972.9989806"" target=""_blank"">リンク</a>"
-Chemical Graph Theory: Introduction and Fundamentals,"Bonchev, Danail",1991,"<a href=""https://www.amazon.co.jp/dp/0367450704"" target=""_blank"">amazon</a>"
-Graph Theory with Applications,"Bondy, John Adrian, et al",1977,"<a href=""https://www.amazon.co.jp/dp/0333226941"" target=""_blank"">amazon</a>"
-Network Analysis in the Social Sciences,"Borgatti, Stephen P, Mehra, Ajay, Brass, Daniel J, and Labianca, Giuseppe",2009,"<a href=""https://www.researchgate.net/publication/24004962_Network_Analysis_in_the_Social_Sciences"" target=""_blank"">リンク</a>"
-Learning social network embeddings for predicting information diffusion,"Bourigault, Simon, Lagnier, Cedric, Lamprier, Sylvain, Denoyer, Ludovic, and Gallinari, Patrick",2014,"<a href=""https://www.researchgate.net/publication/260433722_Learning_social_network_embeddings_for_predicting_information_diffusion"" target=""_blank"">リンク</a>"
-Convex Optimization,"Boyd, Stephen, Boyd, Stephen P, and Vandenberghe, Lieven",2004,"<a href=""https://web.stanford.edu/~boyd/cvxbook/"" target=""_blank"">リンク</a>"
-The Fourier Transform and Its Applications,"Bracewell, Ronald Newbold",1978,"<a href=""https://www.amazon.com/dp/0071160434"" target=""_blank"">amazon</a>"
-Spectral Networks and Locally Connected Networks on Graphs,"Bruna, Joan, Zaremba, Wojciech, Szlam, Arthur, and LeCun, Yann",2013,"<a href=""https://arxiv.org/abs/1312.6203"" target=""_blank"">arxiv</a>"
-"A Comprehensive Survey of Graph Embedding: Problems, Techniques and Applications","Cai, Hongyun, Zheng, Vincent W, and Chang, Kevin Chen-Chuan",2018,"<a href=""https://arxiv.org/abs/1709.07604"" target=""_blank"">arxiv</a>"
-An Optimal Lower Bound on the Number of Variables for Graph Identification,"Cai, Jin-Yi, Fur̈er, Martin, and Immerman, Neil",1992,"<a href=""https://people.cs.umass.edu/~immerman/pub/opt.pdf"" target=""_blank"">PDF</a>"
-Deep Neural Networks for Learning Graph Representations,"Cao, Shaosheng, Lu, Wei, and Xu, Qiongkai",2016,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/10179"" target=""_blank"">リンク</a>"
-GraRep: Learning Graph Representations with Global Structural Information,"Cao, Shaosheng, Lu, Wei, and Xu, Qiongkai",2015,"<a href=""https://paperswithcode.com/paper/grarep-learning-graph-representations-with"" target=""_blank"">リンク</a>"
-BAG: Bi-directional Attention Entity Graph Convolutional Network for Multi-hop Reasoning Question Answering,"Cao, Yu, Fang, Meng, and Tao, Dacheng",2019,"<a href=""https://arxiv.org/abs/1904.04969"" target=""_blank"">arxiv</a>"
-Towards Evaluating the Robustness of Neural Networks,"Carlini, Nicholas, and Wagner, David",2017,"<a href=""https://arxiv.org/abs/1608.04644"" target=""_blank"">arxiv</a>"
-Structural balance: a generalization of Heider's theory,"Cartwright, Dorwin, and Harary, Frank",1956,"<a href=""https://ucilnica.fri.uni-lj.si/pluginfile.php/1147/course/section/4647/Cartwright%20and%20Harary%20-%20Structural%20balance%20-%20A%20generalization%20of%20Heiders%20theory%2C%201956.pdf"" target=""_blank"">PDF</a>"
-Méthode générale pour la résolution des systemes d’équations simultanées.,"Cauchy, Augustin.",,"<a href=""https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf"" target=""_blank"">PDF</a>"
-Hyperbolic Graph Convolutional Neural Networks,"Chami, Ines, Ying, Zhitao, Ré, Christopher, and Leskovec, Jure",2019,"<a href=""https://arxiv.org/abs/1910.12933"" target=""_blank"">arxiv</a>"
-Spectral Properties of Hypergraph Laplacian and Approximation Algorithms,"Chan, T.-H Hubert, Louis, Anand, Tang, Zhihao Gavin, and Zhang, Chenzi",2018,"<a href=""https://arxiv.org/abs/1605.01483"" target=""_blank"">arxiv</a>"
-Generalizing the Hypergraph Laplacian via a Diffusion Process with Mediators,"Chan, T.-H Hubert, and Liang, Zhibin",2019,"<a href=""https://arxiv.org/abs/1804.11128"" target=""_blank"">arxiv</a>"
-Heterogeneous Network Embedding via Deep Architectures,"Chang, Shiyu, Han, Wei, Tang, Jiliang, Qi, Guo-Jun, Aggarwal, Charu C, and Huang, Thomas S",2015,"<a href=""https://www.researchgate.net/publication/299970490_Heterogeneous_Network_Embedding_via_Deep_Architectures"" target=""_blank"">リンク</a>"
-Anomaly Detection using Graph Neural Networks,"Chaudhary, Anshika, Mittal, Himangi, and Arora, Anuja",2019,"<a href=""https://ieeexplore.ieee.org/document/8862186"" target=""_blank"">リンク</a>"
-Stochastic Training of Graph Convolutional Networks with Variance Reduction,"Chen, Jianfei, Zhu, Jun, and Song, Le",2018a,"<a href=""https://arxiv.org/abs/1710.10568"" target=""_blank"">arxiv</a>"
-FastGCN: Fast Learning with Graph Convolutional Networks via Importance Sampling,"Chen, Jie, Ma, Tengfei, and Xiao, Cao",2018b,"<a href=""https://arxiv.org/abs/1801.10247"" target=""_blank"">arxiv</a>"
-Knowledge-Embedded Routing Network for Scene Graph Generation,"Chen, Tianshui, Yu, Weihao, Chen, Riquan, and Lin, Liang",2019a,"<a href=""https://arxiv.org/abs/1903.03326"" target=""_blank"">arxiv</a>"
-Task-Guided and Path-Augmented Heterogeneous Network Embedding for Author Identification,"Chen, Ting, and Sun, Yizhou",2017,"<a href=""https://arxiv.org/abs/1612.02814"" target=""_blank"">arxiv</a>"
-ActiveHNE: Active Heterogeneous Network Embedding,"Chen, Xia, Yu, Guoxian, Wang, Jun, Domeniconi, Carlotta, Li, Zhao, and Zhang, Xiangliang",2019b,"<a href=""https://arxiv.org/abs/1905.05659"" target=""_blank"">arxiv</a>"
-Multi-Label Image Recognition with Graph Convolutional Networks,"Chen, Zhao-Min, Wei, Xiu-Shen, Wang, Peng, and Guo, Yanwen",2019c,"<a href=""https://arxiv.org/abs/1904.03582"" target=""_blank"">arxiv</a>"
-Supervised Community Detection with Line Graph Neural Networks,"Chen, Zhengdao, Li, Xiang, and Bruna, Joan",2017,"<a href=""https://arxiv.org/abs/1705.08415"" target=""_blank"">arxiv</a>"
-Unsupervised Feature Selection in Signed Social Networks,"Cheng, Kewei, Li, Jundong, and Liu, Huan",2017,"<a href=""https://dl.acm.org/doi/10.1145/3097983.3098106"" target=""_blank"">リンク</a>"
-Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks,"Chiang, Wei-Lin, Liu, Xuanqing, Si, Si, Li, Yang, Bengio, Samy, et al",2019,"<a href=""https://arxiv.org/abs/1905.07953"" target=""_blank"">arxiv</a>"
-Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation,"Cho, Kyunghyun, Van Merriënboer, Bart, Gulcehre, Caglar, Bahdanau, Dzmitry, Bougares, Fethi, et al",2014a,"<a href=""https://arxiv.org/abs/1406.1078"" target=""_blank"">arxiv</a>"
-Finding Matches in a Haystack: A Max-Pooling Strategy for Graph Matching in the Presence of Outliers,"Cho, Minsu, Sun, Jian, Duchenne, Olivier, and Ponce, Jean",2014b,"<a href=""https://inria.hal.science/hal-01053675"" target=""_blank"">リンク</a>"
-Learning the Graphical Structure of Electronic Health Records with Graph Convolutional Transformer,"Choi, Edward, Xu, Zhen, Li, Yujia, Dusenberry, Michael, Flores, Gerardo, Xue, Emily, and Dai, Andrew",2020,"<a href=""https://arxiv.org/abs/1906.04716"" target=""_blank"">arxiv</a>"
-Spectral Graph Theory,"Chung, Fan R.K., and Graham, Fan Chung",1997,"<a href=""https://www.amazon.co.jp/dp/0821803158"" target=""_blank"">amazon</a>"
-Structural Neural Encoders for AMR-to-text Generation,"Cohen, Marco Damonte Shay B",2019,"<a href=""https://arxiv.org/abs/1903.11410"" target=""_blank"">arxiv</a>"
-A Survey on Network Embedding,"Cui, Peng, Wang, Xiao, Pei, Jian, and Zhu, Wenwu",2018,"<a href=""https://arxiv.org/abs/1711.08752"" target=""_blank"">arxiv</a>"
-"Sitting closer to friends than enemies, revisited","Cygan, Marek, Pilipczuk, Marcin, Pilipczuk, Michał, and Wojtaszczyk, Jakub Onufry",2012,"<a href=""https://arxiv.org/abs/1201.1869"" target=""_blank"">arxiv</a>"
-Phone Recognition with the Mean-Covariance Restricted Boltzmann Machine,"Dahl, George, Ranzato, Marc’Aurelio, Mohamed, Abdel-rahman, and Hinton, Geoffrey E",2010,"<a href=""https://papers.nips.cc/paper_files/paper/2010/hash/b73ce398c39f506af761d2277d853a92-Abstract.html"" target=""_blank"">リンク</a>"
-Adversarial Attack on Graph Structured Data,"Dai, Hanjun, Li, Hui, Tian, Tian, Huang, Xin, Wang, Lin, et al",2018,"<a href=""https://arxiv.org/abs/1806.02371"" target=""_blank"">arxiv</a>"
-Structural Neural Encoders for AMR-to-text Generation,"Damonte, Marco, and Cohen, Shay B",2019,"<a href=""https://arxiv.org/abs/1903.11410"" target=""_blank"">arxiv</a>"
-Question Answering by Reasoning Across Documents with Graph Convolutional Networks,"De Cao, Nicola, Aziz, Wilker, and Titov, Ivan",2019,"<a href=""https://arxiv.org/abs/1808.09920"" target=""_blank"">arxiv</a>"
-MolGAN: An implicit generative model for small molecular graphs,"De Cao, Nicola, and Kipf, Thomas",2018,"<a href=""https://arxiv.org/abs/1805.11973"" target=""_blank"">arxiv</a>"
-Indexing by Latent Semantic Analysis,"Deerwester, Scott, Dumais, Susan T, Furnas, George W, Landauer, Thomas K, and Harshman, Richard",1990,"<a href=""https://wordvec.colorado.edu/papers/Deerwester_1990.pdf"" target=""_blank"">PDF</a>"
-Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering,"Defferrard, Michaël, Bresson, Xavier, and Vandergheynst, Pierre",2016,"<a href=""https://arxiv.org/abs/1606.09375"" target=""_blank"">arxiv</a>"
-Binary Coding of Speech Spectrograms Using a Deep Auto-encoder,"Deng, Li, Seltzer, Michael L, Yu, Dong, Acero, Alex, Mohamed, Abdel-rahman, and Hinton, Geoff",2010,"<a href=""https://www.microsoft.com/en-us/research/publication/binary-coding-of-speech-spectrograms-using-a-deep-auto-encoder/"" target=""_blank"">リンク</a>"
-Deep Learning in Natural Language Processing,"Deng, Li, and Liu, Yang",2018,"<a href=""https://www.amazon.co.jp/dp/9811338485"" target=""_blank"">amazon</a>"
-Signed Graph Convolutional Network,"Derr, Tyler, Ma, Yao, and Tang, Jiliang",2018,"<a href=""https://arxiv.org/abs/1808.06354"" target=""_blank"">arxiv</a>"
-BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,"Devlin, Jacob, Chang, Ming-Wei, Lee, Kenton, and Toutanova, Kristina",2018,"<a href=""https://arxiv.org/abs/1810.04805"" target=""_blank"">arxiv</a>"
-Weighted Graph Cuts without Eigenvectors: A Multilevel Approach,"Dhillon, Inderjit S, Guan, Yuqiang, and Kulis, Brian",2007,"<a href=""https://www.cs.utexas.edu/users/inderjit/public_papers/multilevel_pami.pdf"" target=""_blank"">PDF</a>"
-The autism brain imaging data exchange: towards a large-scale evaluation of the intrinsic brain architecture in autism,"Di Martino, Adriana, Yan, Chao-Gan, Li, Qingyang, Denio, Erin, Castel-lanos, Francisco X, Alaerts, Kaat, Anderson, Jeffrey S, Assaf, Michal, Bookheimer, Susan Y, Dapretto, Mirella, et al",2014,"<a href=""https://pubmed.ncbi.nlm.nih.gov/23774715/"" target=""_blank"">リンク</a>"
-metapath2vec: Scalable Representation Learning for Heterogeneous Networks,"Dong, Yuxiao, Chawla, Nitesh V, and Swami, Ananthram",2017,"<a href=""https://paperswithcode.com/paper/metapath2vec-scalable-representation-learning"" target=""_blank"">リンク</a>"
-Adaptive Subgradient Methods for Online Learning and Stochastic Optimization,"Duchi, John, Hazan, Elad, and Singer, Yoram",2011,"<a href=""https://jmlr.org/papers/v12/duchi11a.html"" target=""_blank"">リンク</a>"
-Convolutional Networks on Graphs for Learning Molecular Fingerprints,"Duvenaud, David K, Maclaurin, Dougal, Iparraguirre, Jorge, Bombarell, Rafael, Hirzel, Timothy, et al",2015,"<a href=""https://arxiv.org/abs/1509.09292"" target=""_blank"">arxiv</a>"
-All You Need Is Low (Rank): Defending Against Adversarial Attacks on Graphs,"Entezari, Negin, Al-Sayouri, Saba A, Darvishzadeh, Amirali, and Papalexakis, Evangelos E",2020,"<a href=""https://dl.acm.org/doi/10.1145/3336191.3371789"" target=""_blank"">リンク</a>"
-Graph Neural Networks for Social Recommendation,"Fan, Wenqi, Ma, Yao, Li, Qing, He, Yuan, Zhao, Eric, et al",2019,"<a href=""https://arxiv.org/abs/1902.07243"" target=""_blank"">arxiv</a>"
-An Introduction to Probability Theory and Its Applications,"Feller, William",1957,"<a href=""https://www.amazon.co.jp/dp/0471257087"" target=""_blank"">amazon</a>"
-Graph Adversarial Training: Dynamically Regularizing Based on Graph Structure,"Feng, Fuli, He, Xiangnan, Tang, Jie, and Chua, Tat-Seng",2019a,"<a href=""https://arxiv.org/abs/1902.08226"" target=""_blank"">arxiv</a>"
-Hypergraph Neural Networks,"Feng, Yifan, You, Haoxuan, Zhang, Zizhao, Ji, Rongrong, and Gao, Yue",2019b,"<a href=""https://arxiv.org/abs/1809.09401"" target=""_blank"">arxiv</a>"
-Structured Neural Summarization,"Fernandes, Patrick, Allamanis, Miltiadis, and Brockschmidt, Marc",2018,"<a href=""https://arxiv.org/abs/1811.01824"" target=""_blank"">arxiv</a>"
-Fast Graph Representation Learning with PyTorch Geometric,"Fey, Matthias, and Lenssen, Jan E",2019,"<a href=""https://arxiv.org/abs/1903.02428"" target=""_blank"">arxiv</a>"
-Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks,"Finn, Chelsea, Abbeel, Pieter, and Levine, Sergey",2017,"<a href=""https://arxiv.org/abs/1703.03400"" target=""_blank"">arxiv</a>"
-Random-Walk Computation of Similarities between Nodes of a Graph with Application to Collaborative Recommendation,"Fouss, Francois, Pirotte, Alain, Renders, Jean-Michel, and Saerens, Marco",2007,"<a href=""https://www.semanticscholar.org/paper/Random-Walk-Computation-of-Similarities-between-of-Fouss-Pirotte/474db64356d6c9c82fe2a8604cd6c13bc17bae78"" target=""_blank"">リンク</a>"
-Protein Interface Prediction using Graph Convolutional Networks,"Fout, Alex, Byrd, Jonathon, Shariat, Basir, and Ben-Hur, Asa",2017,"<a href=""https://proceedings.neurips.cc/paper/2017/hash/f507783927f2ec2737ba40afbd17efb5-Abstract.html"" target=""_blank"">リンク</a>"
-Über Matrizen aus nicht negativen Elementen,"Frobenius, Georg, Frobenius, Ferdinand Georg, Frobenius, Ferdinand Georg, Frobenius, Ferdinand Georg, and Mathematician, Germany",1912,"<a href=""https://upload.wikimedia.org/wikipedia/commons/4/44/Ueber_Matrizen_aus_nicht_negativen_Elementen.pdf"" target=""_blank"">PDF</a>"
-GraphRel: Modeling Text as Relational Graphs for Joint Entity and Relation Extraction,"Fu, Tsu-Jui, Li, Peng-Hsuan, and Ma, Wei-Yun",2019,"<a href=""https://aclanthology.org/P19-1136/"" target=""_blank"">リンク</a>"
-Large-Scale Learnable Graph Convolutional Networks,"Gao, Hongyang, Wang, Zhengyang, and Ji, Shuiwang",2018a,"<a href=""https://arxiv.org/abs/1808.03965"" target=""_blank"">arxiv</a>"
-Kronecker Attention Networks,"Gao, Hongyang, Wang, Zhengyang, and Ji, Shuiwang",2020,"<a href=""https://arxiv.org/abs/2007.08442"" target=""_blank"">arxiv</a>"
-Graph U-Nets,"Gao, Hongyang, and Ji, Shuiwang",2019,"<a href=""https://arxiv.org/abs/1905.05178"" target=""_blank"">arxiv</a>"
-BiNE: Bipartite Network Embedding,"Gao, Ming, Chen, Leihui, He, Xiangnan, and Zhou, Aoying",2018b,"<a href=""https://staff.ustc.edu.cn/~hexn/papers/sigir18-bipartiteNE.pdf"" target=""_blank"">PDF</a>"
-Computers and Intractability: A Guide to the Theory of Np-Completeness,"Garey, Michael R, and Johnson, David S",1979,"<a href=""https://www.amazon.co.jp/dp/0716710455"" target=""_blank"">amazon</a>"
-Generating Classification Weights with GNN Denoising Autoencoders for Few-Shot Learning,"Gidaris, Spyros, and Komodakis, Nikos",2019,"<a href=""https://arxiv.org/abs/1905.01102"" target=""_blank"">arxiv</a>"
-Neural Message Passing for Quantum Chemistry,"Gilmer, Justin, Schoenholz, Samuel S., Riley, Patrick F., Vinyals, Oriol, and Dahl, George E",2017,"<a href=""https://arxiv.org/abs/1704.01212"" target=""_blank"">arxiv</a>"
-Using collaborative filtering to weave an information tapestry,"Goldberg, David, Nichols, David, Oki, Brian M, and Terry, Douglas",1992,"<a href=""https://dl.acm.org/doi/10.1145/138859.138867"" target=""_blank"">リンク</a>"
-Eigentaste: A Constant Time Collaborative Filtering Algorithm,"Goldberg, Ken, Roeder, Theresa, Gupta, Dhruv, and Perkins, Chris",2001,"<a href=""https://link.springer.com/article/10.1023/A:1011419012209"" target=""_blank"">リンク</a>"
-A Primer on Neural Network Models for Natural Language Processing,"Goldberg, Yoav",2016,"<a href=""https://arxiv.org/abs/1510.00726"" target=""_blank"">arxiv</a>"
-Explaining and Harnessing Adversarial Examples,"Goodfellow, Ian J, Shlens, Jonathon, and Szegedy, Christian",2014b,"<a href=""https://arxiv.org/abs/1412.6572"" target=""_blank"">arxiv</a>"
-Deep Learning,"Goodfellow, Ian, Bengio, Yoshua, and Courville, Aaron",2016,"<a href=""https://www.amazon.co.jp/dp/0262035618"" target=""_blank"">amazon</a><br><a href=""https://www.amazon.co.jp/dp/4048930621"" target=""_blank"">amazon</a>"
-Generative Adversarial Nets,"Goodfellow, Ian, Pouget-Abadie, Jean, Mirza, Mehdi, Xu, Bing, Warde-Farley, David, et al",2014a,"<a href=""https://arxiv.org/abs/1406.2661"" target=""_blank"">arxiv</a>"
-"Graph Embedding Techniques, Applications, and Performance: A Survey","Goyal, Palash, and Ferrara, Emilio",2018,"<a href=""https://arxiv.org/abs/1705.02801"" target=""_blank"">arxiv</a>"
-node2vec: Scalable Feature Learning for Networks,"Grover, Aditya, and Leskovec, Jure",2016,"<a href=""https://arxiv.org/abs/1607.00653"" target=""_blank"">arxiv</a>"
-Towards Feature Selection in Networks,"Gu, Quanquan, and Han, Jiawei",2011,"<a href=""https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=1d9e493a34df3fc2d7eec5b343ea91f9fc474678"" target=""_blank"">リンク</a>"
-RaRE: Social Rank Regulated Large-scale Network Embedding,"Gu, Yupeng, Sun, Yizhou, Li, Yanen, and Yang, Yang",2018,"<a href=""https://dl.acm.org/doi/abs/10.1145/3178876.3186102"" target=""_blank"">リンク</a>"
-Attention Guided Graph Convolutional Networks for Relation Extraction,"Guo, Zhijiang, Zhang, Yan, and Lu, Wei",2019,"<a href=""https://arxiv.org/abs/1906.07510"" target=""_blank"">arxiv</a>"
-"Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics","Gutmann, Michael U, and Hyvärinen, Aapo",2012,"<a href=""https://jmlr.org/papers/v13/gutmann12a.html"" target=""_blank"">リンク</a>"
-"Exploring Network Structure, Dynamics, and Function using NetworkX","Hagberg, Aric, Swart, Pieter, and S Chult, Daniel",2008,"<a href=""https://conference.scipy.org/proceedings/scipy2008/paper_2/"" target=""_blank"">リンク</a>"
-Knowledge Transfer for Out-of-Knowledge-Base Entities: A Graph Neural Network Approach,"Hamaguchi, Takuo, Oiwa, Hidekazu, Shimbo, Masashi, and Matsumoto, Yuji",2017,"<a href=""https://arxiv.org/abs/1706.05674"" target=""_blank"">arxiv</a>"
-Inductive Representation Learning on Large Graphs,"Hamilton, Will, Ying, Zhitao, and Leskovec, Jure",2017a,"<a href=""https://arxiv.org/abs/1706.02216"" target=""_blank"">arxiv</a>"
-Representation Learning on Graphs: Methods and Applications,"Hamilton, William L, Ying, Rex, and Leskovec, Jure",2017b,"<a href=""https://arxiv.org/abs/1709.05584"" target=""_blank"">arxiv</a>"
-Deep Self-Learning From Noisy Labels,"Han, Jiangfan, Luo, Ping, and Wang, Xiaogang",2019,"<a href=""https://arxiv.org/abs/1908.02160"" target=""_blank"">arxiv</a>"
-Data Mining: Concepts and Techniques,"Han, Jiawei, Pei, Jian, and Kamber, Micheline",2022,"<a href=""https://www.amazon.co.jp/dp/0128117605"" target=""_blank"">amazon</a>"
-Cascade-BGNN: Toward Efficient Self-supervised Representation Learning on Large-scale Bipartite Graphs,"He, Chaoyang, Xie, Tian, Rong, Yu, Huang, Wenbing, Li, Yanfang, et al",2019,"<a href=""https://arxiv.org/abs/1906.11994"" target=""_blank"">arxiv</a>"
-Deep Residual Learning for Image Recognition,"He, Kaiming, Zhang, Xiangyu, Ren, Shaoqing, and Sun, Jian",2016,"<a href=""https://arxiv.org/abs/1512.03385"" target=""_blank"">arxiv</a>"
-Attitudes and Cognitive Organization,"Heider, Fritz",1946,"<a href=""https://snap.stanford.edu/class/cs224w-readings/heider49balance.pdf"" target=""_blank"">PDF</a>"
-Long Short-Term Memory,"Hochreiter, Sepp, and Schmidhuber, Jürgen",1997,"<a href=""https://www.bioinf.jku.at/publications/older/2604.pdf"" target=""_blank"">PDF</a>"
-Linear Algebra,"Hoffman, Kenneth, and Kunze, Ray",2015,"<a href=""https://www.amazon.co.jp/dp/9332550077"" target=""_blank"">amazon</a>"
-Strategies for Pre-training Graph Neural Networks,"Hu, Weihua, Liu, Bowen, Gomes, Joseph, Zitnik, Marinka, Liang, Percy, Pande, Vijay, and Leskovec, Jure",2020b,"<a href=""https://arxiv.org/abs/1905.12265"" target=""_blank"">arxiv</a>"
-GPT-GNN: Generative Pre-Training of Graph Neural Networks,"Hu, Ziniu, Dong, Yuxiao, Wang, Kuansan, Chang, Kai-Wei, and Sun, Yizhou",2020a,"<a href=""https://arxiv.org/abs/2006.15437"" target=""_blank"">arxiv</a>"
-Pre-Training graph neural networks for generic structural feature extraction,"Hu, Ziniu, Fan, Changjun, Chen, Ting, Chang, Kai-Wei, and Sun, Yizhou",2019,"<a href=""https://arxiv.org/abs/1905.13728"" target=""_blank"">arxiv</a>"
-Unsupervised Nonlinear Feature Selection from High-Dimensional Signed Networks,"Huang, Qiang, Xia, Tingyu, Sun, Huiyan, Yamada, Makoto, and Chang, Yi",2020,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/5839"" target=""_blank"">リンク</a>"
-Adaptive Sampling Towards Fast Graph Representation Learning,"Huang, Wenbing, Zhang, Tong, Rong, Yu, and Huang, Junzhou",2018,"<a href=""https://arxiv.org/abs/1809.05343"" target=""_blank"">arxiv</a>"
-Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift,"Ioffe, Sergey, and Szegedy, Christian",2015,"<a href=""https://arxiv.org/abs/1502.03167"" target=""_blank"">arxiv</a>"
-Graph Neural Network for Music Score Data and Modeling Expressive Piano Performance,"Jeong, Dasaem, Kwon, Taegyun, Kim, Yoojin, and Nam, Juhan",2019,"<a href=""https://proceedings.mlr.press/v97/jeong19a.html"" target=""_blank"">リンク</a>"
-Dynamic Hypergraph Neural Networks,"Jiang, Jianwen, Wei, Yuxuan, Feng, Yifan, Cao, Jingxuan, and Gao, Yue",2019,"<a href=""https://www.ijcai.org/proceedings/2019/366"" target=""_blank"">リンク</a>"
-Latent Adversarial Training of Graph Convolution Networks,"Jin, Hongwei, and Zhang, Xinhua",2019,"<a href=""https://graphreason.github.io/papers/35.pdf"" target=""_blank"">PDF</a>"
-Self-supervised Learning on Graphs: Deep Insights and New Direction,"Jin, Wei, Derr, Tyler, Liu, Haochen, Wang, Yiqi, Wang, Suhang, Liu, Zitao, and Tang, Jiliang",2020c,"<a href=""https://arxiv.org/abs/2006.10141"" target=""_blank"">arxiv</a>"
-"Adversarial Attacks and Defenses on Graphs: A Review, A Tool and Empirical Studies","Jin, Wei, Li, Yaxin, Xu, Han, Wang, Yiqi, and Tang, Jiliang",2020a,"<a href=""https://arxiv.org/abs/2003.00653"" target=""_blank"">arxiv</a>"
-Graph Structure Learning for Robust Graph Neural Networks,"Jin, Wei, Ma, Yao, Liu, Xiaorui, Tang, Xianfeng, Wang, Suhang, et al",2020b,"<a href=""https://arxiv.org/abs/2005.10203"" target=""_blank"">arxiv</a>"
-Junction Tree Variational Autoencoder for Molecular Graph Generation,"Jin, Wengong, Barzilay, Regina, and Jaakkola, Tommi",2018,"<a href=""https://arxiv.org/abs/1802.04364"" target=""_blank"">arxiv</a>"
-An Efficient Graph Convolutional Network Technique for the Travelling Salesman Problem,"Joshi, Chaitanya K, Laurent, Thomas, and Bresson, Xavier",2019,"<a href=""https://arxiv.org/abs/1906.01227"" target=""_blank"">arxiv</a>"
-International encyclopedia of statistical science: Kullback-Leibler Divergence,"Joyce, James M",2011,"<a href=""https://link.springer.com/referenceworkentry/10.1007/978-3-642-04898-2_327"" target=""_blank"">リンク</a>"
-"Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition","Jurafsky, Daniel, and Martin, James H",2000,"<a href=""https://www.amazon.co.jp/dp/0130950696"" target=""_blank"">amazon</a>"
-Deep Learning for NLP and Speech Recognition,"Kamath, Uday, Liu, John, and Whitaker, James",2019,"<a href=""https://www.amazon.co.jp/dp/3030145956"" target=""_blank"">amazon</a>"
-Rethinking Knowledge Graph Propagation for Zero-Shot Learning,"Kampffmeyer, Michael, Chen, Yinbo, Liang, Xiaodan, Wang, Hao, Zhang, Yujia, and Xing, Eric P",2019,"<a href=""https://arxiv.org/abs/1805.11724"" target=""_blank"">arxiv</a>"
-Brain connectivity in autism,"Kana, Rajesh K, Uddin, Lucina Q, Kenet, Tal, Chugani, Diane, and Mul̈ler, Ralph-Axel",2014,"<a href=""https://www.frontiersin.org/articles/10.3389/fnhum.2014.00349/full"" target=""_blank"">リンク</a>"
-A fast and high quality multilevel scheme for partitioning irregular graphs,"Karypis, George, and Kumar, Vipin",1998,"<a href=""https://glaros.dtc.umn.edu/gkhome/node/107"" target=""_blank"">リンク</a>"
-Deep Generative Probabilistic Graph Neural Networks for Scene Graph Generation,"Khademi, Mahmoud, and Schulte, Oliver",2020,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/6783"" target=""_blank"">リンク</a>"
-Learning Combinatorial Optimization Algorithms over Graphs,"Khalil, Elias, Dai, Hanjun, Zhang, Yuyu, Dilkina, Bistra, and Song, Le",2017,"<a href=""https://arxiv.org/abs/1704.01665"" target=""_blank"">arxiv</a>"
-Adam: A Method for Stochastic Optimization,"Kingma, Diederik P, and Ba, Jimmy",2014,"<a href=""https://arxiv.org/abs/1412.6980"" target=""_blank"">arxiv</a>"
-Auto-Encoding Variational Bayes,"Kingma, Diederik P, and Welling, Max",2013,"<a href=""https://arxiv.org/abs/1312.6114"" target=""_blank"">arxiv</a>"
-Semi-Supervised Classification with Graph Convolutional Networks,"Kipf, Thomas N, and Welling, Max",2016a,"<a href=""https://arxiv.org/abs/1609.02907"" target=""_blank"">arxiv</a>"
-Variational Graph Auto-Encoders,"Kipf, Thomas N, and Welling, Max",2016b,"<a href=""https://arxiv.org/abs/1611.07308"" target=""_blank"">arxiv</a>"
-Neural Relational Inference for Interacting Systems,"Kipf, Thomas, Fetaya, Ethan, Wang, Kuan-Chieh, Welling, Max, and Zemel, Richard",2018,"<a href=""https://arxiv.org/abs/1802.04687"" target=""_blank"">arxiv</a>"
-Matrix Factorization Techniques for Recommender Systems,"Koren, Yehuda, Bell, Robert, and Volinsky, Chris",2009,"<a href=""https://datajobs.com/data-science-repo/Recommender-Systems-%5BNetflix%5D.pdf"" target=""_blank"">PDF</a>"
-ImageNet Classification with Deep Convolutional Neural Networks,"Krizhevsky, Alex, Sutskever, Ilya, and Hinton, Geoffrey E",2012,"<a href=""https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"" target=""_blank"">リンク</a>"
-The SIDER database of drugs and side effects,"Kuhn, Michael, Letunic, Ivica, Jensen, Lars Juhl, and Bork, Peer",2016,"<a href=""https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702794/"" target=""_blank"">リンク</a>"
-The Slashdot Zoo: Mining a Social Network with Negative Edges,"Kunegis, Jérôme, Lommatzsch, Andreas, and Bauckhage, Christian",2009,"<a href=""https://arxiv.org/abs/1710.11395"" target=""_blank"">arxiv</a>"
-PRUNE: Preserving Proximity and Global Ranking for Network Embedding,"Lai, Yi-An, Hsu, Chin-Chi, Chen, Wen Hao, Yeh, Mi-Yen, and Lin, Shou-De",2017,"<a href=""https://proceedings.neurips.cc/paper/2017/hash/cdd96eedd7f695f4d61802f8105ba2b0-Abstract.html"" target=""_blank"">リンク</a>"
-Modèles connexionnistes de l'apprentissage,"Le Cun,Yann, and Fogelman-Soulié, Françoise",1987,"<a href=""https://www.persee.fr/doc/intel_0769-4113_1987_num_2_1_1804"" target=""_blank"">リンク</a>"
-Graph Classification using Structural Attention,"Lee, John Boaz, Rossi, Ryan, and Kong, Xiangnan",2018,"<a href=""https://dl.acm.org/doi/10.1145/3219819.3219980"" target=""_blank"">リンク</a>"
-Self-Attention Graph Pooling,"Lee, Junhyun, Lee, Inyeop, and Kang, Jaewoo",2019,"<a href=""https://arxiv.org/abs/1904.08082"" target=""_blank"">arxiv</a>"
-End-to-end Neural Coreference Resolution,"Lee, Kenton, He, Luheng, Lewis, Mike, and Zettlemoyer, Luke",2017,"<a href=""https://arxiv.org/abs/1707.07045"" target=""_blank"">arxiv</a>"
-Predicting Positive and Negative Links in Online Social Networks,"Leskovec, Jure, Huttenlocher, Daniel, and Kleinberg, Jon",2010a,"<a href=""https://arxiv.org/abs/1003.2429"" target=""_blank"">arxiv</a>"
-Signed Networks in Social Media,"Leskovec, Jure, Huttenlocher, Daniel, and Kleinberg, Jon",2010b,"<a href=""https://arxiv.org/abs/1003.2424"" target=""_blank"">arxiv</a>"
-SNAP Datasets: Stanford Large Network Dataset Collection,"Leskovec, Jure, and Krevl, Andrej",2014,"<a href=""https://snap.stanford.edu/data/"" target=""_blank"">リンク</a>"
-SNAP: A General Purpose Network Analysis and Graph Mining Library,"Leskovec, Jure, and Sosič, Rok",2016,"<a href=""https://arxiv.org/abs/1606.07550"" target=""_blank"">arxiv</a>"
-Encoding Social Information with Graph Convolutional Networks forPolitical Perspective Detection in News Media,"Li, Chang, and Goldwasser, Dan",2019,"<a href=""https://aclanthology.org/P19-1247/"" target=""_blank"">リンク</a>"
-Spatio-Temporal Graph Convolution for Skeleton Based Action Recognition,"Li, Chaolong, Cui, Zhen, Zheng, Wenming, Xu, Chunyan, and Yang, Jian",2018a,"<a href=""https://arxiv.org/abs/1802.09834"" target=""_blank"">arxiv</a>"
-A Novel Computational Model for Predicting microRNA-Disease Associations Based on Heterogeneous Graph Convolutional Networks,"Li, Chunyan, Liu, Hongju, Hu, Qian, Que, Jinlong, and Yao, Junfeng",2019a,"<a href=""https://www.mdpi.com/2073-4409/8/9/977"" target=""_blank"">リンク</a>"
-Feature Selection: A Data Perspective,"Li, Jundong, Cheng, Kewei, Wang, Suhang, Morstatter, Fred, Trevino, Robert P, Tang, Jiliang, and Liu, Huan",2017b,"<a href=""https://arxiv.org/abs/1601.07996"" target=""_blank"">arxiv</a>"
-Attributed Network Embedding for Learning in a Dynamic Environment,"Li, Jundong, Dani, Harsh, Hu, Xia, Tang, Jiliang, Chang, Yi, and Liu, Huan",2017a,"<a href=""https://arxiv.org/abs/1706.01860"" target=""_blank"">arxiv</a>"
-Adaptive Unsupervised Feature Selection on Attributed Networks,"Li, Jundong, Guo, Ruocheng, Liu, Chenghao, and Liu, Huan",2019b,"<a href=""https://dl.acm.org/doi/10.1145/3292500.3330856"" target=""_blank"">リンク</a>"
-Toward Time-Evolving Feature Selection on Dynamic Networks,"Li, Jundong, Hu, Xia, Jian, Ling, and Liu, Huan",2016,"<a href=""https://www.semanticscholar.org/paper/Toward-Time-Evolving-Feature-Selection-on-Dynamic-Li-Hu/f831be455cba1db826715e3caf7957fae1e5169d"" target=""_blank"">リンク</a>"
-Actional-Structural Graph Convolutional Networks for Skeleton-based Action Recognition,"Li, Maosen, Chen, Siheng, Chen, Xu, Zhang, Ya, Wang, Yanfeng, and Tian, Qi",2019c,"<a href=""https://arxiv.org/abs/1904.12659"" target=""_blank"">arxiv</a>"
-Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning,"Li, Qimai, Han, Zhichao, and Wu, Xiao-Ming",2018b,"<a href=""https://arxiv.org/abs/1801.07606"" target=""_blank"">arxiv</a>"
-Adaptive Graph Convolutional Neural Networks,"Li, Ruoyu, Wang, Sheng, Zhu, Feiyun, and Huang, Junzhou",2018c,"<a href=""https://arxiv.org/abs/1801.03226"" target=""_blank"">arxiv</a>"
-DeepRobust: A PyTorch Library for Adversarial Attacks and Defenses,"Li, Yaxin, Jin, Wei, Xu, Han, and Tang, Jiliang",2020a,"<a href=""https://arxiv.org/abs/2005.06149"" target=""_blank"">arxiv</a>"
-Community Detection in Attributed Graphs: An Embedding Approach,"Li, Ye, Sha, Chaofeng, Huang, Xin, and Zhang, Yanchun",2018d,"<a href=""https://dl.acm.org/doi/10.5555/3504035.3504077"" target=""_blank"">リンク</a>"
-Learning Signed Network Embedding via Graph Attention,"Li, Yu, Tian, Yuan, Zhang, Jiawei, and Chang, Yi",2020b,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/5911"" target=""_blank"">リンク</a>"
-Gated Graph Sequence Neural Networks,"Li, Yujia, Tarlow, Daniel, Brockschmidt, Marc, and Zemel, Richard",2015,"<a href=""https://arxiv.org/abs/1511.05493"" target=""_blank"">arxiv</a>"
-Combinatorial Optimization with Graph Convolutional Networks and Guided Tree Search,"Li, Zhuwen, Chen, Qifeng, and Koltun, Vladlen",2018e,"<a href=""https://arxiv.org/abs/1810.10659"" target=""_blank"">arxiv</a>"
-Semantic Object Parsing with Graph LSTM,"Liang, Xiaodan, Shen, Xiaohui, Feng, Jiashi, Lin, Liang, and Yan, Shuicheng",2016,"<a href=""https://arxiv.org/abs/1603.07063"" target=""_blank"">arxiv</a>"
-Efficient Graph Generation with Graph Recurrent Attention Networks,"Liao, Renjie, Li, Yujia, Song, Yang, Wang, Shenlong, Hamilton, Will, Du-venaud, David K, Urtasun, Raquel, and Zemel, Richard",2019,"<a href=""https://arxiv.org/abs/1910.00760"" target=""_blank"">arxiv</a>"
-The Link-Prediction Problem for Social Networks,"Liben-Nowell, David, and Kleinberg, Jon",2007,"<a href=""https://cs.carleton.edu/faculty/dlibenno/papers/link-prediction/link.pdf"" target=""_blank"">PDF</a>"
-Learning Entity and Relation Embeddings for Knowledge Graph Completion,"Lin, Yankai, Liu, Zhiyuan, Sun, Maosong, Liu, Yang, and Zhu, Xuan",2015,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/9491"" target=""_blank"">リンク</a>"
-Fast Interactive Object Annotation with Curve-GCN,"Ling, Huan, Gao, Jun, Kar, Amlan, Chen, Wenzheng, and Fidler, Sanja",2019,"<a href=""https://arxiv.org/abs/1903.06874"" target=""_blank"">arxiv</a>"
-Computational Methods of Feature Selection,"Liu, Huan, and Motoda, Hiroshi",2007,"<a href=""https://www.amazon.co.jp/dp/1584888784"" target=""_blank"">amazon</a>"
-Feature Selection for Knowledge Discovery and Data Mining,"Liu, Huan, and Motoda, Hiroshi",2012,"<a href=""https://www.amazon.com/dp/079238198X"" target=""_blank"">amazon</a>"
-Chemi-net: a graph convolutional network for accurate drug property prediction,"Liu, Ke, Sun, Xiangyan, Jia, Lei, Ma, Jun, Xing, Haoming, et al",2018a,"<a href=""https://arxiv.org/abs/1803.06236"" target=""_blank"">arxiv</a>"
-Hyperbolic Graph Neural Networks,"Liu, Qi, Nickel, Maximilian, and Kiela, Douwe",2019a,"<a href=""https://arxiv.org/abs/1910.12892"" target=""_blank"">arxiv</a>"
-Alleviating the Inconsistency Problem of Applying Graph Neural Network to Fraud Detection,"Liu, Zhiwei, Dou, Yingtong, Yu, Philip S, Deng, Yutong, and Peng, Hao",2020,"<a href=""https://arxiv.org/abs/2005.00625"" target=""_blank"">arxiv</a>"
-GeniePath: Graph Neural Networks with Adaptive Receptive Paths,"Liu, Ziqi, Chen, Chaochao, Li, Longfei, Zhou, Jun, Li, Xiaolong, et al",2019b,"<a href=""https://arxiv.org/abs/1802.00910"" target=""_blank"">arxiv</a>"
-Heterogeneous Graph Neural Networks for Malicious Account Detection,"Liu, Ziqi, Chen, Chaochao, Yang, Xinxing, Zhou, Jun, Li, Xiaolong, et al",2018b,"<a href=""https://arxiv.org/abs/2002.12307"" target=""_blank"">arxiv</a>"
-Towards Efficient Large-Scale Graph Neural Network Computing,"Ma, Lingxiao, Yang, Zhi, Miao, Youshan, Xue, Jilong, Wu, Ming, et al",2018a,"<a href=""https://arxiv.org/abs/1810.08403"" target=""_blank"">arxiv</a>"
-NeuGraph: Parallel Deep Neural Network Computation on Large Graphs,"Ma, Lingxiao, Yang, Zhi, Miao, Youshan, Xue, Jilong, Wu, Ming, et al",2019a,"<a href=""https://www.usenix.org/conference/atc19/presentation/ma"" target=""_blank"">リンク</a>"
-Constrained Generation of Semantically Valid Graphs via Regularizing Variational Autoencoders,"Ma, Tengfei, Chen, Jie, and Xiao, Cao",2018b,"<a href=""https://arxiv.org/abs/1809.02630"" target=""_blank"">arxiv</a>"
-Drug Similarity Integration Through Attentive Multi-view Graph Auto-Encoders,"Ma, Tengfei, Xiao, Cao, Zhou, Jiayu, and Wang, Fei",2018c,"<a href=""https://arxiv.org/abs/1804.10850"" target=""_blank"">arxiv</a>"
-Streaming Graph Neural Networks,"Ma, Yao, Guo, Ziyi, Ren, Zhaocun, Tang, Jiliang, and Yin, Dawei",2020b,"<a href=""https://arxiv.org/abs/1810.10627"" target=""_blank"">arxiv</a>"
-Multi-Dimensional Network Embedding with Hierarchical Structure,"Ma, Yao, Ren, Zhaochun, Jiang, Ziheng, Tang, Jiliang, and Yin, Dawei",2018d,"<a href=""https://dl.acm.org/doi/10.1145/3159652.3159680"" target=""_blank"">リンク</a>"
-Multi-dimensional Graph Convolutional Networks,"Ma, Yao, Wang, Suhang, Aggarwal, Chara C, Yin, Dawei, and Tang, Jiliang",2019c,"<a href=""https://arxiv.org/abs/1808.06099"" target=""_blank"">arxiv</a>"
-Graph Convolutional Networks with EigenPooling,"Ma, Yao, Wang, Suhang, Aggarwal, Charu C., and Tang, Jiliang",2019b,"<a href=""https://arxiv.org/abs/1904.13107"" target=""_blank"">arxiv</a>"
-Attacking Graph Convolutional Networks via Rewiring,"Ma, Yao, Wang, Suhang, Derr, Tyler, Wu, Lingfei, and Tang, Jiliang",2019d,"<a href=""https://arxiv.org/abs/1906.03750"" target=""_blank"">arxiv</a>"
-Preserving Local and Global Information for Network Embedding,"Ma, Yao, Wang, Suhang, Ren, ZhaoChun, Yin, Dawei, and Tang, Jiliang",2017,"<a href=""https://arxiv.org/abs/1710.07266"" target=""_blank"">arxiv</a>"
-Rectifier nonlinearities improve neural network acoustic models,"Maas, Andrew L, Hannun, Awni Y, and Ng, Andrew Y",2013,"<a href=""https://www.stateoftheart.ai/papers/73d06dc5-1953-41bb-be13-71102341b93e"" target=""_blank"">リンク</a>"
-Exploiting Semantics in Neural Machine Translation with Graph Convolutional Networks,"Marcheggiani, Diego, Bastings, Joost, and Titov, Ivan",2018,"<a href=""https://arxiv.org/abs/1804.08313"" target=""_blank"">arxiv</a>"
-Encoding Sentences with Graph Convolutional Networks for Semantic Role Labeling,"Marcheggiani, Diego, and Titov, Ivan",2017,"<a href=""https://arxiv.org/abs/1703.04826"" target=""_blank"">arxiv</a>"
-A Logical Calculus of the Ideas Immanent in Nervous Activity,"McCulloch, Warren S, and Pitts, Walter",1943,"<a href=""https://home.csulb.edu/~cwallis/382/readings/482/mccolloch.logical.calculus.ideas.1943.pdf"" target=""_blank"">PDF</a>"
-Link Prediction via Matrix Factorization,"Menon, Aditya Krishna, and Elkan, Charles",2011,"<a href=""https://link.springer.com/chapter/10.1007/978-3-642-23783-6_28#preview"" target=""_blank"">リンク</a>"
-Distributed Representations of Words and Phrases and their Compositionality,"Mikolov, Tomas, Sutskever, Ilya, Chen, Kai, Corrado, Greg S, and Dean, Jeff",2013,"<a href=""https://arxiv.org/abs/1310.4546"" target=""_blank"">arxiv</a>"
-WordNet: An Electronic Lexical Database,"Miller, George A",1998,"<a href=""https://www.amazon.co.jp/dp/026206197X"" target=""_blank"">amazon</a>"
-Abusive Language Detection with Graph Convolutional Networks,"Mishra, Pushkar, Del Tredici, Marco, Yannakoudakis, Helen, and Shutova, Ekaterina",2019,"<a href=""https://arxiv.org/abs/1904.04073"" target=""_blank"">arxiv</a>"
-End-to-End Relation Extraction using LSTMs on Sequences and Tree Structures,"Miwa, Makoto, and Bansal, Mohit",2016,"<a href=""https://arxiv.org/abs/1601.00770"" target=""_blank"">arxiv</a>"
-Geometric Matrix Completion with Recurrent Multi-Graph Neural Networks,"Monti, Federico, Bronstein, Michael, and Bresson, Xavier",2017,"<a href=""https://arxiv.org/abs/1704.06803"" target=""_blank"">arxiv</a>"
-Fake News Detection on Social Media using Geometric Deep Learning,"Monti, Federico, Frasca, Fabrizio, Eynard, Davide, Mannion, Damon, and Bronstein, Michael M",2019,"<a href=""https://arxiv.org/abs/1902.06673"" target=""_blank"">arxiv</a>"
-Hierarchical Probabilistic Neural Network Language Model,"Morin, Frederic, and Bengio, Yoshua",2005,"<a href=""https://proceedings.mlr.press/r5/morin05a.html"" target=""_blank"">リンク</a>"
-Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks,"Morris, Christopher, Ritzert, Martin, Fey, Matthias, Hamilton, William L, Lenssen, Jan Eric, et al",2019,"<a href=""https://arxiv.org/abs/1810.02244"" target=""_blank"">arxiv</a>"
-A survey of graphs in natural language processing,"Nastase, Vivi, Mihalcea, Rada, and Radev, Dragomir R",2015,"<a href=""https://web.eecs.umich.edu/~mihalcea/papers/nastase.jnle15.pdf"" target=""_blank"">PDF</a>"
-Learning Attention-based Embeddings for Relation Prediction in Knowledge Graphs,"Nathani, Deepak, Chauhan, Jatin, Sharma, Charu, and Kaul, Manohar",2019,"<a href=""https://arxiv.org/abs/1906.01195"" target=""_blank"">arxiv</a>"
-Iterative Classification in Relational Data,"Neville, Jennifer, and Jensen, David",2000,"<a href=""https://aaai.org/papers/ws00-06-007-iterative-classification-in-relational-data/"" target=""_blank"">リンク</a>"
-Networks: An Introduction,"Newman, Mark",2018,"<a href=""https://www.amazon.co.jp/dp/0198839979"" target=""_blank"">amazon</a>"
-Modularity and community structure in networks,"Newman, Mark E.J",2006,"<a href=""https://arxiv.org/abs/physics/0602124"" target=""_blank"">arxiv</a>"
-On Spectral Clustering: Analysis and an algorithm,"Ng, Andrew Y., Jordan, Michael I., and Weiss, Yair",2002,"<a href=""https://papers.nips.cc/paper_files/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html"" target=""_blank"">リンク</a>"
-Sparse autoencoder,"Ng, Andrew, et al",2011,"<a href=""https://web.stanford.edu/class/cs294a/sparseAutoencoder_2011new.pdf"" target=""_blank"">PDF</a>"
-Continuous-Time Dynamic Network Embeddings,"Nguyen, Giang Hoang, Lee, John Boaz, Rossi, Ryan A., Ahmed, Nesreen K., et al",2018,"<a href=""https://dl.acm.org/doi/pdf/10.1145/3184558.3191526"" target=""_blank"">リンク</a>"
-GraphDTA: Predicting drug-target binding affinity with graph neural networks,"Nguyen, Thin, Le, Hang, and Venkatesh, Svetha",2020,"<a href=""https://www.biorxiv.org/content/10.1101/684662"" target=""_blank"">リンク</a>"
-A Review of Relational Machine Learning for Knowledge Graphs,"Nickel, Maximilian, Murphy, Kevin, Tresp, Volker, and Gabrilovich, Evgeniy",2015,"<a href=""https://arxiv.org/abs/1503.00759"" target=""_blank"">arxiv</a>"
-Learning Convolutional Neural Networks for Graphs,"Niepert, Mathias, Ahmed, Mohamed, and Kutzkov, Konstantin",2016,"<a href=""https://arxiv.org/abs/1605.05273"" target=""_blank"">arxiv</a>"
-Learning Conditioned Graph Structures for Interpretable Visual Question Answering,"Norcliffe-Brown, Will, Vafeias, Stathis, and Parisot, Sarah",2018,"<a href=""https://arxiv.org/abs/1806.07243"" target=""_blank"">arxiv</a>"
-Activation Functions: Comparison of trends in Practice and Research for Deep Learning,"Nwankpa, Chigozie, Ijomah, Winifred, Gachagan, Anthony, and Marshall, Stephen",2018,"<a href=""https://arxiv.org/abs/1811.03378"" target=""_blank"">arxiv</a>"
-Sparse coding with an overcomplete basis set: A strategy employed by V1?,"Olshausen, Bruno A., and Field, David J",1997,"<a href=""https://www.sciencedirect.com/science/article/pii/S0042698997001697"" target=""_blank"">リンク</a>"
-Graph Neural Networks Exponentially Lose Expressive Power for Node Classification,"Oono, Kenta, and Suzuki, Taiji",2020,"<a href=""https://arxiv.org/abs/1905.10947"" target=""_blank"">arxiv</a>"
-Asymmetric Transitivity Preserving Graph Embedding,"Ou, Mingdong, Cui, Peng, Pei, Jian, Zhang, Ziwei, and Zhu, Wenwu",2016,"<a href=""https://www.kdd.org/kdd2016/papers/files/rfp0184-ouA.pdf"" target=""_blank"">PDF</a>"
-"Monte Carlo Theory, Methods and Examples","Owen, Art B",2013,"<a href=""https://artowen.su.domains/mc/"" target=""_blank"">リンク</a>"
-Adversarially Regularized Graph Autoencoder for Graph Embedding,"Pan, Shirui, Hu, Ruiqi, Long, Guodong, Jiang, Jing, Yao, Lina, et al",2018,"<a href=""https://arxiv.org/abs/1802.04407"" target=""_blank"">arxiv</a>"
-EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs,"Pareja, Aldo, Domeniconi, Giacomo, Chen, Jie, Ma, Tengfei, Suzumura, Toy-otaro, et al",2019,"<a href=""https://arxiv.org/abs/1902.10191"" target=""_blank"">arxiv</a>"
-Disease Prediction using Graph Convolutional Networks: Application to Autism Spectrum Disorder and Alzheimer's Disease,"Parisot, Sarah, Ktena, Sofia Ira, Ferrante, Enzo, Lee, Matthew, Guerrero, Ri-cardo, et al",2018,"<a href=""https://arxiv.org/abs/1806.01738"" target=""_blank"">arxiv</a>"
-Estimating Node Importance in Knowledge Graphs Using Graph Neural Networks,"Park, Namyong, Kan, Andrey, Dong, Xin Luna, Zhao, Tong, and Faloutsos, Christos",2019,"<a href=""https://arxiv.org/abs/1905.08865"" target=""_blank"">arxiv</a>"
-"PyTorch: An Imperative Style, High-Performance Deep Learning Library","Paszke, Adam, Gross, Sam, Chintala, Soumith, Chanan, Gregory, Yang, Edward, et al",2019,"<a href=""https://arxiv.org/abs/1912.01703"" target=""_blank"">arxiv</a>"
-The graph-tool python library,"Peixoto, Tiago P",2014,"<a href=""https://graph-tool.skewed.de/"" target=""_blank"">リンク</a>"
-Self-Supervised Graph Representation Learning via Global Context Prediction,"Peng, Zhen, Dong, Yixiang, Luo, Minnan, Wu, Xiao-Ming, and Zheng, Qinghua",2020,"<a href=""https://arxiv.org/abs/2003.01604"" target=""_blank"">arxiv</a>"
-DeepWalk: Online Learning of Social Representations,"Perozzi, Bryan, Al-Rfou, Rami, and Skiena, Steven",2014,"<a href=""https://arxiv.org/abs/1403.6652"" target=""_blank"">arxiv</a>"
-GSPBOX: A toolbox for signal processing on graphs,"Perraudin, Nathanael̈, Paratte, Johan, Shuman, David, Martin, Lionel, Kalo-folias, Vassilis, et al",2014,"<a href=""https://arxiv.org/abs/1408.5781"" target=""_blank"">arxiv</a>"
-Zur Theorie der Matrices,"Perron, Oskar",1907,"<a href=""https://eudml.org/doc/158317"" target=""_blank"">リンク</a>"
-Deep contextualized word representations,"Peters, Matthew E, Neumann, Mark, Iyyer, Mohit, Gardner, Matt, Clark, Christopher, et al",2018,"<a href=""https://arxiv.org/abs/1802.05365"" target=""_blank"">arxiv</a>"
-The Perron-Frobenius theorem: some of its applications,"Pillai, S Unnikrishna, Suel, Torsten, and Cha, Seunghun",2005,"<a href=""https://ieeexplore.ieee.org/document/1406483"" target=""_blank"">リンク</a>"
-A hybrid model for spatiotemporal forecasting of PM2.5 based on graph convolutional neural network and long short-term memory,"Qi, Yanlin, Li, Qi, Karimian, Hamed, and Liu, Di",2019,"<a href=""https://www.sciencedirect.com/science/article/abs/pii/S0048969719303821?via%3Dihub"" target=""_blank"">リンク</a>"
-"Network Embedding as Matrix Factorization: Unifying DeepWalk, LINE, PTE, and node2vec","Qiu, Jiezhong, Dong, Yuxiao, Ma, Hao, Li, Jian, Wang, Kuansan, et al",2018b,"<a href=""https://arxiv.org/abs/1710.02971"" target=""_blank"">arxiv</a>"
-DeepInf: Social Influence Prediction with Deep Learning,"Qiu, Jiezhong, Tang, Jian, Ma, Hao, Dong, Yuxiao, Wang, Kuansan, et al",2018a,"<a href=""https://arxiv.org/abs/1807.05560"" target=""_blank"">arxiv</a>"
-Improving Language Understanding by Generative Pre-Training,"Radford, Alec, Narasimhan, Karthik, Salimans, Tim, Sutskever, Ilya",2018,"<a href=""https://paperswithcode.com/paper/improving-language-understanding-by"" target=""_blank"">リンク</a>"
-Language Models are Unsupervised Multitask Learners,"Radford, Alec, Wu, Jeff, Child, Rewon, Luan, David, Amodei, Dario, et al",2019,"<a href=""https://paperswithcode.com/paper/language-models-are-unsupervised-multitask"" target=""_blank"">リンク</a>"
-Adversarial Attacks and Defenses in Deep Learning,"Ren, Kui, Zheng, Tianhang, Qin, Zhan, and Liu, Xue",2020,"<a href=""https://www.sciencedirect.com/science/article/pii/S209580991930503X"" target=""_blank"">リンク</a>"
-Recommender Systems,"Resnick, Paul, and Varian, Hal R",1997,"<a href=""https://dl.acm.org/doi/10.1145/245108.245121"" target=""_blank"">リンク</a>"
-struc2vec: Learning Node Representations from Structural Identity,"Ribeiro, Leonardo F.R., Saverese, Pedro H.P., and Figueiredo, Daniel R",2017,"<a href=""https://arxiv.org/abs/1704.03165"" target=""_blank"">arxiv</a>"
-DropEdge: Towards Deep Graph Convolutional Networks on Node Classification,"Rong, Yu, Huang, Wenbing, Xu, Tingyang, and Huang, Junzhou",2020,"<a href=""https://arxiv.org/abs/1907.10903"" target=""_blank"">arxiv</a>"
-The perceptron: A probabilistic model for information storage and organization in the brain,"Rosenblatt, Frank",1958,"<a href=""https://134.208.26.59/INA/A%20probabilistic%20model.pdf"" target=""_blank"">PDF</a><br><a href=""https://pdfs.semanticscholar.org/865f/b2cfe6fdb7af2c663ef346ea05889f237108.pdf"" target=""_blank"">PDF</a>"
-HONE: Higher-Order Network Embeddings,"Rossi, Ryan A, Ahmed, Nesreen K, Koh, Eunyee, Kim, Sungchul, Rao, Anup, et al",2018,"<a href=""https://arxiv.org/abs/1801.09303"" target=""_blank"">arxiv</a>"
-The Network Data Repository with Interactive Graph Analytics and Visualization,"Rossi, Ryan A., and Ahmed, Nesreen K",2015,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/9277"" target=""_blank"">リンク</a>"
-Nonlinear Dimensionality Reduction by Locally Linear Embedding,"Roweis, Sam T, and Saul, Lawrence K",2000,"<a href=""https://www.robots.ox.ac.uk/~az/lectures/ml/lle.pdf"" target=""_blank"">PDF</a>"
-Learning representations by back-propagating errors,"Rumelhart, David E, Hinton, Geoffrey E, and Williams, Ronald J",1986,"<a href=""https://www.semanticscholar.org/paper/Learning-representations-by-back-propagating-errors-Rumelhart-Hinton/052b1d8ce63b07fec3de9dbb583772d860b7c769"" target=""_blank"">リンク</a>"
-Unveiling the potential of Graph Neural Networks for network modeling and optimization in SDN,"Rusek, Krzysztof, Suar̀ez-Varela, Josè, Mestres, Albert, Barlet-Ros, Pere, and Cabellos-Aparicio, Albert",2019,"<a href=""https://arxiv.org/abs/1901.08113"" target=""_blank"">arxiv</a>"
-Inter-sentence Relation Extraction with Document-level Graph Convolutional Neural Network,"Sahu, Sunil Kumar, Christopoulou, Fenia, Miwa, Makoto, and Ananiadou, Sophia",2019,"<a href=""https://arxiv.org/abs/1906.04684"" target=""_blank"">arxiv</a>"
-"Structural equivalence: Meaning and definition, computation and application","Sailer, Lee Douglas",1978,"<a href=""https://www.sciencedirect.com/science/article/abs/pii/037887337890014X?via%3Dihub"" target=""_blank"">リンク</a>"
-FastDTW: Toward Accurate Dynamic Time Warping in Linear Time and Space,"Salvador, Stan, and Chan, Philip",2007,"<a href=""https://cs.fit.edu/~pkc/papers/tdm04.pdf"" target=""_blank"">PDF</a>"
-Dynamic Graph Representation Learning via Self-Attention Networks,"Sankar, Aravind, Wu, Yanhong, Gou, Liang, Zhang, Wei, and Yang, Hao",2018,"<a href=""https://arxiv.org/abs/1812.09430"" target=""_blank"">arxiv</a>"
-The Graph Neural Network Model,"Scarselli, Franco, Gori, Marco, Tsoi, Ah Chung, Hagenbuchner, Markus, and Monfardini, Gabriele",2008,"<a href=""https://ro.uow.edu.au/cgi/viewcontent.cgi?article=10501&context=infopapers"" target=""_blank"">リンク</a>"
-Graph neural networks for ranking Web pages,"Scarselli, Franco, Yong, Sweah Liang, Gori, Marco, Hagenbuchner, Markus, Tsoi, Ah Chung, and Maggini, Marco",2005,"<a href=""https://www.semanticscholar.org/paper/Graph-neural-networks-for-ranking-Web-pages-Scarselli-Yong/769bfd4a4b45979cf83bb56c054ebcaaaf8b35d7"" target=""_blank"">リンク</a>"
-Modeling Relational Data with Graph Convolutional Networks,"Schlichtkrull, Michael, Kipf, Thomas N, Bloem, Peter, Van Den Berg, Rianne, Titov, Ivan, et al",2018,"<a href=""https://arxiv.org/abs/1703.06103"" target=""_blank"">arxiv</a>"
-Conversational Speech Transcription Using Context-Dependent Deep Neural Networks,"Seide, Frank, Li, Gang, and Yu, Dong",2011,"<a href=""https://www.isca-archive.org/interspeech_2011/seide11_interspeech.html"" target=""_blank"">リンク</a>"
-Collective Classification in Network Data,"Sen, Prithviraj, Namata, Galileo, Bilgic, Mustafa, Getoor, Lise, Galligher, Brian, et al",2008,"<a href=""https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2157"" target=""_blank"">リンク</a>"
-End-to-end Structure-Aware Convolutional Networks for Knowledge Base Completion,"Shang, Chao, Tang, Yun, Huang, Jing, Bi, Jinbo, He, Xiaodong, et al",2019a,"<a href=""https://arxiv.org/abs/1811.04441"" target=""_blank"">arxiv</a>"
-Pre-training of Graph Augmented Transformers for Medication Recommendation,"Shang, Junyuan, Ma, Tengfei, Xiao, Cao, and Sun, Jimeng",2019c,"<a href=""https://arxiv.org/abs/1906.00346"" target=""_blank"">arxiv</a>"
-GAMENet: Graph Augmented MEmory Networks for Recommending Medication Combination,"Shang, Junyuan, Xiao, Cao, Ma, Tengfei, Li, Hongyan, and Sun, Jimeng",2019b,"<a href=""https://arxiv.org/abs/1809.01852"" target=""_blank"">arxiv</a>"
-Overlapping Community Detection with Graph Neural Networks,"Shchur, Oleksandr, and Günnemann, Stephan",2019,"<a href=""https://arxiv.org/abs/1909.12201"" target=""_blank"">arxiv</a>"
-Heterogeneous Information Network Embedding for Recommendation,"Shi, Chuan, Hu, Binbin, Zhao, Wayne Xin, and Philip, S Yu",2018a,"<a href=""https://arxiv.org/abs/1711.10730"" target=""_blank"">arxiv</a>"
-Normalized Cuts and Image Segmentation,"Shi, Jianbo, and Malik, Jitendra",2000,"<a href=""https://people.eecs.berkeley.edu/~malik/papers/SM-ncut.pdf"" target=""_blank"">PDF</a>"
-Skeleton-Based Action Recognition With Directed Graph Neural Networks,"Shi, Lei, Zhang, Yifan, Cheng, Jian, and Lu, Hanqing",2019a,"<a href=""https://openaccess.thecvf.com/content_CVPR_2019/html/Shi_Skeleton-Based_Action_Recognition_With_Directed_Graph_Neural_Networks_CVPR_2019_paper.html"" target=""_blank"">リンク</a>"
-Two-Stream Adaptive Graph Convolutional Networks for Skeleton-Based Action Recognition,"Shi, Lei, Zhang, Yifan, Cheng, Jian, and Lu, Hanqing",2019b,"<a href=""https://arxiv.org/abs/1805.07694"" target=""_blank"">arxiv</a>"
-mvn2vec: Preservation and Collaboration in Multi-View Network Embedding,"Shi, Yu, Han, Fangqiu, He, Xinwei, He, Xinran, Yang, Carl, et al",2018b,"<a href=""https://arxiv.org/abs/1801.06597"" target=""_blank"">arxiv</a>"
-The Emerging Field of Signal Processing on Graphs: Extending High-Dimensional Data Analysis to Networks and Other Irregular Domains,"Shuman, David I, Narang, Sunil K, Frossard, Pascal, Ortega, Antonio, and Vandergheynst, Pierre",2013,"<a href=""https://arxiv.org/abs/1211.0053"" target=""_blank"">arxiv</a>"
-An Attention Enhanced Graph Convolutional LSTM Network for Skeleton-Based Action Recognition,"Si, Chenyang, Chen, Wentao, Wang, Wei, Wang, Liang, and Tan, Tie-niu",2019,"<a href=""https://arxiv.org/abs/1902.09130"" target=""_blank"">arxiv</a>"
-Skeleton-Based Action Recognition with Spatial Reasoning and Temporal Stack Learning,"Si, Chenyang, Jing, Ya, Wang, Wei, Wang, Liang, and Tan, Tieniu",2018,"<a href=""https://arxiv.org/abs/1805.02335"" target=""_blank"">arxiv</a>"
-Dynamic Edge-Conditioned Filters in Convolutional Neural Networks on Graphs,"Simonovsky, Martin, and Komodakis, Nikos",2017,"<a href=""https://arxiv.org/abs/1704.02901"" target=""_blank"">arxiv</a>"
-GraphVAE: Towards Generation of Small Graphs Using Variational Autoencoders,"Simonovsky, Martin, and Komodakis, Nikos",2018,"<a href=""https://arxiv.org/abs/1802.03480"" target=""_blank"">arxiv</a>"
-Very Deep Convolutional Networks for Large-Scale Image Recognition,"Simonyan, Karen, and Zisserman, Andrew",2014,"<a href=""https://arxiv.org/abs/1409.1556"" target=""_blank"">arxiv</a>"
-AMR-to-text Generation with Synchronous Node Replacement Grammar,"Song, Linfeng, Peng, Xiaochang, Zhang, Yue, Wang, Zhiguo, and Gildea, Daniel",2017,"<a href=""https://arxiv.org/abs/1702.00500"" target=""_blank"">arxiv</a>"
-Exploring Graph-structured Passage Representation for Multi-hop Reading Comprehension with Graph Neural Networks,"Song, Linfeng, Wang, Zhiguo, Yu, Mo, Zhang, Yue, Florian, Radu, et al",2018a,"<a href=""https://arxiv.org/abs/1809.02040"" target=""_blank"">arxiv</a>"
-A Graph-to-Sequence Model for AMR-to-Text Generation,"Song, Linfeng, Zhang, Yue, Wang, Zhiguo, and Gildea, Daniel",2018b,"<a href=""https://arxiv.org/abs/1805.02473"" target=""_blank"">arxiv</a>"
-N-ary Relation Extraction using Graph State LSTM,"Song, Linfeng, Zhang, Yue, Wang, Zhiguo, and Gildea, Daniel",2018c,"<a href=""https://arxiv.org/abs/1808.09101"" target=""_blank"">arxiv</a>"
-Dropout: A Simple Way to Prevent Neural Networks from Overfitting,"Srivastava, Nitish, Hinton, Geoffrey, Krizhevsky, Alex, Sutskever, Ilya, and Salakhutdinov, Ruslan",2014,"<a href=""https://dl.acm.org/doi/pdf/10.5555/2627435.2670313"" target=""_blank"">リンク</a>"
-Joint Type Inference on Entities and Relations via Graph Convolutional Networks,"Sun, Changzhi, Gong, Yeyun, Wu, Yuanbin, Gong, Ming, Jiang, Daxin, et al",2019a,"<a href=""https://aclanthology.org/P19-1131/"" target=""_blank"">リンク</a>"
-InfoGraph: Unsupervised and Semi-supervised Graph-Level Representation Learning via Mutual Information Maximization,"Sun, Fan-Yun, Hoffmann, Jordan, and Tang, Jian",2019b,"<a href=""https://arxiv.org/abs/1908.01000"" target=""_blank"">arxiv</a>"
-Multi-Stage Self-Supervised Learning for Graph Convolutional Networks on Graphs with Few Labels,"Sun, Ke, Lin, Zhouchen, and Zhu, Zhanxing",2019c,"<a href=""https://arxiv.org/abs/1902.11038"" target=""_blank"">arxiv</a>"
-Axiomatic Attribution for Deep Networks,"Sundararajan, Mukund, Taly, Ankur, and Yan, Qiqi",2017,"<a href=""https://arxiv.org/abs/1703.01365"" target=""_blank"">arxiv</a>"
-Sequence to Sequence Learning with Neural Networks,"Sutskever, I, Vinyals, O, and Le, QV",2014,"<a href=""https://arxiv.org/abs/1409.3215"" target=""_blank"">arxiv</a>"
-Policy Gradient Methods for Reinforcement Learning with Function Approximation,"Sutton, Richard S, McAllester, David A, Singh, Satinder P, and Mansour, Yishay",2000,"<a href=""https://papers.nips.cc/paper_files/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html"" target=""_blank"">リンク</a>"
-Rethinking the Inception Architecture for Computer Vision,"Szegedy, Christian, Vanhoucke, Vincent, Ioffe, Sergey, Shlens, Jon, and Wo-jna, Zbigniew",2016,"<a href=""https://arxiv.org/abs/1512.00567"" target=""_blank"">arxiv</a>"
-Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks,"Tai, Kai Sheng, Socher, Richard, and Manning, Christopher D",2015,"<a href=""https://arxiv.org/abs/1503.00075"" target=""_blank"">arxiv</a>"
-Introduction To Data Mining,"Tan, Pang-Ning, Steinbach, Michael, and Kumar, Vipin",2021,"<a href=""https://www.amazon.co.jp/dp/9354491049"" target=""_blank"">amazon</a>"
-LINE: Large-scale Information Network Embedding,"Tang, Jian, Qu, Meng, Wang, Mingzhe, Zhang, Ming, Yan, Jun, et al",2015,"<a href=""https://arxiv.org/abs/1503.03578"" target=""_blank"">arxiv</a>"
-Node Classification in Signed Social Networks,"Tang, Jiliang, Aggarwal, Charu, and Liu, Huan",2016a,"<a href=""https://www.semanticscholar.org/paper/Node-Classification-in-Signed-Social-Networks-Tang-Aggarwal/41a08affbb5c847d6f2a82d5ae4be9ed5df52353"" target=""_blank"">リンク</a>"
-Feature Selection for Classification: A Review,"Tang, Jiliang, Alelyani, Salem, and Liu, Huan",2014a,"<a href=""https://www.semanticscholar.org/paper/Feature-Selection-for-Classification%3A-A-Review-Tang-Alelyani/ce2fa0dbf76d20369f793c11d2d8803880a9ab2d"" target=""_blank"">リンク</a>"
-A Survey of Signed Network Mining in Social Media,"Tang, Jiliang, Chang, Yi, Aggarwal, Charu, and Liu, Huan",2016b,"<a href=""https://arxiv.org/abs/1511.07569"" target=""_blank"">arxiv</a>"
-Exploiting Homophily Effect for Trust Prediction,"Tang, Jiliang, Hu, Xia, Gao, Huiji, and Liu, Huan",2013a,"<a href=""https://www.semanticscholar.org/paper/Exploiting-homophily-effect-for-trust-prediction-Tang-Gao/04b3e9e7abe8b2d0be8ddfe080750bc4cb9473d9"" target=""_blank"">リンク</a>"
-Unsupervised Feature Selection for Multi-View Data in Social Media,"Tang, Jiliang, Hu, Xia, Gao, Huiji, and Liu, Huan",2013b,"<a href=""https://www.semanticscholar.org/paper/Unsupervised-Feature-Selection-for-Multi-View-Data-Tang-Hu/27e2af1d9775974485ff0b642aec57326a791411"" target=""_blank"">リンク</a>"
-Is Distrust the Negation of Trust? The Value of Distrust in Social Media,"Tang, Jiliang, Hu, Xia, and Liu, Huan",2014b,"<a href=""https://www.semanticscholar.org/paper/Is-distrust-the-negation-of-trust%3A-the-value-of-in-Tang-Hu/bdde4a7c07d6fec4516d545c6629749c1b2a088f"" target=""_blank"">リンク</a>"
-Unsupervised Feature Selection for Linked Social Media Data,"Tang, Jiliang, and Liu, Huan",2012b,"<a href=""https://www.semanticscholar.org/paper/Unsupervised-feature-selection-for-linked-social-Tang-Liu/ec8c47ef5797976594c7b784dcad6776743ef014"" target=""_blank"">リンク</a>"
-Feature Selection with Linked Data in Social Media,"Tang, Jiliang, and Liu, Huan",2012a,"<a href=""https://epubs.siam.org/doi/10.1137/1.9781611972825.11"" target=""_blank"">リンク</a>"
-Relational Learning via Latent Social Dimensions,"Tang, Lei, and Liu, Huan",2009,"<a href=""https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=Uex-uzMAAAAJ&citation_for_view=Uex-uzMAAAAJ:d1gkVwhDpl0C"" target=""_blank"">リンク</a>"
-Transferring Robustness for Graph Neural Network Against Poisoning Attacks,"Tang, Xianfeng, Li, Yandong, Sun, Yiwei, Yao, Huaxiu, Mitra, Prasenjit, and Wang, Suhang",2019,"<a href=""https://arxiv.org/abs/1908.07558"" target=""_blank"">arxiv</a>"
-Investigating and Mitigating Degree-Related Biases in Graph Convolutional Networks,"Tang, Xianfeng, Yao, Huaxiu, Sun, Yiwei, Wang, Yiqi, Tang, Jiliang, et al",2020,"<a href=""https://arxiv.org/abs/2006.15643"" target=""_blank"">arxiv</a>"
-A Global Geometric Framework for Nonlinear Dimensionality Reduction,"Tenenbaum, Joshua B, De Silva, Vin, and Langford, John C",2000,"<a href=""https://www.robots.ox.ac.uk/~az/lectures/ml/tenenbaum-isomap-Science2000.pdf"" target=""_blank"">PDF</a>"
-Graph-Structured Representations for Visual Question Answering,"Teney, Damien, Liu, Lingqiao, and van den Hengel, Anton",2017,"<a href=""https://arxiv.org/abs/1609.05600"" target=""_blank"">arxiv</a>"
-Chemical Graph Theory,"Trinajstic, Nenad",2018,"<a href=""https://www.amazon.co.jp/dp/0367450399"" target=""_blank"">amazon</a>"
-Structural Deep Embedding for Hyper-Networks,"Tu, Ke, Cui, Peng, Wang, Xiao, Wang, Fei, and Zhu, Wenwu",2018,"<a href=""https://arxiv.org/abs/1711.10146"" target=""_blank"">arxiv</a>"
-Multi-hop Reading Comprehension across Multiple Documents by Reasoning over Heterogeneous Graphs,"Tu, Ming, Wang, Guangtao, Huang, Jing, Tang, Yun, He, Xiaodong, et al",2019,"<a href=""https://arxiv.org/abs/1905.07374"" target=""_blank"">arxiv</a>"
-Composition-based Multi-Relational Graph Convolutional Networks,"Vashishth, Shikhar, Sanyal, Soumya, Nitin, Vikram, and Talukdar, Partha",2019,"<a href=""https://arxiv.org/abs/1911.03082"" target=""_blank"">arxiv</a>"
-Attention Is All You Need,"Vaswani, Ashish, Shazeer, Noam, Parmar, Niki, Uszkoreit, Jakob, Jones, Llion, et al",2017,"<a href=""https://arxiv.org/abs/1706.03762"" target=""_blank"">arxiv</a>"
-Graph Attention Networks,"Veličković, Petar, Cucurull, Guillem, Casanova, Arantxa, Romero, Adriana, Lio, Pietro, et al",2017,"<a href=""https://arxiv.org/abs/1710.10903"" target=""_blank"">arxiv</a>"
-Deep Graph Infomax,"Veličković, Petar, Fedus, William, Hamilton, William L, Lio, Pietro, et al",2019,"<a href=""https://arxiv.org/abs/1809.10341"" target=""_blank"">arxiv</a>"
-A Neural Conversational Model,"Vinyals, Oriol, and Le, Quoc",2015,"<a href=""https://arxiv.org/abs/1506.05869"" target=""_blank"">arxiv</a>"
-The spread of true and false news online,"Vosoughi, Soroush, Roy, Deb, and Aral, Sinan",2018,"<a href=""https://www.science.org/doi/10.1126/science.aap9559"" target=""_blank"">リンク</a>"
-Structural Deep Network Embedding,"Wang, Daixin, Cui, Peng, and Zhu, Wenwu",2016,"<a href=""https://dl.acm.org/doi/10.1145/2939672.2939753"" target=""_blank"">リンク</a>"
-Community discovery using nonnegative matrix factorization,"Wang, Fei, Li, Tao, Wang, Xin, Zhu, Shenghuo, and Ding, Chris",2011,"<a href=""https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=df89be8356e1f2c6bd2269ef6fb1bc326c149e50"" target=""_blank"">リンク</a>"
-MCNE: An End-to-End Framework for Learning Multiple Conditional Network Representations of Social Network,"Wang, Hao, Xu, Tong, Liu, Qi, Lian, Defu, Chen, Enhong, et al",2019a,"<a href=""https://arxiv.org/abs/1905.11013"" target=""_blank"">arxiv</a>"
-GraphGAN: Graph Representation Learning with Generative Adversarial Nets,"Wang, Hongwei, Wang, Jia, Wang, Jialin, Zhao, Miao, Zhang, Weinan, et al",2018a,"<a href=""https://arxiv.org/abs/1711.08267"" target=""_blank"">arxiv</a>"
-Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems,"Wang, Hongwei, Zhang, Fuzheng, Zhang, Mengdi, Leskovec, Jure, Zhao, Miao, et al",2019b,"<a href=""https://arxiv.org/abs/1905.04413"" target=""_blank"">arxiv</a>"
-Knowledge Graph Convolutional Networks for Recommender Systems,"Wang, Hongwei, Zhao, Miao, Xie, Xing, Li, Wenjie, and Guo, Minyi",2019c,"<a href=""https://arxiv.org/abs/1904.12575"" target=""_blank"">arxiv</a>"
-FdGars: Fraudster Detection via Graph Convolutional Networks in Online App Review System,"Wang, Jianyu, Wen, Rui, Wu, Chunming, Huang, Yu, and Xion, Jian",2019d,"<a href=""https://dl.acm.org/doi/10.1145/3308560.3316586"" target=""_blank"">リンク</a>"
-"Deep Graph Library: A Graph-Centric, Highly-Performant Package for Graph Neural Networks","Wang, Minjie, Yu, Lingfan, Zheng, Da, Gan, Quan, Gai, Yu, et al",2019e,"<a href=""https://arxiv.org/abs/1909.01315"" target=""_blank"">arxiv</a>"
-Logic Attention Based Neighborhood Aggregation for Inductive Knowledge Graph Embedding,"Wang, Peifeng, Han, Jialong, Li, Chenliang, and Pan, Rong",2019f,"<a href=""https://arxiv.org/abs/1811.01399"" target=""_blank"">arxiv</a>"
-Attributed Signed Network Embedding,"Wang, Suhang, Aggarwal, Charu, Tang, Jiliang, and Liu, Huan",2017a,"<a href=""https://dl.acm.org/doi/10.1145/3132847.3132905"" target=""_blank"">リンク</a>"
-Signed Network Embedding in Social Media,"Wang, Suhang, Tang, Jiliang, Aggarwal, Charu, Chang, Yi, and Liu, Huan",2017b,"<a href=""https://epubs.siam.org/doi/10.1137/1.9781611974973.37"" target=""_blank"">リンク</a>"
-KGAT: Knowledge Graph Attention Network for Recommendation,"Wang, Xiang, He, Xiangnan, Cao, Yixin, Liu, Meng, and Chua, Tat-Seng",2019g,"<a href=""https://arxiv.org/abs/1905.07854"" target=""_blank"">arxiv</a>"
-Neural Graph Collaborative Filtering,"Wang, Xiang, He, Xiangnan, Wang, Meng, Feng, Fuli, and Chua, Tat-Seng",2019h,"<a href=""https://arxiv.org/abs/1905.08108"" target=""_blank"">arxiv</a>"
-Community Preserving Network Embedding,"Wang, Xiao, Cui, Peng, Wang, Jing, Pei, Jian, Zhu, Wenwu, et al",2017c,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/10488"" target=""_blank"">リンク</a>"
-Heterogeneous Graph Attention Network,"Wang, Xiao, Ji, Houye, Shi, Chuan, Wang, Bai, Ye, Yanfang, et al",2019i,"<a href=""https://arxiv.org/abs/1903.07293"" target=""_blank"">arxiv</a>"
-Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs,"Wang, Xiaolong, Ye, Yufei, and Gupta, Abhinav",2018b,"<a href=""https://arxiv.org/abs/1803.08035"" target=""_blank"">arxiv</a>"
-Traffic Flow Prediction via Spatial Temporal Graph Neural Network,"Wang, Xiaoyang, Ma, Yao, Wang, Yiqi, Jin, Wei, Wang, Xin, Tang, et al",2020a,"<a href=""https://dl.acm.org/doi/abs/10.1145/3366423.3380186"" target=""_blank"">リンク</a>"
-One-Class Graph Neural Networks for Anomaly Detection in Attributed Networks,"Wang, Xuhong, Du, Ying, Cui, Ping, and Yang, Yupu",2020b,"<a href=""https://arxiv.org/abs/2002.09594"" target=""_blank"">arxiv</a>"
-Bipartite Network Embedding via Effective Integration of Explicit and Implicit Relations,"Wang, Yaping, Jiao, Pengfei, Wang, Wenjun, Lu, Chunyu, Liu, Hongtao, et al",2019j,"<a href=""https://link.springer.com/chapter/10.1007/978-3-030-18576-3_26"" target=""_blank"">リンク</a>"
-Dynamic Graph CNN for Learning on Point Clouds,"Wang, Yue, Sun, Yongbin, Liu, Ziwei, Sarma, Sanjay E, Bronstein, Michael M., et al",2019k,"<a href=""https://arxiv.org/abs/1801.07829"" target=""_blank"">arxiv</a>"
-Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks,"Wang, Zhichun, Lv, Qingsong, Lan, Xiaohan, and Zhang, Yu",2018c,"<a href=""https://aclanthology.org/D18-1032/"" target=""_blank"">リンク</a>"
-Q-learning,"Watkins, Christopher JCH, and Dayan, Peter",1992,"<a href=""https://link.springer.com/article/10.1007/BF00992698"" target=""_blank"">リンク</a>"
-Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics,"Weber, Mark, Domeniconi, Giacomo, Chen, Jie, Weidele, Daniel Karl I, Bellei, Claudio, et al",2019,"<a href=""https://arxiv.org/abs/1908.02591"" target=""_blank"">arxiv</a>"
-Unsupervised Feature Selection on Networks: A Generative View,"Wei, Xiaokai, Cao, Bokai, and Philip, S Yu",2016,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/10309"" target=""_blank"">リンク</a>"
-Efficient Partial Order Preserving Unsupervised Feature Selection on Networks,"Wei, Xiaokai, Xie, Sihong, and Yu, Philip S",2015,"<a href=""https://epubs.siam.org/doi/10.1137/1.9781611974010.10"" target=""_blank"">リンク</a>"
-The reduction of a graph to canonical form and the algebra which appears therein,"Weisfeiler, B, and Lehman, A",1968,"<a href=""https://www.iti.zcu.cz/wl2018/pdf/wl_paper_translation.pdf"" target=""_blank"">PDF</a>"
-Constructing Datasets for Multi-hop Reading Comprehension Across Documents,"Welbl, Johannes, Stenetorp, Pontus, and Riedel, Sebastian",2018,"<a href=""https://arxiv.org/abs/1710.06481"" target=""_blank"">arxiv</a>"
-Graph CNNs with Motif and Variable Temporal Block for Skeleton-Based Action Recognition,"Wen, Yu-Hui, Gao, Lin, Fu, Hongbo, Zhang, Fang-Lue, and Xia, Shihong",2019,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/4929"" target=""_blank"">リンク</a>"
-The Roots of Backpropagation: From Ordered Derivatives to Neural Networks and Political Forecasting,"Werbos, Paul John",1994,"<a href=""https://www.amazon.co.jp/dp/0471598976"" target=""_blank"">amazon</a>"
-Sex differences in autism spectrum disorders,"Werling, Donna M, and Geschwind, Daniel H",2013,"<a href=""https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4164392/"" target=""_blank"">リンク</a>"
-Convolution Transform,"Widder, David Vernon, and Hirschman, Isidore Isaac",2015,"<a href=""https://www.amazon.co.jp/dp/0691626928"" target=""_blank"">amazon</a>"
-Adversarial Examples for Graph Data: Deep Insights into Attack and Defense,"Wu, Huijun, Wang, Chen, Tyshetskiy, Yuriy, Docherty, Andrew, Lu, Kai, et al",2019,"<a href=""https://www.ijcai.org/proceedings/2019/669"" target=""_blank"">リンク</a>"
-A Comprehensive Survey on Graph Neural Networks,"Wu, Zonghan, Pan, Shirui, Chen, Fengwen, Long, Guodong, Zhang, Chengqi, et al",2020,"<a href=""https://arxiv.org/abs/1901.00596"" target=""_blank"">arxiv</a>"
-Graph Wavelet Neural Network,"Xu, Bingbing, Shen, Huawei, Cao, Qi, Qiu, Yunqi, and Cheng, Xueqi",2019a,"<a href=""https://arxiv.org/abs/1904.07785"" target=""_blank"">arxiv</a>"
-"Adversarial Attacks and Defenses in Images, Graphs and Text: A Review","Xu, Han, Ma, Yao, Liu, Haochen, Deb, Debayan, Liu, Hui, et al",2019b,"<a href=""https://arxiv.org/abs/1909.08072"" target=""_blank"">arxiv</a>"
-Representing Big Data as Networks: New Methods and Insights,"Xu, Jian",2017,"<a href=""https://arxiv.org/abs/1712.09648"" target=""_blank"">arxiv</a>"
-Topology Attack and Defense for Graph Neural Networks: An Optimization Perspective,"Xu, Kaidi, Chen, Hongge, Liu, Sijia, Chen, Pin-Yu, Weng, Tsui-Wei, et al",2019c,"<a href=""https://arxiv.org/abs/1906.04214"" target=""_blank"">arxiv</a>"
-How Powerful are Graph Neural Networks?,"Xu, Keyulu, Hu, Weihua, Leskovec, Jure, and Jegelka, Stefanie",2019d,"<a href=""https://arxiv.org/abs/1810.00826"" target=""_blank"">arxiv</a>"
-Representation Learning on Graphs with Jumping Knowledge Networks,"Xu, Keyulu, Li, Chengtao, Tian, Yonglong, Sonobe, Tomohiro, Kawarabayashi, Ken-ichi, et al",2018a,"<a href=""https://arxiv.org/abs/1806.03536"" target=""_blank"">arxiv</a>"
-Cross-lingual Knowledge Graph Alignment via Graph Matching Neural Network,"Xu, Kun, Wang, Liwei, Yu, Mo, Feng, Yansong, Song, Yan, et al",2019e,"<a href=""https://arxiv.org/abs/1905.11605"" target=""_blank"">arxiv</a>"
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks,"Xu, Kun, Wu, Lingfei, Wang, Zhiguo, Feng, Yansong, Witbrock, Michael, et al",2018b,"<a href=""https://arxiv.org/abs/1804.00823"" target=""_blank"">arxiv</a>"
-Graph Convolutional Network and Convolutional Neural Network Based Method for Predicting lncRNA-Disease Associations,"Xuan, Ping, Pan, Shuxiang, Zhang, Tiangang, Liu, Yong, and Sun, Hao",2019,"<a href=""https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6769579/"" target=""_blank"">リンク</a>"
-HyperGCN: A New Method of Training Graph Convolutional Networks on Hypergraphs,"Yadati, Naganand, Nimishakavi, Madhav, Yadav, Prateek, Nitin, Vikram, Louis, Anand, et al",2019,"<a href=""https://dl.acm.org/doi/10.5555/3454287.3454422"" target=""_blank"">リンク</a>"
-Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition,"Yan, Sijie, Xiong, Yuanjun, and Lin, Dahua",2018,"<a href=""https://arxiv.org/abs/1801.07455"" target=""_blank"">arxiv</a>"
-Deep Graph Kernels,"Yanardag, Pinar, and Vishwanathan, SVN",2015,"<a href=""https://web.archive.org/web/20151120124955id_/http://web.ics.purdue.edu/~ypinar/kdd/"" target=""_blank"">リンク</a>"
-Learning Multi-Relational Semantics Using Neural-Embedding Models,"Yang, Bishan, Yih, Wen-tau, He, Xiaodong, Gao, Jianfeng, and Deng, Li",2014,"<a href=""https://arxiv.org/abs/1411.4072"" target=""_blank"">arxiv</a>"
-Defining and Evaluating Network Communities based on Ground-truth,"Yang, Jaewon, and Leskovec, Jure",2015,"<a href=""https://arxiv.org/abs/1205.6233"" target=""_blank"">arxiv</a>"
-Auto-Encoding Scene Graphs for Image Captioning,"Yang, Xu, Tang, Kaihua, Zhang, Hanwang, and Cai, Jianfei",2019,"<a href=""https://arxiv.org/abs/1812.02378"" target=""_blank"">arxiv</a>"
-Graph Convolutional Networks for Text Classification,"Yao, Liang, Mao, Chengsheng, and Luo, Yuan",2019,"<a href=""https://arxiv.org/abs/1809.05679"" target=""_blank"">arxiv</a>"
-Graph Convolutional Neural Networks for Web-Scale Recommender Systems,"Ying, Rex, He, Ruining, Chen, Kaifeng, Eksombatchai, Pong, Hamilton, William L., et al",2018a,"<a href=""https://arxiv.org/abs/1806.01973"" target=""_blank"">arxiv</a>"
-GNNExplainer: Generating Explanations for Graph Neural Networks,"Ying, Zhitao, Bourgeois, Dylan, You, Jiaxuan, Zitnik, Marinka, and Leskovec, Jure",2019,"<a href=""https://arxiv.org/abs/1903.03894"" target=""_blank"">arxiv</a>"
-Hierarchical Graph Representation Learning with Differentiable Pooling,"Ying, Zhitao, You, Jiaxuan, Morris, Christopher, Ren, Xiang, Hamilton, Will, et al",2018c,"<a href=""https://arxiv.org/abs/1806.08804"" target=""_blank"">arxiv</a>"
-Graph Convolutional Policy Network for Goal-Directed Molecular Graph Generation,"You, Jiaxuan, Liu, Bowen, Ying, Zhitao, Pande, Vijay, and Leskovec, Jure",2018a,"<a href=""https://arxiv.org/abs/1806.02473"" target=""_blank"">arxiv</a>"
-GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Models,"You, Jiaxuan, Ying, Rex, Ren, Xiang, Hamilton, William L., and Leskovec, Jure",2018b,"<a href=""https://arxiv.org/abs/1802.08773"" target=""_blank"">arxiv</a>"
-When Does Self-Supervision Help Graph Convolutional Networks?,"You, Yuning, Chen, Tianlong, Wang, Zhangyang, and Shen, Yang",2020,"<a href=""https://arxiv.org/abs/2006.09136"" target=""_blank"">arxiv</a>"
-Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting,"Yu, Bing, Yin, Haoteng, and Zhu, Zhanxing",2017,"<a href=""https://arxiv.org/abs/1709.04875"" target=""_blank"">arxiv</a>"
-Automatic Speech Recognition: A Deep Learning Approach,"Yu, Dong, and Deng, Li",2016,"<a href=""https://www.amazon.co.jp/dp/1447169670"" target=""_blank"">amazon</a>"
-XGNN: Towards Model-Level Explanations of Graph Neural Networks,"Yuan, Hao, Tang, Jiliang, Hu, Xia, and Ji, Shuiwang",2020,"<a href=""https://arxiv.org/abs/2006.02587"" target=""_blank"">arxiv</a>"
-StructPool: Structured Graph Pooling via Conditional Random Fields,"Yuan, Hao, and Ji, Shuiwang",2019a,"<a href=""https://openreview.net/forum?id=BJxg_hVtwH"" target=""_blank"">リンク</a>"
-SNE: Signed Network Embedding,"Yuan, Shuhan, Wu, Xintao, and Xiang, Yang",2017,"<a href=""https://arxiv.org/abs/1703.04837"" target=""_blank"">arxiv</a>"
-Adversarial Examples: Attacks and Defenses for Deep Learning,"Yuan, Xiaoyong, He, Pan, Zhu, Qile, and Li, Xiaolin",2019b,"<a href=""https://arxiv.org/abs/1712.07107"" target=""_blank"">arxiv</a>"
-ADADELTA: An Adaptive Learning Rate Method,"Zeiler, Matthew D",2012,"<a href=""https://arxiv.org/abs/1212.5701"" target=""_blank"">arxiv</a>"
-GraphSAINT: Graph Sampling Based Inductive Learning Method,"Zeng, Hanqing, Zhou, Hongkuan, Srivastava, Ajitesh, Kannan, Rajgopal, and Prasanna, Viktor",2019,"<a href=""https://arxiv.org/abs/1907.04931"" target=""_blank"">arxiv</a>"
-Heterogeneous Graph Neural Network,"Zhang, Chuxu, Song, Dongjin, Huang, Chao, Swami, Ananthram, and Chawla, Nitesh V",2019a,"<a href=""https://dl.acm.org/doi/10.1145/3292500.3330961"" target=""_blank"">リンク</a>"
-OAG: Toward Linking Large-scale Heterogeneous Entity Graphs,"Zhang, Fanjin, Liu, Xiao, Tang, Jie, Dong, Yuxiao, Yao, Peiran, et al",2019b,"<a href=""https://www.stateoftheart.ai/papers/586cd1d4-6886-4c8f-99eb-3a7a43fa0235"" target=""_blank"">リンク</a>"
-Circuit-GNN: Graph Neural Networks for Distributed Circuit Design,"Zhang, Guo, He, Hao, and Katabi, Dina",2019c,"<a href=""https://proceedings.mlr.press/v97/zhang19e.html"" target=""_blank"">リンク</a>"
-GaAN: Gated Attention Networks for Learning on Large and Spatiotemporal Graphs,"Zhang, Jiani, Shi, Xingjian, Xie, Junyuan, Ma, Hao, King, Irwin, and Yeung, Dit-Yan",2018a,"<a href=""https://arxiv.org/abs/1803.07294"" target=""_blank"">arxiv</a>"
-Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks,"Zhang, Ningyu, Deng, Shumin, Sun, Zhanlin, Wang, Guanying, Chen, Xi, et al",2019d,"<a href=""https://arxiv.org/abs/1903.01306"" target=""_blank"">arxiv</a>"
-Adversarial Attacks on Deep Learning Models in Natural Language Processing: A Survey,"Zhang, Wei Emma, Sheng, Quan Z, Alhazmi, Ahoud, and Li, Chenliang",2020,"<a href=""https://arxiv.org/abs/1901.06796"" target=""_blank"">arxiv</a>"
-Deep Collective Classification in Heterogeneous Information Networks,"Zhang, Yizhou, Xiong, Yun, Kong, Xiangnan, Li, Shanshan, Mi, Jinhong, et al",2018b,"<a href=""https://dl.acm.org/doi/10.1145/3178876.3186106"" target=""_blank"">リンク</a>"
-Graph Convolution over Pruned Dependency Trees Improves Relation Extraction,"Zhang, Yuhao, Qi, Peng, and Manning, Christopher D",2018c,"<a href=""https://arxiv.org/abs/1809.10185"" target=""_blank"">arxiv</a>"
-PairNorm: Tackling Oversmoothing in GNNs,"Zhao, Lingxiao, and Akoglu, Leman",2019,"<a href=""https://arxiv.org/abs/1909.12223"" target=""_blank"">arxiv</a>"
-Graph Neural Networks: A Review of Methods and Applications,"Zhou, Jie, Cui, Ganqu, Zhang, Zhengyan, Yang, Cheng, Liu, Zhiyuan, et al",2018a,"<a href=""https://arxiv.org/abs/1812.08434"" target=""_blank"">arxiv</a>"
-Dynamic Network Embedding by Modeling Triadic Closure Process,"Zhou, Lekui, Yang, Yang, Ren, Xiang, Wu, Fei, and Zhuang, Yueting",2018b,"<a href=""https://ojs.aaai.org/index.php/AAAI/article/view/11257"" target=""_blank"">リンク</a>"
-Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks,"Zhou, Yaqin, Liu, Shangqing, Siow, Jingkai, Du, Xiaoning, and Liu, Yang",2019,"<a href=""https://arxiv.org/abs/1909.03496"" target=""_blank"">arxiv</a>"
-Robust Graph Convolutional Networks Against Adversarial Attacks,"Zhu, Dingyuan, Zhang, Ziwei, Cui, Peng, and Zhu, Wenwu",2019a,"<a href=""https://pengcui.thumedialab.com/papers/RGCN.pdf"" target=""_blank"">PDF</a>"
-Graph Neural Networks with Generated Parameters for Relation Extraction,"Zhu, Hao, Lin, Yankai, Liu, Zhiyuan, Fu, Jie, Chua, Tat-seng, et al",2019b,"<a href=""https://aclanthology.org/P19-1128/"" target=""_blank"">リンク</a>"
-AliGraph: A Comprehensive Graph Neural Network Platform,"Zhu, Rong, Zhao, Kun, Yang, Hongxia, Lin, Wei, Zhou, Chang, et al",2019c,"<a href=""https://arxiv.org/abs/1902.08730"" target=""_blank"">arxiv</a>"
-Combining Content and Link for Classification using Matrix Factorization,"Zhu, Shenghuo, Yu, Kai, Chi, Yun, and Gong, Yihong",2007,"<a href=""https://www.dbs.ifi.lmu.de/~yu_k/sigir2007_mf.pdf"" target=""_blank"">PDF</a>"
-Semi-supervised learning using Gaussian fields and harmonic functions,"Zhu, Xiaojin, Ghahramani, Zoubin, and Lafferty, John D",2003,"<a href=""https://dl.acm.org/doi/10.5555/3041838.3041953"" target=""_blank"">リンク</a>"
-Modeling polypharmacy side effects with graph convolutional networks,"Zitnik, Marinka, Agrawal, Monica, and Leskovec, Jure",2018,"<a href=""https://arxiv.org/abs/1802.00543"" target=""_blank"">arxiv</a>"
-Adversarial Attacks on Neural Networks for Graph Data,"Zügner, Daniel, Akbarnejad, Amir, and Günnemann, Stephan",2018,"<a href=""https://arxiv.org/abs/1805.07984"" target=""_blank"">arxiv</a>"
-Adversarial Attacks on Graph Neural Networks via Meta Learning,"Zügner, Daniel, and Günnemann, Stephan",2019,"<a href=""https://arxiv.org/abs/1902.08412"" target=""_blank"">arxiv</a>"
+タイトル,著者名,年,URL
+TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems,"Abadi, Martín, Agarwal, Ashish, Barham, Paul, Brevdo, Eugene, Chen, Zhifeng, et al",2015,https://arxiv.org/abs/1603.04467
+Friends and neighbors on the Web,"Adamic, Lada A, and Adar, Eytan",2003,https://www.sciencedirect.com/science/article/abs/pii/S0378873303000091?via%3Dihub
+PAIRpred: Partner-specific prediction of interacting residues from sequence and structure,"Afsar Minhas, Fayyaz ul Amir, Geiss, Brian J, and Ben-Hur, Asa",2014,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4329725/
+Linear Algebra and Optimization for Machine Learning,"Aggarwal, Charu C",2020,https://www.amazon.co.jp/dp/3030403432
+Neural Networks and Deep Learning,"Aggarwal, Charu C",2023,https://www.amazon.co.jp/dp/3031296419
+Learning to Represent Programs with Graphs,"Allamanis, Miltiadis, Brockschmidt, Marc, and Khademi, Mahmoud",2017,https://arxiv.org/abs/1711.00740
+Local Graph Partitioning using PageRank Vectors,"Andersen, Reid, Chung, Fan, and Lang, Kevin",2006,https://www.cs.cmu.edu/afs/cs/user/glmiller/public/Scientific-Computing/F-11/RelatedWork/local_partitioning_full.pdf
+Diffusion-Convolutional Neural Networks,"Atwood, James, and Towsley, Don",2016,https://arxiv.org/abs/1511.02136
+Graph Isomorphism in Quasipolynomial Time,"Babai, László",2016,https://arxiv.org/abs/1512.03547
+Neural Machine Translation by Jointly Learning to Align and Translate,"Bahdanau, Dzmitry, Cho, Kyunghyun, and Bengio, Yoshua",2014,https://arxiv.org/abs/1409.0473
+Hypergraph Convolution and Hypergraph Attention,"Bai, Song, Zhang, Feihu, and Torr, Philip HS",2019,https://arxiv.org/abs/1901.08150
+Abstract Meaning Representation for Sembanking,"Banarescu, Laura, Bonial, Claire, Cai, Shu, Georgescu, Madalina, Griffitt, Kira, et al",2013,https://aclanthology.org/W13-2322.pdf
+Graph Convolutional Encoders for Syntax-aware Neural Machine Translation,"Bastings, Jasmijn, Titov, Ivan, Aziz, Wilker, Marcheggiani, Diego, and Sima’an, Khalil",2017,https://arxiv.org/abs/1704.04675
+"Relational inductive biases, deep learning, and graph networks","Battaglia, Peter W, Hamrick, Jessica B, Bapst, Victor, Sanchez-Gonzalez, Alvaro, Zambaldi, et al",2018,https://arxiv.org/abs/1806.01261
+"Interaction Networks for Learning about Objects, Relations and Physics","Battaglia, Peter W, Pascanu, Razvan, Lai, Matthew, Rezende, Danilo Jimenez, et al",2016,https://arxiv.org/abs/1612.00222
+Heterogeneous Hyper-Network Embedding,"Baytas, Inci M, Xiao, Cao, Wang, Fei, Jain, Anil K, and Zhou, Jiayu",2018,https://par.nsf.gov/servlets/purl/10098519
+Graph-to-Sequence Learning using Gated Graph Neural Networks,"Beck, Daniel, Haffari, Gholamreza, and Cohn, Trevor",2018,https://arxiv.org/abs/1806.09835
+Laplacian Eigenmaps for Dimensionality Reduction and Data Representation,"Belkin, Mikhail, and Niyogi, Partha",2003,https://www2.imm.dtu.dk/projects/manifold/Papers/Laplacian.pdf
+Graph Convolutional Matrix Completion,"Berg, Rianne van den, Kipf, Thomas N, and Welling, Max",2017,https://arxiv.org/abs/1706.02263
+Link Prediction in Criminal Networks: A Tool for Criminal Intelligence Analysis,"Berlusconi, Giulia, Calderoni, Francesco, Parolini, Nicola, Verani, Marco, and Piccardi, Carlo",2016,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4841537/
+Node Classification in Social Networks,"Bhagat, Smriti, Cormode, Graham, and Muthukrishnan, S",2011,https://arxiv.org/abs/1101.3291
+Pattern Recognition and Machine Learning,"Bishop, Christopher M",2006,"https://www.amazon.co.jp/dp/0387310738
+https://www.amazon.co.jp/dp/4621061224
+https://www.amazon.co.jp/dp/4621061240"
+Some unique properties of eigenvector centrality,"Bonacich, Phillip",2007,https://www.sciencedirect.com/science/article/abs/pii/S0378873307000342?via%3Dihub
+Factoring and weighting approaches to status scores and clique identification,"Bonacich, Phillip",1972,https://www.tandfonline.com/doi/pdf/10.1080/0022250X.1972.9989806
+Chemical Graph Theory: Introduction and Fundamentals,"Bonchev, Danail",1991,https://www.amazon.co.jp/dp/0367450704
+Graph Theory with Applications,"Bondy, John Adrian, et al",1977,https://www.amazon.co.jp/dp/0333226941
+Network Analysis in the Social Sciences,"Borgatti, Stephen P, Mehra, Ajay, Brass, Daniel J, and Labianca, Giuseppe",2009,https://www.researchgate.net/publication/24004962_Network_Analysis_in_the_Social_Sciences
+Learning social network embeddings for predicting information diffusion,"Bourigault, Simon, Lagnier, Cedric, Lamprier, Sylvain, Denoyer, Ludovic, and Gallinari, Patrick",2014,https://www.researchgate.net/publication/260433722_Learning_social_network_embeddings_for_predicting_information_diffusion
+Convex Optimization,"Boyd, Stephen, Boyd, Stephen P, and Vandenberghe, Lieven",2004,https://web.stanford.edu/~boyd/cvxbook/
+The Fourier Transform and Its Applications,"Bracewell, Ronald Newbold",1978,https://www.amazon.com/dp/0071160434
+Spectral Networks and Locally Connected Networks on Graphs,"Bruna, Joan, Zaremba, Wojciech, Szlam, Arthur, and LeCun, Yann",2013,https://arxiv.org/abs/1312.6203
+"A Comprehensive Survey of Graph Embedding: Problems, Techniques and Applications","Cai, Hongyun, Zheng, Vincent W, and Chang, Kevin Chen-Chuan",2018,https://arxiv.org/abs/1709.07604
+An Optimal Lower Bound on the Number of Variables for Graph Identification,"Cai, Jin-Yi, Fur̈er, Martin, and Immerman, Neil",1992,https://people.cs.umass.edu/~immerman/pub/opt.pdf
+Deep Neural Networks for Learning Graph Representations,"Cao, Shaosheng, Lu, Wei, and Xu, Qiongkai",2016,https://ojs.aaai.org/index.php/AAAI/article/view/10179
+GraRep: Learning Graph Representations with Global Structural Information,"Cao, Shaosheng, Lu, Wei, and Xu, Qiongkai",2015,https://paperswithcode.com/paper/grarep-learning-graph-representations-with
+BAG: Bi-directional Attention Entity Graph Convolutional Network for Multi-hop Reasoning Question Answering,"Cao, Yu, Fang, Meng, and Tao, Dacheng",2019,https://arxiv.org/abs/1904.04969
+Towards Evaluating the Robustness of Neural Networks,"Carlini, Nicholas, and Wagner, David",2017,https://arxiv.org/abs/1608.04644
+Structural balance: a generalization of Heider's theory,"Cartwright, Dorwin, and Harary, Frank",1956,https://ucilnica.fri.uni-lj.si/pluginfile.php/1147/course/section/4647/Cartwright%20and%20Harary%20-%20Structural%20balance%20-%20A%20generalization%20of%20Heiders%20theory%2C%201956.pdf
+Méthode générale pour la résolution des systemes d’équations simultanées.,"Cauchy, Augustin.",,https://cs.uwaterloo.ca/~y328yu/classics/cauchy-en.pdf
+Hyperbolic Graph Convolutional Neural Networks,"Chami, Ines, Ying, Zhitao, Ré, Christopher, and Leskovec, Jure",2019,https://arxiv.org/abs/1910.12933
+Spectral Properties of Hypergraph Laplacian and Approximation Algorithms,"Chan, T.-H Hubert, Louis, Anand, Tang, Zhihao Gavin, and Zhang, Chenzi",2018,https://arxiv.org/abs/1605.01483
+Generalizing the Hypergraph Laplacian via a Diffusion Process with Mediators,"Chan, T.-H Hubert, and Liang, Zhibin",2019,https://arxiv.org/abs/1804.11128
+Heterogeneous Network Embedding via Deep Architectures,"Chang, Shiyu, Han, Wei, Tang, Jiliang, Qi, Guo-Jun, Aggarwal, Charu C, and Huang, Thomas S",2015,https://www.researchgate.net/publication/299970490_Heterogeneous_Network_Embedding_via_Deep_Architectures
+Anomaly Detection using Graph Neural Networks,"Chaudhary, Anshika, Mittal, Himangi, and Arora, Anuja",2019,https://ieeexplore.ieee.org/document/8862186
+Stochastic Training of Graph Convolutional Networks with Variance Reduction,"Chen, Jianfei, Zhu, Jun, and Song, Le",2018a,https://arxiv.org/abs/1710.10568
+FastGCN: Fast Learning with Graph Convolutional Networks via Importance Sampling,"Chen, Jie, Ma, Tengfei, and Xiao, Cao",2018b,https://arxiv.org/abs/1801.10247
+Knowledge-Embedded Routing Network for Scene Graph Generation,"Chen, Tianshui, Yu, Weihao, Chen, Riquan, and Lin, Liang",2019a,https://arxiv.org/abs/1903.03326
+Task-Guided and Path-Augmented Heterogeneous Network Embedding for Author Identification,"Chen, Ting, and Sun, Yizhou",2017,https://arxiv.org/abs/1612.02814
+ActiveHNE: Active Heterogeneous Network Embedding,"Chen, Xia, Yu, Guoxian, Wang, Jun, Domeniconi, Carlotta, Li, Zhao, and Zhang, Xiangliang",2019b,https://arxiv.org/abs/1905.05659
+Multi-Label Image Recognition with Graph Convolutional Networks,"Chen, Zhao-Min, Wei, Xiu-Shen, Wang, Peng, and Guo, Yanwen",2019c,https://arxiv.org/abs/1904.03582
+Supervised Community Detection with Line Graph Neural Networks,"Chen, Zhengdao, Li, Xiang, and Bruna, Joan",2017,https://arxiv.org/abs/1705.08415
+Unsupervised Feature Selection in Signed Social Networks,"Cheng, Kewei, Li, Jundong, and Liu, Huan",2017,https://dl.acm.org/doi/10.1145/3097983.3098106
+Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks,"Chiang, Wei-Lin, Liu, Xuanqing, Si, Si, Li, Yang, Bengio, Samy, et al",2019,https://arxiv.org/abs/1905.07953
+Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation,"Cho, Kyunghyun, Van Merriënboer, Bart, Gulcehre, Caglar, Bahdanau, Dzmitry, Bougares, Fethi, et al",2014a,https://arxiv.org/abs/1406.1078
+Finding Matches in a Haystack: A Max-Pooling Strategy for Graph Matching in the Presence of Outliers,"Cho, Minsu, Sun, Jian, Duchenne, Olivier, and Ponce, Jean",2014b,https://inria.hal.science/hal-01053675
+Learning the Graphical Structure of Electronic Health Records with Graph Convolutional Transformer,"Choi, Edward, Xu, Zhen, Li, Yujia, Dusenberry, Michael, Flores, Gerardo, Xue, Emily, and Dai, Andrew",2020,https://arxiv.org/abs/1906.04716
+Spectral Graph Theory,"Chung, Fan R.K., and Graham, Fan Chung",1997,https://www.amazon.co.jp/dp/0821803158
+Structural Neural Encoders for AMR-to-text Generation,"Cohen, Marco Damonte Shay B",2019,https://arxiv.org/abs/1903.11410
+A Survey on Network Embedding,"Cui, Peng, Wang, Xiao, Pei, Jian, and Zhu, Wenwu",2018,https://arxiv.org/abs/1711.08752
+"Sitting closer to friends than enemies, revisited","Cygan, Marek, Pilipczuk, Marcin, Pilipczuk, Michał, and Wojtaszczyk, Jakub Onufry",2012,https://arxiv.org/abs/1201.1869
+Phone Recognition with the Mean-Covariance Restricted Boltzmann Machine,"Dahl, George, Ranzato, Marc’Aurelio, Mohamed, Abdel-rahman, and Hinton, Geoffrey E",2010,https://papers.nips.cc/paper_files/paper/2010/hash/b73ce398c39f506af761d2277d853a92-Abstract.html
+Adversarial Attack on Graph Structured Data,"Dai, Hanjun, Li, Hui, Tian, Tian, Huang, Xin, Wang, Lin, et al",2018,https://arxiv.org/abs/1806.02371
+Structural Neural Encoders for AMR-to-text Generation,"Damonte, Marco, and Cohen, Shay B",2019,https://arxiv.org/abs/1903.11410
+Question Answering by Reasoning Across Documents with Graph Convolutional Networks,"De Cao, Nicola, Aziz, Wilker, and Titov, Ivan",2019,https://arxiv.org/abs/1808.09920
+MolGAN: An implicit generative model for small molecular graphs,"De Cao, Nicola, and Kipf, Thomas",2018,https://arxiv.org/abs/1805.11973
+Indexing by Latent Semantic Analysis,"Deerwester, Scott, Dumais, Susan T, Furnas, George W, Landauer, Thomas K, and Harshman, Richard",1990,https://wordvec.colorado.edu/papers/Deerwester_1990.pdf
+Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering,"Defferrard, Michaël, Bresson, Xavier, and Vandergheynst, Pierre",2016,https://arxiv.org/abs/1606.09375
+Binary Coding of Speech Spectrograms Using a Deep Auto-encoder,"Deng, Li, Seltzer, Michael L, Yu, Dong, Acero, Alex, Mohamed, Abdel-rahman, and Hinton, Geoff",2010,https://www.microsoft.com/en-us/research/publication/binary-coding-of-speech-spectrograms-using-a-deep-auto-encoder/
+Deep Learning in Natural Language Processing,"Deng, Li, and Liu, Yang",2018,https://www.amazon.co.jp/dp/9811338485
+Signed Graph Convolutional Network,"Derr, Tyler, Ma, Yao, and Tang, Jiliang",2018,https://arxiv.org/abs/1808.06354
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,"Devlin, Jacob, Chang, Ming-Wei, Lee, Kenton, and Toutanova, Kristina",2018,https://arxiv.org/abs/1810.04805
+Weighted Graph Cuts without Eigenvectors: A Multilevel Approach,"Dhillon, Inderjit S, Guan, Yuqiang, and Kulis, Brian",2007,https://www.cs.utexas.edu/users/inderjit/public_papers/multilevel_pami.pdf
+The autism brain imaging data exchange: towards a large-scale evaluation of the intrinsic brain architecture in autism,"Di Martino, Adriana, Yan, Chao-Gan, Li, Qingyang, Denio, Erin, Castel-lanos, Francisco X, Alaerts, Kaat, Anderson, Jeffrey S, Assaf, Michal, Bookheimer, Susan Y, Dapretto, Mirella, et al",2014,https://pubmed.ncbi.nlm.nih.gov/23774715/
+metapath2vec: Scalable Representation Learning for Heterogeneous Networks,"Dong, Yuxiao, Chawla, Nitesh V, and Swami, Ananthram",2017,https://paperswithcode.com/paper/metapath2vec-scalable-representation-learning
+Adaptive Subgradient Methods for Online Learning and Stochastic Optimization,"Duchi, John, Hazan, Elad, and Singer, Yoram",2011,https://jmlr.org/papers/v12/duchi11a.html
+Convolutional Networks on Graphs for Learning Molecular Fingerprints,"Duvenaud, David K, Maclaurin, Dougal, Iparraguirre, Jorge, Bombarell, Rafael, Hirzel, Timothy, et al",2015,https://arxiv.org/abs/1509.09292
+All You Need Is Low (Rank): Defending Against Adversarial Attacks on Graphs,"Entezari, Negin, Al-Sayouri, Saba A, Darvishzadeh, Amirali, and Papalexakis, Evangelos E",2020,https://dl.acm.org/doi/10.1145/3336191.3371789
+Graph Neural Networks for Social Recommendation,"Fan, Wenqi, Ma, Yao, Li, Qing, He, Yuan, Zhao, Eric, et al",2019,https://arxiv.org/abs/1902.07243
+An Introduction to Probability Theory and Its Applications,"Feller, William",1957,https://www.amazon.co.jp/dp/0471257087
+Graph Adversarial Training: Dynamically Regularizing Based on Graph Structure,"Feng, Fuli, He, Xiangnan, Tang, Jie, and Chua, Tat-Seng",2019a,https://arxiv.org/abs/1902.08226
+Hypergraph Neural Networks,"Feng, Yifan, You, Haoxuan, Zhang, Zizhao, Ji, Rongrong, and Gao, Yue",2019b,https://arxiv.org/abs/1809.09401
+Structured Neural Summarization,"Fernandes, Patrick, Allamanis, Miltiadis, and Brockschmidt, Marc",2018,https://arxiv.org/abs/1811.01824
+Fast Graph Representation Learning with PyTorch Geometric,"Fey, Matthias, and Lenssen, Jan E",2019,https://arxiv.org/abs/1903.02428
+Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks,"Finn, Chelsea, Abbeel, Pieter, and Levine, Sergey",2017,https://arxiv.org/abs/1703.03400
+Random-Walk Computation of Similarities between Nodes of a Graph with Application to Collaborative Recommendation,"Fouss, Francois, Pirotte, Alain, Renders, Jean-Michel, and Saerens, Marco",2007,https://www.semanticscholar.org/paper/Random-Walk-Computation-of-Similarities-between-of-Fouss-Pirotte/474db64356d6c9c82fe2a8604cd6c13bc17bae78
+Protein Interface Prediction using Graph Convolutional Networks,"Fout, Alex, Byrd, Jonathon, Shariat, Basir, and Ben-Hur, Asa",2017,https://proceedings.neurips.cc/paper/2017/hash/f507783927f2ec2737ba40afbd17efb5-Abstract.html
+Über Matrizen aus nicht negativen Elementen,"Frobenius, Georg, Frobenius, Ferdinand Georg, Frobenius, Ferdinand Georg, Frobenius, Ferdinand Georg, and Mathematician, Germany",1912,https://upload.wikimedia.org/wikipedia/commons/4/44/Ueber_Matrizen_aus_nicht_negativen_Elementen.pdf
+GraphRel: Modeling Text as Relational Graphs for Joint Entity and Relation Extraction,"Fu, Tsu-Jui, Li, Peng-Hsuan, and Ma, Wei-Yun",2019,https://aclanthology.org/P19-1136/
+Large-Scale Learnable Graph Convolutional Networks,"Gao, Hongyang, Wang, Zhengyang, and Ji, Shuiwang",2018a,https://arxiv.org/abs/1808.03965
+Kronecker Attention Networks,"Gao, Hongyang, Wang, Zhengyang, and Ji, Shuiwang",2020,https://arxiv.org/abs/2007.08442
+Graph U-Nets,"Gao, Hongyang, and Ji, Shuiwang",2019,https://arxiv.org/abs/1905.05178
+BiNE: Bipartite Network Embedding,"Gao, Ming, Chen, Leihui, He, Xiangnan, and Zhou, Aoying",2018b,https://staff.ustc.edu.cn/~hexn/papers/sigir18-bipartiteNE.pdf
+Computers and Intractability: A Guide to the Theory of Np-Completeness,"Garey, Michael R, and Johnson, David S",1979,https://www.amazon.co.jp/dp/0716710455
+Generating Classification Weights with GNN Denoising Autoencoders for Few-Shot Learning,"Gidaris, Spyros, and Komodakis, Nikos",2019,https://arxiv.org/abs/1905.01102
+Neural Message Passing for Quantum Chemistry,"Gilmer, Justin, Schoenholz, Samuel S., Riley, Patrick F., Vinyals, Oriol, and Dahl, George E",2017,https://arxiv.org/abs/1704.01212
+Using collaborative filtering to weave an information tapestry,"Goldberg, David, Nichols, David, Oki, Brian M, and Terry, Douglas",1992,https://dl.acm.org/doi/10.1145/138859.138867
+Eigentaste: A Constant Time Collaborative Filtering Algorithm,"Goldberg, Ken, Roeder, Theresa, Gupta, Dhruv, and Perkins, Chris",2001,https://link.springer.com/article/10.1023/A:1011419012209
+A Primer on Neural Network Models for Natural Language Processing,"Goldberg, Yoav",2016,https://arxiv.org/abs/1510.00726
+Explaining and Harnessing Adversarial Examples,"Goodfellow, Ian J, Shlens, Jonathon, and Szegedy, Christian",2014b,https://arxiv.org/abs/1412.6572
+Deep Learning,"Goodfellow, Ian, Bengio, Yoshua, and Courville, Aaron",2016,"https://www.amazon.co.jp/dp/0262035618
+https://www.amazon.co.jp/dp/4048930621"
+Generative Adversarial Nets,"Goodfellow, Ian, Pouget-Abadie, Jean, Mirza, Mehdi, Xu, Bing, Warde-Farley, David, et al",2014a,https://arxiv.org/abs/1406.2661
+"Graph Embedding Techniques, Applications, and Performance: A Survey","Goyal, Palash, and Ferrara, Emilio",2018,https://arxiv.org/abs/1705.02801
+node2vec: Scalable Feature Learning for Networks,"Grover, Aditya, and Leskovec, Jure",2016,https://arxiv.org/abs/1607.00653
+Towards Feature Selection in Networks,"Gu, Quanquan, and Han, Jiawei",2011,https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=1d9e493a34df3fc2d7eec5b343ea91f9fc474678
+RaRE: Social Rank Regulated Large-scale Network Embedding,"Gu, Yupeng, Sun, Yizhou, Li, Yanen, and Yang, Yang",2018,https://dl.acm.org/doi/abs/10.1145/3178876.3186102
+Attention Guided Graph Convolutional Networks for Relation Extraction,"Guo, Zhijiang, Zhang, Yan, and Lu, Wei",2019,https://arxiv.org/abs/1906.07510
+"Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics","Gutmann, Michael U, and Hyvärinen, Aapo",2012,https://jmlr.org/papers/v13/gutmann12a.html
+"Exploring Network Structure, Dynamics, and Function using NetworkX","Hagberg, Aric, Swart, Pieter, and S Chult, Daniel",2008,https://conference.scipy.org/proceedings/scipy2008/paper_2/
+Knowledge Transfer for Out-of-Knowledge-Base Entities: A Graph Neural Network Approach,"Hamaguchi, Takuo, Oiwa, Hidekazu, Shimbo, Masashi, and Matsumoto, Yuji",2017,https://arxiv.org/abs/1706.05674
+Inductive Representation Learning on Large Graphs,"Hamilton, Will, Ying, Zhitao, and Leskovec, Jure",2017a,https://arxiv.org/abs/1706.02216
+Representation Learning on Graphs: Methods and Applications,"Hamilton, William L, Ying, Rex, and Leskovec, Jure",2017b,https://arxiv.org/abs/1709.05584
+Deep Self-Learning From Noisy Labels,"Han, Jiangfan, Luo, Ping, and Wang, Xiaogang",2019,https://arxiv.org/abs/1908.02160
+Data Mining: Concepts and Techniques,"Han, Jiawei, Pei, Jian, and Kamber, Micheline",2022,https://www.amazon.co.jp/dp/0128117605
+Cascade-BGNN: Toward Efficient Self-supervised Representation Learning on Large-scale Bipartite Graphs,"He, Chaoyang, Xie, Tian, Rong, Yu, Huang, Wenbing, Li, Yanfang, et al",2019,https://arxiv.org/abs/1906.11994
+Deep Residual Learning for Image Recognition,"He, Kaiming, Zhang, Xiangyu, Ren, Shaoqing, and Sun, Jian",2016,https://arxiv.org/abs/1512.03385
+Attitudes and Cognitive Organization,"Heider, Fritz",1946,https://snap.stanford.edu/class/cs224w-readings/heider49balance.pdf
+Long Short-Term Memory,"Hochreiter, Sepp, and Schmidhuber, Jürgen",1997,https://www.bioinf.jku.at/publications/older/2604.pdf
+Linear Algebra,"Hoffman, Kenneth, and Kunze, Ray",2015,https://www.amazon.co.jp/dp/9332550077
+Strategies for Pre-training Graph Neural Networks,"Hu, Weihua, Liu, Bowen, Gomes, Joseph, Zitnik, Marinka, Liang, Percy, Pande, Vijay, and Leskovec, Jure",2020b,https://arxiv.org/abs/1905.12265
+GPT-GNN: Generative Pre-Training of Graph Neural Networks,"Hu, Ziniu, Dong, Yuxiao, Wang, Kuansan, Chang, Kai-Wei, and Sun, Yizhou",2020a,https://arxiv.org/abs/2006.15437
+Pre-Training graph neural networks for generic structural feature extraction,"Hu, Ziniu, Fan, Changjun, Chen, Ting, Chang, Kai-Wei, and Sun, Yizhou",2019,https://arxiv.org/abs/1905.13728
+Unsupervised Nonlinear Feature Selection from High-Dimensional Signed Networks,"Huang, Qiang, Xia, Tingyu, Sun, Huiyan, Yamada, Makoto, and Chang, Yi",2020,https://ojs.aaai.org/index.php/AAAI/article/view/5839
+Adaptive Sampling Towards Fast Graph Representation Learning,"Huang, Wenbing, Zhang, Tong, Rong, Yu, and Huang, Junzhou",2018,https://arxiv.org/abs/1809.05343
+Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift,"Ioffe, Sergey, and Szegedy, Christian",2015,https://arxiv.org/abs/1502.03167
+Graph Neural Network for Music Score Data and Modeling Expressive Piano Performance,"Jeong, Dasaem, Kwon, Taegyun, Kim, Yoojin, and Nam, Juhan",2019,https://proceedings.mlr.press/v97/jeong19a.html
+Dynamic Hypergraph Neural Networks,"Jiang, Jianwen, Wei, Yuxuan, Feng, Yifan, Cao, Jingxuan, and Gao, Yue",2019,https://www.ijcai.org/proceedings/2019/366
+Latent Adversarial Training of Graph Convolution Networks,"Jin, Hongwei, and Zhang, Xinhua",2019,https://graphreason.github.io/papers/35.pdf
+Self-supervised Learning on Graphs: Deep Insights and New Direction,"Jin, Wei, Derr, Tyler, Liu, Haochen, Wang, Yiqi, Wang, Suhang, Liu, Zitao, and Tang, Jiliang",2020c,https://arxiv.org/abs/2006.10141
+"Adversarial Attacks and Defenses on Graphs: A Review, A Tool and Empirical Studies","Jin, Wei, Li, Yaxin, Xu, Han, Wang, Yiqi, and Tang, Jiliang",2020a,https://arxiv.org/abs/2003.00653
+Graph Structure Learning for Robust Graph Neural Networks,"Jin, Wei, Ma, Yao, Liu, Xiaorui, Tang, Xianfeng, Wang, Suhang, et al",2020b,https://arxiv.org/abs/2005.10203
+Junction Tree Variational Autoencoder for Molecular Graph Generation,"Jin, Wengong, Barzilay, Regina, and Jaakkola, Tommi",2018,https://arxiv.org/abs/1802.04364
+An Efficient Graph Convolutional Network Technique for the Travelling Salesman Problem,"Joshi, Chaitanya K, Laurent, Thomas, and Bresson, Xavier",2019,https://arxiv.org/abs/1906.01227
+International encyclopedia of statistical science: Kullback-Leibler Divergence,"Joyce, James M",2011,https://link.springer.com/referenceworkentry/10.1007/978-3-642-04898-2_327
+"Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition","Jurafsky, Daniel, and Martin, James H",2000,https://www.amazon.co.jp/dp/0130950696
+Deep Learning for NLP and Speech Recognition,"Kamath, Uday, Liu, John, and Whitaker, James",2019,https://www.amazon.co.jp/dp/3030145956
+Rethinking Knowledge Graph Propagation for Zero-Shot Learning,"Kampffmeyer, Michael, Chen, Yinbo, Liang, Xiaodan, Wang, Hao, Zhang, Yujia, and Xing, Eric P",2019,https://arxiv.org/abs/1805.11724
+Brain connectivity in autism,"Kana, Rajesh K, Uddin, Lucina Q, Kenet, Tal, Chugani, Diane, and Mul̈ler, Ralph-Axel",2014,https://www.frontiersin.org/articles/10.3389/fnhum.2014.00349/full
+A fast and high quality multilevel scheme for partitioning irregular graphs,"Karypis, George, and Kumar, Vipin",1998,https://glaros.dtc.umn.edu/gkhome/node/107
+Deep Generative Probabilistic Graph Neural Networks for Scene Graph Generation,"Khademi, Mahmoud, and Schulte, Oliver",2020,https://ojs.aaai.org/index.php/AAAI/article/view/6783
+Learning Combinatorial Optimization Algorithms over Graphs,"Khalil, Elias, Dai, Hanjun, Zhang, Yuyu, Dilkina, Bistra, and Song, Le",2017,https://arxiv.org/abs/1704.01665
+Adam: A Method for Stochastic Optimization,"Kingma, Diederik P, and Ba, Jimmy",2014,https://arxiv.org/abs/1412.6980
+Auto-Encoding Variational Bayes,"Kingma, Diederik P, and Welling, Max",2013,https://arxiv.org/abs/1312.6114
+Semi-Supervised Classification with Graph Convolutional Networks,"Kipf, Thomas N, and Welling, Max",2016a,https://arxiv.org/abs/1609.02907
+Variational Graph Auto-Encoders,"Kipf, Thomas N, and Welling, Max",2016b,https://arxiv.org/abs/1611.07308
+Neural Relational Inference for Interacting Systems,"Kipf, Thomas, Fetaya, Ethan, Wang, Kuan-Chieh, Welling, Max, and Zemel, Richard",2018,https://arxiv.org/abs/1802.04687
+Matrix Factorization Techniques for Recommender Systems,"Koren, Yehuda, Bell, Robert, and Volinsky, Chris",2009,https://datajobs.com/data-science-repo/Recommender-Systems-%5BNetflix%5D.pdf
+ImageNet Classification with Deep Convolutional Neural Networks,"Krizhevsky, Alex, Sutskever, Ilya, and Hinton, Geoffrey E",2012,https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
+The SIDER database of drugs and side effects,"Kuhn, Michael, Letunic, Ivica, Jensen, Lars Juhl, and Bork, Peer",2016,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702794/
+The Slashdot Zoo: Mining a Social Network with Negative Edges,"Kunegis, Jérôme, Lommatzsch, Andreas, and Bauckhage, Christian",2009,https://arxiv.org/abs/1710.11395
+PRUNE: Preserving Proximity and Global Ranking for Network Embedding,"Lai, Yi-An, Hsu, Chin-Chi, Chen, Wen Hao, Yeh, Mi-Yen, and Lin, Shou-De",2017,https://proceedings.neurips.cc/paper/2017/hash/cdd96eedd7f695f4d61802f8105ba2b0-Abstract.html
+Modèles connexionnistes de l'apprentissage,"Le Cun,Yann, and Fogelman-Soulié, Françoise",1987,https://www.persee.fr/doc/intel_0769-4113_1987_num_2_1_1804
+Graph Classification using Structural Attention,"Lee, John Boaz, Rossi, Ryan, and Kong, Xiangnan",2018,https://dl.acm.org/doi/10.1145/3219819.3219980
+Self-Attention Graph Pooling,"Lee, Junhyun, Lee, Inyeop, and Kang, Jaewoo",2019,https://arxiv.org/abs/1904.08082
+End-to-end Neural Coreference Resolution,"Lee, Kenton, He, Luheng, Lewis, Mike, and Zettlemoyer, Luke",2017,https://arxiv.org/abs/1707.07045
+Predicting Positive and Negative Links in Online Social Networks,"Leskovec, Jure, Huttenlocher, Daniel, and Kleinberg, Jon",2010a,https://arxiv.org/abs/1003.2429
+Signed Networks in Social Media,"Leskovec, Jure, Huttenlocher, Daniel, and Kleinberg, Jon",2010b,https://arxiv.org/abs/1003.2424
+SNAP Datasets: Stanford Large Network Dataset Collection,"Leskovec, Jure, and Krevl, Andrej",2014,https://snap.stanford.edu/data/
+SNAP: A General Purpose Network Analysis and Graph Mining Library,"Leskovec, Jure, and Sosič, Rok",2016,https://arxiv.org/abs/1606.07550
+Encoding Social Information with Graph Convolutional Networks forPolitical Perspective Detection in News Media,"Li, Chang, and Goldwasser, Dan",2019,https://aclanthology.org/P19-1247/
+Spatio-Temporal Graph Convolution for Skeleton Based Action Recognition,"Li, Chaolong, Cui, Zhen, Zheng, Wenming, Xu, Chunyan, and Yang, Jian",2018a,https://arxiv.org/abs/1802.09834
+A Novel Computational Model for Predicting microRNA-Disease Associations Based on Heterogeneous Graph Convolutional Networks,"Li, Chunyan, Liu, Hongju, Hu, Qian, Que, Jinlong, and Yao, Junfeng",2019a,https://www.mdpi.com/2073-4409/8/9/977
+Feature Selection: A Data Perspective,"Li, Jundong, Cheng, Kewei, Wang, Suhang, Morstatter, Fred, Trevino, Robert P, Tang, Jiliang, and Liu, Huan",2017b,https://arxiv.org/abs/1601.07996
+Attributed Network Embedding for Learning in a Dynamic Environment,"Li, Jundong, Dani, Harsh, Hu, Xia, Tang, Jiliang, Chang, Yi, and Liu, Huan",2017a,https://arxiv.org/abs/1706.01860
+Adaptive Unsupervised Feature Selection on Attributed Networks,"Li, Jundong, Guo, Ruocheng, Liu, Chenghao, and Liu, Huan",2019b,https://dl.acm.org/doi/10.1145/3292500.3330856
+Toward Time-Evolving Feature Selection on Dynamic Networks,"Li, Jundong, Hu, Xia, Jian, Ling, and Liu, Huan",2016,https://www.semanticscholar.org/paper/Toward-Time-Evolving-Feature-Selection-on-Dynamic-Li-Hu/f831be455cba1db826715e3caf7957fae1e5169d
+Actional-Structural Graph Convolutional Networks for Skeleton-based Action Recognition,"Li, Maosen, Chen, Siheng, Chen, Xu, Zhang, Ya, Wang, Yanfeng, and Tian, Qi",2019c,https://arxiv.org/abs/1904.12659
+Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning,"Li, Qimai, Han, Zhichao, and Wu, Xiao-Ming",2018b,https://arxiv.org/abs/1801.07606
+Adaptive Graph Convolutional Neural Networks,"Li, Ruoyu, Wang, Sheng, Zhu, Feiyun, and Huang, Junzhou",2018c,https://arxiv.org/abs/1801.03226
+DeepRobust: A PyTorch Library for Adversarial Attacks and Defenses,"Li, Yaxin, Jin, Wei, Xu, Han, and Tang, Jiliang",2020a,https://arxiv.org/abs/2005.06149
+Community Detection in Attributed Graphs: An Embedding Approach,"Li, Ye, Sha, Chaofeng, Huang, Xin, and Zhang, Yanchun",2018d,https://dl.acm.org/doi/10.5555/3504035.3504077
+Learning Signed Network Embedding via Graph Attention,"Li, Yu, Tian, Yuan, Zhang, Jiawei, and Chang, Yi",2020b,https://ojs.aaai.org/index.php/AAAI/article/view/5911
+Gated Graph Sequence Neural Networks,"Li, Yujia, Tarlow, Daniel, Brockschmidt, Marc, and Zemel, Richard",2015,https://arxiv.org/abs/1511.05493
+Combinatorial Optimization with Graph Convolutional Networks and Guided Tree Search,"Li, Zhuwen, Chen, Qifeng, and Koltun, Vladlen",2018e,https://arxiv.org/abs/1810.10659
+Semantic Object Parsing with Graph LSTM,"Liang, Xiaodan, Shen, Xiaohui, Feng, Jiashi, Lin, Liang, and Yan, Shuicheng",2016,https://arxiv.org/abs/1603.07063
+Efficient Graph Generation with Graph Recurrent Attention Networks,"Liao, Renjie, Li, Yujia, Song, Yang, Wang, Shenlong, Hamilton, Will, Du-venaud, David K, Urtasun, Raquel, and Zemel, Richard",2019,https://arxiv.org/abs/1910.00760
+The Link-Prediction Problem for Social Networks,"Liben-Nowell, David, and Kleinberg, Jon",2007,https://cs.carleton.edu/faculty/dlibenno/papers/link-prediction/link.pdf
+Learning Entity and Relation Embeddings for Knowledge Graph Completion,"Lin, Yankai, Liu, Zhiyuan, Sun, Maosong, Liu, Yang, and Zhu, Xuan",2015,https://ojs.aaai.org/index.php/AAAI/article/view/9491
+Fast Interactive Object Annotation with Curve-GCN,"Ling, Huan, Gao, Jun, Kar, Amlan, Chen, Wenzheng, and Fidler, Sanja",2019,https://arxiv.org/abs/1903.06874
+Computational Methods of Feature Selection,"Liu, Huan, and Motoda, Hiroshi",2007,https://www.amazon.co.jp/dp/1584888784
+Feature Selection for Knowledge Discovery and Data Mining,"Liu, Huan, and Motoda, Hiroshi",2012,https://www.amazon.com/dp/079238198X
+Chemi-net: a graph convolutional network for accurate drug property prediction,"Liu, Ke, Sun, Xiangyan, Jia, Lei, Ma, Jun, Xing, Haoming, et al",2018a,https://arxiv.org/abs/1803.06236
+Hyperbolic Graph Neural Networks,"Liu, Qi, Nickel, Maximilian, and Kiela, Douwe",2019a,https://arxiv.org/abs/1910.12892
+Alleviating the Inconsistency Problem of Applying Graph Neural Network to Fraud Detection,"Liu, Zhiwei, Dou, Yingtong, Yu, Philip S, Deng, Yutong, and Peng, Hao",2020,https://arxiv.org/abs/2005.00625
+GeniePath: Graph Neural Networks with Adaptive Receptive Paths,"Liu, Ziqi, Chen, Chaochao, Li, Longfei, Zhou, Jun, Li, Xiaolong, et al",2019b,https://arxiv.org/abs/1802.00910
+Heterogeneous Graph Neural Networks for Malicious Account Detection,"Liu, Ziqi, Chen, Chaochao, Yang, Xinxing, Zhou, Jun, Li, Xiaolong, et al",2018b,https://arxiv.org/abs/2002.12307
+Towards Efficient Large-Scale Graph Neural Network Computing,"Ma, Lingxiao, Yang, Zhi, Miao, Youshan, Xue, Jilong, Wu, Ming, et al",2018a,https://arxiv.org/abs/1810.08403
+NeuGraph: Parallel Deep Neural Network Computation on Large Graphs,"Ma, Lingxiao, Yang, Zhi, Miao, Youshan, Xue, Jilong, Wu, Ming, et al",2019a,https://www.usenix.org/conference/atc19/presentation/ma
+Constrained Generation of Semantically Valid Graphs via Regularizing Variational Autoencoders,"Ma, Tengfei, Chen, Jie, and Xiao, Cao",2018b,https://arxiv.org/abs/1809.02630
+Drug Similarity Integration Through Attentive Multi-view Graph Auto-Encoders,"Ma, Tengfei, Xiao, Cao, Zhou, Jiayu, and Wang, Fei",2018c,https://arxiv.org/abs/1804.10850
+Streaming Graph Neural Networks,"Ma, Yao, Guo, Ziyi, Ren, Zhaocun, Tang, Jiliang, and Yin, Dawei",2020b,https://arxiv.org/abs/1810.10627
+Multi-Dimensional Network Embedding with Hierarchical Structure,"Ma, Yao, Ren, Zhaochun, Jiang, Ziheng, Tang, Jiliang, and Yin, Dawei",2018d,https://dl.acm.org/doi/10.1145/3159652.3159680
+Multi-dimensional Graph Convolutional Networks,"Ma, Yao, Wang, Suhang, Aggarwal, Chara C, Yin, Dawei, and Tang, Jiliang",2019c,https://arxiv.org/abs/1808.06099
+Graph Convolutional Networks with EigenPooling,"Ma, Yao, Wang, Suhang, Aggarwal, Charu C., and Tang, Jiliang",2019b,https://arxiv.org/abs/1904.13107
+Attacking Graph Convolutional Networks via Rewiring,"Ma, Yao, Wang, Suhang, Derr, Tyler, Wu, Lingfei, and Tang, Jiliang",2019d,https://arxiv.org/abs/1906.03750
+Preserving Local and Global Information for Network Embedding,"Ma, Yao, Wang, Suhang, Ren, ZhaoChun, Yin, Dawei, and Tang, Jiliang",2017,https://arxiv.org/abs/1710.07266
+Rectifier nonlinearities improve neural network acoustic models,"Maas, Andrew L, Hannun, Awni Y, and Ng, Andrew Y",2013,https://www.stateoftheart.ai/papers/73d06dc5-1953-41bb-be13-71102341b93e
+Exploiting Semantics in Neural Machine Translation with Graph Convolutional Networks,"Marcheggiani, Diego, Bastings, Joost, and Titov, Ivan",2018,https://arxiv.org/abs/1804.08313
+Encoding Sentences with Graph Convolutional Networks for Semantic Role Labeling,"Marcheggiani, Diego, and Titov, Ivan",2017,https://arxiv.org/abs/1703.04826
+A Logical Calculus of the Ideas Immanent in Nervous Activity,"McCulloch, Warren S, and Pitts, Walter",1943,https://home.csulb.edu/~cwallis/382/readings/482/mccolloch.logical.calculus.ideas.1943.pdf
+Link Prediction via Matrix Factorization,"Menon, Aditya Krishna, and Elkan, Charles",2011,https://link.springer.com/chapter/10.1007/978-3-642-23783-6_28#preview
+Distributed Representations of Words and Phrases and their Compositionality,"Mikolov, Tomas, Sutskever, Ilya, Chen, Kai, Corrado, Greg S, and Dean, Jeff",2013,https://arxiv.org/abs/1310.4546
+WordNet: An Electronic Lexical Database,"Miller, George A",1998,https://www.amazon.co.jp/dp/026206197X
+Abusive Language Detection with Graph Convolutional Networks,"Mishra, Pushkar, Del Tredici, Marco, Yannakoudakis, Helen, and Shutova, Ekaterina",2019,https://arxiv.org/abs/1904.04073
+End-to-End Relation Extraction using LSTMs on Sequences and Tree Structures,"Miwa, Makoto, and Bansal, Mohit",2016,https://arxiv.org/abs/1601.00770
+Geometric Matrix Completion with Recurrent Multi-Graph Neural Networks,"Monti, Federico, Bronstein, Michael, and Bresson, Xavier",2017,https://arxiv.org/abs/1704.06803
+Fake News Detection on Social Media using Geometric Deep Learning,"Monti, Federico, Frasca, Fabrizio, Eynard, Davide, Mannion, Damon, and Bronstein, Michael M",2019,https://arxiv.org/abs/1902.06673
+Hierarchical Probabilistic Neural Network Language Model,"Morin, Frederic, and Bengio, Yoshua",2005,https://proceedings.mlr.press/r5/morin05a.html
+Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks,"Morris, Christopher, Ritzert, Martin, Fey, Matthias, Hamilton, William L, Lenssen, Jan Eric, et al",2019,https://arxiv.org/abs/1810.02244
+A survey of graphs in natural language processing,"Nastase, Vivi, Mihalcea, Rada, and Radev, Dragomir R",2015,https://web.eecs.umich.edu/~mihalcea/papers/nastase.jnle15.pdf
+Learning Attention-based Embeddings for Relation Prediction in Knowledge Graphs,"Nathani, Deepak, Chauhan, Jatin, Sharma, Charu, and Kaul, Manohar",2019,https://arxiv.org/abs/1906.01195
+Iterative Classification in Relational Data,"Neville, Jennifer, and Jensen, David",2000,https://aaai.org/papers/ws00-06-007-iterative-classification-in-relational-data/
+Networks: An Introduction,"Newman, Mark",2018,https://www.amazon.co.jp/dp/0198839979
+Modularity and community structure in networks,"Newman, Mark E.J",2006,https://arxiv.org/abs/physics/0602124
+On Spectral Clustering: Analysis and an algorithm,"Ng, Andrew Y., Jordan, Michael I., and Weiss, Yair",2002,https://papers.nips.cc/paper_files/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html
+Sparse autoencoder,"Ng, Andrew, et al",2011,https://web.stanford.edu/class/cs294a/sparseAutoencoder_2011new.pdf
+Continuous-Time Dynamic Network Embeddings,"Nguyen, Giang Hoang, Lee, John Boaz, Rossi, Ryan A., Ahmed, Nesreen K., et al",2018,https://dl.acm.org/doi/pdf/10.1145/3184558.3191526
+GraphDTA: Predicting drug-target binding affinity with graph neural networks,"Nguyen, Thin, Le, Hang, and Venkatesh, Svetha",2020,https://www.biorxiv.org/content/10.1101/684662
+A Review of Relational Machine Learning for Knowledge Graphs,"Nickel, Maximilian, Murphy, Kevin, Tresp, Volker, and Gabrilovich, Evgeniy",2015,https://arxiv.org/abs/1503.00759
+Learning Convolutional Neural Networks for Graphs,"Niepert, Mathias, Ahmed, Mohamed, and Kutzkov, Konstantin",2016,https://arxiv.org/abs/1605.05273
+Learning Conditioned Graph Structures for Interpretable Visual Question Answering,"Norcliffe-Brown, Will, Vafeias, Stathis, and Parisot, Sarah",2018,https://arxiv.org/abs/1806.07243
+Activation Functions: Comparison of trends in Practice and Research for Deep Learning,"Nwankpa, Chigozie, Ijomah, Winifred, Gachagan, Anthony, and Marshall, Stephen",2018,https://arxiv.org/abs/1811.03378
+Sparse coding with an overcomplete basis set: A strategy employed by V1?,"Olshausen, Bruno A., and Field, David J",1997,https://www.sciencedirect.com/science/article/pii/S0042698997001697
+Graph Neural Networks Exponentially Lose Expressive Power for Node Classification,"Oono, Kenta, and Suzuki, Taiji",2020,https://arxiv.org/abs/1905.10947
+Asymmetric Transitivity Preserving Graph Embedding,"Ou, Mingdong, Cui, Peng, Pei, Jian, Zhang, Ziwei, and Zhu, Wenwu",2016,https://www.kdd.org/kdd2016/papers/files/rfp0184-ouA.pdf
+"Monte Carlo Theory, Methods and Examples","Owen, Art B",2013,https://artowen.su.domains/mc/
+Adversarially Regularized Graph Autoencoder for Graph Embedding,"Pan, Shirui, Hu, Ruiqi, Long, Guodong, Jiang, Jing, Yao, Lina, et al",2018,https://arxiv.org/abs/1802.04407
+EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs,"Pareja, Aldo, Domeniconi, Giacomo, Chen, Jie, Ma, Tengfei, Suzumura, Toy-otaro, et al",2019,https://arxiv.org/abs/1902.10191
+Disease Prediction using Graph Convolutional Networks: Application to Autism Spectrum Disorder and Alzheimer's Disease,"Parisot, Sarah, Ktena, Sofia Ira, Ferrante, Enzo, Lee, Matthew, Guerrero, Ri-cardo, et al",2018,https://arxiv.org/abs/1806.01738
+Estimating Node Importance in Knowledge Graphs Using Graph Neural Networks,"Park, Namyong, Kan, Andrey, Dong, Xin Luna, Zhao, Tong, and Faloutsos, Christos",2019,https://arxiv.org/abs/1905.08865
+"PyTorch: An Imperative Style, High-Performance Deep Learning Library","Paszke, Adam, Gross, Sam, Chintala, Soumith, Chanan, Gregory, Yang, Edward, et al",2019,https://arxiv.org/abs/1912.01703
+The graph-tool python library,"Peixoto, Tiago P",2014,https://graph-tool.skewed.de/
+Self-Supervised Graph Representation Learning via Global Context Prediction,"Peng, Zhen, Dong, Yixiang, Luo, Minnan, Wu, Xiao-Ming, and Zheng, Qinghua",2020,https://arxiv.org/abs/2003.01604
+DeepWalk: Online Learning of Social Representations,"Perozzi, Bryan, Al-Rfou, Rami, and Skiena, Steven",2014,https://arxiv.org/abs/1403.6652
+GSPBOX: A toolbox for signal processing on graphs,"Perraudin, Nathanael̈, Paratte, Johan, Shuman, David, Martin, Lionel, Kalo-folias, Vassilis, et al",2014,https://arxiv.org/abs/1408.5781
+Zur Theorie der Matrices,"Perron, Oskar",1907,https://eudml.org/doc/158317
+Deep contextualized word representations,"Peters, Matthew E, Neumann, Mark, Iyyer, Mohit, Gardner, Matt, Clark, Christopher, et al",2018,https://arxiv.org/abs/1802.05365
+The Perron-Frobenius theorem: some of its applications,"Pillai, S Unnikrishna, Suel, Torsten, and Cha, Seunghun",2005,https://ieeexplore.ieee.org/document/1406483
+A hybrid model for spatiotemporal forecasting of PM2.5 based on graph convolutional neural network and long short-term memory,"Qi, Yanlin, Li, Qi, Karimian, Hamed, and Liu, Di",2019,https://www.sciencedirect.com/science/article/abs/pii/S0048969719303821?via%3Dihub
+"Network Embedding as Matrix Factorization: Unifying DeepWalk, LINE, PTE, and node2vec","Qiu, Jiezhong, Dong, Yuxiao, Ma, Hao, Li, Jian, Wang, Kuansan, et al",2018b,https://arxiv.org/abs/1710.02971
+DeepInf: Social Influence Prediction with Deep Learning,"Qiu, Jiezhong, Tang, Jian, Ma, Hao, Dong, Yuxiao, Wang, Kuansan, et al",2018a,https://arxiv.org/abs/1807.05560
+Improving Language Understanding by Generative Pre-Training,"Radford, Alec, Narasimhan, Karthik, Salimans, Tim, Sutskever, Ilya",2018,https://paperswithcode.com/paper/improving-language-understanding-by
+Language Models are Unsupervised Multitask Learners,"Radford, Alec, Wu, Jeff, Child, Rewon, Luan, David, Amodei, Dario, et al",2019,https://paperswithcode.com/paper/language-models-are-unsupervised-multitask
+Adversarial Attacks and Defenses in Deep Learning,"Ren, Kui, Zheng, Tianhang, Qin, Zhan, and Liu, Xue",2020,https://www.sciencedirect.com/science/article/pii/S209580991930503X
+Recommender Systems,"Resnick, Paul, and Varian, Hal R",1997,https://dl.acm.org/doi/10.1145/245108.245121
+struc2vec: Learning Node Representations from Structural Identity,"Ribeiro, Leonardo F.R., Saverese, Pedro H.P., and Figueiredo, Daniel R",2017,https://arxiv.org/abs/1704.03165
+DropEdge: Towards Deep Graph Convolutional Networks on Node Classification,"Rong, Yu, Huang, Wenbing, Xu, Tingyang, and Huang, Junzhou",2020,https://arxiv.org/abs/1907.10903
+The perceptron: A probabilistic model for information storage and organization in the brain,"Rosenblatt, Frank",1958,"https://134.208.26.59/INA/A%20probabilistic%20model.pdf
+https://pdfs.semanticscholar.org/865f/b2cfe6fdb7af2c663ef346ea05889f237108.pdf"
+HONE: Higher-Order Network Embeddings,"Rossi, Ryan A, Ahmed, Nesreen K, Koh, Eunyee, Kim, Sungchul, Rao, Anup, et al",2018,https://arxiv.org/abs/1801.09303
+The Network Data Repository with Interactive Graph Analytics and Visualization,"Rossi, Ryan A., and Ahmed, Nesreen K",2015,https://ojs.aaai.org/index.php/AAAI/article/view/9277
+Nonlinear Dimensionality Reduction by Locally Linear Embedding,"Roweis, Sam T, and Saul, Lawrence K",2000,https://www.robots.ox.ac.uk/~az/lectures/ml/lle.pdf
+Learning representations by back-propagating errors,"Rumelhart, David E, Hinton, Geoffrey E, and Williams, Ronald J",1986,https://www.semanticscholar.org/paper/Learning-representations-by-back-propagating-errors-Rumelhart-Hinton/052b1d8ce63b07fec3de9dbb583772d860b7c769
+Unveiling the potential of Graph Neural Networks for network modeling and optimization in SDN,"Rusek, Krzysztof, Suar̀ez-Varela, Josè, Mestres, Albert, Barlet-Ros, Pere, and Cabellos-Aparicio, Albert",2019,https://arxiv.org/abs/1901.08113
+Inter-sentence Relation Extraction with Document-level Graph Convolutional Neural Network,"Sahu, Sunil Kumar, Christopoulou, Fenia, Miwa, Makoto, and Ananiadou, Sophia",2019,https://arxiv.org/abs/1906.04684
+"Structural equivalence: Meaning and definition, computation and application","Sailer, Lee Douglas",1978,https://www.sciencedirect.com/science/article/abs/pii/037887337890014X?via%3Dihub
+FastDTW: Toward Accurate Dynamic Time Warping in Linear Time and Space,"Salvador, Stan, and Chan, Philip",2007,https://cs.fit.edu/~pkc/papers/tdm04.pdf
+Dynamic Graph Representation Learning via Self-Attention Networks,"Sankar, Aravind, Wu, Yanhong, Gou, Liang, Zhang, Wei, and Yang, Hao",2018,https://arxiv.org/abs/1812.09430
+The Graph Neural Network Model,"Scarselli, Franco, Gori, Marco, Tsoi, Ah Chung, Hagenbuchner, Markus, and Monfardini, Gabriele",2008,https://ro.uow.edu.au/cgi/viewcontent.cgi?article=10501&context=infopapers
+Graph neural networks for ranking Web pages,"Scarselli, Franco, Yong, Sweah Liang, Gori, Marco, Hagenbuchner, Markus, Tsoi, Ah Chung, and Maggini, Marco",2005,https://www.semanticscholar.org/paper/Graph-neural-networks-for-ranking-Web-pages-Scarselli-Yong/769bfd4a4b45979cf83bb56c054ebcaaaf8b35d7
+Modeling Relational Data with Graph Convolutional Networks,"Schlichtkrull, Michael, Kipf, Thomas N, Bloem, Peter, Van Den Berg, Rianne, Titov, Ivan, et al",2018,https://arxiv.org/abs/1703.06103
+Conversational Speech Transcription Using Context-Dependent Deep Neural Networks,"Seide, Frank, Li, Gang, and Yu, Dong",2011,https://www.isca-archive.org/interspeech_2011/seide11_interspeech.html
+Collective Classification in Network Data,"Sen, Prithviraj, Namata, Galileo, Bilgic, Mustafa, Getoor, Lise, Galligher, Brian, et al",2008,https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2157
+End-to-end Structure-Aware Convolutional Networks for Knowledge Base Completion,"Shang, Chao, Tang, Yun, Huang, Jing, Bi, Jinbo, He, Xiaodong, et al",2019a,https://arxiv.org/abs/1811.04441
+Pre-training of Graph Augmented Transformers for Medication Recommendation,"Shang, Junyuan, Ma, Tengfei, Xiao, Cao, and Sun, Jimeng",2019c,https://arxiv.org/abs/1906.00346
+GAMENet: Graph Augmented MEmory Networks for Recommending Medication Combination,"Shang, Junyuan, Xiao, Cao, Ma, Tengfei, Li, Hongyan, and Sun, Jimeng",2019b,https://arxiv.org/abs/1809.01852
+Overlapping Community Detection with Graph Neural Networks,"Shchur, Oleksandr, and Günnemann, Stephan",2019,https://arxiv.org/abs/1909.12201
+Heterogeneous Information Network Embedding for Recommendation,"Shi, Chuan, Hu, Binbin, Zhao, Wayne Xin, and Philip, S Yu",2018a,https://arxiv.org/abs/1711.10730
+Normalized Cuts and Image Segmentation,"Shi, Jianbo, and Malik, Jitendra",2000,https://people.eecs.berkeley.edu/~malik/papers/SM-ncut.pdf
+Skeleton-Based Action Recognition With Directed Graph Neural Networks,"Shi, Lei, Zhang, Yifan, Cheng, Jian, and Lu, Hanqing",2019a,https://openaccess.thecvf.com/content_CVPR_2019/html/Shi_Skeleton-Based_Action_Recognition_With_Directed_Graph_Neural_Networks_CVPR_2019_paper.html
+Two-Stream Adaptive Graph Convolutional Networks for Skeleton-Based Action Recognition,"Shi, Lei, Zhang, Yifan, Cheng, Jian, and Lu, Hanqing",2019b,https://arxiv.org/abs/1805.07694
+mvn2vec: Preservation and Collaboration in Multi-View Network Embedding,"Shi, Yu, Han, Fangqiu, He, Xinwei, He, Xinran, Yang, Carl, et al",2018b,https://arxiv.org/abs/1801.06597
+The Emerging Field of Signal Processing on Graphs: Extending High-Dimensional Data Analysis to Networks and Other Irregular Domains,"Shuman, David I, Narang, Sunil K, Frossard, Pascal, Ortega, Antonio, and Vandergheynst, Pierre",2013,https://arxiv.org/abs/1211.0053
+An Attention Enhanced Graph Convolutional LSTM Network for Skeleton-Based Action Recognition,"Si, Chenyang, Chen, Wentao, Wang, Wei, Wang, Liang, and Tan, Tie-niu",2019,https://arxiv.org/abs/1902.09130
+Skeleton-Based Action Recognition with Spatial Reasoning and Temporal Stack Learning,"Si, Chenyang, Jing, Ya, Wang, Wei, Wang, Liang, and Tan, Tieniu",2018,https://arxiv.org/abs/1805.02335
+Dynamic Edge-Conditioned Filters in Convolutional Neural Networks on Graphs,"Simonovsky, Martin, and Komodakis, Nikos",2017,https://arxiv.org/abs/1704.02901
+GraphVAE: Towards Generation of Small Graphs Using Variational Autoencoders,"Simonovsky, Martin, and Komodakis, Nikos",2018,https://arxiv.org/abs/1802.03480
+Very Deep Convolutional Networks for Large-Scale Image Recognition,"Simonyan, Karen, and Zisserman, Andrew",2014,https://arxiv.org/abs/1409.1556
+AMR-to-text Generation with Synchronous Node Replacement Grammar,"Song, Linfeng, Peng, Xiaochang, Zhang, Yue, Wang, Zhiguo, and Gildea, Daniel",2017,https://arxiv.org/abs/1702.00500
+Exploring Graph-structured Passage Representation for Multi-hop Reading Comprehension with Graph Neural Networks,"Song, Linfeng, Wang, Zhiguo, Yu, Mo, Zhang, Yue, Florian, Radu, et al",2018a,https://arxiv.org/abs/1809.02040
+A Graph-to-Sequence Model for AMR-to-Text Generation,"Song, Linfeng, Zhang, Yue, Wang, Zhiguo, and Gildea, Daniel",2018b,https://arxiv.org/abs/1805.02473
+N-ary Relation Extraction using Graph State LSTM,"Song, Linfeng, Zhang, Yue, Wang, Zhiguo, and Gildea, Daniel",2018c,https://arxiv.org/abs/1808.09101
+Dropout: A Simple Way to Prevent Neural Networks from Overfitting,"Srivastava, Nitish, Hinton, Geoffrey, Krizhevsky, Alex, Sutskever, Ilya, and Salakhutdinov, Ruslan",2014,https://dl.acm.org/doi/pdf/10.5555/2627435.2670313
+Joint Type Inference on Entities and Relations via Graph Convolutional Networks,"Sun, Changzhi, Gong, Yeyun, Wu, Yuanbin, Gong, Ming, Jiang, Daxin, et al",2019a,https://aclanthology.org/P19-1131/
+InfoGraph: Unsupervised and Semi-supervised Graph-Level Representation Learning via Mutual Information Maximization,"Sun, Fan-Yun, Hoffmann, Jordan, and Tang, Jian",2019b,https://arxiv.org/abs/1908.01000
+Multi-Stage Self-Supervised Learning for Graph Convolutional Networks on Graphs with Few Labels,"Sun, Ke, Lin, Zhouchen, and Zhu, Zhanxing",2019c,https://arxiv.org/abs/1902.11038
+Axiomatic Attribution for Deep Networks,"Sundararajan, Mukund, Taly, Ankur, and Yan, Qiqi",2017,https://arxiv.org/abs/1703.01365
+Sequence to Sequence Learning with Neural Networks,"Sutskever, I, Vinyals, O, and Le, QV",2014,https://arxiv.org/abs/1409.3215
+Policy Gradient Methods for Reinforcement Learning with Function Approximation,"Sutton, Richard S, McAllester, David A, Singh, Satinder P, and Mansour, Yishay",2000,https://papers.nips.cc/paper_files/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html
+Rethinking the Inception Architecture for Computer Vision,"Szegedy, Christian, Vanhoucke, Vincent, Ioffe, Sergey, Shlens, Jon, and Wo-jna, Zbigniew",2016,https://arxiv.org/abs/1512.00567
+Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks,"Tai, Kai Sheng, Socher, Richard, and Manning, Christopher D",2015,https://arxiv.org/abs/1503.00075
+Introduction To Data Mining,"Tan, Pang-Ning, Steinbach, Michael, and Kumar, Vipin",2021,https://www.amazon.co.jp/dp/9354491049
+LINE: Large-scale Information Network Embedding,"Tang, Jian, Qu, Meng, Wang, Mingzhe, Zhang, Ming, Yan, Jun, et al",2015,https://arxiv.org/abs/1503.03578
+Node Classification in Signed Social Networks,"Tang, Jiliang, Aggarwal, Charu, and Liu, Huan",2016a,https://www.semanticscholar.org/paper/Node-Classification-in-Signed-Social-Networks-Tang-Aggarwal/41a08affbb5c847d6f2a82d5ae4be9ed5df52353
+Feature Selection for Classification: A Review,"Tang, Jiliang, Alelyani, Salem, and Liu, Huan",2014a,https://www.semanticscholar.org/paper/Feature-Selection-for-Classification%3A-A-Review-Tang-Alelyani/ce2fa0dbf76d20369f793c11d2d8803880a9ab2d
+A Survey of Signed Network Mining in Social Media,"Tang, Jiliang, Chang, Yi, Aggarwal, Charu, and Liu, Huan",2016b,https://arxiv.org/abs/1511.07569
+Exploiting Homophily Effect for Trust Prediction,"Tang, Jiliang, Hu, Xia, Gao, Huiji, and Liu, Huan",2013a,https://www.semanticscholar.org/paper/Exploiting-homophily-effect-for-trust-prediction-Tang-Gao/04b3e9e7abe8b2d0be8ddfe080750bc4cb9473d9
+Unsupervised Feature Selection for Multi-View Data in Social Media,"Tang, Jiliang, Hu, Xia, Gao, Huiji, and Liu, Huan",2013b,https://www.semanticscholar.org/paper/Unsupervised-Feature-Selection-for-Multi-View-Data-Tang-Hu/27e2af1d9775974485ff0b642aec57326a791411
+Is Distrust the Negation of Trust? The Value of Distrust in Social Media,"Tang, Jiliang, Hu, Xia, and Liu, Huan",2014b,https://www.semanticscholar.org/paper/Is-distrust-the-negation-of-trust%3A-the-value-of-in-Tang-Hu/bdde4a7c07d6fec4516d545c6629749c1b2a088f
+Unsupervised Feature Selection for Linked Social Media Data,"Tang, Jiliang, and Liu, Huan",2012b,https://www.semanticscholar.org/paper/Unsupervised-feature-selection-for-linked-social-Tang-Liu/ec8c47ef5797976594c7b784dcad6776743ef014
+Feature Selection with Linked Data in Social Media,"Tang, Jiliang, and Liu, Huan",2012a,https://epubs.siam.org/doi/10.1137/1.9781611972825.11
+Relational Learning via Latent Social Dimensions,"Tang, Lei, and Liu, Huan",2009,https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=Uex-uzMAAAAJ&citation_for_view=Uex-uzMAAAAJ:d1gkVwhDpl0C
+Transferring Robustness for Graph Neural Network Against Poisoning Attacks,"Tang, Xianfeng, Li, Yandong, Sun, Yiwei, Yao, Huaxiu, Mitra, Prasenjit, and Wang, Suhang",2019,https://arxiv.org/abs/1908.07558
+Investigating and Mitigating Degree-Related Biases in Graph Convolutional Networks,"Tang, Xianfeng, Yao, Huaxiu, Sun, Yiwei, Wang, Yiqi, Tang, Jiliang, et al",2020,https://arxiv.org/abs/2006.15643
+A Global Geometric Framework for Nonlinear Dimensionality Reduction,"Tenenbaum, Joshua B, De Silva, Vin, and Langford, John C",2000,https://www.robots.ox.ac.uk/~az/lectures/ml/tenenbaum-isomap-Science2000.pdf
+Graph-Structured Representations for Visual Question Answering,"Teney, Damien, Liu, Lingqiao, and van den Hengel, Anton",2017,https://arxiv.org/abs/1609.05600
+Chemical Graph Theory,"Trinajstic, Nenad",2018,https://www.amazon.co.jp/dp/0367450399
+Structural Deep Embedding for Hyper-Networks,"Tu, Ke, Cui, Peng, Wang, Xiao, Wang, Fei, and Zhu, Wenwu",2018,https://arxiv.org/abs/1711.10146
+Multi-hop Reading Comprehension across Multiple Documents by Reasoning over Heterogeneous Graphs,"Tu, Ming, Wang, Guangtao, Huang, Jing, Tang, Yun, He, Xiaodong, et al",2019,https://arxiv.org/abs/1905.07374
+Composition-based Multi-Relational Graph Convolutional Networks,"Vashishth, Shikhar, Sanyal, Soumya, Nitin, Vikram, and Talukdar, Partha",2019,https://arxiv.org/abs/1911.03082
+Attention Is All You Need,"Vaswani, Ashish, Shazeer, Noam, Parmar, Niki, Uszkoreit, Jakob, Jones, Llion, et al",2017,https://arxiv.org/abs/1706.03762
+Graph Attention Networks,"Veličković, Petar, Cucurull, Guillem, Casanova, Arantxa, Romero, Adriana, Lio, Pietro, et al",2017,https://arxiv.org/abs/1710.10903
+Deep Graph Infomax,"Veličković, Petar, Fedus, William, Hamilton, William L, Lio, Pietro, et al",2019,https://arxiv.org/abs/1809.10341
+A Neural Conversational Model,"Vinyals, Oriol, and Le, Quoc",2015,https://arxiv.org/abs/1506.05869
+The spread of true and false news online,"Vosoughi, Soroush, Roy, Deb, and Aral, Sinan",2018,https://www.science.org/doi/10.1126/science.aap9559
+Structural Deep Network Embedding,"Wang, Daixin, Cui, Peng, and Zhu, Wenwu",2016,https://dl.acm.org/doi/10.1145/2939672.2939753
+Community discovery using nonnegative matrix factorization,"Wang, Fei, Li, Tao, Wang, Xin, Zhu, Shenghuo, and Ding, Chris",2011,https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=df89be8356e1f2c6bd2269ef6fb1bc326c149e50
+MCNE: An End-to-End Framework for Learning Multiple Conditional Network Representations of Social Network,"Wang, Hao, Xu, Tong, Liu, Qi, Lian, Defu, Chen, Enhong, et al",2019a,https://arxiv.org/abs/1905.11013
+GraphGAN: Graph Representation Learning with Generative Adversarial Nets,"Wang, Hongwei, Wang, Jia, Wang, Jialin, Zhao, Miao, Zhang, Weinan, et al",2018a,https://arxiv.org/abs/1711.08267
+Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems,"Wang, Hongwei, Zhang, Fuzheng, Zhang, Mengdi, Leskovec, Jure, Zhao, Miao, et al",2019b,https://arxiv.org/abs/1905.04413
+Knowledge Graph Convolutional Networks for Recommender Systems,"Wang, Hongwei, Zhao, Miao, Xie, Xing, Li, Wenjie, and Guo, Minyi",2019c,https://arxiv.org/abs/1904.12575
+FdGars: Fraudster Detection via Graph Convolutional Networks in Online App Review System,"Wang, Jianyu, Wen, Rui, Wu, Chunming, Huang, Yu, and Xion, Jian",2019d,https://dl.acm.org/doi/10.1145/3308560.3316586
+"Deep Graph Library: A Graph-Centric, Highly-Performant Package for Graph Neural Networks","Wang, Minjie, Yu, Lingfan, Zheng, Da, Gan, Quan, Gai, Yu, et al",2019e,https://arxiv.org/abs/1909.01315
+Logic Attention Based Neighborhood Aggregation for Inductive Knowledge Graph Embedding,"Wang, Peifeng, Han, Jialong, Li, Chenliang, and Pan, Rong",2019f,https://arxiv.org/abs/1811.01399
+Attributed Signed Network Embedding,"Wang, Suhang, Aggarwal, Charu, Tang, Jiliang, and Liu, Huan",2017a,https://dl.acm.org/doi/10.1145/3132847.3132905
+Signed Network Embedding in Social Media,"Wang, Suhang, Tang, Jiliang, Aggarwal, Charu, Chang, Yi, and Liu, Huan",2017b,https://epubs.siam.org/doi/10.1137/1.9781611974973.37
+KGAT: Knowledge Graph Attention Network for Recommendation,"Wang, Xiang, He, Xiangnan, Cao, Yixin, Liu, Meng, and Chua, Tat-Seng",2019g,https://arxiv.org/abs/1905.07854
+Neural Graph Collaborative Filtering,"Wang, Xiang, He, Xiangnan, Wang, Meng, Feng, Fuli, and Chua, Tat-Seng",2019h,https://arxiv.org/abs/1905.08108
+Community Preserving Network Embedding,"Wang, Xiao, Cui, Peng, Wang, Jing, Pei, Jian, Zhu, Wenwu, et al",2017c,https://ojs.aaai.org/index.php/AAAI/article/view/10488
+Heterogeneous Graph Attention Network,"Wang, Xiao, Ji, Houye, Shi, Chuan, Wang, Bai, Ye, Yanfang, et al",2019i,https://arxiv.org/abs/1903.07293
+Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs,"Wang, Xiaolong, Ye, Yufei, and Gupta, Abhinav",2018b,https://arxiv.org/abs/1803.08035
+Traffic Flow Prediction via Spatial Temporal Graph Neural Network,"Wang, Xiaoyang, Ma, Yao, Wang, Yiqi, Jin, Wei, Wang, Xin, Tang, et al",2020a,https://dl.acm.org/doi/abs/10.1145/3366423.3380186
+One-Class Graph Neural Networks for Anomaly Detection in Attributed Networks,"Wang, Xuhong, Du, Ying, Cui, Ping, and Yang, Yupu",2020b,https://arxiv.org/abs/2002.09594
+Bipartite Network Embedding via Effective Integration of Explicit and Implicit Relations,"Wang, Yaping, Jiao, Pengfei, Wang, Wenjun, Lu, Chunyu, Liu, Hongtao, et al",2019j,https://link.springer.com/chapter/10.1007/978-3-030-18576-3_26
+Dynamic Graph CNN for Learning on Point Clouds,"Wang, Yue, Sun, Yongbin, Liu, Ziwei, Sarma, Sanjay E, Bronstein, Michael M., et al",2019k,https://arxiv.org/abs/1801.07829
+Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks,"Wang, Zhichun, Lv, Qingsong, Lan, Xiaohan, and Zhang, Yu",2018c,https://aclanthology.org/D18-1032/
+Q-learning,"Watkins, Christopher JCH, and Dayan, Peter",1992,https://link.springer.com/article/10.1007/BF00992698
+Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics,"Weber, Mark, Domeniconi, Giacomo, Chen, Jie, Weidele, Daniel Karl I, Bellei, Claudio, et al",2019,https://arxiv.org/abs/1908.02591
+Unsupervised Feature Selection on Networks: A Generative View,"Wei, Xiaokai, Cao, Bokai, and Philip, S Yu",2016,https://ojs.aaai.org/index.php/AAAI/article/view/10309
+Efficient Partial Order Preserving Unsupervised Feature Selection on Networks,"Wei, Xiaokai, Xie, Sihong, and Yu, Philip S",2015,https://epubs.siam.org/doi/10.1137/1.9781611974010.10
+The reduction of a graph to canonical form and the algebra which appears therein,"Weisfeiler, B, and Lehman, A",1968,https://www.iti.zcu.cz/wl2018/pdf/wl_paper_translation.pdf
+Constructing Datasets for Multi-hop Reading Comprehension Across Documents,"Welbl, Johannes, Stenetorp, Pontus, and Riedel, Sebastian",2018,https://arxiv.org/abs/1710.06481
+Graph CNNs with Motif and Variable Temporal Block for Skeleton-Based Action Recognition,"Wen, Yu-Hui, Gao, Lin, Fu, Hongbo, Zhang, Fang-Lue, and Xia, Shihong",2019,https://ojs.aaai.org/index.php/AAAI/article/view/4929
+The Roots of Backpropagation: From Ordered Derivatives to Neural Networks and Political Forecasting,"Werbos, Paul John",1994,https://www.amazon.co.jp/dp/0471598976
+Sex differences in autism spectrum disorders,"Werling, Donna M, and Geschwind, Daniel H",2013,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4164392/
+Convolution Transform,"Widder, David Vernon, and Hirschman, Isidore Isaac",2015,https://www.amazon.co.jp/dp/0691626928
+Adversarial Examples for Graph Data: Deep Insights into Attack and Defense,"Wu, Huijun, Wang, Chen, Tyshetskiy, Yuriy, Docherty, Andrew, Lu, Kai, et al",2019,https://www.ijcai.org/proceedings/2019/669
+A Comprehensive Survey on Graph Neural Networks,"Wu, Zonghan, Pan, Shirui, Chen, Fengwen, Long, Guodong, Zhang, Chengqi, et al",2020,https://arxiv.org/abs/1901.00596
+Graph Wavelet Neural Network,"Xu, Bingbing, Shen, Huawei, Cao, Qi, Qiu, Yunqi, and Cheng, Xueqi",2019a,https://arxiv.org/abs/1904.07785
+"Adversarial Attacks and Defenses in Images, Graphs and Text: A Review","Xu, Han, Ma, Yao, Liu, Haochen, Deb, Debayan, Liu, Hui, et al",2019b,https://arxiv.org/abs/1909.08072
+Representing Big Data as Networks: New Methods and Insights,"Xu, Jian",2017,https://arxiv.org/abs/1712.09648
+Topology Attack and Defense for Graph Neural Networks: An Optimization Perspective,"Xu, Kaidi, Chen, Hongge, Liu, Sijia, Chen, Pin-Yu, Weng, Tsui-Wei, et al",2019c,https://arxiv.org/abs/1906.04214
+How Powerful are Graph Neural Networks?,"Xu, Keyulu, Hu, Weihua, Leskovec, Jure, and Jegelka, Stefanie",2019d,https://arxiv.org/abs/1810.00826
+Representation Learning on Graphs with Jumping Knowledge Networks,"Xu, Keyulu, Li, Chengtao, Tian, Yonglong, Sonobe, Tomohiro, Kawarabayashi, Ken-ichi, et al",2018a,https://arxiv.org/abs/1806.03536
+Cross-lingual Knowledge Graph Alignment via Graph Matching Neural Network,"Xu, Kun, Wang, Liwei, Yu, Mo, Feng, Yansong, Song, Yan, et al",2019e,https://arxiv.org/abs/1905.11605
+Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks,"Xu, Kun, Wu, Lingfei, Wang, Zhiguo, Feng, Yansong, Witbrock, Michael, et al",2018b,https://arxiv.org/abs/1804.00823
+Graph Convolutional Network and Convolutional Neural Network Based Method for Predicting lncRNA-Disease Associations,"Xuan, Ping, Pan, Shuxiang, Zhang, Tiangang, Liu, Yong, and Sun, Hao",2019,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6769579/
+HyperGCN: A New Method of Training Graph Convolutional Networks on Hypergraphs,"Yadati, Naganand, Nimishakavi, Madhav, Yadav, Prateek, Nitin, Vikram, Louis, Anand, et al",2019,https://dl.acm.org/doi/10.5555/3454287.3454422
+Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition,"Yan, Sijie, Xiong, Yuanjun, and Lin, Dahua",2018,https://arxiv.org/abs/1801.07455
+Deep Graph Kernels,"Yanardag, Pinar, and Vishwanathan, SVN",2015,https://web.archive.org/web/20151120124955id_/http://web.ics.purdue.edu/~ypinar/kdd/
+Learning Multi-Relational Semantics Using Neural-Embedding Models,"Yang, Bishan, Yih, Wen-tau, He, Xiaodong, Gao, Jianfeng, and Deng, Li",2014,https://arxiv.org/abs/1411.4072
+Defining and Evaluating Network Communities based on Ground-truth,"Yang, Jaewon, and Leskovec, Jure",2015,https://arxiv.org/abs/1205.6233
+Auto-Encoding Scene Graphs for Image Captioning,"Yang, Xu, Tang, Kaihua, Zhang, Hanwang, and Cai, Jianfei",2019,https://arxiv.org/abs/1812.02378
+Graph Convolutional Networks for Text Classification,"Yao, Liang, Mao, Chengsheng, and Luo, Yuan",2019,https://arxiv.org/abs/1809.05679
+Graph Convolutional Neural Networks for Web-Scale Recommender Systems,"Ying, Rex, He, Ruining, Chen, Kaifeng, Eksombatchai, Pong, Hamilton, William L., et al",2018a,https://arxiv.org/abs/1806.01973
+GNNExplainer: Generating Explanations for Graph Neural Networks,"Ying, Zhitao, Bourgeois, Dylan, You, Jiaxuan, Zitnik, Marinka, and Leskovec, Jure",2019,https://arxiv.org/abs/1903.03894
+Hierarchical Graph Representation Learning with Differentiable Pooling,"Ying, Zhitao, You, Jiaxuan, Morris, Christopher, Ren, Xiang, Hamilton, Will, et al",2018c,https://arxiv.org/abs/1806.08804
+Graph Convolutional Policy Network for Goal-Directed Molecular Graph Generation,"You, Jiaxuan, Liu, Bowen, Ying, Zhitao, Pande, Vijay, and Leskovec, Jure",2018a,https://arxiv.org/abs/1806.02473
+GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Models,"You, Jiaxuan, Ying, Rex, Ren, Xiang, Hamilton, William L., and Leskovec, Jure",2018b,https://arxiv.org/abs/1802.08773
+When Does Self-Supervision Help Graph Convolutional Networks?,"You, Yuning, Chen, Tianlong, Wang, Zhangyang, and Shen, Yang",2020,https://arxiv.org/abs/2006.09136
+Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting,"Yu, Bing, Yin, Haoteng, and Zhu, Zhanxing",2017,https://arxiv.org/abs/1709.04875
+Automatic Speech Recognition: A Deep Learning Approach,"Yu, Dong, and Deng, Li",2016,https://www.amazon.co.jp/dp/1447169670
+XGNN: Towards Model-Level Explanations of Graph Neural Networks,"Yuan, Hao, Tang, Jiliang, Hu, Xia, and Ji, Shuiwang",2020,https://arxiv.org/abs/2006.02587
+StructPool: Structured Graph Pooling via Conditional Random Fields,"Yuan, Hao, and Ji, Shuiwang",2019a,https://openreview.net/forum?id=BJxg_hVtwH
+SNE: Signed Network Embedding,"Yuan, Shuhan, Wu, Xintao, and Xiang, Yang",2017,https://arxiv.org/abs/1703.04837
+Adversarial Examples: Attacks and Defenses for Deep Learning,"Yuan, Xiaoyong, He, Pan, Zhu, Qile, and Li, Xiaolin",2019b,https://arxiv.org/abs/1712.07107
+ADADELTA: An Adaptive Learning Rate Method,"Zeiler, Matthew D",2012,https://arxiv.org/abs/1212.5701
+GraphSAINT: Graph Sampling Based Inductive Learning Method,"Zeng, Hanqing, Zhou, Hongkuan, Srivastava, Ajitesh, Kannan, Rajgopal, and Prasanna, Viktor",2019,https://arxiv.org/abs/1907.04931
+Heterogeneous Graph Neural Network,"Zhang, Chuxu, Song, Dongjin, Huang, Chao, Swami, Ananthram, and Chawla, Nitesh V",2019a,https://dl.acm.org/doi/10.1145/3292500.3330961
+OAG: Toward Linking Large-scale Heterogeneous Entity Graphs,"Zhang, Fanjin, Liu, Xiao, Tang, Jie, Dong, Yuxiao, Yao, Peiran, et al",2019b,https://www.stateoftheart.ai/papers/586cd1d4-6886-4c8f-99eb-3a7a43fa0235
+Circuit-GNN: Graph Neural Networks for Distributed Circuit Design,"Zhang, Guo, He, Hao, and Katabi, Dina",2019c,https://proceedings.mlr.press/v97/zhang19e.html
+GaAN: Gated Attention Networks for Learning on Large and Spatiotemporal Graphs,"Zhang, Jiani, Shi, Xingjian, Xie, Junyuan, Ma, Hao, King, Irwin, and Yeung, Dit-Yan",2018a,https://arxiv.org/abs/1803.07294
+Long-tail Relation Extraction via Knowledge Graph Embeddings and Graph Convolution Networks,"Zhang, Ningyu, Deng, Shumin, Sun, Zhanlin, Wang, Guanying, Chen, Xi, et al",2019d,https://arxiv.org/abs/1903.01306
+Adversarial Attacks on Deep Learning Models in Natural Language Processing: A Survey,"Zhang, Wei Emma, Sheng, Quan Z, Alhazmi, Ahoud, and Li, Chenliang",2020,https://arxiv.org/abs/1901.06796
+Deep Collective Classification in Heterogeneous Information Networks,"Zhang, Yizhou, Xiong, Yun, Kong, Xiangnan, Li, Shanshan, Mi, Jinhong, et al",2018b,https://dl.acm.org/doi/10.1145/3178876.3186106
+Graph Convolution over Pruned Dependency Trees Improves Relation Extraction,"Zhang, Yuhao, Qi, Peng, and Manning, Christopher D",2018c,https://arxiv.org/abs/1809.10185
+PairNorm: Tackling Oversmoothing in GNNs,"Zhao, Lingxiao, and Akoglu, Leman",2019,https://arxiv.org/abs/1909.12223
+Graph Neural Networks: A Review of Methods and Applications,"Zhou, Jie, Cui, Ganqu, Zhang, Zhengyan, Yang, Cheng, Liu, Zhiyuan, et al",2018a,https://arxiv.org/abs/1812.08434
+Dynamic Network Embedding by Modeling Triadic Closure Process,"Zhou, Lekui, Yang, Yang, Ren, Xiang, Wu, Fei, and Zhuang, Yueting",2018b,https://ojs.aaai.org/index.php/AAAI/article/view/11257
+Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks,"Zhou, Yaqin, Liu, Shangqing, Siow, Jingkai, Du, Xiaoning, and Liu, Yang",2019,https://arxiv.org/abs/1909.03496
+Robust Graph Convolutional Networks Against Adversarial Attacks,"Zhu, Dingyuan, Zhang, Ziwei, Cui, Peng, and Zhu, Wenwu",2019a,https://pengcui.thumedialab.com/papers/RGCN.pdf
+Graph Neural Networks with Generated Parameters for Relation Extraction,"Zhu, Hao, Lin, Yankai, Liu, Zhiyuan, Fu, Jie, Chua, Tat-seng, et al",2019b,https://aclanthology.org/P19-1128/
+AliGraph: A Comprehensive Graph Neural Network Platform,"Zhu, Rong, Zhao, Kun, Yang, Hongxia, Lin, Wei, Zhou, Chang, et al",2019c,https://arxiv.org/abs/1902.08730
+Combining Content and Link for Classification using Matrix Factorization,"Zhu, Shenghuo, Yu, Kai, Chi, Yun, and Gong, Yihong",2007,https://www.dbs.ifi.lmu.de/~yu_k/sigir2007_mf.pdf
+Semi-supervised learning using Gaussian fields and harmonic functions,"Zhu, Xiaojin, Ghahramani, Zoubin, and Lafferty, John D",2003,https://dl.acm.org/doi/10.5555/3041838.3041953
+Modeling polypharmacy side effects with graph convolutional networks,"Zitnik, Marinka, Agrawal, Monica, and Leskovec, Jure",2018,https://arxiv.org/abs/1802.00543
+Adversarial Attacks on Neural Networks for Graph Data,"Zügner, Daniel, Akbarnejad, Amir, and Günnemann, Stephan",2018,https://arxiv.org/abs/1805.07984
+Adversarial Attacks on Graph Neural Networks via Meta Learning,"Zügner, Daniel, and Günnemann, Stephan",2019,https://arxiv.org/abs/1902.08412
