@@ -53,6 +53,8 @@
 </head>
 <body>
 
+<a href="../">メインページ</a>
+
 <h2>参考文献リスト</h2>
 
 <table class="dataframe display">
@@ -2851,6 +2853,6 @@ $(document).ready(function() {
     });
 });
 </script>
-
+<a href="./">メインページ</a>
 </body>
 </html>
