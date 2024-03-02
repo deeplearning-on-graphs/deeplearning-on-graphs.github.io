@@ -10,9 +10,6 @@
     body {
         font-family: 'Verdana', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    h2 {
-        color: #333;
-    }
     table {
         width: 100%;
         max-width: 100%;
@@ -33,10 +30,10 @@
     tr:hover {
         background-color: #f5f5f5;
     }
-    /* 1番目の列の幅を65%に設定 */
+    /* 1番目の列の幅を70%に設定 */
     table.display td:nth-child(1),
     table.display th:nth-child(1) {
-        width: 65%;
+        width: 70%;
     }
 
     /* 2番目の列の幅を25%に設定 */
@@ -44,6 +41,7 @@
     table.display th:nth-child(2) {
         width: 25%;
     }
+
 </style>
 </head>
 <body>
