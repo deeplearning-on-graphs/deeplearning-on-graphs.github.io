@@ -19,23 +19,23 @@ layout: default
 ## 目次
 - 第1章 イントロダクション（[はじめに](./chap/1_introduction.markdown) / [参考文献](./chap/1_ref.markdown)）
 ### 第Ⅰ部
-- 第2章 グラフ理論の基礎（[はじめに](./chap/2_introduction.markdown) / ）
-- 第3章 深層学習の基礎（[はじめに](./chap/3_introduction.markdown) / ）
+- 第2章 グラフ理論の基礎（[はじめに](./chap/2_introduction.markdown) / [参考文献](./chap/2_ref.markdown)）
+- 第3章 深層学習の基礎（[はじめに](./chap/3_introduction.markdown) / [参考文献](./chap/3_ref.markdown)）
 ### 第Ⅱ部
-- 第4章 グラフ埋め込み（[はじめに](./chap/4_introduction.markdown) / ）
-- 第5章 グラフニューラルネットワーク（[はじめに](./chap/5_introduction.markdown) / ）
-- 第6章 グラフニューラルネットワークの敵対的ロバスト性（[はじめに](./chap/6_introduction.markdown) / ）
-- 第7章 グラフニューラルネットワークのスケーラビリティ（[はじめに](./chap/7_introduction.markdown) / ）
-- 第8章 複雑グラフ上のグラフニューラルネットワーク（[はじめに](./chap/8_introduction.markdown) / ）
-- 第9章 GNNの枠を超えて：グラフ上に関するその他の深層学習モデル（[はじめに](./chap/9_introduction.markdown) / ）
+- 第4章 グラフ埋め込み（[はじめに](./chap/4_introduction.markdown) / [参考文献](./chap/4_ref.markdown)）
+- 第5章 グラフニューラルネットワーク（[はじめに](./chap/5_introduction.markdown) / [参考文献](./chap/5_ref.markdown)）
+- 第6章 グラフニューラルネットワークの敵対的ロバスト性（[はじめに](./chap/6_introduction.markdown) / [参考文献](./chap/6_ref.markdown)）
+- 第7章 グラフニューラルネットワークのスケーラビリティ（[はじめに](./chap/7_introduction.markdown) / [参考文献](./chap/7_ref.markdown)）
+- 第8章 複雑グラフ上のグラフニューラルネットワーク（[はじめに](./chap/8_introduction.markdown) / [参考文献](./chap/8_ref.markdown)）
+- 第9章 GNNの枠を超えて：グラフ上に関するその他の深層学習モデル（[はじめに](./chap/9_introduction.markdown) / [参考文献](./chap/9_ref.markdown)）
 ### 第Ⅲ部
-- 第10章 自然言語処理におけるグラフニューラルネットワークの応用（[はじめに](./chap/10_introduction.markdown) / ）
-- 第11章 画像処理におけるグラフニューラルネットワーク（[はじめに](./chap/11_introduction.markdown) / ）
-- 第12章 データマイニングにおけるグラフニューラルネットワーク（[はじめに](./chap/12_introduction.markdown) / ）
-- 第13章 生化学・ヘルスケア分野におけるグラフニューラルネットワーク（[はじめに](./chap/13_introduction.markdown) / ）
+- 第10章 自然言語処理におけるグラフニューラルネットワークの応用（[はじめに](./chap/10_introduction.markdown) / [参考文献](./chap/10_ref.markdown)）
+- 第11章 画像処理におけるグラフニューラルネットワーク（[はじめに](./chap/11_introduction.markdown) / [参考文献](./chap/11_ref.markdown)）
+- 第12章 データマイニングにおけるグラフニューラルネットワーク（[はじめに](./chap/12_introduction.markdown) / [参考文献](./chap/12_ref.markdown)）
+- 第13章 生化学・ヘルスケア分野におけるグラフニューラルネットワーク（[はじめに](./chap/13_introduction.markdown) / [参考文献](./chap/13_ref.markdown)）
 ### 第Ⅳ部
-- 第14章 グラフニューラルネットワークに関する発展的な話題（[はじめに](./chap/14_introduction.markdown) / ）
-- 第15章 グラフニューラルネットワークにおける発展的な応用例（[はじめに](./chap/15_introduction.markdown) / ）
+- 第14章 グラフニューラルネットワークに関する発展的な話題（[はじめに](./chap/14_introduction.markdown) / [参考文献](./chap/14_ref.markdown)）
+- 第15章 グラフニューラルネットワークにおける発展的な応用例（[はじめに](./chap/15_introduction.markdown) / [参考文献](./chap/15_ref.markdown)）
 - [参考文献（全章）](./ref.markdown)
 
 ## 読書アシスタント
