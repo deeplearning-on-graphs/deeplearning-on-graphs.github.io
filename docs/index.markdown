@@ -15,7 +15,7 @@ layout: default
 </div>
 
 <p>Amazonのリンクは<a href="https://amzn.asia/d/6agPggA">こちら</a></p>
-<p>プレアデス出版社のリンクは<a href="http://www.pleiades-publishing.co.jp/genre/kakuritsu.html#bk05"></a>こちら</p>
+<p>プレアデス出版社のリンクは<a href="http://www.pleiades-publishing.co.jp/genre/kakuritsu.html#bk05">こちら</a></p>
 
 ## 目次
 - 第1章 イントロダクション（[はじめに](./chap/1_introduction.markdown) / [参考文献](./chap/1_ref.markdown)）
