@@ -38,7 +38,7 @@ layout: default
 - 第14章 グラフニューラルネットワークに関する発展的な話題（[はじめに](./chap/14_introduction.markdown) / [参考文献](./chap/14_ref.markdown)）
 - 第15章 グラフニューラルネットワークにおける発展的な応用例（[はじめに](./chap/15_introduction.markdown) / [参考文献](./chap/15_ref.markdown)）
 - [参考文献（全章）](./all_ref.markdown)：
-    - [PDF](./References.pdf){:target="_blank"} / [CSV](./references_books){:target="_blank"}
+    - [PDF](./References.pdf){:target="_blank"} / [CSV](./references_books.csv){:target="_blank"}
 
 ## 読書アシスタント
 - 読書アシスタントは[こちら](https://chat.openai.com/g/g-yDqZojV1t-gurahushen-ceng-xue-xi-du-shu-asisutanto)
