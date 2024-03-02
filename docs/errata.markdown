@@ -132,12 +132,14 @@
         </tr>
         <tr>
             <td>p.238</td>
+            <td>8.6節</td>
             <td>Fent <em>et al</em>., 2019b</td>
             <td>Feng <em>et al</em>., 2019b</td>
             <td>誤植</td>
         </tr>
         <tr>
             <td>p.265</td>
+            <td>10.1節</td>
             <td>Jurafsky and Martin, n.d.</td>
             <td>Jurafsky and Martin, 2000</td>
             <td>修正</td>
