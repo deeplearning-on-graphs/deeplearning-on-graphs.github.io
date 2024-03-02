@@ -176,7 +176,7 @@
             <td>修正</td>
         </tr>
         <tr>
-            <td></td>
+            <td>p.352</td>
             <td>14.3.1.2節</td>
             <td>Neville and Jensen, n.d.</td>
             <td>Neville and Jensen, 2000</td>
