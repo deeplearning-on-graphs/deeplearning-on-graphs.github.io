@@ -33,10 +33,10 @@
     tr:hover {
         background-color: #f5f5f5;
     }
-    /* 1番目の列の幅を55%に設定 */
+    /* 1番目の列の幅を60%に設定 */
     table.display td:nth-child(1),
     table.display th:nth-child(1) {
-        width: 55%;
+        width: 60%;
     }
 
     /* 2番目の列の幅を25%に設定 */
