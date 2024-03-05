@@ -43,8 +43,10 @@ layout: default
 ## 読書アシスタント
 - 読書アシスタントは[こちら](https://chat.openai.com/g/g-yDqZojV1t-gurahushen-ceng-xue-xi-du-shu-asisutanto)
     - OpenAI Plusのアカウントが必要になります。
+        - 使用制限（時間あたりのクエリ回数）があるのでご注意ください
     - 本アシスタントは間違いを犯すことがあります。自身が持つ知識領域と直接縫い合わせながらご活用ください。
     - サービス元の仕様変更等により、予告なく本アプリケーションの提供を変更したり、取りやめる場合がございます。ご了承ください。
+        - 技術進展の状況を見て，性能の良い技術に鞍替えすることもあります．
 - [GPTsによる読書アシスタントの作成](https://qiita.com/deeplearning-on-graphs/items/a6de9bcdad540dab5ecb)
 
 ## 誤植情報
