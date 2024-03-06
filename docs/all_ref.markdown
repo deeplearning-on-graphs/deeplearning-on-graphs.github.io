@@ -12,7 +12,7 @@
     }
     body {
         font-family: 'Verdana', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 20px;
+        padding: 0px;
         background-color: #f4f4f4;
         line-height: 1.4;
     }
