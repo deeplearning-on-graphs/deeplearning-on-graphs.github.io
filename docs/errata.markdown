@@ -37,7 +37,7 @@
 現在判っている誤植・修正箇所は以下の通りです．
 <br><br>
 他にも誤植等ございましたら下記までお問い合わせください：<br>
-<a href="mailto:deeplearning.on.graphs@gmail.com?subject=誤植報告&body=「グラフ深層学習」担当者%0D%0A%0D%0A■ページ番号：p.◯◯%0D%0A■誤：%0D%0A✗✗✗✗✗✗%0D%0A%0D%0A■正（わかれば）：%0D%0A◯◯◯◯◯%0D%0A%0D%0A■備考：%0D%0A特になし%0D%0A%0D%0A※訳者より%0D%0Aこの度はご迷惑をおかけしてすみません．ご協力誠にありがとうございます！%0D%0A本メールへの返信はいたしませんのでご了承ください．内容を吟味し次版への対応を検討いたします．">deeplearning.on.graphs@gmail.com</a>
+<a href="mailto:deeplearning.on.graphs@gmail.com?subject=誤植報告&body=「グラフ深層学習」担当者%0D%0A%0D%0A■ページ番号：p.◯◯%0D%0A■誤：%0D%0A✗✗✗✗✗✗%0D%0A%0D%0A■正（わかれば）：%0D%0A◯◯◯◯◯%0D%0A%0D%0A■備考：%0D%0A特になし%0D%0A%0D%0A※訳者より%0D%0Aこの度はご迷惑をおかけしてすみません．ご協力誠にありがとうございます！%0D%0A内容を吟味し次版への対応を検討いたします．">deeplearning.on.graphs@gmail.com</a>
 
 <h3>1刷〜</h3>
 
