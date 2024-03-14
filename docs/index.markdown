@@ -41,13 +41,15 @@ layout: default
     - [PDF](./References.pdf){:target="_blank"} / [CSV](./references_books.csv){:target="_blank"}
 
 ## 読書アシスタント
+実験的に，「本の内容について直接質問し，その答えを受ける」ことを可能にしたサービスを公開しております．
+
 - 読書アシスタントは[こちら](https://chat.openai.com/g/g-yDqZojV1t-gurahushen-ceng-xue-xi-du-shu-asisutanto)
     - ChatGPT Plusのアカウントが必要になります。
         - 使用制限（時間あたりのクエリ回数）があるのでご注意ください
     - 本アシスタントは間違いを犯すことがあります。自身が持つ知識領域と直接縫い合わせながらご活用ください。
     - サービス元の仕様変更等により、予告なく本アプリケーションの提供を変更したり、取りやめる場合がございます。ご了承ください。
         - 技術進展の状況を見て，性能の良い技術に鞍替えすることもあります．
-- [GPTsによる読書アシスタントの作成](https://qiita.com/deeplearning-on-graphs/items/a6de9bcdad540dab5ecb)
+- [読書アシスタントの使い方](https://note.com/dl_on_graphs/n/n4f0bbf0ff054)
 
 ## 誤植情報
 誤植・修正情報は[こちら](./errata.markdown)．
